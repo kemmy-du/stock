@@ -42,7 +42,17 @@
     ).join("");
     const toggle = $("#nav-toggle");
     if (toggle) {
-      toggle.addEventListener("click", () => el.classList.toggle("open"));
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.addEventListener("click", () => {
+        toggle.setAttribute("aria-expanded", String(el.classList.toggle("open")));
+      });
+      // 点击菜单项后自动收起
+      el.addEventListener("click", (e) => {
+        if (e.target.closest(".nav-link")) {
+          el.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
     }
   }
 
