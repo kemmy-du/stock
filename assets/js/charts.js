@@ -20,7 +20,7 @@
     s.src = "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js";
     s.onload = onReady;
     s.onerror = () => {
-      $$(".chart-kline").forEach((el) => {
+      document.querySelectorAll(".chart-kline").forEach((el) => {
         el.innerHTML =
           '<div class="chart-fallback">图表组件加载失败（网络原因）。价格数据请见下方数据表。</div>';
       });
@@ -37,6 +37,7 @@
         axisPointer: { type: "cross", lineStyle: { color: C.axis, width: 1 } },
         backgroundColor: "rgba(255,255,255,0.96)",
         borderColor: "#E2E4E8",
+        confine: true,
         textStyle: { color: "#17191C", fontSize: 12 },
         extraCssText: "box-shadow:0 4px 14px rgba(23,25,28,.08);border-radius:8px;",
         valueFormatter: (v) =>
@@ -59,6 +60,21 @@
         axisLabel: { color: C.text2, fontSize: 11 },
       },
     };
+  }
+
+  /* 窄屏收紧边距与字号，避免 375px 屏绘图区被坐标轴过度挤压 */
+  function applyResponsive(chart) {
+    if (!window.matchMedia("(max-width: 640px)").matches) return;
+    chart.setOption({
+      legend: { textStyle: { fontSize: 10 } },
+      tooltip: { textStyle: { fontSize: 11 } },
+      grid: [
+        { left: 44, right: 8, top: 26, height: "50%" },
+        { left: 44, right: 8, top: "67%", height: "13%" },
+      ],
+      xAxis: [{ axisLabel: { fontSize: 9 } }, {}],
+      yAxis: [{ axisLabel: { fontSize: 9 } }, { axisLabel: { fontSize: 9 } }],
+    });
   }
 
   function renderKline(el, series, currency) {
@@ -124,8 +140,21 @@
         }),
       ],
       grid: [
-        { left: 64, right: 16, top: 30, height: "52%" },
-        { left: 64, right: 16, top: "68%", height: "16%" },
+        { left: 56, right: 10, top: 30, height: "50%" },
+        { left: 56, right: 10, top: "67%", height: "13%" },
+      ],
+      dataZoom: [
+        // 移动端禁用单指平移：否则单指滑动会被图表吃掉，页面无法滚动（双指缩放仍可用）
+        { type: "inside", xAxisIndex: [0, 1], start: 0, end: 100, moveOnMouseMove: true, moveOnTouch: false },
+        {
+          type: "slider", xAxisIndex: [0, 1], start: 0, end: 100,
+          height: 18, bottom: 6, borderColor: "#E2E4E8",
+          fillerColor: "rgba(117,122,131,0.08)",
+          dataBackground: { lineStyle: { color: "#D3D6DC" }, areaStyle: { color: "rgba(117,122,131,0.06)" } },
+          selectedDataBackground: { lineStyle: { color: "#A8ADB5" }, areaStyle: { color: "rgba(117,122,131,0.12)" } },
+          handleStyle: { color: "#757A83" }, moveHandleStyle: { color: "#757A83" },
+          textStyle: { color: "#757A83", fontSize: 10 }, showDetail: false, brushSelect: false,
+        },
       ],
       series: [
         {
@@ -144,7 +173,15 @@
       ],
     });
     chart.setOption(opt);
-    window.addEventListener("resize", () => chart.resize());
+    applyResponsive(chart);
+    let klineResizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(klineResizeTimer);
+      klineResizeTimer = setTimeout(() => {
+        chart.resize();
+        applyResponsive(chart);
+      }, 150);
+    });
     return chart;
   }
 
@@ -170,7 +207,11 @@
           },
         }],
       });
-      window.addEventListener("resize", () => chart.resize());
+      let sparkResizeTimer;
+      window.addEventListener("resize", () => {
+        clearTimeout(sparkResizeTimer);
+        sparkResizeTimer = setTimeout(() => chart.resize(), 150);
+      });
       return;
     }
     // 无 ECharts 时用 SVG 兜底
