@@ -14,18 +14,67 @@
     volDown: "rgba(31,122,77,0.45)",
   };
 
+  /* ECharts CDN 多源故障转移：国内网络（含鸿蒙）访问 jsdelivr 常被限速或不通，
+     逐个源尝试并设超时，任一源成功即止 */
+  const ECHARTS_SOURCES = [
+    "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js",
+    "https://unpkg.com/echarts@5.5.0/dist/echarts.min.js",
+    "https://cdn.staticfile.org/echarts/5.5.0/echarts.min.js",
+  ];
+  const ECHARTS_TIMEOUT = 8000;
+
+  let echartsPromise = null;
+
+  function showChartFallback() {
+    document.querySelectorAll(".chart-kline").forEach((el) => {
+      el.innerHTML =
+        '<div class="chart-fallback">图表组件加载失败（网络原因）。价格数据请见下方数据表。</div>';
+    });
+    document.querySelectorAll("[data-spark]").forEach((el) => { el.innerHTML = ""; });
+  }
+
   function ensureEcharts(onReady) {
-    if (window.echarts) return onReady();
-    const s = document.createElement("script");
-    s.src = "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js";
-    s.onload = onReady;
-    s.onerror = () => {
-      document.querySelectorAll(".chart-kline").forEach((el) => {
-        el.innerHTML =
-          '<div class="chart-fallback">图表组件加载失败（网络原因）。价格数据请见下方数据表。</div>';
+    if (window.echarts) { onReady(); return; }
+    if (!echartsPromise) {
+      echartsPromise = new Promise((resolve, reject) => {
+        let idx = 0;
+        const tryNext = () => {
+          if (idx >= ECHARTS_SOURCES.length) { reject(new Error("echarts cdn unavailable")); return; }
+          const s = document.createElement("script");
+          s.src = ECHARTS_SOURCES[idx++];
+          s.async = true;
+          let settled = false;
+          const timer = setTimeout(() => {
+            if (settled) return;
+            settled = true;
+            s.onload = s.onerror = null;
+            s.remove();
+            tryNext();
+          }, ECHARTS_TIMEOUT);
+          s.onload = () => { if (settled) return; settled = true; clearTimeout(timer); resolve(); };
+          s.onerror = () => { if (settled) return; settled = true; clearTimeout(timer); tryNext(); };
+          document.head.appendChild(s);
+        };
+        tryNext();
       });
-    };
-    document.head.appendChild(s);
+    }
+    // then(onReady, onFail) 而非 .catch：避免 onReady 内部异常被误判成加载失败
+    echartsPromise.then(onReady, showChartFallback);
+  }
+
+  /* resize 防抖 + 尺寸守卫：鸿蒙等设备地址栏收起/键盘弹出会连续触发 resize，
+     仅当容器尺寸真实变化才重绘，杜绝自激循环 */
+  function onResize(el, fn) {
+    let timer, lastW = 0, lastH = 0;
+    window.addEventListener("resize", () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const w = el.clientWidth, h = el.clientHeight;
+        if (w === lastW && h === lastH) return;
+        lastW = w; lastH = h;
+        fn();
+      }, 150);
+    });
   }
 
   function baseOption(currency) {
@@ -174,14 +223,7 @@
     });
     chart.setOption(opt);
     applyResponsive(chart);
-    let klineResizeTimer;
-    window.addEventListener("resize", () => {
-      clearTimeout(klineResizeTimer);
-      klineResizeTimer = setTimeout(() => {
-        chart.resize();
-        applyResponsive(chart);
-      }, 150);
-    });
+    onResize(el, () => { chart.resize(); applyResponsive(chart); });
     return chart;
   }
 
@@ -207,11 +249,7 @@
           },
         }],
       });
-      let sparkResizeTimer;
-      window.addEventListener("resize", () => {
-        clearTimeout(sparkResizeTimer);
-        sparkResizeTimer = setTimeout(() => chart.resize(), 150);
-      });
+      onResize(el, () => chart.resize());
       return;
     }
     // 无 ECharts 时用 SVG 兜底
