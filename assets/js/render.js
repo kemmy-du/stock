@@ -88,10 +88,12 @@
           <span>${esc(rs[0].name)} <span style="color:var(--color-text-3);font-size:11px">${esc(sym)}</span></span>
           <span class="cnt">${rs.length}</span>
         </button>`).join("");
-      return `<div class="side-group">
-        <div class="group-head"><span>${window.SI.MARKET_LABEL[m] || m}</span><span class="count">${list.length}</span></div>
+      // 桌面端默认展开分组；移动端默认收起，避免侧边栏在列表上方占满首屏
+      const openDesktop = window.matchMedia("(min-width: 641px)").matches ? " open" : "";
+      return `<details class="side-group"${openDesktop}>
+        <summary class="group-head"><span>${window.SI.MARKET_LABEL[m] || m}</span><span class="count">${list.length}</span></summary>
         ${items}
-      </div>`;
+      </details>`;
     }).join("");
 
     const rows = () => {
@@ -234,6 +236,7 @@
 
       <section class="card panel" id="sec-财务摘要">
         <div class="panel-head"><h2>财务摘要</h2><span class="hint">${esc(fin.report_period || "最新报告期")}</span></div>
+        <div class="table-scroll">
         <table class="data-table">
           <thead><tr><th>指标</th><th>数值</th><th>同比</th></tr></thead>
           <tbody>
@@ -244,6 +247,7 @@
             <tr><td>市净率 PB</td><td>${fin.pb ?? "—"}</td><td>—</td></tr>
           </tbody>
         </table>
+        </div>
       </section>
 
       <section class="card panel" id="sec-新闻公告">
