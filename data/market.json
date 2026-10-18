@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-16",
+  "indices": [
+    { "name": "上证指数", "code": "000001.SH", "market": "CN", "close": 3716.28, "change_pct": 0.2376 },
+    { "name": "深证成指", "code": "399001.SZ", "market": "CN", "close": 11802.46, "change_pct": -0.1213 },
+    { "name": "沪深300", "code": "000300.SH", "market": "CN", "close": 4170.61, "change_pct": 0.1104 },
+    { "name": "纳斯达克综指", "code": "IXIC.GI", "market": "US", "close": 26140.03, "change_pct": -2.145 },
+    { "name": "标普500", "code": "SPX.GI", "market": "US", "close": 7659.44, "change_pct": -1.0927 },
+    { "name": "道琼斯工业", "code": "DJI.GI", "market": "US", "close": 52002.41, "change_pct": -0.3359 }
+  ]
+}
