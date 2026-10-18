@@ -19,7 +19,6 @@
   const ECHARTS_SOURCES = [
     "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js",
     "https://unpkg.com/echarts@5.5.0/dist/echarts.min.js",
-    "https://cdn.staticfile.org/echarts/5.5.0/echarts.min.js",
   ];
   const ECHARTS_TIMEOUT = 8000;
 
@@ -31,6 +30,7 @@
         '<div class="chart-fallback">图表组件加载失败（网络原因）。价格数据请见下方数据表。</div>';
     });
     document.querySelectorAll("[data-spark]").forEach((el) => { el.innerHTML = ""; });
+    document.querySelectorAll(".chart-line").forEach((el) => { el.innerHTML = ""; });
   }
 
   function ensureEcharts(onReady) {
@@ -261,72 +261,75 @@
     el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}"><polyline points="${pts}" fill="none" stroke="#757A83" stroke-width="1.5"/></svg>`;
   }
 
-  /* ---------- 通用图表：折线图（毛利率趋势等） ---------- */
-  const chartRegistry = {};
+  /* ---------- 纯 SVG 图表（无外部依赖，弱网/离线/内嵌浏览器均可用） ---------- */
 
-  function disposeChart(key) {
-    if (chartRegistry[key]) { chartRegistry[key].dispose(); delete chartRegistry[key]; }
-  }
-
-  function tooltipBase(unit) {
-    return {
-      trigger: "axis",
-      confine: true,
-      backgroundColor: "rgba(255,255,255,0.96)",
-      borderColor: "#E2E4E8",
-      textStyle: { color: "#17191C", fontSize: 12 },
-      extraCssText: "box-shadow:0 4px 14px rgba(23,25,28,.08);border-radius:8px;",
-      valueFormatter: (v) => (typeof v === "number" ? v.toFixed(2) + unit : v),
-    };
-  }
-
+  // 折线图：毛利率趋势。annual 为年度参考位（虚线）
   function initLineChart(elId, labels, values, annual, unit) {
-    ensureEcharts(() => {
-      const el = document.getElementById(elId);
-      if (!el || !labels.length) return;
-      disposeChart(elId);
-      const chart = echarts.init(el);
-      chartRegistry[elId] = chart;
-      chart.setOption({
-        animationDuration: 400,
-        textStyle: { fontFamily: "-apple-system, PingFang SC, sans-serif" },
-        tooltip: tooltipBase(unit || "%"),
-        grid: { left: 50, right: 18, top: 34, bottom: 46 },
-        xAxis: {
-          type: "category", data: labels, boundaryGap: false, interval: 0,
-          axisLine: { lineStyle: { color: C.grid } },
-          axisTick: { show: false },
-          axisLabel: { color: C.text2, fontSize: 10, rotate: labels.length >= 8 ? 45 : 0 },
-        },
-        yAxis: {
-          type: "value", scale: true,
-          splitLine: { lineStyle: { color: C.grid } },
-          axisLabel: { color: C.text2, fontSize: 10, formatter: "{value}" + (unit || "%") },
-        },
-        series: [{
-          name: "单季毛利率", type: "line", data: values,
-          symbol: "circle", symbolSize: 6, connectNulls: true,
-          lineStyle: { width: 2, color: C.ma20 },
-          itemStyle: { color: C.ma20 },
-          areaStyle: { color: "rgba(78,83,91,0.07)" },
-          markLine: (annual && annual.length) ? {
-            silent: true, symbol: "none",
-            data: annual.map((a) => ({
-              yAxis: a.value,
-              label: {
-                formatter: a.period + " " + a.value + "%",
-                position: "insideEndTop", color: C.text2, fontSize: 10,
-              },
-            })),
-            lineStyle: { type: "dashed", color: C.axis, width: 1 },
-          } : undefined,
-        }],
+    const el = document.getElementById(elId);
+    if (!el || !labels.length) return;
+    const u = unit || "%";
+    const draw = () => {
+      const W = Math.max(el.clientWidth || 320, 260);
+      const H = 300;
+      const P = { l: 48, r: 16, t: 26, b: 46 };
+      const iw = W - P.l - P.r;
+      const ih = H - P.t - P.b;
+      const all = values.slice();
+      (annual || []).forEach((a) => all.push(a.value));
+      let vmin = Math.min.apply(null, all);
+      let vmax = Math.max.apply(null, all);
+      const pad = (vmax - vmin) * 0.18 || 1;
+      const lo = vmin - pad, hi = vmax + pad;
+      const X = (i) => P.l + (labels.length === 1 ? iw / 2 : (i / (labels.length - 1)) * iw);
+      const Y = (v) => P.t + ih - ((v - lo) / (hi - lo)) * ih;
+
+      let grid = "", ylab = "";
+      for (let g = 0; g <= 4; g++) {
+        const v = lo + ((hi - lo) * g) / 4;
+        const yy = Y(v).toFixed(1);
+        grid += `<line x1="${P.l}" y1="${yy}" x2="${W - P.r}" y2="${yy}" stroke="#ECEEF1" stroke-width="1"/>`;
+        ylab += `<text x="${P.l - 8}" y="${yy}" fill="#757A83" font-size="10" text-anchor="end" dominant-baseline="middle">${v.toFixed(1)}</text>`;
+      }
+
+      const rotate = labels.length >= 8;
+      let xlab = "";
+      labels.forEach((lb, i) => {
+        const xx = X(i).toFixed(1);
+        if (rotate) {
+          const ty = (H - P.b + 14).toFixed(1);
+          xlab += `<text x="${xx}" y="${ty}" fill="#757A83" font-size="10" text-anchor="end" dominant-baseline="middle" transform="rotate(-45 ${xx} ${ty})">${lb}</text>`;
+        } else {
+          xlab += `<text x="${xx}" y="${H - P.b + 16}" fill="#757A83" font-size="10" text-anchor="middle">${lb}</text>`;
+        }
       });
-      onResize(el, () => chart.resize());
-    });
+
+      let marks = "";
+      (annual || []).forEach((a) => {
+        const yy = Y(a.value).toFixed(1);
+        marks += `<line x1="${P.l}" y1="${yy}" x2="${W - P.r}" y2="${yy}" stroke="#A8ADB5" stroke-width="1" stroke-dasharray="5 4"/>`;
+        marks += `<text x="${W - P.r - 2}" y="${(Y(a.value) - 6).toFixed(1)}" fill="#757A83" font-size="9" text-anchor="end">${a.period} ${a.value}${u}</text>`;
+      });
+
+      const pts = values.map((v, i) => `${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
+      const base = (P.t + ih).toFixed(1);
+      const area = `M ${X(0).toFixed(1)},${base} ` +
+        values.map((v, i) => `L ${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ") +
+        ` L ${X(values.length - 1).toFixed(1)},${base} Z`;
+      let dots = "";
+      values.forEach((v, i) => {
+        dots += `<circle cx="${X(i).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="3" fill="#4E535B"/>`;
+      });
+
+      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img" aria-label="毛利率趋势图">` +
+        `<path d="${area}" fill="rgba(78,83,91,0.07)"/>` + grid + ylab + marks +
+        `<polyline points="${pts}" fill="none" stroke="#4E535B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>` +
+        dots + xlab + `</svg>`;
+    };
+    draw();
+    onResize(el, draw);
   }
 
-  /* ---------- 通用图表：同业分组条形图（指标可切换） ---------- */
+  // 条形图：同业指标对比（支持负值，指标可切换）
   const PEER_METRICS = {
     value: { name: "毛利率", unit: "%" },
     net_margin: { name: "净利率", unit: "%" },
@@ -335,45 +338,55 @@
   };
 
   function initPeerChart(elId, peers, metric, subjectName) {
-    ensureEcharts(() => {
-      const el = document.getElementById(elId);
-      if (!el || !peers || !peers.length) return;
-      const meta = PEER_METRICS[metric] || PEER_METRICS.value;
-      const names = peers.map((p) => p.name);
-      disposeChart(elId);
-      const chart = echarts.init(el);
-      chartRegistry[elId] = chart;
-      chart.setOption({
-        animationDuration: 400,
-        textStyle: { fontFamily: "-apple-system, PingFang SC, sans-serif" },
-        tooltip: tooltipBase(meta.unit),
-        grid: { left: 50, right: 18, top: 30, bottom: 28 },
-        xAxis: {
-          type: "category", data: names, interval: 0,
-          axisLine: { lineStyle: { color: C.grid } },
-          axisTick: { show: false },
-          axisLabel: { color: C.text2, fontSize: 10, rotate: names.length > 5 ? 25 : 0 },
-        },
-        yAxis: {
-          type: "value", scale: true,
-          splitLine: { lineStyle: { color: C.grid } },
-          axisLabel: { color: C.text2, fontSize: 10, formatter: "{value}" + meta.unit },
-        },
-        series: [{
-          name: meta.name, type: "bar",
-          data: peers.map((p, i) => ({
-            value: p[metric],
-            itemStyle: {
-              color: names[i] === subjectName ? "#22262B" : "#A8ADB5",
-              borderRadius: [3, 3, 0, 0],
-            },
-          })),
-          barWidth: "50%",
-          label: { show: true, position: "top", color: C.text2, fontSize: 10 },
-        }],
+    const el = document.getElementById(elId);
+    if (!el || !peers || !peers.length) return;
+    const meta = PEER_METRICS[metric] || PEER_METRICS.value;
+    const draw = () => {
+      const W = Math.max(el.clientWidth || 320, 260);
+      const H = 260;
+      const P = { l: 48, r: 16, t: 24, b: 46 };
+      const iw = W - P.l - P.r;
+      const ih = H - P.t - P.b;
+      const vals = peers.map((p) => p[metric]);
+      const vmin = Math.min.apply(null, vals);
+      const vmax = Math.max.apply(null, vals);
+      const span = (vmax - vmin) || Math.abs(vmax) || 1;
+      const lo = Math.min(0, vmin - span * 0.2);
+      const hi = vmax + span * 0.2;
+      const Y = (v) => P.t + ih - ((v - lo) / (hi - lo)) * ih;
+      const slot = iw / peers.length;
+      const bw = Math.min(slot * 0.46, 54);
+      const zeroY = Y(0);
+
+      let grid = "", ylab = "";
+      for (let g = 0; g <= 4; g++) {
+        const v = lo + ((hi - lo) * g) / 4;
+        const yy = Y(v).toFixed(1);
+        grid += `<line x1="${P.l}" y1="${yy}" x2="${W - P.r}" y2="${yy}" stroke="#ECEEF1" stroke-width="1"/>`;
+        ylab += `<text x="${P.l - 8}" y="${yy}" fill="#757A83" font-size="10" text-anchor="end" dominant-baseline="middle">${v.toFixed(1)}</text>`;
+      }
+
+      let bars = "", xlab = "";
+      peers.forEach((p, i) => {
+        const cx = P.l + slot * (i + 0.5);
+        const v = p[metric];
+        const isSubj = p.name === subjectName;
+        const color = isSubj ? "#22262B" : "#A8ADB5";
+        const yTop = v >= 0 ? Y(v) : zeroY;
+        const h = Math.max(Math.abs(Y(v) - zeroY), 1);
+        bars += `<rect x="${(cx - bw / 2).toFixed(1)}" y="${yTop.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${color}"/>`;
+        const ly = v >= 0 ? (yTop - 6).toFixed(1) : (yTop + h + 14).toFixed(1);
+        bars += `<text x="${cx.toFixed(1)}" y="${ly}" fill="#757A83" font-size="10" font-weight="600" text-anchor="middle">${v}</text>`;
+        xlab += `<text x="${cx.toFixed(1)}" y="${H - P.b + 16}" fill="#757A83" font-size="10" font-weight="${isSubj ? 700 : 400}" text-anchor="middle">${p.name}</text>`;
       });
-      onResize(el, () => chart.resize());
-    });
+
+      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img" aria-label="同业${meta.name}对比图">` +
+        grid + ylab +
+        `<line x1="${P.l}" y1="${zeroY.toFixed(1)}" x2="${W - P.r}" y2="${zeroY.toFixed(1)}" stroke="#D3D6DC" stroke-width="1"/>` +
+        bars + xlab + `</svg>`;
+    };
+    draw();
+    onResize(el, draw);
   }
 
   function initReportChart(series, currency) {
