@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>报告库 · 股析 StockInsight</title>
+  <meta name="description" content="全部股票分析报告：按市场与标的分组筛选、搜索。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2322262B'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>析</text></svg>" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">析</span>
+        <span>股析 <small>STOCKINSIGHT</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">菜单</button>
+      <nav class="nav-links" id="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <div class="section-head" style="margin-top:0">
+        <h2>报告库</h2>
+        <span class="more">按市场与标的浏览全部报告</span>
+      </div>
+
+      <div class="lib-layout">
+        <aside class="sidebar" id="lib-sidebar" aria-label="标的分组">
+          <div class="skeleton" style="height:180px"></div>
+        </aside>
+
+        <div>
+          <div class="lib-toolbar">
+            <label class="search-box">
+              <span aria-hidden="true" style="color:var(--color-text-3)">⌕</span>
+              <input id="lib-search" type="search" placeholder="搜索股票名称、代码或关键词…" aria-label="搜索报告" />
+            </label>
+            <div class="filter-chips" role="group" aria-label="市场筛选">
+              <button class="chip active" data-market="ALL">全部</button>
+              <button class="chip" data-market="CN">A股</button>
+              <button class="chip" data-market="US">美股</button>
+            </div>
+          </div>
+          <div class="report-list" id="lib-list">
+            <div class="card report-row"><div class="skeleton" style="height:56px"></div></div>
+            <div class="card report-row"><div class="skeleton" style="height:56px"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/render.js"></script>
+</body>
+</html>
