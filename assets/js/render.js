@@ -4,7 +4,7 @@
   const { $, $$, loadJSON, fmtPrice, fmtPct, pctClass, fmtVolume, fmtMoney,
     ratingBadge, sentimentBadge, marketBadge } = window.SI;
 
-  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+  const esc = (s) => String(s === null || s === undefined ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   function reportCardHTML(r, idx) {
@@ -174,6 +174,9 @@
     const ind = r.indicators;
     const fin = r.financials;
     const ccy = r.overview.currency;
+    // 兼容旧版 WebView（微信 X5 等 Chromium < 80 内核）：不使用可选链与空值合并运算符
+    const nz = (v, d) => (v === null || v === undefined ? d : v);
+    const md = ind.macd || {};
 
     $("#report-body").innerHTML = `
       <header class="card stock-header">
@@ -203,9 +206,9 @@
         <div class="kv-grid">
           <div class="kv"><div class="k">最新价</div><div class="v num">${fmtPrice(r.overview.price, ccy)} <small>${ccy}</small></div></div>
           <div class="kv"><div class="k">当日涨跌</div><div class="v num ${pctClass(r.overview.change_pct)}">${fmtPct(r.overview.change_pct)}</div></div>
-          <div class="kv"><div class="k">PE (TTM)</div><div class="v num">${fin.pe_ttm ?? "—"}</div></div>
-          <div class="kv"><div class="k">PB</div><div class="v num">${fin.pb ?? "—"}</div></div>
-          <div class="kv"><div class="k">ROE</div><div class="v num">${fin.roe ?? "—"}<small>%</small></div></div>
+          <div class="kv"><div class="k">PE (TTM)</div><div class="v num">${nz(fin.pe_ttm, "—")}</div></div>
+          <div class="kv"><div class="k">PB</div><div class="v num">${nz(fin.pb, "—")}</div></div>
+          <div class="kv"><div class="k">ROE</div><div class="v num">${nz(fin.roe, "—")}<small>%</small></div></div>
           <div class="kv"><div class="k">综合评级</div><div class="v" style="font-size:var(--text-lg)">${ratingBadge(r.analysis.rating)}</div></div>
         </div>
         <p class="analysis-summary" style="margin-top:var(--space-5)">${esc(r.cover)}</p>
@@ -219,13 +222,13 @@
       <section class="card panel" id="sec-技术指标">
         <div class="panel-head"><h2>技术指标</h2><span class="hint">基于日线收盘计算</span></div>
         <div class="kv-grid">
-          <div class="kv"><div class="k">MA5</div><div class="v num">${ind.ma5 ?? "—"}</div></div>
-          <div class="kv"><div class="k">MA20</div><div class="v num">${ind.ma20 ?? "—"}</div></div>
-          <div class="kv"><div class="k">EMA20</div><div class="v num">${ind.ema20 ?? "—"}</div></div>
-          <div class="kv"><div class="k">RSI 14</div><div class="v num">${ind.rsi14 ?? "—"}</div></div>
-          <div class="kv"><div class="k">MACD DIF</div><div class="v num">${ind.macd?.dif ?? "—"}</div></div>
-          <div class="kv"><div class="k">MACD DEA</div><div class="v num">${ind.macd?.dea ?? "—"}</div></div>
-          <div class="kv"><div class="k">MACD 柱</div><div class="v num ${pctClass(ind.macd?.hist)}">${ind.macd?.hist ?? "—"}</div></div>
+          <div class="kv"><div class="k">MA5</div><div class="v num">${nz(ind.ma5, "—")}</div></div>
+          <div class="kv"><div class="k">MA20</div><div class="v num">${nz(ind.ma20, "—")}</div></div>
+          <div class="kv"><div class="k">EMA20</div><div class="v num">${nz(ind.ema20, "—")}</div></div>
+          <div class="kv"><div class="k">RSI 14</div><div class="v num">${nz(ind.rsi14, "—")}</div></div>
+          <div class="kv"><div class="k">MACD DIF</div><div class="v num">${nz(md.dif, "—")}</div></div>
+          <div class="kv"><div class="k">MACD DEA</div><div class="v num">${nz(md.dea, "—")}</div></div>
+          <div class="kv"><div class="k">MACD 柱</div><div class="v num ${pctClass(md.hist)}">${nz(md.hist, "—")}</div></div>
           <div class="kv"><div class="k">区间振幅参考</div><div class="v num">${(() => {
             const cs = r.price_series.map((d) => d.close);
             const mx = Math.max(...cs), mn = Math.min(...cs);
@@ -242,9 +245,9 @@
           <tbody>
             <tr><td>营业收入</td><td>${fmtMoney(fin.revenue, ccy)}</td><td class="${pctClass(fin.revenue_yoy)}">${fin.revenue_yoy == null ? "—" : fmtPct(fin.revenue_yoy)}</td></tr>
             <tr><td>净利润</td><td>${fmtMoney(fin.net_profit, ccy)}</td><td class="${pctClass(fin.net_profit_yoy)}">${fin.net_profit_yoy == null ? "—" : fmtPct(fin.net_profit_yoy)}</td></tr>
-            <tr><td>ROE</td><td>${fin.roe ?? "—"}%</td><td>—</td></tr>
-            <tr><td>市盈率 PE(TTM)</td><td>${fin.pe_ttm ?? "—"}</td><td>—</td></tr>
-            <tr><td>市净率 PB</td><td>${fin.pb ?? "—"}</td><td>—</td></tr>
+            <tr><td>ROE</td><td>${nz(fin.roe, "—")}%</td><td>—</td></tr>
+            <tr><td>市盈率 PE(TTM)</td><td>${nz(fin.pe_ttm, "—")}</td><td>—</td></tr>
+            <tr><td>市净率 PB</td><td>${nz(fin.pb, "—")}</td><td>—</td></tr>
           </tbody>
         </table>
         </div>
