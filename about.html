@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于 · 股析 StockInsight</title>
+  <meta name="description" content="关于股析：数据来源、报告生成方式与免责声明。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2322262B'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>析</text></svg>" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">析</span>
+        <span>股析 <small>STOCKINSIGHT</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">菜单</button>
+      <nav class="nav-links" id="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container prose">
+      <p class="eyebrow">About</p>
+      <h1 style="font-size:var(--text-2xl);margin-block:var(--space-3) var(--space-6)">关于股析</h1>
+
+      <h2>这是什么</h2>
+      <p>股析 StockInsight 是一个纯静态的股票分析报告网站，托管于 GitHub Pages。每份报告由 CodeBuddy 中的 <code>stock-report</code> 技能生成：先通过同花顺 iFinD 数据接口获取行情、财务与新闻资讯，再由 CodeBuddy 内置大模型完成分析并撰写结论，最后以结构化 JSON 落地到本仓库，由前端读取渲染。</p>
+
+      <h2>报告包含什么</h2>
+      <ul>
+        <li>近 60 个交易日日 K 行情与成交量（A股 / 美股）</li>
+        <li>技术指标：MA5 / MA20 / EMA20 / RSI14 / MACD</li>
+        <li>财务摘要：营收、净利润、ROE、PE(TTM)、PB</li>
+        <li>近期新闻公告摘要及情绪标注</li>
+        <li>AI 结论：综合评级、多空要点与逻辑推演</li>
+      </ul>
+
+      <h2>更新方式</h2>
+      <p>当前为手动触发：在 CodeBuddy 中说出「生成 XX 股票分析报告」即可完成取数、分析与发布，网站随之自动更新。后续可接入定时调度实现每日自动更新。</p>
+
+      <h2>技术栈</h2>
+      <ul>
+        <li>纯静态站点：HTML + CSS + 原生 JavaScript，无构建步骤</li>
+        <li>图表：ECharts（CDN 引入，统一灰色主题）</li>
+        <li>视觉：依据 web-design 技能的令牌化 CSS 体系，浅灰纸面 + 单一克制强调色</li>
+      </ul>
+
+      <h2>免责声明</h2>
+      <p>本站所有内容由自动化流程基于公开数据生成，仅供学习研究参考，不构成任何投资建议。数据可能存在延迟或误差，投资决策请以官方披露信息为准，风险自担。</p>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
