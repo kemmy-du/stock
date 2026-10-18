@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>股析 StockInsight · 股票分析报告</title>
+  <meta name="description" content="由 CodeBuddy 生成的静态股票分析报告站：行情、技术指标、财务摘要、新闻情绪与 AI 结论。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2322262B'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>析</text></svg>" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">析</span>
+        <span>股析 <small>STOCKINSIGHT</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">菜单</button>
+      <nav class="nav-links" id="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">CodeBuddy × GitHub Pages</p>
+        <h1>精致的股票分析，静默呈现。</h1>
+        <p>每份报告由 CodeBuddy 在会话中完成取数、技术指标计算与分析结论撰写，结构化落地为数据文件，本站在 GitHub Pages 上静默渲染。不追逐噪音，只保留决策所需的信息层级。</p>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-value" id="stat-reports">—</div><div class="stat-label">已发布报告</div></div>
+          <div class="stat"><div class="stat-value" id="stat-stocks">—</div><div class="stat-label">覆盖标的</div></div>
+          <div class="stat"><div class="stat-value">A股 · 美股</div><div class="stat-label">市场范围</div></div>
+        </div>
+      </section>
+
+      <section aria-label="大盘指数">
+        <div class="section-head"><h2>大盘速览</h2><a class="more" href="market.html">查看市场概览 →</a></div>
+        <div class="index-strip" id="index-strip"></div>
+      </section>
+
+      <section aria-label="最新报告">
+        <div class="section-head"><h2>最新报告</h2><a class="more" href="library.html">进入报告库 →</a></div>
+        <div class="report-grid" id="report-grid">
+          <div class="card report-card"><div class="skeleton" style="height:120px"></div></div>
+          <div class="card report-card"><div class="skeleton" style="height:120px"></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script>
+    // 首页大盘条
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await window.SI.loadJSON("data/market.json");
+        document.getElementById("index-strip").innerHTML = data.indices.map((ix) => `
+          <div class="card index-card">
+            <div class="idx-name">${ix.name}</div>
+            <div class="idx-value num">${ix.close.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+            <div class="idx-chg num ${window.SI.pctClass(ix.change_pct)}">${window.SI.fmtPct(ix.change_pct)}</div>
+          </div>`).join("");
+      } catch (e) {
+        document.getElementById("index-strip").innerHTML =
+          '<div class="empty-state" style="grid-column:1/-1">大盘数据加载失败</div>';
+      }
+    });
+  </script>
+</body>
+</html>
