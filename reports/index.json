@@ -20,5 +20,16 @@
   "change_pct": 0.4269,
   "cover": "业绩连续超预期驱动市值突破 5 万亿美元，估值已部分透支上行空间",
   "industry": "消费电子 / 科技"
+ },
+ {
+  "id": "US-TSLA-2026-10-18",
+  "symbol": "TSLA",
+  "market": "US",
+  "name": "特斯拉",
+  "date": "2026-10-18",
+  "rating": "中性",
+  "change_pct": -2.13,
+  "cover": "Robotaxi 叙事支撑估值想象力，368 倍 PE 与现金消耗决定财报前高波动",
+  "industry": "汽车 / 清洁能源 / AI"
  }
 ]
