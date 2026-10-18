@@ -11,7 +11,7 @@
     const closes = r.price_series.map((d) => d.close).slice(-40).join(",");
     return `
     <a class="card card-hover report-card stagger-item" style="animation-delay:${idx * 60}ms"
-       href="report.html?id=${encodeURIComponent(r.id)}">
+       href="report.html#${encodeURIComponent(r.id)}">
       <div class="card-top">
         <div>
           <div class="stock-name">${esc(r.name)}</div>
@@ -116,7 +116,7 @@
         return;
       }
       $("#lib-list").innerHTML = list.map((r) => `
-        <a class="card card-hover report-row" href="report.html?id=${encodeURIComponent(r.id)}">
+        <a class="card card-hover report-row" href="report.html#${encodeURIComponent(r.id)}">
           <div class="row-main">
             <div class="row-title">
               <span class="nm">${esc(r.name)}</span>
@@ -160,7 +160,12 @@
   }
 
   async function initReport() {
-    const id = new URLSearchParams(location.search).get("id");
+    // 必须加页面守卫：本函数在每个页面都会被执行，
+    // 若无 #report-body 也继续走，就会对所有页面触发跳转，导致 library.html 无限重定向自身
+    if (!$("#report-body")) return;
+    // 优先取 hash（微信等环境会剥离 query 参数，hash 更可靠），并兼容旧的 ?id= 形式
+    const hashId = (location.hash || "").replace(/^#/, "");
+    const id = hashId || new URLSearchParams(location.search).get("id");
     if (!id) { location.replace("library.html"); return; }
     let r;
     try {
