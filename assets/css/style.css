@@ -190,6 +190,29 @@ img, canvas { display: block; max-width: 100%; }
   border-radius: 2px;
   background: var(--gray-800);
 }
+/* 微信 X5 及旧版 WebView 对 backdrop-filter 支持不佳，会持续重绘导致页面闪烁/卡顿，
+   此类环境改用不透明白底 */
+.is-wechat .nav, .legacy-webview .nav {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: #ffffff;
+}
+#si-wechat-tip {
+  position: fixed;
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-4);
+  bottom: calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  background: var(--gray-900);
+  color: var(--gray-0);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
 .nav-toggle {
   display: none;
   margin-left: auto;
