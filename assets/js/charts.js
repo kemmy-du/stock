@@ -261,6 +261,121 @@
     el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}"><polyline points="${pts}" fill="none" stroke="#757A83" stroke-width="1.5"/></svg>`;
   }
 
+  /* ---------- 通用图表：折线图（毛利率趋势等） ---------- */
+  const chartRegistry = {};
+
+  function disposeChart(key) {
+    if (chartRegistry[key]) { chartRegistry[key].dispose(); delete chartRegistry[key]; }
+  }
+
+  function tooltipBase(unit) {
+    return {
+      trigger: "axis",
+      confine: true,
+      backgroundColor: "rgba(255,255,255,0.96)",
+      borderColor: "#E2E4E8",
+      textStyle: { color: "#17191C", fontSize: 12 },
+      extraCssText: "box-shadow:0 4px 14px rgba(23,25,28,.08);border-radius:8px;",
+      valueFormatter: (v) => (typeof v === "number" ? v.toFixed(2) + unit : v),
+    };
+  }
+
+  function initLineChart(elId, labels, values, annual, unit) {
+    ensureEcharts(() => {
+      const el = document.getElementById(elId);
+      if (!el || !labels.length) return;
+      disposeChart(elId);
+      const chart = echarts.init(el);
+      chartRegistry[elId] = chart;
+      chart.setOption({
+        animationDuration: 400,
+        textStyle: { fontFamily: "-apple-system, PingFang SC, sans-serif" },
+        tooltip: tooltipBase(unit || "%"),
+        grid: { left: 50, right: 18, top: 34, bottom: 46 },
+        xAxis: {
+          type: "category", data: labels, boundaryGap: false, interval: 0,
+          axisLine: { lineStyle: { color: C.grid } },
+          axisTick: { show: false },
+          axisLabel: { color: C.text2, fontSize: 10, rotate: labels.length >= 8 ? 45 : 0 },
+        },
+        yAxis: {
+          type: "value", scale: true,
+          splitLine: { lineStyle: { color: C.grid } },
+          axisLabel: { color: C.text2, fontSize: 10, formatter: "{value}" + (unit || "%") },
+        },
+        series: [{
+          name: "单季毛利率", type: "line", data: values,
+          symbol: "circle", symbolSize: 6, connectNulls: true,
+          lineStyle: { width: 2, color: C.ma20 },
+          itemStyle: { color: C.ma20 },
+          areaStyle: { color: "rgba(78,83,91,0.07)" },
+          markLine: (annual && annual.length) ? {
+            silent: true, symbol: "none",
+            data: annual.map((a) => ({
+              yAxis: a.value,
+              label: {
+                formatter: a.period + " " + a.value + "%",
+                position: "insideEndTop", color: C.text2, fontSize: 10,
+              },
+            })),
+            lineStyle: { type: "dashed", color: C.axis, width: 1 },
+          } : undefined,
+        }],
+      });
+      onResize(el, () => chart.resize());
+    });
+  }
+
+  /* ---------- 通用图表：同业分组条形图（指标可切换） ---------- */
+  const PEER_METRICS = {
+    value: { name: "毛利率", unit: "%" },
+    net_margin: { name: "净利率", unit: "%" },
+    roe: { name: "ROE", unit: "%" },
+    pb: { name: "PB", unit: "倍" },
+  };
+
+  function initPeerChart(elId, peers, metric, subjectName) {
+    ensureEcharts(() => {
+      const el = document.getElementById(elId);
+      if (!el || !peers || !peers.length) return;
+      const meta = PEER_METRICS[metric] || PEER_METRICS.value;
+      const names = peers.map((p) => p.name);
+      disposeChart(elId);
+      const chart = echarts.init(el);
+      chartRegistry[elId] = chart;
+      chart.setOption({
+        animationDuration: 400,
+        textStyle: { fontFamily: "-apple-system, PingFang SC, sans-serif" },
+        tooltip: tooltipBase(meta.unit),
+        grid: { left: 50, right: 18, top: 30, bottom: 28 },
+        xAxis: {
+          type: "category", data: names, interval: 0,
+          axisLine: { lineStyle: { color: C.grid } },
+          axisTick: { show: false },
+          axisLabel: { color: C.text2, fontSize: 10, rotate: names.length > 5 ? 25 : 0 },
+        },
+        yAxis: {
+          type: "value", scale: true,
+          splitLine: { lineStyle: { color: C.grid } },
+          axisLabel: { color: C.text2, fontSize: 10, formatter: "{value}" + meta.unit },
+        },
+        series: [{
+          name: meta.name, type: "bar",
+          data: peers.map((p, i) => ({
+            value: p[metric],
+            itemStyle: {
+              color: names[i] === subjectName ? "#22262B" : "#A8ADB5",
+              borderRadius: [3, 3, 0, 0],
+            },
+          })),
+          barWidth: "50%",
+          label: { show: true, position: "top", color: C.text2, fontSize: 10 },
+        }],
+      });
+      onResize(el, () => chart.resize());
+    });
+  }
+
   function initReportChart(series, currency) {
     ensureEcharts(() => {
       const el = document.getElementById("kline-chart");
@@ -278,5 +393,5 @@
     });
   }
 
-  window.SICharts = { initReportChart, initSparklines };
+  window.SICharts = { initReportChart, initSparklines, initLineChart, initPeerChart };
 })();
