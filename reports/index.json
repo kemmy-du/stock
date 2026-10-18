@@ -8,29 +8,11 @@
   "rating": "中性",
   "change_pct": 1.2209,
   "cover": "估值处于历史低位区，短期三连阳修复，等待基本面企稳信号",
-  "industry": "食品饮料"
- },
- {
-  "id": "US-AAPL-2026-10-18",
-  "symbol": "AAPL",
-  "market": "US",
-  "name": "苹果",
-  "date": "2026-10-18",
-  "rating": "增持",
-  "change_pct": 0.4269,
-  "cover": "业绩连续超预期驱动市值突破 5 万亿美元，估值已部分透支上行空间",
-  "industry": "消费电子 / 科技"
- },
- {
-  "id": "US-TSLA-2026-10-18",
-  "symbol": "TSLA",
-  "market": "US",
-  "name": "特斯拉",
-  "date": "2026-10-18",
-  "rating": "中性",
-  "change_pct": -2.13,
-  "cover": "Robotaxi 叙事支撑估值想象力，368 倍 PE 与现金消耗决定财报前高波动",
-  "industry": "汽车 / 清洁能源 / AI"
+  "industry": "食品饮料",
+  "price": 1329.0,
+  "as_of": "2026-10-16",
+  "currency": "CNY",
+  "deep": false
  },
  {
   "id": "CN-603773-2026-10-18",
@@ -41,6 +23,40 @@
   "rating": "减持",
   "change_pct": 0.0,
   "cover": "TGV全制程技术稀缺，但亏损扩大、PB 15.8倍，估值已透支远期量产预期",
-  "industry": "电子 / 光电子器件"
+  "industry": "电子 / 光电子器件",
+  "price": 71.6,
+  "as_of": "2026-10-16",
+  "currency": "CNY",
+  "deep": true
+ },
+ {
+  "id": "US-AAPL-2026-10-18",
+  "symbol": "AAPL",
+  "market": "US",
+  "name": "苹果",
+  "date": "2026-10-18",
+  "rating": "增持",
+  "change_pct": 0.4269,
+  "cover": "业绩连续超预期驱动市值突破 5 万亿美元，估值已部分透支上行空间",
+  "industry": "消费电子 / 科技",
+  "price": 343.46,
+  "as_of": "2026-10-16",
+  "currency": "USD",
+  "deep": false
+ },
+ {
+  "id": "US-TSLA-2026-10-18",
+  "symbol": "TSLA",
+  "market": "US",
+  "name": "特斯拉",
+  "date": "2026-10-18",
+  "rating": "中性",
+  "change_pct": -2.13,
+  "cover": "Robotaxi 叙事支撑估值想象力，368 倍 PE 与现金消耗决定财报前高波动",
+  "industry": "汽车 / 清洁能源 / AI",
+  "price": 354.72,
+  "as_of": "2026-10-16",
+  "currency": "USD",
+  "deep": false
  }
 ]
