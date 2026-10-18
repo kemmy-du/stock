@@ -182,6 +182,161 @@
     // 兼容旧版 WebView（微信 X5 等 Chromium < 80 内核）：不使用可选链与空值合并运算符
     const nz = (v, d) => (v === null || v === undefined ? d : v);
     const md = ind.macd || {};
+    // 深度分析模块（旧报告无此字段，对应章节自动隐藏）
+    const da = r.deep_analysis || null;
+    const gm = da ? da.gross_margin : null;
+    const sectionTabs = ["概览", "行情走势", "技术指标"];
+    if (gm) sectionTabs.push("盈利能力与毛利率");
+    sectionTabs.push("财务摘要");
+    if (da && da.valuation) sectionTabs.push("估值与情景");
+    if (da && da.risks) sectionTabs.push("风险与证伪");
+    sectionTabs.push("新闻公告", "AI 结论");
+
+    const riskLevelCls = (lv) => {
+      const s = String(lv || "");
+      if (s.indexOf("高") === 0) return "risk-high";
+      if (s.indexOf("中高") === 0) return "risk-midhigh";
+      return "risk-mid";
+    };
+    const scenarioCls = (name) => {
+      const s = String(name || "");
+      if (s.indexOf("乐观") === 0) return "scn-bull";
+      if (s.indexOf("悲观") === 0) return "scn-bear";
+      return "scn-base";
+    };
+
+    /* ---------- 深度分析章节片段 ---------- */
+    // 概览：治理与筹码
+    const governanceCardsHTML = (da && da.governance) ? `
+          <div class="kv"><div class="k">实际控制人</div><div class="v" style="font-size:var(--text-base)">${esc(da.governance.controller)} <small>${esc(da.governance.controller_ratio)}%</small></div></div>
+          <div class="kv"><div class="k">前十大股东合计</div><div class="v num">${esc(da.governance.top10_ratio)}<small>%</small></div></div>
+          <div class="kv"><div class="k">机构持股比例</div><div class="v num">${esc(da.governance.institutional_ratio)}<small>%</small></div></div>
+          <div class="kv"><div class="k">股东户数变动</div><div class="v num ${da.governance.shareholder_change_pct > 50 ? "up" : "flat"}">${esc(da.governance.shareholder_change_pct)}<small>%</small></div></div>
+    ` : "";
+
+    // 盈利能力与毛利率（核心章节）
+    const gmSectionHTML = gm ? `
+      <section class="card panel" id="sec-盈利能力与毛利率">
+        <div class="panel-head">
+          <h2>盈利能力与毛利率</h2>
+          <span class="hint">${esc(gm.trend === "contracting" ? "毛利率趋势下行" : gm.trend === "expanding" ? "毛利率趋势上行" : "毛利率趋势平稳")} · 区间 ${esc(gm.range_low)}% — ${esc(gm.range_high)}%</span>
+        </div>
+
+        <h3 class="sub-head">个股毛利率趋势</h3>
+        <div class="chart-line" id="gm-trend-chart" role="img" aria-label="${esc(r.name)} 单季毛利率趋势图"></div>
+        <p class="chart-note">实线为单季毛利率（由累计口径拆算），虚线为年度毛利率参考位</p>
+
+        <h3 class="sub-head">同业对比</h3>
+        <div class="metric-switch" id="gm-metric-switch" role="group" aria-label="对比指标切换">
+          <button class="chip active" data-metric="value">毛利率</button>
+          <button class="chip" data-metric="net_margin">净利率</button>
+          <button class="chip" data-metric="roe">ROE</button>
+          <button class="chip" data-metric="pb">PB</button>
+        </div>
+        <div class="chart-line" id="gm-peer-chart" role="img" aria-label="同业指标对比图"></div>
+        <p class="chart-note">深色柱为 ${esc(r.name)}，浅色柱为可比公司</p>
+
+        <h3 class="sub-head">毛利率变动归因</h3>
+        <ul class="attr-list">
+          ${gm.attribution ? Object.keys(gm.attribution).map((k, i) => {
+            const tags = ["主因", "次因", "补充"];
+            return `<li><span class="attr-tag">${tags[i] || "补充"}</span><span>${esc(gm.attribution[k])}</span></li>`;
+          }).join("") : ""}
+        </ul>
+        <p class="analysis-summary">${esc(gm.note || "")}</p>
+      </section>
+    ` : "";
+
+    // 财务摘要：资产负债与盈利质量
+    const balanceSheetCardsHTML = (da && da.balance_sheet) ? (() => {
+      const b = da.balance_sheet;
+      const kv = (k, v, unit, cls) => `          <div class="kv"><div class="k">${k}</div><div class="v num ${cls || ""}">${esc(v)}<small>${unit}</small></div></div>`;
+      return `
+        <h3 class="sub-head">资产负债与盈利质量</h3>
+        <div class="kv-grid">
+${kv("货币资金", b.cash, "亿元")}
+${kv("带息债务", b.interest_bearing_debt, "亿元")}
+${kv("短期借款", b.short_term_debt, "亿元")}
+${kv("应收账款", b.accounts_receivable, "亿元")}
+${kv("应收 / 营收", b.receivable_to_revenue, "%")}
+${kv("存货", b.inventory, "亿元")}
+${kv("商誉", b.goodwill, "亿元")}
+${kv("研发费用率", b.rd_ratio, "%")}
+${kv("经营现金流", b.operating_cash_flow, "亿元", b.operating_cash_flow >= 0 ? "up" : "down")}
+${kv("资产负债率", b.asset_liability_ratio, "%")}
+        </div>`;
+    })() : "";
+
+    // 估值与情景
+    const valuationSectionHTML = (da && da.valuation) ? `
+      <section class="card panel" id="sec-估值与情景">
+        <div class="panel-head"><h2>估值与情景</h2><span class="hint">同业估值对照 · 三档情景推演</span></div>
+        <div class="kv-grid">
+          <div class="kv"><div class="k">总市值</div><div class="v num">${esc(da.valuation.market_cap)}<small>亿元</small></div></div>
+          <div class="kv"><div class="k">PB</div><div class="v num">${esc(da.valuation.pb)}<small>倍</small></div></div>
+          <div class="kv"><div class="k">PS (TTM)</div><div class="v num">${esc(da.valuation.ps_ttm)}<small>倍</small></div></div>
+          <div class="kv"><div class="k">同业 PB 区间</div><div class="v num">${esc((da.valuation.peer_pb_range || []).join(" — "))}<small>倍</small></div></div>
+        </div>
+        <div class="callout"><strong>估值倒推</strong>${esc(da.valuation.implied_assumption || "")}</div>
+        <p class="analysis-summary">${esc(da.valuation.note || "")}</p>
+
+        <h3 class="sub-head">三档情景</h3>
+        <div class="scenario-grid">
+          ${(da.scenarios || []).map((s) => `
+            <div class="scn-card ${scenarioCls(s.name)}">
+              <div class="scn-head"><span class="scn-name">${esc(s.name)}</span><span class="scn-upside num">${esc(s.upside)}</span></div>
+              <div class="scn-row"><span class="scn-label">假设</span><p>${esc(s.assumption)}</p></div>
+              <div class="scn-row"><span class="scn-label">估值</span><p>${esc(s.valuation)}</p></div>
+            </div>`).join("")}
+        </div>
+
+        <h3 class="sub-head">催化剂日历</h3>
+        <ul class="catalyst-list">
+          ${(da.catalysts || []).map((c) => `<li>${esc(c)}</li>`).join("")}
+        </ul>
+      </section>
+    ` : "";
+
+    // 风险与证伪
+    const riskSectionHTML = (da && da.risks) ? `
+      <section class="card panel" id="sec-风险与证伪">
+        <div class="panel-head"><h2>风险与证伪</h2><span class="hint">风险清单 · 逻辑证伪条件 · 关键跟踪指标</span></div>
+        <div class="table-scroll">
+          <table class="data-table risk-table">
+            <thead><tr><th>风险类型</th><th>等级</th><th>说明</th></tr></thead>
+            <tbody>
+              ${da.risks.map((rk) => `
+                <tr>
+                  <td>${esc(rk.type)}</td>
+                  <td><span class="risk-badge ${riskLevelCls(rk.severity)}">${esc(rk.severity)}</span></td>
+                  <td class="risk-detail">${esc(rk.detail)}</td>
+                </tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-head">证伪条件（出现即应重新评估）</h3>
+        <ul class="falsify-list">
+          ${(da.falsification || []).map((f) => `<li>${esc(f)}</li>`).join("")}
+        </ul>
+
+        <h3 class="sub-head">关键跟踪指标</h3>
+        <div class="table-scroll">
+          <table class="data-table kpi-table">
+            <thead><tr><th>跟踪指标</th><th>阈值 / 目标</th></tr></thead>
+            <tbody>
+              ${(da.kpi_tracking || []).map((k) => {
+                const s = String(k);
+                const i = s.indexOf("（");
+                const name = i > 0 ? s.slice(0, i) : s;
+                const thr = i > 0 ? s.slice(i) : "";
+                return `<tr><td>${esc(name)}</td><td class="kpi-thr">${esc(thr)}</td></tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ` : "";
 
     $("#report-body").innerHTML = `
       <header class="card stock-header">
@@ -202,8 +357,7 @@
       </header>
 
       <nav class="section-tabs" id="section-tabs" aria-label="报告章节">
-        ${["概览", "行情走势", "技术指标", "财务摘要", "新闻公告", "AI 结论"]
-          .map((t) => `<button class="section-tab" data-target="sec-${encodeURIComponent(t)}">${t}</button>`).join("")}
+        ${sectionTabs.map((t) => `<button class="section-tab" data-target="sec-${encodeURIComponent(t)}">${t}</button>`).join("")}
       </nav>
 
       <section class="card panel" id="sec-概览">
@@ -215,7 +369,7 @@
           <div class="kv"><div class="k">PB</div><div class="v num">${nz(fin.pb, "—")}</div></div>
           <div class="kv"><div class="k">ROE</div><div class="v num">${nz(fin.roe, "—")}<small>%</small></div></div>
           <div class="kv"><div class="k">综合评级</div><div class="v" style="font-size:var(--text-lg)">${ratingBadge(r.analysis.rating)}</div></div>
-        </div>
+${governanceCardsHTML}        </div>
         <p class="analysis-summary" style="margin-top:var(--space-5)">${esc(r.cover)}</p>
       </section>
 
@@ -242,6 +396,7 @@
         </div>
       </section>
 
+${gmSectionHTML}
       <section class="card panel" id="sec-财务摘要">
         <div class="panel-head"><h2>财务摘要</h2><span class="hint">${esc(fin.report_period || "最新报告期")}</span></div>
         <div class="table-scroll">
@@ -256,8 +411,9 @@
           </tbody>
         </table>
         </div>
-      </section>
+${balanceSheetCardsHTML}      </section>
 
+${valuationSectionHTML}${riskSectionHTML}
       <section class="card panel" id="sec-新闻公告">
         <div class="panel-head"><h2>新闻公告</h2><span class="hint">近期相关资讯 · 情绪标注仅供参考</span></div>
         <div class="news-list">
@@ -288,6 +444,26 @@
     `;
 
     window.SICharts.initReportChart(r.price_series, ccy);
+
+    // 深度分析图表：毛利率趋势 + 同业对比（指标可切换）
+    if (gm) {
+      const qs = gm.series_quarterly || [];
+      window.SICharts.initLineChart(
+        "gm-trend-chart",
+        qs.map((p) => p.period),
+        qs.map((p) => p.value),
+        gm.series_annual || [],
+        "%"
+      );
+      const peers = gm.peer_compare || [];
+      window.SICharts.initPeerChart("gm-peer-chart", peers, "value", r.name);
+      $$("#gm-metric-switch .chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          $$("#gm-metric-switch .chip").forEach((c) => c.classList.toggle("active", c === chip));
+          window.SICharts.initPeerChart("gm-peer-chart", peers, chip.dataset.metric, r.name);
+        });
+      });
+    }
 
     // 章节锚点 + scrollspy
     const tabs = $$("#section-tabs .section-tab");
