@@ -306,9 +306,12 @@ img, canvas { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-.badge.rating-buy, .badge.rating-add { color: var(--up-600); border-color: color-mix(in srgb, var(--up-500) 30%, transparent); background: var(--up-bg); }
+/* color-mix() 前先给纯色降级：旧版 Chromium（含鸿蒙部分内核）不支持时整条声明会被丢弃 */
+.badge.rating-buy, .badge.rating-add { color: var(--up-600); border-color: var(--up-500); background: var(--up-bg); }
+.badge.rating-buy, .badge.rating-add { border-color: color-mix(in srgb, var(--up-500) 30%, transparent); }
 .badge.rating-neutral { color: var(--color-text-2); }
-.badge.rating-reduce { color: var(--down-600); border-color: color-mix(in srgb, var(--down-500) 30%, transparent); background: var(--down-bg); }
+.badge.rating-reduce { color: var(--down-600); border-color: var(--down-500); background: var(--down-bg); }
+.badge.rating-reduce { border-color: color-mix(in srgb, var(--down-500) 30%, transparent); }
 .badge.market-CN { color: var(--gray-700); }
 .badge.market-US { color: var(--gray-700); }
 
@@ -540,8 +543,10 @@ img, canvas { display: block; max-width: 100%; }
 .analysis-summary { color: var(--color-text-2); font-size: var(--text-sm); line-height: 1.8; }
 .bull-bear { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-top: var(--space-6); }
 .bb-col { border-radius: var(--r-md); padding: var(--space-5); border: 1px solid var(--color-border); }
-.bb-col.bull { background: var(--up-bg); border-color: color-mix(in srgb, var(--up-500) 22%, transparent); }
-.bb-col.bear { background: var(--down-bg); border-color: color-mix(in srgb, var(--down-500) 22%, transparent); }
+.bb-col.bull { background: var(--up-bg); border-color: var(--up-500); }
+.bb-col.bull { border-color: color-mix(in srgb, var(--up-500) 22%, transparent); }
+.bb-col.bear { background: var(--down-bg); border-color: var(--down-500); }
+.bb-col.bear { border-color: color-mix(in srgb, var(--down-500) 22%, transparent); }
 .bb-col h3 { font-size: var(--text-sm); margin-bottom: var(--space-3); }
 .bb-col.bull h3 { color: var(--up-600); }
 .bb-col.bear h3 { color: var(--down-600); }
