@@ -7,39 +7,65 @@
   const esc = (s) => String(s === null || s === undefined ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+  /* 报告卡片：数据源为 index.json 条目（不含 price_series，迷你走势懒加载） */
   function reportCardHTML(r, idx) {
-    const closes = r.price_series.map((d) => d.close).slice(-40).join(",");
     return `
     <a class="card card-hover report-card stagger-item" style="animation-delay:${idx * 60}ms"
        href="report.html#${encodeURIComponent(r.id)}">
       <div class="card-top">
         <div>
           <div class="stock-name">${esc(r.name)}</div>
-          <div class="stock-symbol">${esc(r.symbol)} · ${esc(r.company.industry)}</div>
+          <div class="stock-symbol">${esc(r.symbol)} · ${esc(r.industry)}</div>
         </div>
         <div class="price-line">
-          <div class="price">${fmtPrice(r.overview.price, r.overview.currency)}</div>
-          <div class="chg ${pctClass(r.overview.change_pct)}">${fmtPct(r.overview.change_pct)}</div>
+          <div class="price">${fmtPrice(r.price, r.currency)}</div>
+          <div class="chg ${pctClass(r.change_pct)}">${fmtPct(r.change_pct)}</div>
         </div>
       </div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">${marketBadge(r.market)}${ratingBadge(r.analysis.rating)}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">${marketBadge(r.market)}${ratingBadge(r.rating)}${r.deep ? '<span class="badge" style="color:var(--gray-700)">深度</span>' : ""}</div>
       <div class="cover">${esc(r.cover)}</div>
-      <div class="spark" data-spark="${closes}"></div>
-      <div class="card-foot"><span>${esc(r.overview.as_of)} 收盘</span><span>查看报告 →</span></div>
+      <div class="spark" data-report="${esc(r.id)}"></div>
+      <div class="card-foot"><span>${esc(r.as_of)} 收盘</span><span>查看报告 →</span></div>
     </a>`;
+  }
+
+  /* 迷你走势懒加载：仅对进入视口且数量受限的卡片拉取单份报告 JSON */
+  function lazySparks(scope, limit) {
+    const cards = $$("[data-report]", scope).filter((el) => !el.dataset.loaded);
+    if (!cards.length) return;
+    const queue = cards.slice(0, limit || 24);
+    if (!("IntersectionObserver" in window)) { queue.forEach(loadSpark); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        io.unobserve(en.target);
+        loadSpark(en.target);
+      });
+    }, { rootMargin: "120px" });
+    queue.forEach((el) => io.observe(el));
+
+    async function loadSpark(el) {
+      if (el.dataset.loaded) return;
+      el.dataset.loaded = "1";
+      try {
+        const rep = await loadJSON(`reports/${el.dataset.report}.json`);
+        const closes = rep.price_series.map((d) => d.close).slice(-40).join(",");
+        el.dataset.spark = closes;
+        window.SICharts.initSparklines();
+      } catch (e) { /* 迷你图失败不影响卡片主体 */ }
+    }
   }
 
   async function initIndex() {
     if (!$("#report-grid")) return;
     try {
-      const reports = await Promise.all(
-        (await loadJSON("reports/index.json")).map((r) => loadJSON(`reports/${r.id}.json`))
-      );
+      const all = await loadJSON("reports/index.json");
+      const reports = all.slice(0, 12);
       $("#report-grid").innerHTML = reports.map(reportCardHTML).join("");
-      $("#stat-reports").textContent = reports.length;
-      const stocks = new Set(reports.map((r) => r.symbol + r.market));
+      $("#stat-reports").textContent = all.length;
+      const stocks = new Set(all.map((r) => r.symbol + r.market));
       $("#stat-stocks").textContent = stocks.size;
-      window.SICharts.initSparklines();
+      lazySparks($("#report-grid"), 12);
     } catch (e) {
       $("#report-grid").innerHTML = `<div class="empty-state">报告加载失败：${esc(e.message)}</div>`;
     }
@@ -61,43 +87,51 @@
     }
   }
 
+  const LIB_PAGE_SIZE = 50;
+  const LIB_SIDE_LIMIT = 40;   // 侧边栏每个市场最多展示的标的数
+
   async function initLibrary() {
     if (!$("#lib-list")) return;
     let all = [];
     try {
-      all = await Promise.all(
-        (await loadJSON("reports/index.json")).map((r) => loadJSON(`reports/${r.id}.json`))
-      );
+      all = await loadJSON("reports/index.json");
     } catch (e) {
       $("#lib-list").innerHTML = `<div class="empty-state">报告加载失败：${esc(e.message)}</div>`;
       return;
     }
 
-    const state = { stock: null, market: "ALL", q: "" };
+    const state = { stock: null, market: "ALL", q: "", page: 1 };
 
-    // 侧边栏：按市场分组 → 股票
-    const byMarket = { CN: [], US: [] };
-    all.forEach((r) => (byMarket[r.market] || (byMarket[r.market] = [])).push(r));
+    // 侧边栏：按市场分组 → 股票（限量展示，全量请用搜索）
+    const byMarket = {};
+    all.forEach((r) => { (byMarket[r.market] = byMarket[r.market] || []).push(r); });
     const groups = Object.keys(byMarket).filter((m) => byMarket[m].length);
     $("#lib-sidebar").innerHTML = groups.map((m) => {
       const list = byMarket[m];
       const byStock = {};
       list.forEach((r) => { (byStock[r.symbol] = byStock[r.symbol] || []).push(r); });
-      const items = Object.entries(byStock).map(([sym, rs]) => `
-        <button class="side-item" data-stock="${esc(sym)}" data-market="${m}">
-          <span>${esc(rs[0].name)} <span style="color:var(--color-text-3);font-size:11px">${esc(sym)}</span></span>
-          <span class="cnt">${rs.length}</span>
+      const entries = Object.keys(byStock)
+        .map((sym) => ({ sym, rs: byStock[sym] }))
+        .sort((a, b) => (a.rs[0].date < b.rs[0].date ? 1 : -1));
+      const shown = entries.slice(0, LIB_SIDE_LIMIT);
+      const hidden = entries.length - shown.length;
+      const items = shown.map((e) => `
+        <button class="side-item" data-stock="${esc(e.sym)}" data-market="${m}">
+          <span>${esc(e.rs[0].name)} <span style="color:var(--color-text-3);font-size:11px">${esc(e.sym)}</span></span>
+          <span class="cnt">${e.rs.length}</span>
         </button>`).join("");
+      const more = hidden > 0
+        ? `<div class="side-more">另有 ${hidden} 只标的，请用上方搜索</div>` : "";
       // 桌面端默认展开分组；移动端默认收起，避免侧边栏在列表上方占满首屏
       const openDesktop = window.matchMedia("(min-width: 641px)").matches ? " open" : "";
       return `<details class="side-group"${openDesktop}>
         <summary class="group-head"><span>${window.SI.MARKET_LABEL[m] || m}</span><span class="count">${list.length}</span></summary>
-        ${items}
+        ${items}${more}
       </details>`;
     }).join("");
 
     const rows = () => {
-      let list = all.slice().sort((a, b) => (a.generated_at < b.generated_at ? 1 : -1));
+      let list = all.slice().sort((a, b) => (a.date < b.date ? 1 : -1));
       if (state.market !== "ALL") list = list.filter((r) => r.market === state.market);
       if (state.stock) list = list.filter((r) => r.symbol === state.stock);
       if (state.q) {
@@ -109,34 +143,67 @@
       return list;
     };
 
+    const pager = (total, page) => {
+      const pages = Math.max(1, Math.ceil(total / LIB_PAGE_SIZE));
+      const cur = Math.min(Math.max(1, page), pages);
+      let nums = "";
+      const from = Math.max(1, cur - 2), to = Math.min(pages, cur + 2);
+      if (from > 1) nums += `<button class="pg-btn" data-page="1">1</button>` + (from > 2 ? '<span class="pg-gap">…</span>' : "");
+      for (let i = from; i <= to; i++) nums += `<button class="pg-btn${i === cur ? " active" : ""}" data-page="${i}">${i}</button>`;
+      if (to < pages) nums += (to < pages - 1 ? '<span class="pg-gap">…</span>' : "") + `<button class="pg-btn" data-page="${pages}">${pages}</button>`;
+      return `
+        <div class="lib-pager" id="lib-pager">
+          <span class="pg-info num">共 ${total} 份 · 第 ${cur}/${pages} 页</span>
+          <div class="pg-controls">
+            <button class="pg-btn" data-page="${cur - 1}"${cur <= 1 ? " disabled" : ""}>上一页</button>
+            ${nums}
+            <button class="pg-btn" data-page="${cur + 1}"${cur >= pages ? " disabled" : ""}>下一页</button>
+          </div>
+        </div>`;
+    };
+
     const renderRows = () => {
       const list = rows();
       if (!list.length) {
         $("#lib-list").innerHTML = `<div class="empty-state">没有符合条件的报告</div>`;
+        $("#lib-pager-wrap").innerHTML = "";
         return;
       }
-      $("#lib-list").innerHTML = list.map((r) => `
+      const pages = Math.max(1, Math.ceil(list.length / LIB_PAGE_SIZE));
+      if (state.page > pages) state.page = pages;
+      const start = (state.page - 1) * LIB_PAGE_SIZE;
+      const pageItems = list.slice(start, start + LIB_PAGE_SIZE);
+      $("#lib-list").innerHTML = pageItems.map((r) => `
         <a class="card card-hover report-row" href="report.html#${encodeURIComponent(r.id)}">
           <div class="row-main">
             <div class="row-title">
               <span class="nm">${esc(r.name)}</span>
               <span style="color:var(--color-text-3);font-size:12px" class="num">${esc(r.symbol)}</span>
-              ${marketBadge(r.market)}${ratingBadge(r.analysis.rating)}
+              ${marketBadge(r.market)}${ratingBadge(r.rating)}${r.deep ? '<span class="badge" style="color:var(--gray-700)">深度</span>' : ""}
             </div>
             <div class="row-cover">${esc(r.cover)}</div>
           </div>
           <div class="row-side">
-            <div class="num" style="font-weight:700">${fmtPrice(r.overview.price, r.overview.currency)}</div>
-            <div class="num ${pctClass(r.overview.change_pct)}" style="font-size:13px">${fmtPct(r.overview.change_pct)}</div>
-            <div class="row-date num">${esc(r.generated_at.slice(0, 10))}</div>
+            <div class="num" style="font-weight:700">${fmtPrice(r.price, r.currency)}</div>
+            <div class="num ${pctClass(r.change_pct)}" style="font-size:13px">${fmtPct(r.change_pct)}</div>
+            <div class="row-date num">${esc(r.date)}</div>
           </div>
         </a>`).join("");
+      $("#lib-pager-wrap").innerHTML = pager(list.length, state.page);
+      $$("#lib-pager .pg-btn").forEach((btn) => {
+        if (btn.disabled) return;
+        btn.addEventListener("click", () => {
+          const p = parseInt(btn.dataset.page, 10);
+          if (!isNaN(p)) { state.page = p; renderRows(); }
+        });
+      });
     };
 
     $$("#lib-sidebar .side-item").forEach((btn) => {
       btn.addEventListener("click", () => {
         const sym = btn.dataset.stock;
         state.stock = state.stock === sym ? null : sym;
+        state.page = 1;
         $$("#lib-sidebar .side-item").forEach((b) =>
           b.classList.toggle("active", b.dataset.stock === state.stock));
         renderRows();
@@ -146,6 +213,7 @@
     $$(".chip[data-market]").forEach((chip) => {
       chip.addEventListener("click", () => {
         state.market = chip.dataset.market;
+        state.page = 1;
         $$(".chip[data-market]").forEach((c) => c.classList.toggle("active", c === chip));
         renderRows();
       });
@@ -153,6 +221,7 @@
 
     $("#lib-search").addEventListener("input", (e) => {
       state.q = e.target.value.trim();
+      state.page = 1;
       renderRows();
     });
 
