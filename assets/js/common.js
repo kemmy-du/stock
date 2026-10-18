@@ -131,8 +131,60 @@
     renderFooter();
   });
 
+  /* ---------- 兼容性与兜底 ---------- */
+  const UA = navigator.userAgent || "";
+  const isWeChat = /MicroMessenger/i.test(UA);
+  if (isWeChat) document.documentElement.classList.add("is-wechat");
+
+  // 旧内核探测：无可选链支持时打标，便于 CSS 降级
+  try {
+    new Function("a?.b"); // eslint-disable-line no-new-func
+  } catch (e) {
+    document.documentElement.classList.add("legacy-webview");
+  }
+
+  // 把骨架屏替换为可读提示，避免用户面对无限加载动画
+  function replaceSkeletons(msg) {
+    let n = 0;
+    $$(".skeleton").forEach((el) => {
+      if (el.dataset.failed) return;
+      el.dataset.failed = "1";
+      el.classList.remove("skeleton");
+      el.style.height = "auto";
+      el.style.minHeight = "56px";
+      el.textContent = msg;
+      n++;
+    });
+    return n;
+  }
+
+  function failHint(msg) {
+    const replaced = replaceSkeletons(msg || "页面加载异常，请重试或在系统浏览器中打开。");
+    if (replaced > 0 && isWeChat && !document.getElementById("si-wechat-tip")) {
+      const tip = document.createElement("div");
+      tip.id = "si-wechat-tip";
+      tip.textContent = "微信内置浏览器兼容性有限，建议点右上角「···」在浏览器中打开";
+      document.body.appendChild(tip);
+    }
+  }
+
+  // 脚本解析错误 / 脚本加载失败：旧内核语法不兼容时 render.js 整文件失效，靠这里兜底
+  window.addEventListener("error", (e) => {
+    const fromScript = !!(e.error && e.error instanceof Error) ||
+      !!(e.target && e.target.tagName === "SCRIPT");
+    if (!fromScript) return;
+    console.error("[SI] script error:", e.message || e.target.src);
+    failHint();
+  }, true);
+
+  // 看门狗：12 秒后仍是骨架屏（如请求挂起）则提示
+  setTimeout(() => {
+    if (document.querySelector(".skeleton")) failHint("加载超时，请检查网络后重试。");
+  }, 12000);
+
   window.SI = {
     $, $$, loadJSON, fmtPrice, fmtPct, pctClass, fmtVolume, fmtMoney,
     ratingBadge, sentimentBadge, marketBadge, basePath, MARKET_LABEL,
+    isWeChat, failHint,
   };
 })();
