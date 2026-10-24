@@ -1,0 +1,570 @@
+{
+ "id": "CN-000651-2026-10-24",
+ "symbol": "000651",
+ "market": "CN",
+ "name": "格力电器",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "格力电器",
+  "industry": "家用电器",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "生产销售空调器、自营空调器出口业务及其相关零配件的进出口业务"
+ },
+ "overview": {
+  "price": 37.23,
+  "change_pct": -0.5343,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "空调龙头PE仅7.5倍，现金流188亿，低估值高分红典范",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 41.25,
+   "high": null,
+   "low": null,
+   "close": 41.42,
+   "volume": 3857,
+   "change_pct": 0.242
+  },
+  {
+   "date": "20260821",
+   "open": 41.43,
+   "high": null,
+   "low": null,
+   "close": 41.24,
+   "volume": 4348,
+   "change_pct": -0.4346
+  },
+  {
+   "date": "20260824",
+   "open": 41.26,
+   "high": null,
+   "low": null,
+   "close": 41.45,
+   "volume": 5555,
+   "change_pct": 0.5092
+  },
+  {
+   "date": "20260825",
+   "open": 41.46,
+   "high": null,
+   "low": null,
+   "close": 41.62,
+   "volume": 4858,
+   "change_pct": 0.4101
+  },
+  {
+   "date": "20260826",
+   "open": 41.66,
+   "high": null,
+   "low": null,
+   "close": 41.58,
+   "volume": 5385,
+   "change_pct": -0.0961
+  },
+  {
+   "date": "20260827",
+   "open": 38.91,
+   "high": null,
+   "low": null,
+   "close": 39.27,
+   "volume": 7795,
+   "change_pct": -0.7832
+  },
+  {
+   "date": "20260828",
+   "open": 39.1,
+   "high": null,
+   "low": null,
+   "close": 39.0,
+   "volume": 4949,
+   "change_pct": -0.6875
+  },
+  {
+   "date": "20260831",
+   "open": 38.9,
+   "high": null,
+   "low": null,
+   "close": 38.95,
+   "volume": 3787,
+   "change_pct": -0.1282
+  },
+  {
+   "date": "20260901",
+   "open": 38.95,
+   "high": null,
+   "low": null,
+   "close": 38.55,
+   "volume": 4457,
+   "change_pct": -1.027
+  },
+  {
+   "date": "20260902",
+   "open": 38.63,
+   "high": null,
+   "low": null,
+   "close": 38.48,
+   "volume": 3062,
+   "change_pct": -0.1816
+  },
+  {
+   "date": "20260903",
+   "open": 38.48,
+   "high": null,
+   "low": null,
+   "close": 38.74,
+   "volume": 3215,
+   "change_pct": 0.6757
+  },
+  {
+   "date": "20260904",
+   "open": 38.8,
+   "high": null,
+   "low": null,
+   "close": 38.98,
+   "volume": 3323,
+   "change_pct": 0.6195
+  },
+  {
+   "date": "20260907",
+   "open": 38.98,
+   "high": null,
+   "low": null,
+   "close": 38.9,
+   "volume": 3141,
+   "change_pct": -0.2052
+  },
+  {
+   "date": "20260908",
+   "open": 38.9,
+   "high": null,
+   "low": null,
+   "close": 38.29,
+   "volume": 4535,
+   "change_pct": -1.5681
+  },
+  {
+   "date": "20260909",
+   "open": 38.35,
+   "high": null,
+   "low": null,
+   "close": 38.87,
+   "volume": 3522,
+   "change_pct": 1.5148
+  },
+  {
+   "date": "20260910",
+   "open": 38.95,
+   "high": null,
+   "low": null,
+   "close": 38.95,
+   "volume": 2150,
+   "change_pct": 0.2058
+  },
+  {
+   "date": "20260911",
+   "open": 38.88,
+   "high": null,
+   "low": null,
+   "close": 38.74,
+   "volume": 2980,
+   "change_pct": -0.5392
+  },
+  {
+   "date": "20260914",
+   "open": 38.76,
+   "high": null,
+   "low": null,
+   "close": 38.71,
+   "volume": 2191,
+   "change_pct": -0.0774
+  },
+  {
+   "date": "20260915",
+   "open": 38.66,
+   "high": null,
+   "low": null,
+   "close": 38.3,
+   "volume": 2383,
+   "change_pct": -1.0592
+  },
+  {
+   "date": "20260916",
+   "open": 38.31,
+   "high": null,
+   "low": null,
+   "close": 38.1,
+   "volume": 3376,
+   "change_pct": -0.5222
+  },
+  {
+   "date": "20260917",
+   "open": 38.0,
+   "high": null,
+   "low": null,
+   "close": 37.98,
+   "volume": 2705,
+   "change_pct": -0.315
+  },
+  {
+   "date": "20260918",
+   "open": 38.03,
+   "high": null,
+   "low": null,
+   "close": 38.56,
+   "volume": 2987,
+   "change_pct": 1.5271
+  },
+  {
+   "date": "20260921",
+   "open": 38.55,
+   "high": null,
+   "low": null,
+   "close": 38.0,
+   "volume": 4899,
+   "change_pct": -1.4523
+  },
+  {
+   "date": "20260922",
+   "open": 37.9,
+   "high": null,
+   "low": null,
+   "close": 38.18,
+   "volume": 3438,
+   "change_pct": 0.4737
+  },
+  {
+   "date": "20260923",
+   "open": 38.2,
+   "high": null,
+   "low": null,
+   "close": 38.36,
+   "volume": 1723,
+   "change_pct": 0.4715
+  },
+  {
+   "date": "20260924",
+   "open": 38.23,
+   "high": null,
+   "low": null,
+   "close": 38.5,
+   "volume": 2524,
+   "change_pct": 0.365
+  },
+  {
+   "date": "20260928",
+   "open": 38.5,
+   "high": null,
+   "low": null,
+   "close": 38.4,
+   "volume": 2414,
+   "change_pct": -0.2597
+  },
+  {
+   "date": "20260929",
+   "open": 38.38,
+   "high": null,
+   "low": null,
+   "close": 38.1,
+   "volume": 2148,
+   "change_pct": -0.7812
+  },
+  {
+   "date": "20260930",
+   "open": 38.13,
+   "high": null,
+   "low": null,
+   "close": 38.28,
+   "volume": 1852,
+   "change_pct": 0.4724
+  },
+  {
+   "date": "20261008",
+   "open": 38.29,
+   "high": null,
+   "low": null,
+   "close": 38.32,
+   "volume": 2736,
+   "change_pct": 0.1045
+  },
+  {
+   "date": "20261009",
+   "open": 38.35,
+   "high": null,
+   "low": null,
+   "close": 38.83,
+   "volume": 3812,
+   "change_pct": 1.3309
+  },
+  {
+   "date": "20261012",
+   "open": 38.83,
+   "high": null,
+   "low": null,
+   "close": 39.59,
+   "volume": 4091,
+   "change_pct": 1.9572
+  },
+  {
+   "date": "20261013",
+   "open": 39.57,
+   "high": null,
+   "low": null,
+   "close": 39.63,
+   "volume": 4605,
+   "change_pct": 0.101
+  },
+  {
+   "date": "20261014",
+   "open": 39.63,
+   "high": null,
+   "low": null,
+   "close": 39.72,
+   "volume": 2292,
+   "change_pct": 0.2271
+  },
+  {
+   "date": "20261015",
+   "open": 39.68,
+   "high": null,
+   "low": null,
+   "close": 39.7,
+   "volume": 3739,
+   "change_pct": -0.0504
+  },
+  {
+   "date": "20261016",
+   "open": 39.6,
+   "high": null,
+   "low": null,
+   "close": 39.49,
+   "volume": 2718,
+   "change_pct": -0.529
+  },
+  {
+   "date": "20261019",
+   "open": 39.48,
+   "high": null,
+   "low": null,
+   "close": 39.91,
+   "volume": 3393,
+   "change_pct": 1.0636
+  },
+  {
+   "date": "20261020",
+   "open": 40.0,
+   "high": null,
+   "low": null,
+   "close": 38.6,
+   "volume": 5680,
+   "change_pct": -3.2824
+  },
+  {
+   "date": "20261021",
+   "open": 38.5,
+   "high": null,
+   "low": null,
+   "close": 37.13,
+   "volume": 1,
+   "change_pct": -3.8083
+  },
+  {
+   "date": "20261022",
+   "open": 37.05,
+   "high": null,
+   "low": null,
+   "close": 37.43,
+   "volume": 6385,
+   "change_pct": 0.808
+  },
+  {
+   "date": "20261023",
+   "open": 37.33,
+   "high": null,
+   "low": null,
+   "close": 37.23,
+   "volume": 7329,
+   "change_pct": -0.5343
+  }
+ ],
+ "financials": {
+  "revenue": 896.73,
+  "revenue_yoy": -8.1402,
+  "net_profit": 132.78,
+  "net_profit_yoy": -8.1999,
+  "roe": 8.68,
+  "pe_ttm": 7.4831,
+  "pb": 1.5188,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "珠海格力电器股份有限公司",
+   "source": "同花顺财经",
+   "date": "2026-10-14",
+   "sentiment": "neutral",
+   "summary": "发展历程。1991年，珠海经济特区工业发展总公司（格力集团的前身）决定将“冠雄”和“海利”合并，建立格力电器；同年11月18日，投资2亿元、占地10万平方米的格力电器一期工程开工建设，格力电器正式诞生。 1994年，格力电器在国内外市场开始统一使用“GREE”商标。1995年，经过董明珠的大力整肃，格力空调产销量跃居全国首位。从这一年开始,格力空调的销售没有一分钱的应收账款，也没有了一分钱的三角债"
+  },
+  {
+   "title": "格力电器涨0.23%，成交额9.13亿元，后市是否有机会？",
+   "source": "同花顺财经",
+   "date": "2026-10-15",
+   "sentiment": "neutral",
+   "summary": "来源：新浪证券-红岸工作室。10月14日，格力电器涨0.23%，成交额9.13亿元，换手率0.42%，总市值2224.88亿元。异动分析。高股息精选+证金持股+超级品牌+家用电器+机器人概念。 1、格力电器最近3年的股息率分别为：7.40%，6.60%，7.46%。2、公司前十大流通股东中包含中央汇金资产管理有限责任公司或中国证券金融股份有限公司。 3、格力电器是一家多元化、科技型的全球工业集团，"
+  },
+  {
+   "title": "格力电器2026年半年报发布：家电底盘稳固，智能装备营收连续增长",
+   "source": "同花顺财经",
+   "date": "2026-08-27",
+   "sentiment": "neutral",
+   "summary": "格力电器2026年半年报发布：家电底盘稳固，智能装备营收连续双位数增长。8月26日，格力电器发布2026年度半年报。2026年上半年，公司紧扣制造业高质量发展主线，持续强化核心技术与智能制造优势，经营质效稳步提升。 实现营业总收入896.73亿元，归属于上市公司股东的净利润132.78亿元，净利润率达14.81%。同时，格力电器智能装备业务营收连续双位数增长，充分彰显出品牌在复杂环境下向高端化、智"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "格力电器2026H1营收896.73亿元，归母净利润132.78亿元，毛利率28.81%、ROE 8.68%，经营活动现金流188.09亿元。估值端PE(TTM)7.48倍、PB 1.52倍，处于历史低位。技术面收盘37.23元。核心逻辑：空调行业龙头地位稳固、毛利率28.81%体现品牌溢价，188.09亿元经营现金流大幅超过净利润，PE 7.48倍为白电龙头中最低，高分红+低估值提供强安全边际；风险在于空调需求见顶与渠道改革阵痛。",
+  "bull_points": [
+   "估值极低：PE(TTM)7.48倍、PB 1.52倍，白电龙头中最低，安全边际充足",
+   "盈利质量优秀：经营现金流188.09亿元大幅超过归母净利润132.78亿元",
+   "毛利率28.81%：空调行业最高，品牌溢价与成本控制能力突出",
+   "高分红：历史分红率高，在当前低利率环境下配置价值凸显"
+  ],
+  "bear_points": [
+   "空调需求见顶：国内空调保有量已高，新增需求空间有限",
+   "渠道改革阵痛：新零售转型影响短期收入确认节奏",
+   "多元化成效慢：工业制品、绿色能源等第二曲线尚未形成有效规模",
+   "ROE 8.68%偏低，大额现金资产拉低资本回报率"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 28.8127,
+   "ttm": 30.0492,
+   "net_margin": 14.9029,
+   "roe": 18.7655,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "高毛利家用空调占比与低毛利外销/代工结构决定综合毛利",
+    "price_vs_cost": "铜铝等原材料价格波动直接影响成本，公司通过套保与规模采购对冲",
+    "new_business_drag": "工业制品、智能装备等新业务前期投入拉低短期毛利"
+   },
+   "note": "格力毛利率28.81%为空调行业最高，反映其强大的品牌溢价与供应链成本控制。核心观察点不在毛利而在现金：188.09亿元经营现金流对应132.78亿元净利润，净利润现金含量141%，盈利质量极为扎实，这是低估值之外最有力的支撑。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 1.5188,
+   "ps_ttm": 1.278,
+   "pe_ttm": 7.4831,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 896.73,
+   "net_profit": 132.78,
+   "total_assets": 3991.37,
+   "total_liabilities": 2468.15,
+   "net_assets": 1485.08,
+   "operating_cash_flow": 188.09,
+   "asset_liability_ratio": 61.84,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 38.06,
+   "ma20": 38.6,
+   "ema20": 38.6,
+   "rsi14": 40.0,
+   "macd": {
+    "dif": -0.337,
+    "dea": -0.193,
+    "hist": -0.288
+   },
+   "close": 37.23,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "空调需求下滑",
+    "severity": "高",
+    "detail": "保有量高位+地产下行，新增需求承压"
+   },
+   {
+    "type": "渠道改革风险",
+    "severity": "中高",
+    "detail": "新零售转型若执行不力将影响收入与渠道稳定"
+   },
+   {
+    "type": "原材料价格波动",
+    "severity": "中",
+    "detail": "铜铝价格上行侵蚀毛利，套保无法完全覆盖"
+   },
+   {
+    "type": "多元化不及预期",
+    "severity": "中",
+    "detail": "工业制品与绿色能源尚未形成规模，第二曲线遥远"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "渠道改革完成+海外与工业制品放量，2027年净利润达380亿元",
+    "valuation": "12倍PE，对应约4560亿市值",
+    "upside": "+45%"
+   }
+  ],
+  "catalysts": [
+   "月度空调内销出货数据",
+   "渠道改革进展与新零售收入占比",
+   "工业制品与绿色能源收入增速",
+   "分红方案与回购计划"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超20%",
+   "综合毛利率跌破26%",
+   "经营现金流/净利润跌破0.8",
+   "渠道动荡导致收入大幅波动"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润同比（阈值：<-20%）",
+   "综合毛利率（阈值：<26%）",
+   "经营现金流/净利润（阈值：<0.8）",
+   "工业制品收入占比（目标：持续提升）"
+  ]
+ },
+ "_data": {
+  "code": "000651.SZ",
+  "name": "格力电器",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "家用电器--白色家电--空调",
+  "main_business": "生产销售空调器、自营空调器出口业务及其相关零配件的进出口业务",
+  "business_mix": "消费电器:77.7563%;工业制品及绿色能源:10.1571%;其他业务:10.1311%;其他主营:1.5576%;智能装备:0.3978%",
+  "gross_margin_mrq": 28.8127,
+  "gross_margin_ttm": 30.0492,
+  "net_margin": 14.9029,
+  "roe_ttm": 18.7655,
+  "roic": 5.0469,
+  "ps_ttm": 1.278,
+  "revenue": 896.73,
+  "net_profit": 132.78,
+  "total_assets": 3991.37,
+  "total_liabilities": 2468.15,
+  "net_assets": 1485.08,
+  "operating_cash_flow": 188.09
+ },
+ "indicators": {
+  "ma5": 38.06,
+  "ma20": 38.6,
+  "ema20": 38.6,
+  "rsi14": 40.0,
+  "macd": {
+   "dif": -0.337,
+   "dea": -0.193,
+   "hist": -0.288
+  }
+ }
+}
