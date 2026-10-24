@@ -1,0 +1,570 @@
+{
+ "id": "CN-000792-2026-10-24",
+ "symbol": "000792",
+ "market": "CN",
+ "name": "盐湖股份",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "盐湖股份",
+  "industry": "基础化工",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "氯化钾的开发、生产和销售；盐湖资源综合开发利用；其他业务，包括水泥生产、商贸连锁业务以及酒店业务。"
+ },
+ "overview": {
+  "price": 22.25,
+  "change_pct": 2.6765,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "钾锂双龙头毛利率71%，PE仅9.8倍，现金流62.82亿",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 28.15,
+   "high": null,
+   "low": null,
+   "close": 27.93,
+   "volume": 4054,
+   "change_pct": 0.3233
+  },
+  {
+   "date": "20260821",
+   "open": 27.82,
+   "high": null,
+   "low": null,
+   "close": 28.81,
+   "volume": 7705,
+   "change_pct": 3.1507
+  },
+  {
+   "date": "20260824",
+   "open": 29.2,
+   "high": null,
+   "low": null,
+   "close": 28.48,
+   "volume": 6836,
+   "change_pct": -1.1454
+  },
+  {
+   "date": "20260825",
+   "open": 28.38,
+   "high": null,
+   "low": null,
+   "close": 27.45,
+   "volume": 7624,
+   "change_pct": -3.6166
+  },
+  {
+   "date": "20260826",
+   "open": 27.4,
+   "high": null,
+   "low": null,
+   "close": 28.15,
+   "volume": 6909,
+   "change_pct": 2.5501
+  },
+  {
+   "date": "20260827",
+   "open": 28.0,
+   "high": null,
+   "low": null,
+   "close": 28.21,
+   "volume": 6265,
+   "change_pct": 0.2131
+  },
+  {
+   "date": "20260828",
+   "open": 28.38,
+   "high": null,
+   "low": null,
+   "close": 28.38,
+   "volume": 6384,
+   "change_pct": 0.6026
+  },
+  {
+   "date": "20260831",
+   "open": 28.39,
+   "high": null,
+   "low": null,
+   "close": 28.19,
+   "volume": 5826,
+   "change_pct": -0.6695
+  },
+  {
+   "date": "20260901",
+   "open": 28.19,
+   "high": null,
+   "low": null,
+   "close": 27.85,
+   "volume": 6612,
+   "change_pct": -1.2061
+  },
+  {
+   "date": "20260902",
+   "open": 27.55,
+   "high": null,
+   "low": null,
+   "close": 26.94,
+   "volume": 7014,
+   "change_pct": -3.2675
+  },
+  {
+   "date": "20260903",
+   "open": 27.12,
+   "high": null,
+   "low": null,
+   "close": 27.07,
+   "volume": 4506,
+   "change_pct": 0.4826
+  },
+  {
+   "date": "20260904",
+   "open": 27.07,
+   "high": null,
+   "low": null,
+   "close": 26.65,
+   "volume": 4928,
+   "change_pct": -1.5515
+  },
+  {
+   "date": "20260907",
+   "open": 26.47,
+   "high": null,
+   "low": null,
+   "close": 26.28,
+   "volume": 5023,
+   "change_pct": -1.3884
+  },
+  {
+   "date": "20260908",
+   "open": 26.39,
+   "high": null,
+   "low": null,
+   "close": 26.83,
+   "volume": 5297,
+   "change_pct": 2.0928
+  },
+  {
+   "date": "20260909",
+   "open": 26.6,
+   "high": null,
+   "low": null,
+   "close": 26.72,
+   "volume": 4455,
+   "change_pct": -0.41
+  },
+  {
+   "date": "20260910",
+   "open": 26.76,
+   "high": null,
+   "low": null,
+   "close": 26.37,
+   "volume": 3097,
+   "change_pct": -1.3099
+  },
+  {
+   "date": "20260911",
+   "open": 25.61,
+   "high": null,
+   "low": null,
+   "close": 25.45,
+   "volume": 6165,
+   "change_pct": -3.4888
+  },
+  {
+   "date": "20260914",
+   "open": 25.3,
+   "high": null,
+   "low": null,
+   "close": 25.14,
+   "volume": 3456,
+   "change_pct": -1.2181
+  },
+  {
+   "date": "20260915",
+   "open": 24.98,
+   "high": null,
+   "low": null,
+   "close": 24.71,
+   "volume": 4277,
+   "change_pct": -1.7104
+  },
+  {
+   "date": "20260916",
+   "open": 24.62,
+   "high": null,
+   "low": null,
+   "close": 24.75,
+   "volume": 4663,
+   "change_pct": 0.1619
+  },
+  {
+   "date": "20260917",
+   "open": 24.65,
+   "high": null,
+   "low": null,
+   "close": 24.99,
+   "volume": 4292,
+   "change_pct": 0.9697
+  },
+  {
+   "date": "20260918",
+   "open": 25.14,
+   "high": null,
+   "low": null,
+   "close": 24.74,
+   "volume": 5353,
+   "change_pct": -1.0004
+  },
+  {
+   "date": "20260921",
+   "open": 24.84,
+   "high": null,
+   "low": null,
+   "close": 24.96,
+   "volume": 4000,
+   "change_pct": 0.8892
+  },
+  {
+   "date": "20260922",
+   "open": 24.85,
+   "high": null,
+   "low": null,
+   "close": 24.87,
+   "volume": 4223,
+   "change_pct": -0.3606
+  },
+  {
+   "date": "20260923",
+   "open": 24.88,
+   "high": null,
+   "low": null,
+   "close": 24.48,
+   "volume": 4330,
+   "change_pct": -1.5682
+  },
+  {
+   "date": "20260924",
+   "open": 24.4,
+   "high": null,
+   "low": null,
+   "close": 23.7,
+   "volume": 5014,
+   "change_pct": -3.1863
+  },
+  {
+   "date": "20260928",
+   "open": 23.33,
+   "high": null,
+   "low": null,
+   "close": 23.13,
+   "volume": 4998,
+   "change_pct": -2.4051
+  },
+  {
+   "date": "20260929",
+   "open": 23.14,
+   "high": null,
+   "low": null,
+   "close": 23.5,
+   "volume": 3962,
+   "change_pct": 1.5997
+  },
+  {
+   "date": "20260930",
+   "open": 23.49,
+   "high": null,
+   "low": null,
+   "close": 23.83,
+   "volume": 4490,
+   "change_pct": 1.4043
+  },
+  {
+   "date": "20261008",
+   "open": 23.78,
+   "high": null,
+   "low": null,
+   "close": 23.96,
+   "volume": 4879,
+   "change_pct": 0.5455
+  },
+  {
+   "date": "20261009",
+   "open": 23.85,
+   "high": null,
+   "low": null,
+   "close": 24.09,
+   "volume": 5046,
+   "change_pct": 0.5426
+  },
+  {
+   "date": "20261012",
+   "open": 23.63,
+   "high": null,
+   "low": null,
+   "close": 23.44,
+   "volume": 5285,
+   "change_pct": -2.6982
+  },
+  {
+   "date": "20261013",
+   "open": 23.11,
+   "high": null,
+   "low": null,
+   "close": 23.13,
+   "volume": 4789,
+   "change_pct": -1.3225
+  },
+  {
+   "date": "20261014",
+   "open": 23.27,
+   "high": null,
+   "low": null,
+   "close": 23.0,
+   "volume": 4235,
+   "change_pct": -0.562
+  },
+  {
+   "date": "20261015",
+   "open": 22.53,
+   "high": null,
+   "low": null,
+   "close": 22.95,
+   "volume": 4850,
+   "change_pct": -0.2174
+  },
+  {
+   "date": "20261016",
+   "open": 23.1,
+   "high": null,
+   "low": null,
+   "close": 23.06,
+   "volume": 4058,
+   "change_pct": 0.4793
+  },
+  {
+   "date": "20261019",
+   "open": 22.86,
+   "high": null,
+   "low": null,
+   "close": 23.0,
+   "volume": 2663,
+   "change_pct": -0.2602
+  },
+  {
+   "date": "20261020",
+   "open": 22.95,
+   "high": null,
+   "low": null,
+   "close": 23.14,
+   "volume": 3396,
+   "change_pct": 0.6087
+  },
+  {
+   "date": "20261021",
+   "open": 23.13,
+   "high": null,
+   "low": null,
+   "close": 22.53,
+   "volume": 4201,
+   "change_pct": -2.6361
+  },
+  {
+   "date": "20261022",
+   "open": 22.3,
+   "high": null,
+   "low": null,
+   "close": 21.67,
+   "volume": 6622,
+   "change_pct": -3.8171
+  },
+  {
+   "date": "20261023",
+   "open": 21.42,
+   "high": null,
+   "low": null,
+   "close": 22.25,
+   "volume": 6497,
+   "change_pct": 2.6765
+  }
+ ],
+ "financials": {
+  "revenue": 130.52,
+  "revenue_yoy": 79.8793,
+  "net_profit": 61.69,
+  "net_profit_yoy": 153.2816,
+  "roe": 13.34,
+  "pe_ttm": 9.77,
+  "pb": 2.4656,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "壹评级发布盐湖股份首次评级报告",
+   "source": "同花顺财经",
+   "date": "2026-10-19",
+   "sentiment": "neutral",
+   "summary": "【壹评级发布盐湖股份首次评级报告】10月19日，第一财经旗下“壹评级”发布盐湖股份（000792.SZ）首次评级报告。盐湖股份在护城河方面表现突出，“壹评级”给予5星评级。 “壹评级”动态估值模型和DDM估值模型显示盐湖股份当下市值基本合理。盐湖股份作为中国盐湖资源开发的龙头企业，是国内最大的氯化钾生产商，同时也是全球少数具备大规模盐湖提锂能力的企业之一。 公司手握稀缺盐湖采矿权，依托资源稀缺性与"
+  },
+  {
+   "title": "盐湖股份预计九个月大赚90.5亿 并表五矿盐湖钾锂双主业齐增",
+   "source": "同花顺财经",
+   "date": "2026-10-15",
+   "sentiment": "neutral",
+   "summary": "长江商报记者汪静 盐湖股份(000792.SZ)业绩大增。 10月13日晚间，盐湖股份披露2026年前三季度业绩预告，预计实现归母净利润88.4亿元—90.5亿元，同比增长87.96%—92.42%； 扣非净利润86.7亿元—88.8亿元，同比增长86.12%—90.63%。 长江商报记者注意到，2026年前三季度，盐湖股份的归母净利润超过2025年全年，创下公司历史上最好的前三季度业绩。 盐湖股"
+  },
+  {
+   "title": "盐湖股份2026年前三季度净利润同比预增88%-92%",
+   "source": "同花顺财经",
+   "date": "2026-10-14",
+   "sentiment": "neutral",
+   "summary": "10月13日，盐湖股份发布2026年前三季度业绩预告。预计2026年前三季度归属于上市公司股东的净利润为88.40亿元-90.50亿元，同比增长87.96%-92.42%。 对于业绩变动原因，盐湖股份表示公司氯化钾产销稳定，产品价格较同期上涨，筑牢业绩基本盘； 公司碳酸锂产能较上年大幅提升，尤其4万吨/年基础锂盐项目顺利量产，凭借成本优势叠加产品价格回暖，成为业绩增长核心，两大业务协同发力，推动公"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "盐湖股份2026H1营收130.52亿元，归母净利润61.69亿元，毛利率71.39%、ROE 13.34%，经营活动现金流62.82亿元，资产负债率仅14%。估值端PE(TTM)9.77倍、PB 2.47倍。技术面收盘22.25元。核心逻辑：氯化钾与碳酸锂双龙头，察尔汗盐湖资源成本优势显著，毛利率71.39%体现资源属性，PE 9.77倍估值偏低，财务结构极为稳健；风险在于钾肥与锂肥价格波动。",
+  "bull_points": [
+   "资源优势：察尔汗盐湖钾锂资源储量巨大，开采成本行业最低",
+   "毛利率71.39%：资源型企业的典型高毛利，成本护城河深厚",
+   "估值偏低：PE(TTM)9.77倍，相对ROE 13.34%具备吸引力",
+   "财务极稳健：资产负债率仅14%，现金流62.82亿元，无有息负债压力"
+  ],
+  "bear_points": [
+   "产品价格波动：钾肥与碳酸锂价格波动直接决定业绩",
+   "锂业务拖累：碳酸锂价格低迷时，锂板块可能亏损",
+   "单一资源依赖：利润高度集中于察尔汗单一矿区",
+   "ROE 13.34%有提升空间：巨额现金资产拉低资本回报率"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 71.3851,
+   "ttm": 66.1202,
+   "net_margin": 55.5473,
+   "roe": 25.2368,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "氯化钾（高毛利稳定）与碳酸锂（价格波动大）的结构决定业绩弹性",
+    "price_vs_cost": "盐湖提钾提锂成本极低且稳定，价格是唯一核心变量",
+    "new_business_drag": "锂板块在价格低迷期亏损，拖累整体"
+   },
+   "note": "盐湖股份毛利率71.39%是典型盐湖资源企业特征，低成本开采是护城河。其盈利波动主要来自产品价格而非成本，因此毛利率本身很稳定，真正的观察变量是钾肥与碳酸锂的价格走势，以及锂板块的盈亏平衡点。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.4656,
+   "ps_ttm": 5.5283,
+   "pe_ttm": 9.77,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 130.52,
+   "net_profit": 61.69,
+   "total_assets": 615.66,
+   "total_liabilities": 86.61,
+   "net_assets": 477.51,
+   "operating_cash_flow": 62.82,
+   "asset_liability_ratio": 14.07,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 22.52,
+   "ma20": 23.47,
+   "ema20": 23.51,
+   "rsi14": 40.13,
+   "macd": {
+    "dif": -0.957,
+    "dea": -0.932,
+    "hist": -0.05
+   },
+   "close": 22.25,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "钾肥价格下行",
+    "severity": "中高",
+    "detail": "钾肥受进口谈判与保供政策影响，存在下行压力"
+   },
+   {
+    "type": "碳酸锂价格低迷",
+    "severity": "中高",
+    "detail": "锂价若长期低迷，锂板块将持续亏损"
+   },
+   {
+    "type": "单一资源依赖",
+    "severity": "中",
+    "detail": "利润集中于察尔汗，资源政策变化影响大"
+   },
+   {
+    "type": "资本运作不确定",
+    "severity": "中",
+    "detail": "与中国五矿的整合进展存在不确定性"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "钾肥稳中有升+锂价回升，2027年净利润达150亿元",
+    "valuation": "15倍PE，对应约2250亿市值",
+    "upside": "+35%"
+   }
+  ],
+  "catalysts": [
+   "钾肥年度进口谈判价格",
+   "碳酸锂价格走势",
+   "锂板块盈亏平衡进度",
+   "与中国五矿整合进展"
+  ],
+  "falsification": [
+   "钾肥价格大幅下行",
+   "碳酸锂价格跌破成本线且锂板块亏损扩大",
+   "归母净利润同比降幅超30%",
+   "资源开采政策发生不利变化"
+  ],
+  "kpi_tracking": [
+   "综合毛利率（阈值：持续稳定）",
+   "钾肥与碳酸锂价格（核心变量）",
+   "锂板块盈亏（目标：减亏）",
+   "归母净利润同比（阈值：<-30%）"
+  ]
+ },
+ "_data": {
+  "code": "000792.SZ",
+  "name": "盐湖股份",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "基础化工--农化制品--钾肥",
+  "main_business": "氯化钾的开发、生产和销售；盐湖资源综合开发利用；其他业务，包括水泥生产、商贸连锁业务以及酒店业务。",
+  "business_mix": "钾产品:77.6065%;锂产品:18.7879%;其他:3.5213%;贸易:0.0843%",
+  "gross_margin_mrq": 71.3851,
+  "gross_margin_ttm": 66.1202,
+  "net_margin": 55.5473,
+  "roe_ttm": 25.2368,
+  "roic": 13.0609,
+  "ps_ttm": 5.5283,
+  "revenue": 130.52,
+  "net_profit": 61.69,
+  "total_assets": 615.66,
+  "total_liabilities": 86.61,
+  "net_assets": 477.51,
+  "operating_cash_flow": 62.82
+ },
+ "indicators": {
+  "ma5": 22.52,
+  "ma20": 23.47,
+  "ema20": 23.51,
+  "rsi14": 40.13,
+  "macd": {
+   "dif": -0.957,
+   "dea": -0.932,
+   "hist": -0.05
+  }
+ }
+}
