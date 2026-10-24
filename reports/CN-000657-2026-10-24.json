@@ -1,0 +1,570 @@
+{
+ "id": "CN-000657-2026-10-24",
+ "symbol": "000657",
+ "market": "CN",
+ "name": "中钨高新",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "中钨高新",
+  "industry": "有色金属",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "硬质合金生产及加工销售"
+ },
+ "overview": {
+  "price": 42.28,
+  "change_pct": 1.537,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "硬质合金ROE 26%亮眼，但PB 7.86倍已透支，现金流为负",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 68.0,
+   "high": null,
+   "low": null,
+   "close": 64.45,
+   "volume": 8438,
+   "change_pct": -2.5846
+  },
+  {
+   "date": "20260821",
+   "open": 64.51,
+   "high": null,
+   "low": null,
+   "close": 68.14,
+   "volume": 8357,
+   "change_pct": 5.7254
+  },
+  {
+   "date": "20260824",
+   "open": 69.0,
+   "high": null,
+   "low": null,
+   "close": 66.76,
+   "volume": 8964,
+   "change_pct": -2.0252
+  },
+  {
+   "date": "20260825",
+   "open": 65.7,
+   "high": null,
+   "low": null,
+   "close": 63.81,
+   "volume": 7882,
+   "change_pct": -4.4188
+  },
+  {
+   "date": "20260826",
+   "open": 63.83,
+   "high": null,
+   "low": null,
+   "close": 63.01,
+   "volume": 5998,
+   "change_pct": -1.2537
+  },
+  {
+   "date": "20260827",
+   "open": 62.64,
+   "high": null,
+   "low": null,
+   "close": 67.54,
+   "volume": 8826,
+   "change_pct": 7.1893
+  },
+  {
+   "date": "20260828",
+   "open": 67.9,
+   "high": null,
+   "low": null,
+   "close": 66.76,
+   "volume": 8402,
+   "change_pct": -1.1549
+  },
+  {
+   "date": "20260831",
+   "open": 64.8,
+   "high": null,
+   "low": null,
+   "close": 65.8,
+   "volume": 6662,
+   "change_pct": -1.438
+  },
+  {
+   "date": "20260901",
+   "open": 65.78,
+   "high": null,
+   "low": null,
+   "close": 62.33,
+   "volume": 6149,
+   "change_pct": -5.2736
+  },
+  {
+   "date": "20260902",
+   "open": 60.47,
+   "high": null,
+   "low": null,
+   "close": 59.77,
+   "volume": 5555,
+   "change_pct": -4.1072
+  },
+  {
+   "date": "20260903",
+   "open": 60.63,
+   "high": null,
+   "low": null,
+   "close": 60.02,
+   "volume": 4019,
+   "change_pct": 0.4183
+  },
+  {
+   "date": "20260904",
+   "open": 60.61,
+   "high": null,
+   "low": null,
+   "close": 57.64,
+   "volume": 5673,
+   "change_pct": -3.9653
+  },
+  {
+   "date": "20260907",
+   "open": 58.0,
+   "high": null,
+   "low": null,
+   "close": 60.0,
+   "volume": 5543,
+   "change_pct": 4.0944
+  },
+  {
+   "date": "20260908",
+   "open": 60.01,
+   "high": null,
+   "low": null,
+   "close": 59.86,
+   "volume": 4545,
+   "change_pct": -0.2333
+  },
+  {
+   "date": "20260909",
+   "open": 61.02,
+   "high": null,
+   "low": null,
+   "close": 60.5,
+   "volume": 4914,
+   "change_pct": 1.0692
+  },
+  {
+   "date": "20260910",
+   "open": 59.22,
+   "high": null,
+   "low": null,
+   "close": 59.42,
+   "volume": 2853,
+   "change_pct": -1.7851
+  },
+  {
+   "date": "20260911",
+   "open": 57.83,
+   "high": null,
+   "low": null,
+   "close": 58.52,
+   "volume": 4885,
+   "change_pct": -1.5146
+  },
+  {
+   "date": "20260914",
+   "open": 57.99,
+   "high": null,
+   "low": null,
+   "close": 59.17,
+   "volume": 3735,
+   "change_pct": 1.1107
+  },
+  {
+   "date": "20260915",
+   "open": 60.58,
+   "high": null,
+   "low": null,
+   "close": 62.23,
+   "volume": 9875,
+   "change_pct": 5.1715
+  },
+  {
+   "date": "20260916",
+   "open": 60.78,
+   "high": null,
+   "low": null,
+   "close": 62.04,
+   "volume": 7918,
+   "change_pct": -0.3053
+  },
+  {
+   "date": "20260917",
+   "open": 61.99,
+   "high": null,
+   "low": null,
+   "close": 60.9,
+   "volume": 6621,
+   "change_pct": -1.8375
+  },
+  {
+   "date": "20260918",
+   "open": 61.86,
+   "high": null,
+   "low": null,
+   "close": 61.76,
+   "volume": 6113,
+   "change_pct": 1.4122
+  },
+  {
+   "date": "20260921",
+   "open": 61.29,
+   "high": null,
+   "low": null,
+   "close": 60.49,
+   "volume": 7586,
+   "change_pct": -2.0563
+  },
+  {
+   "date": "20260922",
+   "open": 61.0,
+   "high": null,
+   "low": null,
+   "close": 60.26,
+   "volume": 7379,
+   "change_pct": -0.3802
+  },
+  {
+   "date": "20260923",
+   "open": 60.26,
+   "high": null,
+   "low": null,
+   "close": 59.16,
+   "volume": 4479,
+   "change_pct": -1.8254
+  },
+  {
+   "date": "20260924",
+   "open": 58.62,
+   "high": null,
+   "low": null,
+   "close": 57.18,
+   "volume": 3616,
+   "change_pct": -3.3469
+  },
+  {
+   "date": "20260928",
+   "open": 57.0,
+   "high": null,
+   "low": null,
+   "close": 53.25,
+   "volume": 4693,
+   "change_pct": -6.873
+  },
+  {
+   "date": "20260929",
+   "open": 53.57,
+   "high": null,
+   "low": null,
+   "close": 53.69,
+   "volume": 3326,
+   "change_pct": 0.8263
+  },
+  {
+   "date": "20260930",
+   "open": 53.9,
+   "high": null,
+   "low": null,
+   "close": 52.74,
+   "volume": 2468,
+   "change_pct": -1.7694
+  },
+  {
+   "date": "20261008",
+   "open": 52.75,
+   "high": null,
+   "low": null,
+   "close": 51.85,
+   "volume": 2883,
+   "change_pct": -1.6875
+  },
+  {
+   "date": "20261009",
+   "open": 51.74,
+   "high": null,
+   "low": null,
+   "close": 51.13,
+   "volume": 4113,
+   "change_pct": -1.3886
+  },
+  {
+   "date": "20261012",
+   "open": 50.9,
+   "high": null,
+   "low": null,
+   "close": 48.34,
+   "volume": 3198,
+   "change_pct": -5.4567
+  },
+  {
+   "date": "20261013",
+   "open": 46.8,
+   "high": null,
+   "low": null,
+   "close": 48.17,
+   "volume": 4520,
+   "change_pct": -0.3517
+  },
+  {
+   "date": "20261014",
+   "open": 48.81,
+   "high": null,
+   "low": null,
+   "close": 46.67,
+   "volume": 4508,
+   "change_pct": -3.114
+  },
+  {
+   "date": "20261015",
+   "open": 44.89,
+   "high": null,
+   "low": null,
+   "close": 44.19,
+   "volume": 5148,
+   "change_pct": -5.3139
+  },
+  {
+   "date": "20261016",
+   "open": 45.03,
+   "high": null,
+   "low": null,
+   "close": 43.66,
+   "volume": 4169,
+   "change_pct": -1.1994
+  },
+  {
+   "date": "20261019",
+   "open": 43.34,
+   "high": null,
+   "low": null,
+   "close": 42.79,
+   "volume": 4146,
+   "change_pct": -1.9927
+  },
+  {
+   "date": "20261020",
+   "open": 43.23,
+   "high": null,
+   "low": null,
+   "close": 43.81,
+   "volume": 4174,
+   "change_pct": 2.3837
+  },
+  {
+   "date": "20261021",
+   "open": 43.88,
+   "high": null,
+   "low": null,
+   "close": 44.0,
+   "volume": 3293,
+   "change_pct": 0.4337
+  },
+  {
+   "date": "20261022",
+   "open": 44.0,
+   "high": null,
+   "low": null,
+   "close": 41.64,
+   "volume": 3793,
+   "change_pct": -5.3636
+  },
+  {
+   "date": "20261023",
+   "open": 40.18,
+   "high": null,
+   "low": null,
+   "close": 42.28,
+   "volume": 5339,
+   "change_pct": 1.537
+  }
+ ],
+ "financials": {
+  "revenue": 236.99,
+  "revenue_yoy": 85.5747,
+  "net_profit": 29.79,
+  "net_profit_yoy": 219.6696,
+  "roe": 26.37,
+  "pe_ttm": 28.7481,
+  "pb": 7.856,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "中钨高新与修水县开展会商交流",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "1、10月20日，中钨高新党委书记、董事长沈慧明与江西省修水县委书记刘婕举行工作会谈，双方就钨产业转型升级、重点项目建设、产业链协同发展等深入交换意见。 10月20日，中钨高新（000657）党委书记、董事长沈慧明与来访的江西省修水县委书记刘婕举行工作会谈，双方围绕钨产业转型升级、重点项目建设、产业链协同发展、校企科创合作、资源整合提质等方面深入洽谈、充分交换意见。 沈慧明对刘婕一行到访表示欢迎，"
+  },
+  {
+   "title": "中钨高新：第三季度归母净利润9.03亿元，同比增长148.81%",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "中钨高新10月22日公告，2026年第三季度实现营业收入73.14亿元，同比增长48.88%；归母净利润9.03亿元，同比增长148.81%；基本每股收益0.3961元。 前三季度实现营业收入236.99亿元，同比增长85.57%；归母净利润29.79亿元，同比增长227.93%；基本每股收益1.3073元。 报告期内，钨精矿均价同比上涨，公司依托全产业链成本优势带动上下游盈利空间扩大；叠加抢抓半"
+  },
+  {
+   "title": "中钨高新：2026年第三季度归属于上市公司股东的净利润同比增长148.81%",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "证券日报网讯 10月22日，中钨高新发布2026年第三季度报告称，公司2026年第三季度实现营业收入7,313,870,089.21元，同比增长48.88%； 归属于上市公司股东的净利润为902,604,804.54元，同比增长148.81%。"
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "中钨高新2026H1营收236.99亿元，归母净利润29.79亿元，毛利率31.01%、ROE 26.37%，经营活动现金流-5.62亿元。估值端PE(TTM)28.75倍、PB 7.86倍。技术面收盘42.28元，处于高位。核心矛盾：硬质合金与数控刀具龙头地位稳固、ROE 26.37%极为亮眼，但PB 7.86倍在材料行业中偏高，且经营现金流为负说明利润未转化为现金，估值已较充分反映高端制造逻辑。",
+  "bull_points": [
+   "ROE 26.37%：在材料与工具行业中极为罕见，资本回报效率顶尖",
+   "龙头地位：硬质合金与数控刀具国内绝对龙头，高端产品进口替代空间大",
+   "毛利率31.01%：体现高端制造的定价能力",
+   "进口替代：高端刀具国产化率提升，公司是核心受益者"
+  ],
+  "bear_points": [
+   "PB 7.86倍偏高：在材料行业中属极端估值，透支未来成长",
+   "现金流为负：经营活动现金流-5.62亿元，与29.79亿元净利润严重背离",
+   "PE 28.75倍：相对材料行业常态估值缺乏吸引力",
+   "周期敏感：硬质合金与基建、制造业投资强相关，需求波动大"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 31.0106,
+   "ttm": 30.01,
+   "net_margin": 13.4113,
+   "roe": 27.3269,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "高端数控刀具占比提升是毛利率上行核心，传统硬质合金竞争激烈",
+    "price_vs_cost": "钨价是核心成本变量，公司通过资源布局与长协对冲",
+    "new_business_drag": "数控刀具与高端产线前期投入大，折旧摊销压制短期毛利"
+   },
+   "note": "中钨高新毛利率31.01%体现高端工具属性，ROE 26.37%的核心驱动是轻资产高周转而非高毛利。最需警惕的是现金流：-5.62亿元经营现金流对应29.79亿元净利润，说明存在大额应收或存货占用，利润质量与账面表现严重不符。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 7.856,
+   "ps_ttm": 3.3724,
+   "pe_ttm": 28.7481,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 236.99,
+   "net_profit": 29.79,
+   "total_assets": 299.09,
+   "total_liabilities": 166.04,
+   "net_assets": 122.63,
+   "operating_cash_flow": -5.62,
+   "asset_liability_ratio": 55.52,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 42.9,
+   "ma20": 50.35,
+   "ema20": 48.97,
+   "rsi14": 14.73,
+   "macd": {
+    "dif": -4.811,
+    "dea": -4.26,
+    "hist": -1.102
+   },
+   "close": 42.28,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "估值回归风险",
+    "severity": "高",
+    "detail": "PB 7.86倍在材料行业属极端水平，业绩不及预期将面临双杀"
+   },
+   {
+    "type": "现金流恶化",
+    "severity": "中高",
+    "detail": "经营现金流为负若持续，利润真实性存疑"
+   },
+   {
+    "type": "制造业投资下行",
+    "severity": "中高",
+    "detail": "硬质合金与制造业资本开支强相关"
+   },
+   {
+    "type": "钨价波动",
+    "severity": "中",
+    "detail": "钨价大幅波动影响成本与存货价值"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "悲观",
+    "assumption": "制造业投资下行+估值回归，2027年净利润降至25亿元",
+    "valuation": "PB回落至4倍，对应市值约320亿元",
+    "upside": "-45%"
+   }
+  ],
+  "catalysts": [
+   "数控刀具收入占比与毛利率",
+   "经营现金流转正时点",
+   "制造业PMI与机床订单",
+   "三季报应收账款与存货变化"
+  ],
+  "falsification": [
+   "经营现金流连续两季为负",
+   "单季归母净利润同比降幅超25%",
+   "综合毛利率跌破28%",
+   "应收账款增速持续大幅超过收入增速"
+  ],
+  "kpi_tracking": [
+   "经营现金流/净利润（阈值：连续两季为负）",
+   "综合毛利率（阈值：<28%）",
+   "数控刀具占比（目标：持续提升）",
+   "应收账款周转天数（阈值：显著恶化）"
+  ]
+ },
+ "_data": {
+  "code": "000657.SZ",
+  "name": "中钨高新",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "有色金属--小金属--钨",
+  "main_business": "硬质合金生产及加工销售",
+  "business_mix": "精矿及粉末产品:31.5952%;其他硬质合金:25.6486%;切削刀具及工具:20.4748%;难熔金属:15.3862%;贸易及装备等:6.8952%",
+  "gross_margin_mrq": 31.0106,
+  "gross_margin_ttm": 30.01,
+  "net_margin": 13.4113,
+  "roe_ttm": 27.3269,
+  "roic": 18.9298,
+  "ps_ttm": 3.3724,
+  "revenue": 236.99,
+  "net_profit": 29.79,
+  "total_assets": 299.09,
+  "total_liabilities": 166.04,
+  "net_assets": 122.63,
+  "operating_cash_flow": -5.62
+ },
+ "indicators": {
+  "ma5": 42.9,
+  "ma20": 50.35,
+  "ema20": 48.97,
+  "rsi14": 14.73,
+  "macd": {
+   "dif": -4.811,
+   "dea": -4.26,
+   "hist": -1.102
+  }
+ }
+}
