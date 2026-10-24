@@ -1,0 +1,570 @@
+{
+ "id": "CN-000596-2026-10-24",
+ "symbol": "000596",
+ "market": "CN",
+ "name": "古井贡酒",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "古井贡酒",
+  "industry": "食品饮料",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "白酒的生产和销售。"
+ },
+ "overview": {
+  "price": 86.42,
+  "change_pct": 4.8786,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "徽酒龙头毛利率80%，但PE 22倍高于同业，性价比一般",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 92.9,
+   "high": null,
+   "low": null,
+   "close": 92.42,
+   "volume": 315,
+   "change_pct": -0.6237
+  },
+  {
+   "date": "20260821",
+   "open": 92.01,
+   "high": null,
+   "low": null,
+   "close": 90.65,
+   "volume": 349,
+   "change_pct": -1.9152
+  },
+  {
+   "date": "20260824",
+   "open": 90.2,
+   "high": null,
+   "low": null,
+   "close": 90.65,
+   "volume": 414,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260825",
+   "open": 91.51,
+   "high": null,
+   "low": null,
+   "close": 90.86,
+   "volume": 280,
+   "change_pct": 0.2317
+  },
+  {
+   "date": "20260826",
+   "open": 89.5,
+   "high": null,
+   "low": null,
+   "close": 92.18,
+   "volume": 316,
+   "change_pct": 1.4528
+  },
+  {
+   "date": "20260827",
+   "open": 91.36,
+   "high": null,
+   "low": null,
+   "close": 92.17,
+   "volume": 277,
+   "change_pct": -0.0108
+  },
+  {
+   "date": "20260828",
+   "open": 91.58,
+   "high": null,
+   "low": null,
+   "close": 93.9,
+   "volume": 383,
+   "change_pct": 1.877
+  },
+  {
+   "date": "20260831",
+   "open": 93.93,
+   "high": null,
+   "low": null,
+   "close": 91.71,
+   "volume": 543,
+   "change_pct": -2.3323
+  },
+  {
+   "date": "20260901",
+   "open": 91.88,
+   "high": null,
+   "low": null,
+   "close": 100.88,
+   "volume": 773,
+   "change_pct": 9.9989
+  },
+  {
+   "date": "20260902",
+   "open": 100.0,
+   "high": null,
+   "low": null,
+   "close": 97.73,
+   "volume": 670,
+   "change_pct": -3.1225
+  },
+  {
+   "date": "20260903",
+   "open": 98.14,
+   "high": null,
+   "low": null,
+   "close": 96.76,
+   "volume": 350,
+   "change_pct": -0.9925
+  },
+  {
+   "date": "20260904",
+   "open": 97.06,
+   "high": null,
+   "low": null,
+   "close": 101.17,
+   "volume": 694,
+   "change_pct": 4.5577
+  },
+  {
+   "date": "20260907",
+   "open": 100.8,
+   "high": null,
+   "low": null,
+   "close": 101.0,
+   "volume": 473,
+   "change_pct": -0.168
+  },
+  {
+   "date": "20260908",
+   "open": 100.0,
+   "high": null,
+   "low": null,
+   "close": 101.0,
+   "volume": 397,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260909",
+   "open": 99.98,
+   "high": null,
+   "low": null,
+   "close": 98.21,
+   "volume": 358,
+   "change_pct": -2.7624
+  },
+  {
+   "date": "20260910",
+   "open": 97.67,
+   "high": null,
+   "low": null,
+   "close": 94.35,
+   "volume": 350,
+   "change_pct": -3.9304
+  },
+  {
+   "date": "20260911",
+   "open": 94.0,
+   "high": null,
+   "low": null,
+   "close": 92.12,
+   "volume": 270,
+   "change_pct": -2.3635
+  },
+  {
+   "date": "20260914",
+   "open": 92.17,
+   "high": null,
+   "low": null,
+   "close": 92.1,
+   "volume": 232,
+   "change_pct": -0.0217
+  },
+  {
+   "date": "20260915",
+   "open": 92.5,
+   "high": null,
+   "low": null,
+   "close": 93.53,
+   "volume": 266,
+   "change_pct": 1.5527
+  },
+  {
+   "date": "20260916",
+   "open": 92.67,
+   "high": null,
+   "low": null,
+   "close": 93.21,
+   "volume": 240,
+   "change_pct": -0.3421
+  },
+  {
+   "date": "20260917",
+   "open": 92.5,
+   "high": null,
+   "low": null,
+   "close": 92.5,
+   "volume": 182,
+   "change_pct": -0.7617
+  },
+  {
+   "date": "20260918",
+   "open": 92.0,
+   "high": null,
+   "low": null,
+   "close": 93.78,
+   "volume": 279,
+   "change_pct": 1.3838
+  },
+  {
+   "date": "20260921",
+   "open": 93.28,
+   "high": null,
+   "low": null,
+   "close": 95.46,
+   "volume": 273,
+   "change_pct": 1.7914
+  },
+  {
+   "date": "20260922",
+   "open": 94.59,
+   "high": null,
+   "low": null,
+   "close": 95.86,
+   "volume": 222,
+   "change_pct": 0.419
+  },
+  {
+   "date": "20260923",
+   "open": 95.21,
+   "high": null,
+   "low": null,
+   "close": 96.8,
+   "volume": 400,
+   "change_pct": 0.9806
+  },
+  {
+   "date": "20260924",
+   "open": 95.98,
+   "high": null,
+   "low": null,
+   "close": 91.66,
+   "volume": 328,
+   "change_pct": -5.3099
+  },
+  {
+   "date": "20260928",
+   "open": 91.0,
+   "high": null,
+   "low": null,
+   "close": 87.9,
+   "volume": 296,
+   "change_pct": -4.1021
+  },
+  {
+   "date": "20260929",
+   "open": 87.47,
+   "high": null,
+   "low": null,
+   "close": 89.03,
+   "volume": 198,
+   "change_pct": 1.2856
+  },
+  {
+   "date": "20260930",
+   "open": 89.03,
+   "high": null,
+   "low": null,
+   "close": 93.55,
+   "volume": 521,
+   "change_pct": 5.0769
+  },
+  {
+   "date": "20261008",
+   "open": 92.9,
+   "high": null,
+   "low": null,
+   "close": 93.55,
+   "volume": 276,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20261009",
+   "open": 93.44,
+   "high": null,
+   "low": null,
+   "close": 92.65,
+   "volume": 250,
+   "change_pct": -0.9621
+  },
+  {
+   "date": "20261012",
+   "open": 92.11,
+   "high": null,
+   "low": null,
+   "close": 91.9,
+   "volume": 224,
+   "change_pct": -0.8095
+  },
+  {
+   "date": "20261013",
+   "open": 91.91,
+   "high": null,
+   "low": null,
+   "close": 87.88,
+   "volume": 405,
+   "change_pct": -4.3743
+  },
+  {
+   "date": "20261014",
+   "open": 86.3,
+   "high": null,
+   "low": null,
+   "close": 86.44,
+   "volume": 265,
+   "change_pct": -1.6386
+  },
+  {
+   "date": "20261015",
+   "open": 86.46,
+   "high": null,
+   "low": null,
+   "close": 83.86,
+   "volume": 461,
+   "change_pct": -2.9847
+  },
+  {
+   "date": "20261016",
+   "open": 83.0,
+   "high": null,
+   "low": null,
+   "close": 85.07,
+   "volume": 404,
+   "change_pct": 1.4429
+  },
+  {
+   "date": "20261019",
+   "open": 84.1,
+   "high": null,
+   "low": null,
+   "close": 89.0,
+   "volume": 599,
+   "change_pct": 4.6197
+  },
+  {
+   "date": "20261020",
+   "open": 88.34,
+   "high": null,
+   "low": null,
+   "close": 86.4,
+   "volume": 291,
+   "change_pct": -2.9213
+  },
+  {
+   "date": "20261021",
+   "open": 86.0,
+   "high": null,
+   "low": null,
+   "close": 83.3,
+   "volume": 277,
+   "change_pct": -3.588
+  },
+  {
+   "date": "20261022",
+   "open": 83.39,
+   "high": null,
+   "low": null,
+   "close": 82.4,
+   "volume": 229,
+   "change_pct": -1.0804
+  },
+  {
+   "date": "20261023",
+   "open": 82.39,
+   "high": null,
+   "low": null,
+   "close": 86.42,
+   "volume": 528,
+   "change_pct": 4.8786
+  }
+ ],
+ "financials": {
+  "revenue": 101.31,
+  "revenue_yoy": -27.0065,
+  "net_profit": 21.64,
+  "net_profit_yoy": -41.4803,
+  "roe": 8.42,
+  "pe_ttm": 22.2631,
+  "pb": 1.9781,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "古井贡酒",
+   "source": "同花顺财经",
+   "date": "2026-10-09",
+   "sentiment": "neutral",
+   "summary": "古井贡酒是产自安徽亳州的浓香型白酒，中国老八大名酒之一，核心产品是“年份原浆”系列，日常小酌、宴请和送礼都能找到合适的款式。\n哪些系列值得买\n‌年份原浆系列‌：品牌主打，覆盖从入门到高端，常见型号有古5、古8、古16、古20等，数字越大定位通常越高。\n‌经典口粮款‌：如老瓷贡、第六代献礼版等，包装简洁，价格更亲民，适合家里常备和日常小聚。\n‌礼盒与纪念款‌：逢年过节送人可选古16礼盒、古20礼盒，"
+  },
+  {
+   "title": "老古井贡酒",
+   "source": "同花顺财经",
+   "date": "2026-10-14",
+   "sentiment": "neutral",
+   "summary": "导读\n古井贡酒有着悠久的历史。南北朝时，在亳州的减店集，人们发现有一口古井，井水清洌甜美，人们用此井水酿酒、泡茶，回味无穷。相传，有个将军因作战失利，临死前将所用的兵器投入井里。谁知此后井水比先前更清淳透明，爽口润喉，所酿之酒，十里飘香，古井名声大噪，人们称之为“天下名井”。 1959 年，政府为了重振“贡酒”的雄风，多次拨款兴建古井酒厂，以恢复“贡酒”的生产。将那些失散的公兴糟坊的传人又聚集在一"
+  },
+  {
+   "title": "古井贡酒(000596) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "古井贡酒(000596) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 29 家机构对古井贡酒的2026年度业绩作出预测；\n预测2026年每股收益 5.77 元，较去年同比下降 14.01%， 预测2026年净利润 30.85 亿元，较去年同比下降 13.07%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"4.17\","
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "古井贡酒2026H1营收101.31亿元，归母净利润21.64亿元，毛利率80.33%、ROE 8.42%，经营活动现金流15.43亿元。估值端PE(TTM)22.26倍、PB 1.98倍。技术面收盘86.42元，随白酒板块回调。核心逻辑：年份原浆系列在徽酒市场占据绝对优势、毛利率80%体现品牌力，但当前PE 22.26倍在白酒板块中不算便宜，且现金流15.43亿元弱于净利润21.64亿元，渠道端有压力，估值与成长性匹配度一般。",
+  "bull_points": [
+   "区域龙头：年份原浆在安徽及周边市场占据绝对优势，渠道控制力强",
+   "毛利率80.33%：品牌溢价能力突出，产品结构持续升级",
+   "PB 1.98倍：在白酒板块中估值不算极端",
+   "全国化推进：省外市场拓展提供增量空间"
+  ],
+  "bear_points": [
+   "PE 22.26倍偏高：相对同业与自身增速缺乏吸引力",
+   "现金流弱于利润：经营现金流15.43亿元 vs 净利润21.64亿元，渠道打款放缓",
+   "区域集中：安徽市场占比过高，省外拓展面临强势对手",
+   "行业调整：白酒整体去库存压力下，次高端价格带竞争最激烈"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 80.3299,
+   "ttm": 79.4092,
+   "net_margin": 21.8194,
+   "roe": 8.2436,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "年份原浆古5/古8/古16/古20结构升级是毛利率上行的核心动力",
+    "price_vs_cost": "白酒提价能力强，成本影响极小",
+    "new_business_drag": "黄鹤楼等并表品牌与新品推广前期投入拉低毛利"
+   },
+   "note": "古井贡酒毛利率80.33%体现年份原浆的产品结构优势，但需关注现金流与利润的背离：15.43亿元经营现金流对应21.64亿元净利润，回款质量下降是渠道压力的直接体现，比毛利率更值得警惕。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 1.9781,
+   "ps_ttm": 3.0286,
+   "pe_ttm": 22.2631,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 101.31,
+   "net_profit": 21.64,
+   "total_assets": 384.38,
+   "total_liabilities": 124.47,
+   "net_assets": 248.91,
+   "operating_cash_flow": 15.43,
+   "asset_liability_ratio": 32.38,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 85.5,
+   "ma20": 89.65,
+   "ema20": 88.63,
+   "rsi14": 47.62,
+   "macd": {
+    "dif": -2.459,
+    "dea": -1.942,
+    "hist": -1.035
+   },
+   "close": 86.42,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "省外拓展不及预期",
+    "severity": "中高",
+    "detail": "全国化面临洋河、今世缘等强势对手"
+   },
+   {
+    "type": "渠道现金流恶化",
+    "severity": "中高",
+    "detail": "经营现金流与净利润背离若加剧，渠道压力加大"
+   },
+   {
+    "type": "行业调整",
+    "severity": "中",
+    "detail": "次高端价格带是白酒调整期竞争最激烈的区间"
+   },
+   {
+    "type": "区域集中风险",
+    "severity": "中",
+    "detail": "安徽市场占比过高，单一区域波动影响大"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "省外放量+产品结构升级，2027年净利润达55亿元",
+    "valuation": "22倍PE，对应约1210亿市值",
+    "upside": "+25%"
+   }
+  ],
+  "catalysts": [
+   "年份原浆各系列收入占比",
+   "省外市场收入增速",
+   "合同负债与经营现金流变化",
+   "三季报收入增速"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超25%",
+   "省外收入增速转负",
+   "合同负债连续两季大幅下滑",
+   "综合毛利率跌破77%"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润同比（阈值：<-25%）",
+   "年份原浆占比（目标：持续提升）",
+   "省外收入增速（阈值：转负）",
+   "经营现金流/净利润（阈值：<0.6）"
+  ]
+ },
+ "_data": {
+  "code": "000596.SZ",
+  "name": "古井贡酒",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "食品饮料--白酒Ⅱ--白酒Ⅲ",
+  "main_business": "白酒的生产和销售。",
+  "business_mix": "白酒业务:98.4481%;其他:1.0813%;酒店业务:0.4707%",
+  "gross_margin_mrq": 80.3299,
+  "gross_margin_ttm": 79.4092,
+  "net_margin": 21.8194,
+  "roe_ttm": 8.2436,
+  "roic": 7.6564,
+  "ps_ttm": 3.0286,
+  "revenue": 101.31,
+  "net_profit": 21.64,
+  "total_assets": 384.38,
+  "total_liabilities": 124.47,
+  "net_assets": 248.91,
+  "operating_cash_flow": 15.43
+ },
+ "indicators": {
+  "ma5": 85.5,
+  "ma20": 89.65,
+  "ema20": 88.63,
+  "rsi14": 47.62,
+  "macd": {
+   "dif": -2.459,
+   "dea": -1.942,
+   "hist": -1.035
+  }
+ }
+}
