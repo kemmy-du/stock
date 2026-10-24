@@ -1,0 +1,570 @@
+{
+ "id": "CN-000895-2026-10-24",
+ "symbol": "000895",
+ "market": "CN",
+ "name": "双汇发展",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "双汇发展",
+  "industry": "食品饮料",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "畜禽屠宰，肉类食品的加工销售和食品包装"
+ },
+ "overview": {
+  "price": 23.73,
+  "change_pct": -0.3778,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "肉制品龙头ROE 10.68%，PB 3.93倍，高分红防御属性突出",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 25.12,
+   "high": null,
+   "low": null,
+   "close": 25.08,
+   "volume": 760,
+   "change_pct": -0.199
+  },
+  {
+   "date": "20260821",
+   "open": 25.08,
+   "high": null,
+   "low": null,
+   "close": 24.9,
+   "volume": 678,
+   "change_pct": -0.7177
+  },
+  {
+   "date": "20260824",
+   "open": 24.9,
+   "high": null,
+   "low": null,
+   "close": 25.38,
+   "volume": 999,
+   "change_pct": 1.9277
+  },
+  {
+   "date": "20260825",
+   "open": 25.39,
+   "high": null,
+   "low": null,
+   "close": 25.17,
+   "volume": 990,
+   "change_pct": -0.8274
+  },
+  {
+   "date": "20260826",
+   "open": 25.11,
+   "high": null,
+   "low": null,
+   "close": 25.07,
+   "volume": 1048,
+   "change_pct": -0.3973
+  },
+  {
+   "date": "20260827",
+   "open": 24.98,
+   "high": null,
+   "low": null,
+   "close": 24.94,
+   "volume": 708,
+   "change_pct": -0.5185
+  },
+  {
+   "date": "20260828",
+   "open": 24.93,
+   "high": null,
+   "low": null,
+   "close": 24.87,
+   "volume": 688,
+   "change_pct": -0.2807
+  },
+  {
+   "date": "20260831",
+   "open": 24.1,
+   "high": null,
+   "low": null,
+   "close": 24.06,
+   "volume": 1906,
+   "change_pct": -3.2569
+  },
+  {
+   "date": "20260901",
+   "open": 24.14,
+   "high": null,
+   "low": null,
+   "close": 23.94,
+   "volume": 2049,
+   "change_pct": -0.4988
+  },
+  {
+   "date": "20260902",
+   "open": 23.95,
+   "high": null,
+   "low": null,
+   "close": 23.75,
+   "volume": 1498,
+   "change_pct": -0.7937
+  },
+  {
+   "date": "20260903",
+   "open": 23.77,
+   "high": null,
+   "low": null,
+   "close": 23.67,
+   "volume": 1136,
+   "change_pct": -0.3368
+  },
+  {
+   "date": "20260904",
+   "open": 23.67,
+   "high": null,
+   "low": null,
+   "close": 24.17,
+   "volume": 1692,
+   "change_pct": 2.1124
+  },
+  {
+   "date": "20260907",
+   "open": 24.15,
+   "high": null,
+   "low": null,
+   "close": 24.0,
+   "volume": 1108,
+   "change_pct": -0.7034
+  },
+  {
+   "date": "20260908",
+   "open": 24.0,
+   "high": null,
+   "low": null,
+   "close": 23.94,
+   "volume": 890,
+   "change_pct": -0.24999999999999
+  },
+  {
+   "date": "20260909",
+   "open": 23.95,
+   "high": null,
+   "low": null,
+   "close": 23.89,
+   "volume": 906,
+   "change_pct": -0.2089
+  },
+  {
+   "date": "20260910",
+   "open": 23.88,
+   "high": null,
+   "low": null,
+   "close": 23.78,
+   "volume": 805,
+   "change_pct": -0.4604
+  },
+  {
+   "date": "20260911",
+   "open": 23.75,
+   "high": null,
+   "low": null,
+   "close": 23.54,
+   "volume": 996,
+   "change_pct": -1.0093
+  },
+  {
+   "date": "20260914",
+   "open": 23.56,
+   "high": null,
+   "low": null,
+   "close": 23.46,
+   "volume": 954,
+   "change_pct": -0.3398
+  },
+  {
+   "date": "20260915",
+   "open": 23.45,
+   "high": null,
+   "low": null,
+   "close": 23.4,
+   "volume": 651,
+   "change_pct": -0.2558
+  },
+  {
+   "date": "20260916",
+   "open": 23.4,
+   "high": null,
+   "low": null,
+   "close": 23.27,
+   "volume": 671,
+   "change_pct": -0.5556
+  },
+  {
+   "date": "20260917",
+   "open": 23.21,
+   "high": null,
+   "low": null,
+   "close": 23.32,
+   "volume": 499,
+   "change_pct": 0.2149
+  },
+  {
+   "date": "20260918",
+   "open": 23.35,
+   "high": null,
+   "low": null,
+   "close": 23.29,
+   "volume": 732,
+   "change_pct": -0.1286
+  },
+  {
+   "date": "20260921",
+   "open": 23.3,
+   "high": null,
+   "low": null,
+   "close": 23.26,
+   "volume": 922,
+   "change_pct": -0.1288
+  },
+  {
+   "date": "20260922",
+   "open": 23.26,
+   "high": null,
+   "low": null,
+   "close": 23.38,
+   "volume": 806,
+   "change_pct": 0.5159
+  },
+  {
+   "date": "20260923",
+   "open": 23.38,
+   "high": null,
+   "low": null,
+   "close": 23.33,
+   "volume": 750,
+   "change_pct": -0.2139
+  },
+  {
+   "date": "20260924",
+   "open": 23.3,
+   "high": null,
+   "low": null,
+   "close": 23.18,
+   "volume": 533,
+   "change_pct": -0.6429
+  },
+  {
+   "date": "20260928",
+   "open": 23.19,
+   "high": null,
+   "low": null,
+   "close": 23.57,
+   "volume": 1598,
+   "change_pct": 1.6825
+  },
+  {
+   "date": "20260929",
+   "open": 23.54,
+   "high": null,
+   "low": null,
+   "close": 23.41,
+   "volume": 1093,
+   "change_pct": -0.6788
+  },
+  {
+   "date": "20260930",
+   "open": 23.45,
+   "high": null,
+   "low": null,
+   "close": 23.66,
+   "volume": 714,
+   "change_pct": 1.0679
+  },
+  {
+   "date": "20261008",
+   "open": 23.62,
+   "high": null,
+   "low": null,
+   "close": 23.66,
+   "volume": 805,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20261009",
+   "open": 23.63,
+   "high": null,
+   "low": null,
+   "close": 23.79,
+   "volume": 1126,
+   "change_pct": 0.5495
+  },
+  {
+   "date": "20261012",
+   "open": 23.16,
+   "high": null,
+   "low": null,
+   "close": 23.5,
+   "volume": 1501,
+   "change_pct": -1.219
+  },
+  {
+   "date": "20261013",
+   "open": 23.4,
+   "high": null,
+   "low": null,
+   "close": 23.44,
+   "volume": 1228,
+   "change_pct": -0.2553
+  },
+  {
+   "date": "20261014",
+   "open": 23.43,
+   "high": null,
+   "low": null,
+   "close": 23.95,
+   "volume": 1471,
+   "change_pct": 2.1758
+  },
+  {
+   "date": "20261015",
+   "open": 23.9,
+   "high": null,
+   "low": null,
+   "close": 23.81,
+   "volume": 1204,
+   "change_pct": -0.5846
+  },
+  {
+   "date": "20261016",
+   "open": 23.81,
+   "high": null,
+   "low": null,
+   "close": 23.96,
+   "volume": 1234,
+   "change_pct": 0.63
+  },
+  {
+   "date": "20261019",
+   "open": 23.9,
+   "high": null,
+   "low": null,
+   "close": 24.09,
+   "volume": 1094,
+   "change_pct": 0.5426
+  },
+  {
+   "date": "20261020",
+   "open": 24.11,
+   "high": null,
+   "low": null,
+   "close": 23.94,
+   "volume": 1016,
+   "change_pct": -0.6227
+  },
+  {
+   "date": "20261021",
+   "open": 23.94,
+   "high": null,
+   "low": null,
+   "close": 23.6,
+   "volume": 979,
+   "change_pct": -1.4202
+  },
+  {
+   "date": "20261022",
+   "open": 23.6,
+   "high": null,
+   "low": null,
+   "close": 23.82,
+   "volume": 1066,
+   "change_pct": 0.9322
+  },
+  {
+   "date": "20261023",
+   "open": 23.84,
+   "high": null,
+   "low": null,
+   "close": 23.73,
+   "volume": 1176,
+   "change_pct": -0.3778
+  }
+ ],
+ "financials": {
+  "revenue": 281.84,
+  "revenue_yoy": -1.1183,
+  "net_profit": 23.06,
+  "net_profit_yoy": -0.9044,
+  "roe": 10.68,
+  "pe_ttm": 16.1619,
+  "pb": 3.9339,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "双汇发展的发展困局",
+   "source": "同花顺财经",
+   "date": "2026-10-20",
+   "sentiment": "neutral",
+   "summary": "来源｜蓝筹企业评论。导语：因食品安全被罚款1.29亿、营收连续五年下降。 2026年10月，双汇发展（000895.SZ）因猪后鞧肉林可霉素残留超标37.5倍，被罚没约1.29亿元，董事长万宏伟个人被罚3764.62万元——这是“处罚到人”机制在食品安全领域的一次标志性事件。一张罚单的重量。 2026年10月9日，双汇发展公告，公司、望奎双汇及四名高管合计被罚没1.29亿元，预计减少当年归母净利润"
+  },
+  {
+   "title": "双汇发展：收到行政处罚决定书",
+   "source": "同花顺财经",
+   "date": "2026-10-09",
+   "sentiment": "neutral",
+   "summary": "【双汇发展：收到行政处罚决定书】财联社10月9日电，双汇发展(000895.SZ)公告称，公司及望奎双汇、相关董事及高管收到行政处罚决定书。 因销售兽药残留不符合质量安全标准的农产品等问题，望奎双汇被没收违法所得165.39万元并罚款3307.79万元；公司被没收违法所得170.10万元并罚款3401.93万元； 此外，因未制定“生猪静养期”巡检标准，公司及相关人员被罚款。上述处罚将导致公司202"
+  },
+  {
+   "title": "双汇发展及相关高管被处罚",
+   "source": "同花顺财经",
+   "date": "2026-10-12",
+   "sentiment": "neutral",
+   "summary": "本报讯 （记者肖艳青）10月9日晚间，河南双汇投资发展股份有限公司（以下简称“双汇发展”）披露其关于收到《行政处罚决定书》的公告，针对旗下望奎双汇北大荒食品有限公司猪后鞧肉检出林可霉素残留超标等问题， 公司就本次处罚作出回应，并公布六项整改措施。    双汇发展表示：“公司诚恳接受、坚决服从相关行政处罚决定，并郑重致歉，加强整改，确保产品质量安全。 公告显示，监管部门对望奎双汇及双汇发展罚没合计7"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "双汇发展2026H1营收281.84亿元，归母净利润23.06亿元，毛利率19.15%、ROE 10.68%，经营活动现金流16.17亿元，资产负债率仅48%。估值端PE(TTM)16.16倍、PB 3.93倍。技术面收盘23.73元。核心逻辑：肉制品行业绝对龙头，高温肉制品市占率第一，屠宰业务规模效应显著，ROE 10.68%在食品行业中优秀，高分红历史提供防御属性；风险在于猪价波动与预制菜等新业务投入。",
+  "bull_points": [
+   "行业龙头：高温肉制品市占率第一，品牌与渠道壁垒深厚",
+   "ROE 10.68%：在食品饮料行业中属优秀水平",
+   "财务稳健：资产负债率仅48%，现金流16.17亿元",
+   "高分红：历史分红率高，防御属性突出，适合稳健配置"
+  ],
+  "bear_points": [
+   "PB 3.93倍偏高：相对肉制品行业成长性，估值不便宜",
+   "毛利率19.15%偏低：屠宰业务占比高拉低综合毛利",
+   "猪价波动：生猪价格波动影响屠宰成本与肉制品价差",
+   "成长性有限：主品类市场成熟，增长依赖预制菜等新业务"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 19.1456,
+   "ttm": 18.9463,
+   "net_margin": 8.2959,
+   "roe": 24.3403,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "高毛利肉制品占比提升是综合毛利率上行的核心路径",
+    "price_vs_cost": "生猪价格波动是最大变量，公司通过进口与储备平抑",
+    "new_business_drag": "预制菜与中央厨房前期投入拉低短期毛利"
+   },
+   "note": "双汇毛利率19.15%呈结构性偏低，核心原因是低毛利屠宰业务占比过高。肉制品板块毛利率实际在30%以上。观察重点应是肉制品与屠宰的收入结构变化，以及进口猪肉对成本的影响。ROE 10.68%的实现在于高周转而非高毛利。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 3.9339,
+   "ps_ttm": 1.3902,
+   "pe_ttm": 16.1619,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 281.84,
+   "net_profit": 23.06,
+   "total_assets": 408.7,
+   "total_liabilities": 197.65,
+   "net_assets": 209.0,
+   "operating_cash_flow": 16.17,
+   "asset_liability_ratio": 48.36,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 23.84,
+   "ma20": 23.62,
+   "ema20": 23.75,
+   "rsi14": 53.05,
+   "macd": {
+    "dif": -0.036,
+    "dea": -0.093,
+    "hist": 0.113
+   },
+   "close": 23.73,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "猪价大幅波动",
+    "severity": "高",
+    "detail": "生猪价格波动影响成本与终端价差"
+   },
+   {
+    "type": "食品安全风险",
+    "severity": "中高",
+    "detail": "肉制品行业对食品安全极度敏感，单一事件影响巨大"
+   },
+   {
+    "type": "成长性不足",
+    "severity": "中",
+    "detail": "主品类成熟，新业务尚未形成规模"
+   },
+   {
+    "type": "原材料进口依赖",
+    "severity": "中",
+    "detail": "猪肉进口受国际价格与政策影响"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "肉制品占比提升+预制菜放量，2027年净利润达70亿元",
+    "valuation": "20倍PE，对应约1400亿市值",
+    "upside": "+30%"
+   }
+  ],
+  "catalysts": [
+   "肉制品与屠宰收入结构变化",
+   "生猪价格走势",
+   "预制菜业务收入增速",
+   "分红方案"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超25%",
+   "综合毛利率跌破17%",
+   "发生重大食品安全事件",
+   "肉制品收入增速转负"
+  ],
+  "kpi_tracking": [
+   "肉制品收入占比（目标：持续提升）",
+   "综合毛利率（阈值：<17%）",
+   "经营现金流/净利润（阈值：<0.6）",
+   "预制菜收入增速（目标：>30%）"
+  ]
+ },
+ "_data": {
+  "code": "000895.SZ",
+  "name": "双汇发展",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "食品饮料--食品加工--肉制品",
+  "main_business": "畜禽屠宰，肉类食品的加工销售和食品包装",
+  "business_mix": "生鲜猪产品:49.1921%;包装肉制品:39.5679%;其他:20.2873%;其他业务:0.3123%;公司内部行业抵减:-9.3596%",
+  "gross_margin_mrq": 19.1456,
+  "gross_margin_ttm": 18.9463,
+  "net_margin": 8.2959,
+  "roe_ttm": 24.3403,
+  "roic": 7.1993,
+  "ps_ttm": 1.3902,
+  "revenue": 281.84,
+  "net_profit": 23.06,
+  "total_assets": 408.7,
+  "total_liabilities": 197.65,
+  "net_assets": 209.0,
+  "operating_cash_flow": 16.17
+ },
+ "indicators": {
+  "ma5": 23.84,
+  "ma20": 23.62,
+  "ema20": 23.75,
+  "rsi14": 53.05,
+  "macd": {
+   "dif": -0.036,
+   "dea": -0.093,
+   "hist": 0.113
+  }
+ }
+}
