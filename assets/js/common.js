@@ -25,7 +25,13 @@
   const MARKET_LABEL = { CN: "A股", US: "美股" };
 
   const $ = (sel, root) => (root || document).querySelector(sel);
-  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  // 防御：root 可能是 null 或不具备 querySelectorAll 的对象
+  const $$ = (sel, root) => {
+    const ctx = root || document;
+    return ctx && typeof ctx.querySelectorAll === "function"
+      ? Array.from(ctx.querySelectorAll(sel))
+      : [];
+  };
 
   function currentPage() {
     const path = location.pathname.split("/").pop();
