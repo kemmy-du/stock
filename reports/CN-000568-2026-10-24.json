@@ -1,0 +1,570 @@
+{
+ "id": "CN-000568-2026-10-24",
+ "symbol": "000568",
+ "market": "CN",
+ "name": "泸州老窖",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "泸州老窖",
+  "industry": "食品饮料",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "“国窖1573”、“泸州老窖”等系列白酒的研发、生产和销售。"
+ },
+ "overview": {
+  "price": 69.99,
+  "change_pct": 2.9265,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "高端白酒PE仅13.7倍，毛利率85%，估值已反映悲观预期",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 85.0,
+   "high": 86.33,
+   "low": null,
+   "close": 86.11,
+   "volume": 796,
+   "change_pct": 1.9053
+  },
+  {
+   "date": "20260821",
+   "open": 86.01,
+   "high": 86.3,
+   "low": null,
+   "close": 85.2,
+   "volume": 568,
+   "change_pct": -1.0568
+  },
+  {
+   "date": "20260824",
+   "open": 85.2,
+   "high": 87.47,
+   "low": null,
+   "close": 85.51,
+   "volume": 957,
+   "change_pct": 0.3638
+  },
+  {
+   "date": "20260825",
+   "open": 85.53,
+   "high": 86.29,
+   "low": null,
+   "close": 84.73,
+   "volume": 883,
+   "change_pct": -0.9122
+  },
+  {
+   "date": "20260826",
+   "open": 81.0,
+   "high": 84.07,
+   "low": null,
+   "close": 82.72,
+   "volume": 1592,
+   "change_pct": -2.3722
+  },
+  {
+   "date": "20260827",
+   "open": 82.5,
+   "high": 82.6,
+   "low": null,
+   "close": 81.93,
+   "volume": 1104,
+   "change_pct": -0.955
+  },
+  {
+   "date": "20260828",
+   "open": 77.98,
+   "high": 78.83,
+   "low": null,
+   "close": 78.44,
+   "volume": 1012,
+   "change_pct": 1.1998
+  },
+  {
+   "date": "20260831",
+   "open": 78.8,
+   "high": 79.2,
+   "low": null,
+   "close": 77.0,
+   "volume": 1046,
+   "change_pct": -1.8358
+  },
+  {
+   "date": "20260901",
+   "open": 76.69,
+   "high": 80.36,
+   "low": null,
+   "close": 78.68,
+   "volume": 1399,
+   "change_pct": 2.1818
+  },
+  {
+   "date": "20260902",
+   "open": 78.33,
+   "high": 79.1,
+   "low": null,
+   "close": 77.82,
+   "volume": 506,
+   "change_pct": -1.093
+  },
+  {
+   "date": "20260903",
+   "open": 77.84,
+   "high": 77.99,
+   "low": null,
+   "close": 76.0,
+   "volume": 1125,
+   "change_pct": -2.3387
+  },
+  {
+   "date": "20260904",
+   "open": 76.02,
+   "high": 81.31,
+   "low": null,
+   "close": 79.92,
+   "volume": 1843,
+   "change_pct": 5.1579
+  },
+  {
+   "date": "20260907",
+   "open": 79.6,
+   "high": 80.3,
+   "low": null,
+   "close": 79.3,
+   "volume": 770,
+   "change_pct": -0.7758
+  },
+  {
+   "date": "20260908",
+   "open": 79.35,
+   "high": 79.56,
+   "low": null,
+   "close": 77.78,
+   "volume": 895,
+   "change_pct": -1.9168
+  },
+  {
+   "date": "20260909",
+   "open": 77.65,
+   "high": 77.78,
+   "low": null,
+   "close": 76.9,
+   "volume": 607,
+   "change_pct": -1.1314
+  },
+  {
+   "date": "20260910",
+   "open": 77.0,
+   "high": 77.1,
+   "low": null,
+   "close": 74.81,
+   "volume": 1201,
+   "change_pct": -2.7178
+  },
+  {
+   "date": "20260911",
+   "open": 74.7,
+   "high": 74.7,
+   "low": null,
+   "close": 73.63,
+   "volume": 763,
+   "change_pct": -1.5773
+  },
+  {
+   "date": "20260914",
+   "open": 73.8,
+   "high": 74.4,
+   "low": null,
+   "close": 73.48,
+   "volume": 541,
+   "change_pct": -0.2037
+  },
+  {
+   "date": "20260915",
+   "open": 73.7,
+   "high": 73.78,
+   "low": null,
+   "close": 72.0,
+   "volume": 800,
+   "change_pct": -2.0142
+  },
+  {
+   "date": "20260916",
+   "open": 72.15,
+   "high": 72.41,
+   "low": null,
+   "close": 72.35,
+   "volume": 562,
+   "change_pct": 0.4861
+  },
+  {
+   "date": "20260917",
+   "open": 72.07,
+   "high": 72.6,
+   "low": null,
+   "close": 71.65,
+   "volume": 550,
+   "change_pct": -0.9675
+  },
+  {
+   "date": "20260918",
+   "open": 71.65,
+   "high": 72.25,
+   "low": null,
+   "close": 71.92,
+   "volume": 545,
+   "change_pct": 0.3768
+  },
+  {
+   "date": "20260921",
+   "open": 72.28,
+   "high": 72.72,
+   "low": null,
+   "close": 72.2,
+   "volume": 904,
+   "change_pct": 0.3893
+  },
+  {
+   "date": "20260922",
+   "open": 72.1,
+   "high": 72.54,
+   "low": null,
+   "close": 71.48,
+   "volume": 896,
+   "change_pct": -0.9972
+  },
+  {
+   "date": "20260923",
+   "open": 71.61,
+   "high": 73.18,
+   "low": null,
+   "close": 72.11,
+   "volume": 1049,
+   "change_pct": 0.8814
+  },
+  {
+   "date": "20260924",
+   "open": 71.69,
+   "high": 72.16,
+   "low": null,
+   "close": 70.65,
+   "volume": 907,
+   "change_pct": -2.0247
+  },
+  {
+   "date": "20260928",
+   "open": 70.65,
+   "high": 70.95,
+   "low": null,
+   "close": 69.96,
+   "volume": 568,
+   "change_pct": -0.9766
+  },
+  {
+   "date": "20260929",
+   "open": 69.98,
+   "high": 70.38,
+   "low": null,
+   "close": 69.38,
+   "volume": 688,
+   "change_pct": -0.829
+  },
+  {
+   "date": "20260930",
+   "open": 69.5,
+   "high": 73.18,
+   "low": null,
+   "close": 72.28,
+   "volume": 1416,
+   "change_pct": 4.1799
+  },
+  {
+   "date": "20261008",
+   "open": 71.75,
+   "high": 72.64,
+   "low": null,
+   "close": 72.61,
+   "volume": 1045,
+   "change_pct": 0.4566
+  },
+  {
+   "date": "20261009",
+   "open": 72.28,
+   "high": 73.33,
+   "low": null,
+   "close": 71.5,
+   "volume": 997,
+   "change_pct": -1.5287
+  },
+  {
+   "date": "20261012",
+   "open": 71.48,
+   "high": 72.5,
+   "low": null,
+   "close": 71.93,
+   "volume": 730,
+   "change_pct": 0.6014
+  },
+  {
+   "date": "20261013",
+   "open": 71.8,
+   "high": 72.44,
+   "low": null,
+   "close": 70.4,
+   "volume": 1028,
+   "change_pct": -2.1271
+  },
+  {
+   "date": "20261014",
+   "open": 70.35,
+   "high": 71.19,
+   "low": null,
+   "close": 70.3,
+   "volume": 788,
+   "change_pct": -0.142
+  },
+  {
+   "date": "20261015",
+   "open": 70.0,
+   "high": 72.63,
+   "low": null,
+   "close": 71.37,
+   "volume": 1821,
+   "change_pct": 1.522
+  },
+  {
+   "date": "20261016",
+   "open": 70.97,
+   "high": 72.5,
+   "low": null,
+   "close": 71.94,
+   "volume": 1172,
+   "change_pct": 0.7987
+  },
+  {
+   "date": "20261019",
+   "open": 71.75,
+   "high": 74.22,
+   "low": null,
+   "close": 72.64,
+   "volume": 1666,
+   "change_pct": 0.973
+  },
+  {
+   "date": "20261020",
+   "open": 72.45,
+   "high": 72.9,
+   "low": null,
+   "close": 71.29,
+   "volume": 1211,
+   "change_pct": -1.8585
+  },
+  {
+   "date": "20261021",
+   "open": 71.29,
+   "high": 71.62,
+   "low": null,
+   "close": 69.18,
+   "volume": 1769,
+   "change_pct": -2.9597
+  },
+  {
+   "date": "20261022",
+   "open": 69.09,
+   "high": 69.12,
+   "low": null,
+   "close": 68.0,
+   "volume": 1282,
+   "change_pct": -1.7057
+  },
+  {
+   "date": "20261023",
+   "open": 68.29,
+   "high": 70.16,
+   "low": null,
+   "close": 69.99,
+   "volume": 1594,
+   "change_pct": 2.9265
+  }
+ ],
+ "financials": {
+  "revenue": 104.72,
+  "revenue_yoy": -36.3535,
+  "net_profit": 43.39,
+  "net_profit_yoy": -43.0356,
+  "roe": 8.62,
+  "pe_ttm": 13.7228,
+  "pb": 2.6259,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "泸州老窖:还未到底",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "站在三季报发布的当口，翻阅泸州老窖 2025 年及 2026 年上半年的财报数据，已然勾勒出一条陡峭的下行曲线。\n尽管泸州老窖主动 \" 释压出清 \" 的策略在财务报表端体现为单季业绩的断崖式下跌，但更值得警惕的是资产质量的同步下滑：合同负债持续萎缩、经营现金流大幅失血、存货创下阶段新高。\n虽然许多券商仍以 \" 底部信号明确 \" 维持买入评级，但 2026 年经营业绩状况大幅下调几乎已成定局，更值得"
+  },
+  {
+   "title": "泸州老窖酒价格表查询_泸州老窖酒价格表一览",
+   "source": "同花顺财经",
+   "date": "2026-10-17",
+   "sentiment": "neutral",
+   "summary": "南方财富网 2026-10-17 21:42\n泸州老窖源远流长，是中国浓香型白酒的发源地，以众多独特优势在中国酒业独树一帜：拥有我国建造最早（始建于公元1573年）、连续使用时间最长、保护最完整的1573国宝窖池群——1996年12月成为行业首家全国重点文物保护单位，2006年被列入“世界文化遗产预备名录”；2012年11月泸州老窖作坊群再次入选《中国世界文化遗产预备名单》；2013年3月，泸州老"
+  },
+  {
+   "title": "泸州老窖",
+   "source": "同花顺财经",
+   "date": "2026-10-14",
+   "sentiment": "neutral",
+   "summary": "企业荣誉\n1915~2000\n1996年泸州老窖明代窖池群入选第四批全国重点文物保护单位。\n1994年巴拿马万国名酒特别金奖\n1992年8月特曲获俄罗斯食品博览会金奖\n1992年美国洛杉矶太平洋博览会金奖\n1992年匈牙利布达佩斯特别金奖\n1990年特曲获巴黎国际食品博览会金奖\n1915年巴拿马万国博览会金奖\n2000~2010年\n2009年“永盛烧坊”商标获“四川省著名商标”称号\n书法巨碑《九九"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "泸州老窖2026H1营收104.72亿元，归母净利润43.39亿元，毛利率85.35%、ROE 8.62%，经营活动现金流20.82亿元。估值端PE(TTM)13.72倍、PB 2.63倍，处于历史低位区间。技术面收盘69.99元，随白酒板块深度回调。核心逻辑：国窖1573高端定位稳固、毛利率85%彰显品牌力，行业去库存周期中龙头相对占优，当前估值已较充分反映需求疲软预期，具备逆向配置价值；风险在于白酒行业调整周期长度超预期。",
+  "bull_points": [
+   "品牌与毛利优势：国窖1573高端定位稳固，毛利率85.35%为白酒行业顶级水平",
+   "估值历史低位：PE(TTM)13.72倍、PB 2.63倍，处于上市以来偏低分位",
+   "财务稳健：资产负债率仅29%，现金流20.82亿元，无有息负债压力",
+   "龙头占优：行业去库存期份额向名酒集中，公司渠道与品牌优势凸显"
+  ],
+  "bear_points": [
+   "行业调整周期：白酒行业处于去库存阶段，需求恢复时点不确定",
+   "现金流弱于利润：经营活动现金流20.82亿元低于净利润43.39亿元，回款放缓",
+   "高端价格带竞争：茅台五粮液下沉挤压千元价格带空间",
+   "ROE 8.62%偏低，渠道扩张与费用投入压制回报率"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 85.3455,
+   "ttm": 85.5577,
+   "net_margin": 41.7958,
+   "roe": 16.415,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "国窖1573占比是综合毛利率的核心变量，系列酒占比提升会拉低毛利",
+    "price_vs_cost": "高端白酒具备强提价能力，原材料成本影响极小",
+    "new_business_drag": "低度酒、预调酒等新品类前期投入拉低短期毛利"
+   },
+   "note": "泸州老窖毛利率85.35%属白酒行业顶级，反映国窖1573的强大品牌溢价。毛利率本身不是风险点，真正的观察重点是现金流：20.82亿元经营现金流对应43.39亿元净利润，说明渠道打款意愿减弱、报表利润与现金回款出现背离，这是白酒调整期的典型信号。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.6259,
+   "ps_ttm": 5.2163,
+   "pe_ttm": 13.7228,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 104.72,
+   "net_profit": 43.39,
+   "total_assets": 643.25,
+   "total_liabilities": 184.42,
+   "net_assets": 457.33,
+   "operating_cash_flow": 20.82,
+   "asset_liability_ratio": 28.67,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 70.22,
+   "ma20": 71.06,
+   "ema20": 71.62,
+   "rsi14": 50.09,
+   "macd": {
+    "dif": -1.767,
+    "dea": -1.952,
+    "hist": 0.37
+   },
+   "close": 69.99,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "行业调整超预期",
+    "severity": "高",
+    "detail": "白酒去库存周期若延长，量价均将承压"
+   },
+   {
+    "type": "渠道现金流恶化",
+    "severity": "中高",
+    "detail": "经营现金流与净利润背离若加剧，说明渠道压力加大"
+   },
+   {
+    "type": "高端价格带竞争",
+    "severity": "中",
+    "detail": "茅台五粮液在千元带形成上下挤压"
+   },
+   {
+    "type": "政策风险",
+    "severity": "中",
+    "detail": "公务消费限制等政策变化影响高端白酒需求"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "行业去库存完成+国窖1573量价齐升，2027年净利润达150亿元",
+    "valuation": "22倍PE，对应约3300亿市值",
+    "upside": "+45%"
+   }
+  ],
+  "catalysts": [
+   "季度合同负债与经营现金流变化（渠道健康度核心）",
+   "国窖1573批价走势",
+   "白酒行业库存去化进度",
+   "三季报收入与利润增速"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超30%",
+   "合同负债连续两季大幅下滑",
+   "经营活动现金流持续低于净利润",
+   "国窖1573批价跌破关键价位"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润同比（阈值：<-30%）",
+   "合同负债环比变化（阈值：连续两季下滑）",
+   "经营现金流/净利润（阈值：<0.5）",
+   "综合毛利率（阈值：<83%）"
+  ]
+ },
+ "_data": {
+  "code": "000568.SZ",
+  "name": "泸州老窖",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "食品饮料--白酒Ⅱ--白酒Ⅲ",
+  "main_business": "“国窖1573”、“泸州老窖”等系列白酒的研发、生产和销售。",
+  "business_mix": "中高档酒类:89.2618%;其他酒类:10.2506%;其他收入:0.4876%",
+  "gross_margin_mrq": 85.3455,
+  "gross_margin_ttm": 85.5577,
+  "net_margin": 41.7958,
+  "roe_ttm": 16.415,
+  "roic": 7.7264,
+  "ps_ttm": 5.2163,
+  "revenue": 104.72,
+  "net_profit": 43.39,
+  "total_assets": 643.25,
+  "total_liabilities": 184.42,
+  "net_assets": 457.33,
+  "operating_cash_flow": 20.82
+ },
+ "indicators": {
+  "ma5": 70.22,
+  "ma20": 71.06,
+  "ema20": 71.62,
+  "rsi14": 50.09,
+  "macd": {
+   "dif": -1.767,
+   "dea": -1.952,
+   "hist": 0.37
+  }
+ }
+}
