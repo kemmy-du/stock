@@ -1,0 +1,570 @@
+{
+ "id": "CN-000625-2026-10-24",
+ "symbol": "000625",
+ "market": "CN",
+ "name": "长安汽车",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "长安汽车",
+  "industry": "汽车",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "制造和销售汽车(含轿车)、制造汽车发动机系列产品"
+ },
+ "overview": {
+  "price": 7.07,
+  "change_pct": 1.0,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "微利+现金流-114亿，国企车企转型阵痛期，估值与盈利双弱",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 7.04,
+   "high": null,
+   "low": null,
+   "close": 7.15,
+   "volume": 4641,
+   "change_pct": 1.5625
+  },
+  {
+   "date": "20260821",
+   "open": 7.12,
+   "high": null,
+   "low": null,
+   "close": 7.07,
+   "volume": 3325,
+   "change_pct": -1.1189
+  },
+  {
+   "date": "20260824",
+   "open": 7.07,
+   "high": null,
+   "low": null,
+   "close": 7.05,
+   "volume": 2638,
+   "change_pct": -0.2829
+  },
+  {
+   "date": "20260825",
+   "open": 7.03,
+   "high": null,
+   "low": null,
+   "close": 7.1,
+   "volume": 2796,
+   "change_pct": 0.7092
+  },
+  {
+   "date": "20260826",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 7.14,
+   "volume": 3276,
+   "change_pct": 0.5634
+  },
+  {
+   "date": "20260827",
+   "open": 7.12,
+   "high": null,
+   "low": null,
+   "close": 7.1,
+   "volume": 3073,
+   "change_pct": -0.5602
+  },
+  {
+   "date": "20260828",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 7.1,
+   "volume": 2994,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260831",
+   "open": 7.1,
+   "high": null,
+   "low": null,
+   "close": 7.07,
+   "volume": 3786,
+   "change_pct": -0.4225
+  },
+  {
+   "date": "20260901",
+   "open": 7.08,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 3837,
+   "change_pct": 0.7072
+  },
+  {
+   "date": "20260902",
+   "open": 7.1,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 2873,
+   "change_pct": -0.8427
+  },
+  {
+   "date": "20260903",
+   "open": 7.08,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 2899,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260904",
+   "open": 7.07,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 5608,
+   "change_pct": 0.8499
+  },
+  {
+   "date": "20260907",
+   "open": 7.1,
+   "high": null,
+   "low": null,
+   "close": 7.11,
+   "volume": 3275,
+   "change_pct": -0.1404
+  },
+  {
+   "date": "20260908",
+   "open": 7.11,
+   "high": null,
+   "low": null,
+   "close": 7.24,
+   "volume": 7113,
+   "change_pct": 1.8284
+  },
+  {
+   "date": "20260909",
+   "open": 7.23,
+   "high": null,
+   "low": null,
+   "close": 7.18,
+   "volume": 3821,
+   "change_pct": -0.8287
+  },
+  {
+   "date": "20260910",
+   "open": 7.15,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 3201,
+   "change_pct": -0.8357
+  },
+  {
+   "date": "20260911",
+   "open": 7.1,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 4968,
+   "change_pct": -0.8427
+  },
+  {
+   "date": "20260914",
+   "open": 7.07,
+   "high": null,
+   "low": null,
+   "close": 7.23,
+   "volume": 8956,
+   "change_pct": 2.4079
+  },
+  {
+   "date": "20260915",
+   "open": 7.18,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 5151,
+   "change_pct": -1.5214
+  },
+  {
+   "date": "20260916",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 7.08,
+   "volume": 3783,
+   "change_pct": -0.5618
+  },
+  {
+   "date": "20260917",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 7.15,
+   "volume": 4456,
+   "change_pct": 0.9887
+  },
+  {
+   "date": "20260918",
+   "open": 7.15,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 3575,
+   "change_pct": -0.4196
+  },
+  {
+   "date": "20260921",
+   "open": 7.11,
+   "high": null,
+   "low": null,
+   "close": 7.15,
+   "volume": 3147,
+   "change_pct": 0.4213
+  },
+  {
+   "date": "20260922",
+   "open": 7.15,
+   "high": null,
+   "low": null,
+   "close": 7.18,
+   "volume": 4068,
+   "change_pct": 0.4196
+  },
+  {
+   "date": "20260923",
+   "open": 7.16,
+   "high": null,
+   "low": null,
+   "close": 7.12,
+   "volume": 4421,
+   "change_pct": -0.8357
+  },
+  {
+   "date": "20260924",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 7.03,
+   "volume": 4013,
+   "change_pct": -1.264
+  },
+  {
+   "date": "20260928",
+   "open": 7.03,
+   "high": null,
+   "low": null,
+   "close": 7.05,
+   "volume": 4615,
+   "change_pct": 0.2845
+  },
+  {
+   "date": "20260929",
+   "open": 7.05,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 4546,
+   "change_pct": 0.1418
+  },
+  {
+   "date": "20260930",
+   "open": 7.05,
+   "high": null,
+   "low": null,
+   "close": 7.11,
+   "volume": 7650,
+   "change_pct": 0.7082
+  },
+  {
+   "date": "20261008",
+   "open": 7.1,
+   "high": null,
+   "low": null,
+   "close": 7.04,
+   "volume": 4590,
+   "change_pct": -0.9845
+  },
+  {
+   "date": "20261009",
+   "open": 7.03,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 4448,
+   "change_pct": 0.2841
+  },
+  {
+   "date": "20261012",
+   "open": 7.04,
+   "high": null,
+   "low": null,
+   "close": 7.1,
+   "volume": 4298,
+   "change_pct": 0.5666
+  },
+  {
+   "date": "20261013",
+   "open": 7.03,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 3635,
+   "change_pct": -0.5634
+  },
+  {
+   "date": "20261014",
+   "open": 7.06,
+   "high": null,
+   "low": null,
+   "close": 7.01,
+   "volume": 3551,
+   "change_pct": -0.7082
+  },
+  {
+   "date": "20261015",
+   "open": 6.95,
+   "high": null,
+   "low": null,
+   "close": 6.94,
+   "volume": 5056,
+   "change_pct": -0.9986
+  },
+  {
+   "date": "20261016",
+   "open": 6.96,
+   "high": null,
+   "low": null,
+   "close": 7.07,
+   "volume": 5797,
+   "change_pct": 1.8732
+  },
+  {
+   "date": "20261019",
+   "open": 7.06,
+   "high": null,
+   "low": null,
+   "close": 7.14,
+   "volume": 6405,
+   "change_pct": 0.9901
+  },
+  {
+   "date": "20261020",
+   "open": 7.12,
+   "high": null,
+   "low": null,
+   "close": 7.07,
+   "volume": 4851,
+   "change_pct": -0.9804
+  },
+  {
+   "date": "20261021",
+   "open": 7.07,
+   "high": null,
+   "low": null,
+   "close": 7.01,
+   "volume": 3305,
+   "change_pct": -0.8487
+  },
+  {
+   "date": "20261022",
+   "open": 7.01,
+   "high": null,
+   "low": null,
+   "close": 7.0,
+   "volume": 3928,
+   "change_pct": -0.1427
+  },
+  {
+   "date": "20261023",
+   "open": 6.96,
+   "high": null,
+   "low": null,
+   "close": 7.07,
+   "volume": 5499,
+   "change_pct": 1.0
+  }
+ ],
+ "financials": {
+  "revenue": 656.34,
+  "revenue_yoy": -9.7081,
+  "net_profit": 8.17,
+  "net_profit_yoy": -89.9192,
+  "roe": 1.06,
+  "pe_ttm": 26.9409,
+  "pb": 0.9357,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "中国长安汽车党委书记、董事长朱华荣出席2026年世界科技与发展论坛并作主题演讲",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "坚持智能化引领，锻造科技自立自强筋骨 长安持续落地智能化“北斗天枢”计划，组建7500余人智能化团队，在智能产品领域投入225亿元，拥有全国唯一的“智能汽车安全技术全国重点实验室”、国际领先的天枢智能实验中心。 自研的央企首个一段式端到端驾驶辅助系统“长安天枢领航”正式量产上车。这套系统以安全为核心，打通舱、驾、动、底、控、云六大领域，在核心领域实现软硬件一体化自研。 坚持融合化开放，共建产业大生"
+  },
+  {
+   "title": "朱华荣卸任，赵非接棒，长安汽车要重新找回增长",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "但放在当前的经营环境下，这次调整显然还有更深一层的现实意义。2026年前9个月，长安汽车累计销量约169.27万辆，同比下降18.07%；上半年归母净利润约8.17亿元，同比下降64.32%。 对于刚刚完成独立央企组建的中国长安而言，组织架构已经搭建起来，接下来真正需要证明的，是这套新体系能否帮助长安汽车改善经营表现。一、两级公司重新划分权责2025年7月，中国长安正式成立。 长安汽车产销快报显示"
+  },
+  {
+   "title": "中国长安总经理赵非：AI正重塑汽车产业竞争格局，安全是智能网联发展的底线",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "10月21日，在2026世界智能网联汽车大会上，中国长安汽车集团有限公司总经理赵非围绕“AI赋能数智互联—共筑汽车产业新生态”作主题分享。 中国长安汽车集团有限公司总经理赵非围绕“AI赋能数智互联—共筑汽车产业新生态”作主题分享赵非表示，智能网联汽车正在成为端侧物理AI落地时间最近、渗透率提升最快、应用规模最大的载体。 随着L2级组合驾驶辅助和NOA功能渗透率持续提升，用户对智能辅助驾驶的需求已经"
+  }
+ ],
+ "analysis": {
+  "rating": "减持",
+  "summary": "长安汽车2026H1营收656.34亿元，归母净利润仅8.17亿元，毛利率14.50%、ROE 1.06%，经营活动现金流-114.13亿元。估值端PE(TTM)26.94倍、PB 0.94倍。技术面收盘7.07元，处于低位。核心矛盾：新能源转型期价格战导致微利，现金流大幅为负反映营运资本占用与投入压力，PE 26.94倍对应1.06%的ROE严重错配，虽有PB 0.94倍的破净保护，但盈利拐点尚未出现。",
+  "bull_points": [
+   "PB 0.94倍破净：资产提供一定安全边际，若盈利修复弹性大",
+   "国企背景：长安集团资源支持，与华为、宁德时代等合作深化",
+   "新能源转型：深蓝/阿维塔/启源三大品牌覆盖主流价格带",
+   "出口增长：海外市场成为重要增量，缓解国内价格战压力"
+  ],
+  "bear_points": [
+   "盈利极弱：归母净利润8.17亿元、ROE 1.06%，价格战下近乎盈亏平衡",
+   "现金流大幅为负：经营活动现金流-114.13亿元，营运资本占用严重",
+   "估值错配：PE(TTM)26.94倍对应ROE 1.06%，缺乏业绩支撑",
+   "行业价格战：新能源车价格竞争激烈，毛利率14.50%仍在下行通道"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 14.5004,
+   "ttm": 15.5504,
+   "net_margin": 0.2753,
+   "roe": 3.4212,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "低毛利的新能源占比提升+高毛利合资板块萎缩，双向拉低综合毛利",
+    "price_vs_cost": "行业价格战使单车售价持续下行，电池成本下降被价格战抵消",
+    "new_business_drag": "深蓝/阿维塔等新品牌前期投入巨大，尚未形成规模效应"
+   },
+   "note": "长安毛利率14.50%在车企中偏低，价格战是主因。核心问题不在毛利而在费用与现金流：-114.13亿元经营现金流对应8.17亿元净利润，说明利润是账面的、现金是流出的，这种状态不可持续，必须依靠融资或压缩投入维持。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 0.9357,
+   "ps_ttm": 0.4466,
+   "pe_ttm": 26.9409,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 656.34,
+   "net_profit": 8.17,
+   "total_assets": 1876.89,
+   "total_liabilities": 1079.91,
+   "net_assets": 760.37,
+   "operating_cash_flow": -114.13,
+   "asset_liability_ratio": 57.54,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 7.06,
+   "ma20": 7.07,
+   "ema20": 7.07,
+   "rsi14": 51.32,
+   "macd": {
+    "dif": -0.02,
+    "dea": -0.02,
+    "hist": -0.001
+   },
+   "close": 7.07,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "价格战持续",
+    "severity": "高",
+    "detail": "新能源车价格竞争若继续，毛利率可能进一步下行"
+   },
+   {
+    "type": "现金流断裂风险",
+    "severity": "中高",
+    "detail": "经营现金流-114.13亿元，持续为负将迫使股权融资稀释"
+   },
+   {
+    "type": "新品牌亏损",
+    "severity": "中高",
+    "detail": "阿维塔等新品牌尚在投入期，亏损扩大风险"
+   },
+   {
+    "type": "合资板块萎缩",
+    "severity": "中",
+    "detail": "福特/马自达等合资品牌市场份额持续下滑"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "悲观",
+    "assumption": "价格战延续+新品牌亏损扩大，全年净利润可能转亏",
+    "valuation": "PB 0.7倍，对应市值约430亿元",
+    "upside": "-35%"
+   }
+  ],
+  "catalysts": [
+   "月度新能源销量与品牌结构",
+   "毛利率能否止跌回升",
+   "经营现金流转正时点",
+   "与华为合作车型上市进度"
+  ],
+  "falsification": [
+   "全年归母净利润转亏",
+   "经营现金流连续两季大额为负",
+   "综合毛利率跌破13%",
+   "被迫进行大额股权融资"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润（阈值：转亏）",
+   "综合毛利率（阈值：<13%）",
+   "经营现金流（阈值：连续两季为负）",
+   "新能源销量占比（目标：持续提升）"
+  ]
+ },
+ "_data": {
+  "code": "000625.SZ",
+  "name": "长安汽车",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "汽车--乘用车--综合乘用车",
+  "main_business": "制造和销售汽车(含轿车)、制造汽车发动机系列产品",
+  "business_mix": "销售商品:94.9631%;提供劳务及其他:5.0369%",
+  "gross_margin_mrq": 14.5004,
+  "gross_margin_ttm": 15.5504,
+  "net_margin": 0.2753,
+  "roe_ttm": 3.4212,
+  "roic": 0.0467,
+  "ps_ttm": 0.4466,
+  "revenue": 656.34,
+  "net_profit": 8.17,
+  "total_assets": 1876.89,
+  "total_liabilities": 1079.91,
+  "net_assets": 760.37,
+  "operating_cash_flow": -114.13
+ },
+ "indicators": {
+  "ma5": 7.06,
+  "ma20": 7.07,
+  "ema20": 7.07,
+  "rsi14": 51.32,
+  "macd": {
+   "dif": -0.02,
+   "dea": -0.02,
+   "hist": -0.001
+  }
+ }
+}
