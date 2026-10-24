@@ -1,0 +1,570 @@
+{
+ "id": "CN-000975-2026-10-24",
+ "symbol": "000975",
+ "market": "CN",
+ "name": "山金国际",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "山金国际",
+  "industry": "有色金属",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "贵金属和有色金属矿采选及金属贸易"
+ },
+ "overview": {
+  "price": 23.45,
+  "change_pct": -0.2128,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "黄金龙头ROE 20.37%，PE 17.5倍，现金流43亿受益金价上行",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 28.3,
+   "high": null,
+   "low": null,
+   "close": 27.9,
+   "volume": 8763,
+   "change_pct": 4.1045
+  },
+  {
+   "date": "20260821",
+   "open": 28.3,
+   "high": null,
+   "low": null,
+   "close": 28.58,
+   "volume": 7165,
+   "change_pct": 2.4373
+  },
+  {
+   "date": "20260824",
+   "open": 28.85,
+   "high": null,
+   "low": null,
+   "close": 29.26,
+   "volume": 8117,
+   "change_pct": 2.3793
+  },
+  {
+   "date": "20260825",
+   "open": 29.26,
+   "high": null,
+   "low": null,
+   "close": 27.8,
+   "volume": 5588,
+   "change_pct": -4.9897
+  },
+  {
+   "date": "20260826",
+   "open": 27.86,
+   "high": null,
+   "low": null,
+   "close": 27.37,
+   "volume": 5011,
+   "change_pct": -1.5468
+  },
+  {
+   "date": "20260827",
+   "open": 27.37,
+   "high": null,
+   "low": null,
+   "close": 27.4,
+   "volume": 5810,
+   "change_pct": 0.1096
+  },
+  {
+   "date": "20260828",
+   "open": 27.0,
+   "high": null,
+   "low": null,
+   "close": 27.31,
+   "volume": 4249,
+   "change_pct": -0.3285
+  },
+  {
+   "date": "20260831",
+   "open": 25.9,
+   "high": null,
+   "low": null,
+   "close": 26.35,
+   "volume": 7653,
+   "change_pct": -3.5152
+  },
+  {
+   "date": "20260901",
+   "open": 26.35,
+   "high": null,
+   "low": null,
+   "close": 26.4,
+   "volume": 4600,
+   "change_pct": 0.1898
+  },
+  {
+   "date": "20260902",
+   "open": 25.6,
+   "high": null,
+   "low": null,
+   "close": 26.48,
+   "volume": 4846,
+   "change_pct": 0.303
+  },
+  {
+   "date": "20260903",
+   "open": 26.9,
+   "high": null,
+   "low": null,
+   "close": 26.64,
+   "volume": 4652,
+   "change_pct": 0.6042
+  },
+  {
+   "date": "20260904",
+   "open": 27.04,
+   "high": null,
+   "low": null,
+   "close": 26.25,
+   "volume": 4163,
+   "change_pct": -1.464
+  },
+  {
+   "date": "20260907",
+   "open": 25.73,
+   "high": null,
+   "low": null,
+   "close": 25.8,
+   "volume": 3190,
+   "change_pct": -1.7143
+  },
+  {
+   "date": "20260908",
+   "open": 26.1,
+   "high": null,
+   "low": null,
+   "close": 25.8,
+   "volume": 3467,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260909",
+   "open": 25.58,
+   "high": null,
+   "low": null,
+   "close": 25.98,
+   "volume": 3335,
+   "change_pct": 0.6977
+  },
+  {
+   "date": "20260910",
+   "open": 25.98,
+   "high": null,
+   "low": null,
+   "close": 25.87,
+   "volume": 2170,
+   "change_pct": -0.4234
+  },
+  {
+   "date": "20260911",
+   "open": 25.15,
+   "high": null,
+   "low": null,
+   "close": 25.39,
+   "volume": 3760,
+   "change_pct": -1.8554
+  },
+  {
+   "date": "20260914",
+   "open": 24.93,
+   "high": null,
+   "low": null,
+   "close": 25.69,
+   "volume": 3057,
+   "change_pct": 1.1816
+  },
+  {
+   "date": "20260915",
+   "open": 25.6,
+   "high": null,
+   "low": null,
+   "close": 25.45,
+   "volume": 2238,
+   "change_pct": -0.9342
+  },
+  {
+   "date": "20260916",
+   "open": 25.45,
+   "high": null,
+   "low": null,
+   "close": 26.52,
+   "volume": 3707,
+   "change_pct": 4.2043
+  },
+  {
+   "date": "20260917",
+   "open": 25.99,
+   "high": null,
+   "low": null,
+   "close": 25.02,
+   "volume": 6413,
+   "change_pct": -5.6561
+  },
+  {
+   "date": "20260918",
+   "open": 25.67,
+   "high": null,
+   "low": null,
+   "close": 25.51,
+   "volume": 4666,
+   "change_pct": 1.9584
+  },
+  {
+   "date": "20260921",
+   "open": 25.29,
+   "high": null,
+   "low": null,
+   "close": 24.62,
+   "volume": 4279,
+   "change_pct": -3.4888
+  },
+  {
+   "date": "20260922",
+   "open": 24.56,
+   "high": null,
+   "low": null,
+   "close": 24.2,
+   "volume": 3198,
+   "change_pct": -1.7059
+  },
+  {
+   "date": "20260923",
+   "open": 24.32,
+   "high": null,
+   "low": null,
+   "close": 24.28,
+   "volume": 2139,
+   "change_pct": 0.3306
+  },
+  {
+   "date": "20260924",
+   "open": 23.8,
+   "high": null,
+   "low": null,
+   "close": 23.17,
+   "volume": 4826,
+   "change_pct": -4.5717
+  },
+  {
+   "date": "20260928",
+   "open": 22.53,
+   "high": null,
+   "low": null,
+   "close": 22.13,
+   "volume": 4108,
+   "change_pct": -4.4886
+  },
+  {
+   "date": "20260929",
+   "open": 21.99,
+   "high": null,
+   "low": null,
+   "close": 22.27,
+   "volume": 3483,
+   "change_pct": 0.6326
+  },
+  {
+   "date": "20260930",
+   "open": 22.3,
+   "high": null,
+   "low": null,
+   "close": 22.76,
+   "volume": 3162,
+   "change_pct": 2.2003
+  },
+  {
+   "date": "20261008",
+   "open": 22.29,
+   "high": null,
+   "low": null,
+   "close": 22.14,
+   "volume": 2307,
+   "change_pct": -2.7241
+  },
+  {
+   "date": "20261009",
+   "open": 22.37,
+   "high": null,
+   "low": null,
+   "close": 23.86,
+   "volume": 6288,
+   "change_pct": 7.7687
+  },
+  {
+   "date": "20261012",
+   "open": 23.73,
+   "high": null,
+   "low": null,
+   "close": 23.3,
+   "volume": 6206,
+   "change_pct": -2.347
+  },
+  {
+   "date": "20261013",
+   "open": 22.85,
+   "high": null,
+   "low": null,
+   "close": 23.8,
+   "volume": 4425,
+   "change_pct": 2.1459
+  },
+  {
+   "date": "20261014",
+   "open": 23.51,
+   "high": null,
+   "low": null,
+   "close": 23.44,
+   "volume": 3261,
+   "change_pct": -1.5126
+  },
+  {
+   "date": "20261015",
+   "open": 23.3,
+   "high": null,
+   "low": null,
+   "close": 23.75,
+   "volume": 5842,
+   "change_pct": 1.3225
+  },
+  {
+   "date": "20261016",
+   "open": 24.17,
+   "high": null,
+   "low": null,
+   "close": 24.63,
+   "volume": 6048,
+   "change_pct": 3.7053
+  },
+  {
+   "date": "20261019",
+   "open": 24.35,
+   "high": null,
+   "low": null,
+   "close": 25.03,
+   "volume": 5152,
+   "change_pct": 1.624
+  },
+  {
+   "date": "20261020",
+   "open": 24.11,
+   "high": null,
+   "low": null,
+   "close": 24.28,
+   "volume": 4536,
+   "change_pct": -2.9964
+  },
+  {
+   "date": "20261021",
+   "open": 23.98,
+   "high": null,
+   "low": null,
+   "close": 24.31,
+   "volume": 2781,
+   "change_pct": 0.1236
+  },
+  {
+   "date": "20261022",
+   "open": 24.18,
+   "high": null,
+   "low": null,
+   "close": 23.5,
+   "volume": 3763,
+   "change_pct": -3.332
+  },
+  {
+   "date": "20261023",
+   "open": 22.79,
+   "high": null,
+   "low": null,
+   "close": 23.45,
+   "volume": 4794,
+   "change_pct": -0.2128
+  }
+ ],
+ "financials": {
+  "revenue": 136.25,
+  "revenue_yoy": -9.1419,
+  "net_profit": 32.01,
+  "net_profit_yoy": 32.0013,
+  "roe": 20.37,
+  "pe_ttm": 17.5082,
+  "pb": 3.8992,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "山金国际：第三季度净利润同比下降9.14%",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "2026年10月23日 19:52:15查看原文财联社10月23日电，山金国际(000975.SZ)公告称，第三季度营业收入为39.66亿元，同比下降31.03%；归属于上市公司股东的净利润为7.85亿元，同比下降9.14%。前三季度实现营业收入136.25亿元，同比下降9.14%；归属于上市公司股东的净利润为32.01亿元，同比增长30.16%。小财注：公司Q3净利润7.85亿，Q2净利润10."
+  },
+  {
+   "title": "山金国际：第三季度归母净利润7.85亿元，同比下降9.14%",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "山金国际：第三季度归母净利润7.85亿元，同比下降9.14%2026-10-24 01:17发布于：浙江省山金国际公告，前三季度实现营收136.25亿元，同比下降9.14%；归母净利润32.01亿元，同比增长30.16%。第三季度实现营收39.66亿元，同比下降31.03%；归母净利润7.85亿元，同比下降9.14%。返回搜狐，查看更多阅读 ()"
+  },
+  {
+   "title": "赤峰黄金、山金国际、恒邦股份第三季度营收均同比下滑,赤峰黄金下调2026年黄金产销量目标",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "赤峰黄金、山金国际、恒邦股份第三季度营收均同比下滑，赤峰黄金下调 2026 年黄金产销量目标\n市场资讯 2026-10-24 08:24:37\n10 月 23 日盘后，赤峰黄金（600988.SH）、山金国际（000975.SZ）、恒邦股份（002237.SZ）同日披露 2026 年三季度报告，三家公司第三季度单季营收均同比下滑。\n此前 10 月 22 日晚，四川黄金（001337.SZ）、湖南黄"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "山金国际2026H1营收136.25亿元，归母净利润32.01亿元，毛利率42.11%、ROE 20.37%，经营活动现金流43.46亿元，资产负债率仅27%。估值端PE(TTM)17.51倍、PB 3.90倍。技术面收盘23.45元，处于高位。核心逻辑：黄金矿业龙头，受益金价上行周期，毛利率42.11%与ROE 20.37%体现资源属性，现金流43.46亿元极为充沛，财务结构稳健；风险在于金价回调与资源接续。",
+  "bull_points": [
+   "金价上行受益：归母净利润32.01亿元，毛利率42.11%，直接受益金价上涨",
+   "ROE 20.37%：矿业公司中顶尖水平，资本回报效率高",
+   "现金流充沛：经营活动现金流43.46亿元，覆盖净利润",
+   "财务稳健：资产负债率仅27%，扩张能力强"
+  ],
+  "bear_points": [
+   "金价回调风险：业绩与金价强相关，价格回落将直接冲击盈利",
+   "PB 3.90倍偏高：已较充分反映金价上行预期",
+   "资源接续压力：矿山开采周期长，需持续勘探与并购",
+   "成本上行：矿石品位下降与人工成本上升压缩毛利"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 42.1084,
+   "ttm": 44.008,
+   "net_margin": 26.182,
+   "roe": 22.271,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "自产金与贸易金结构决定综合毛利，自产金占比是核心",
+    "price_vs_cost": "金价是决定变量，矿山品位下降与人工成本上行是逆风",
+    "new_business_drag": "海外矿山与勘探前期投入"
+   },
+   "note": "山金国际毛利率42.11%在矿业公司中属优秀，核心来源于低成本矿山与高金价。需注意金价是外生变量而非公司能力，因此毛利率的可持续性完全取决于金价走势。ROE 20.37%与43.46亿元现金流是真实的竞争力体现，但估值PB 3.90倍已部分透支金价预期。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 3.8992,
+   "ps_ttm": 4.1338,
+   "pe_ttm": 17.5082,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 136.25,
+   "net_profit": 32.01,
+   "total_assets": 254.18,
+   "total_liabilities": 68.26,
+   "net_assets": 166.74,
+   "operating_cash_flow": 43.46,
+   "asset_liability_ratio": 26.85,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 24.11,
+   "ma20": 23.72,
+   "ema20": 24.13,
+   "rsi14": 58.66,
+   "macd": {
+    "dif": -0.456,
+    "dea": -0.61,
+    "hist": 0.308
+   },
+   "close": 23.45,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "金价大幅回调",
+    "severity": "高",
+    "detail": "业绩与金价强相关，是决定性变量"
+   },
+   {
+    "type": "资源接续不足",
+    "severity": "中高",
+    "detail": "矿山有开采周期，需持续勘探与并购维持产量"
+   },
+   {
+    "type": "成本上行",
+    "severity": "中",
+    "detail": "矿石品位下降与人工成本上升压缩毛利"
+   },
+   {
+    "type": "海外经营风险",
+    "severity": "中",
+    "detail": "海外矿山面临政治与政策风险"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "金价维持高位+产量增长，2027年净利润达70亿元",
+    "valuation": "20倍PE，对应约1400亿市值",
+    "upside": "+25%"
+   }
+  ],
+  "catalysts": [
+   "国际金价走势（核心变量）",
+   "自产金产量与成本",
+   "矿山勘探与并购进展",
+   "三季报毛利率变化"
+  ],
+  "falsification": [
+   "金价大幅回调",
+   "自产金产量显著下滑",
+   "综合毛利率跌破35%",
+   "归母净利润同比降幅超30%"
+  ],
+  "kpi_tracking": [
+   "自产金产量（目标：持续增长）",
+   "综合毛利率（阈值：<35%）",
+   "克金成本（阈值：显著上升）",
+   "国际金价（阈值：大幅回调）"
+  ]
+ },
+ "_data": {
+  "code": "000975.SZ",
+  "name": "山金国际",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "有色金属--贵金属--黄金",
+  "main_business": "贵金属和有色金属矿采选及金属贸易",
+  "business_mix": "铜贸易:33.2697%;矿产金:32.1938%;白银贸易:16.5382%;锡锭贸易:6.9930%;铅锌精矿含银:6.0038%;锌精矿:1.6240%;铅精矿:0.9867%;锌锭贸易:0.8015%;矿产金含银:0.7831%;铝贸易:0.7564%;其他:0.0498%",
+  "gross_margin_mrq": 42.1084,
+  "gross_margin_ttm": 44.008,
+  "net_margin": 26.182,
+  "roe_ttm": 22.271,
+  "roic": 18.1773,
+  "ps_ttm": 4.1338,
+  "revenue": 136.25,
+  "net_profit": 32.01,
+  "total_assets": 254.18,
+  "total_liabilities": 68.26,
+  "net_assets": 166.74,
+  "operating_cash_flow": 43.46
+ },
+ "indicators": {
+  "ma5": 24.11,
+  "ma20": 23.72,
+  "ema20": 24.13,
+  "rsi14": 58.66,
+  "macd": {
+   "dif": -0.456,
+   "dea": -0.61,
+   "hist": 0.308
+  }
+ }
+}
