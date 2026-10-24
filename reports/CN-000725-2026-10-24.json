@@ -1,0 +1,570 @@
+{
+ "id": "CN-000725-2026-10-24",
+ "symbol": "000725",
+ "market": "CN",
+ "name": "京东方A",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "京东方A",
+  "industry": "电子",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "显示器件业务、智慧系统产品业务、智慧健康服务业务"
+ },
+ "overview": {
+  "price": 4.93,
+  "change_pct": 1.4403,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "面板龙头现金流227亿+周期复苏，PB 1.37倍估值有吸引力",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 6.07,
+   "high": 6.09,
+   "low": 5.87,
+   "close": 5.9,
+   "volume": 15,
+   "change_pct": -1.8303
+  },
+  {
+   "date": "20260821",
+   "open": 5.88,
+   "high": 6.05,
+   "low": 5.79,
+   "close": 6.0,
+   "volume": 13,
+   "change_pct": 1.6949
+  },
+  {
+   "date": "20260824",
+   "open": 5.99,
+   "high": 5.99,
+   "low": 5.68,
+   "close": 5.75,
+   "volume": 14,
+   "change_pct": -4.1667
+  },
+  {
+   "date": "20260825",
+   "open": 5.65,
+   "high": 5.79,
+   "low": 5.53,
+   "close": 5.74,
+   "volume": 10,
+   "change_pct": -0.1739
+  },
+  {
+   "date": "20260826",
+   "open": 5.75,
+   "high": 5.78,
+   "low": 5.69,
+   "close": 5.72,
+   "volume": 8,
+   "change_pct": -0.3484
+  },
+  {
+   "date": "20260827",
+   "open": 5.75,
+   "high": 5.95,
+   "low": 5.74,
+   "close": 5.94,
+   "volume": 14,
+   "change_pct": 3.8462
+  },
+  {
+   "date": "20260828",
+   "open": 5.9,
+   "high": 5.98,
+   "low": 5.86,
+   "close": 5.92,
+   "volume": 10,
+   "change_pct": -0.3367
+  },
+  {
+   "date": "20260831",
+   "open": 5.79,
+   "high": 6.02,
+   "low": 5.75,
+   "close": 6.01,
+   "volume": 14,
+   "change_pct": 1.5203
+  },
+  {
+   "date": "20260901",
+   "open": 6.01,
+   "high": 6.01,
+   "low": 5.89,
+   "close": 5.91,
+   "volume": 10,
+   "change_pct": -1.6639
+  },
+  {
+   "date": "20260902",
+   "open": 5.83,
+   "high": 5.84,
+   "low": 5.78,
+   "close": 5.79,
+   "volume": 8,
+   "change_pct": -2.0305
+  },
+  {
+   "date": "20260903",
+   "open": 5.83,
+   "high": 5.84,
+   "low": 5.66,
+   "close": 5.71,
+   "volume": 9,
+   "change_pct": -1.3817
+  },
+  {
+   "date": "20260904",
+   "open": 5.74,
+   "high": 5.77,
+   "low": 5.58,
+   "close": 5.61,
+   "volume": 10,
+   "change_pct": -1.7513
+  },
+  {
+   "date": "20260907",
+   "open": 5.66,
+   "high": 5.72,
+   "low": 5.61,
+   "close": 5.68,
+   "volume": 9,
+   "change_pct": 1.2478
+  },
+  {
+   "date": "20260908",
+   "open": 5.65,
+   "high": 5.66,
+   "low": 5.55,
+   "close": 5.56,
+   "volume": 10,
+   "change_pct": -2.1127
+  },
+  {
+   "date": "20260909",
+   "open": 5.61,
+   "high": 5.63,
+   "low": 5.52,
+   "close": 5.55,
+   "volume": 7,
+   "change_pct": -0.1799
+  },
+  {
+   "date": "20260910",
+   "open": 5.51,
+   "high": 5.52,
+   "low": 5.45,
+   "close": 5.46,
+   "volume": 8,
+   "change_pct": -1.6216
+  },
+  {
+   "date": "20260911",
+   "open": 5.37,
+   "high": 5.4,
+   "low": 5.21,
+   "close": 5.33,
+   "volume": 11,
+   "change_pct": -2.381
+  },
+  {
+   "date": "20260914",
+   "open": 5.26,
+   "high": 5.36,
+   "low": 5.23,
+   "close": 5.3,
+   "volume": 6,
+   "change_pct": -0.5629
+  },
+  {
+   "date": "20260915",
+   "open": 5.26,
+   "high": 5.32,
+   "low": 5.25,
+   "close": 5.27,
+   "volume": 5,
+   "change_pct": -0.566
+  },
+  {
+   "date": "20260916",
+   "open": 5.28,
+   "high": 5.45,
+   "low": 5.23,
+   "close": 5.45,
+   "volume": 10,
+   "change_pct": 3.4156
+  },
+  {
+   "date": "20260917",
+   "open": 5.42,
+   "high": 5.81,
+   "low": 5.42,
+   "close": 5.75,
+   "volume": 23,
+   "change_pct": 5.5046
+  },
+  {
+   "date": "20260918",
+   "open": 5.78,
+   "high": 5.95,
+   "low": 5.75,
+   "close": 5.92,
+   "volume": 21,
+   "change_pct": 2.9565
+  },
+  {
+   "date": "20260921",
+   "open": 6.0,
+   "high": 6.18,
+   "low": 5.97,
+   "close": 6.07,
+   "volume": 18,
+   "change_pct": 2.5338
+  },
+  {
+   "date": "20260922",
+   "open": 6.12,
+   "high": 6.15,
+   "low": 5.98,
+   "close": 6.0,
+   "volume": 15,
+   "change_pct": -1.1532
+  },
+  {
+   "date": "20260923",
+   "open": 6.09,
+   "high": 6.31,
+   "low": 5.99,
+   "close": 6.02,
+   "volume": 16,
+   "change_pct": 0.3333
+  },
+  {
+   "date": "20260924",
+   "open": 5.97,
+   "high": 6.03,
+   "low": 5.83,
+   "close": 5.85,
+   "volume": 11,
+   "change_pct": -2.8239
+  },
+  {
+   "date": "20260928",
+   "open": 6.02,
+   "high": 6.09,
+   "low": 5.76,
+   "close": 5.8,
+   "volume": 14,
+   "change_pct": -0.8547
+  },
+  {
+   "date": "20260929",
+   "open": 5.72,
+   "high": 5.8,
+   "low": 5.62,
+   "close": 5.71,
+   "volume": 9,
+   "change_pct": -1.5517
+  },
+  {
+   "date": "20260930",
+   "open": 5.73,
+   "high": 5.88,
+   "low": 5.69,
+   "close": 5.72,
+   "volume": 9,
+   "change_pct": 0.1751
+  },
+  {
+   "date": "20261008",
+   "open": 5.7,
+   "high": 5.79,
+   "low": 5.47,
+   "close": 5.5,
+   "volume": 10,
+   "change_pct": -3.8462
+  },
+  {
+   "date": "20261009",
+   "open": 5.5,
+   "high": 5.53,
+   "low": 5.32,
+   "close": 5.5,
+   "volume": 9,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20261012",
+   "open": 5.5,
+   "high": 5.5,
+   "low": 5.33,
+   "close": 5.33,
+   "volume": 7,
+   "change_pct": -3.0909
+  },
+  {
+   "date": "20261013",
+   "open": 5.25,
+   "high": 5.39,
+   "low": 5.19,
+   "close": 5.35,
+   "volume": 9,
+   "change_pct": 0.3752
+  },
+  {
+   "date": "20261014",
+   "open": 5.32,
+   "high": 5.33,
+   "low": 5.17,
+   "close": 5.19,
+   "volume": 8,
+   "change_pct": -2.9907
+  },
+  {
+   "date": "20261015",
+   "open": 5.06,
+   "high": 5.08,
+   "low": 4.99,
+   "close": 5.05,
+   "volume": 9,
+   "change_pct": -2.6975
+  },
+  {
+   "date": "20261016",
+   "open": 5.1,
+   "high": 5.18,
+   "low": 5.05,
+   "close": 5.13,
+   "volume": 7,
+   "change_pct": 1.5842
+  },
+  {
+   "date": "20261019",
+   "open": 5.08,
+   "high": 5.11,
+   "low": 4.97,
+   "close": 5.06,
+   "volume": 6,
+   "change_pct": -1.3645
+  },
+  {
+   "date": "20261020",
+   "open": 5.04,
+   "high": 5.1,
+   "low": 5.01,
+   "close": 5.04,
+   "volume": 6,
+   "change_pct": -0.3953
+  },
+  {
+   "date": "20261021",
+   "open": 5.08,
+   "high": 5.11,
+   "low": 5.04,
+   "close": 5.05,
+   "volume": 6,
+   "change_pct": 0.1984
+  },
+  {
+   "date": "20261022",
+   "open": 5.06,
+   "high": 5.07,
+   "low": 4.82,
+   "close": 4.86,
+   "volume": 10,
+   "change_pct": -3.7624
+  },
+  {
+   "date": "20261023",
+   "open": 4.76,
+   "high": 4.94,
+   "low": 4.63,
+   "close": 4.93,
+   "volume": 11,
+   "change_pct": 1.4403
+  }
+ ],
+ "financials": {
+  "revenue": 1031.32,
+  "revenue_yoy": 1.8308,
+  "net_profit": 52.48,
+  "net_profit_yoy": 66.0887,
+  "roe": 3.82,
+  "pe_ttm": 23.2419,
+  "pb": 1.3717,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "京东方A增持股份计划圆满结束，市场反应如何？",
+   "source": "同花顺财经",
+   "date": "2026-10-14",
+   "sentiment": "neutral",
+   "summary": "10月14日，京东方A（股票代码：000725）发布公告，宣布其控股股东北京电子控股有限责任公司于2026年7月29日至2026年10月13日通过集中竞价交易方式，成功增持公司A股股份186120000股，占公司总股本的0.50%。此次增持的总金额达999777764.30元（不含交易费用），标志着增持计划的圆满完成。\n本次增持后的股权结构显示，北京电控的权益由12.58%上升至13.08%，成功"
+  },
+  {
+   "title": "京东方A(000725) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "京东方A(000725) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 21 家机构对京东方A的2026年度业绩作出预测；\n预测2026年每股收益 0.23 元，较去年同比增长 43.75%， 预测2026年净利润 84.82 亿元，较去年同比增长 44.82%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"0.05\","
+  },
+  {
+   "title": "京东方ARSI6连续超卖10日",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "2026年10月21日，京东方A收盘报5.05元，较上一交易日上涨0.2%。从当日的技术指标看，6日RSI为23.15，已连续10个交易日低于30，处于超卖区；BIAS6为-0.72%。 近20个交易日，京东方A股价累计下跌7.34%，期间最高于9月21日收6.07元，最低于10月20日收5.04元。 京东方A收盘价与RSI6、BIAS6近20个交易日走势 注：本文技术指标均按日线数据计算，RSI"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "京东方A 2026H1营收1031.32亿元，归母净利润52.48亿元，毛利率15.03%、ROE 3.82%，经营活动现金流227.45亿元。估值端PE(TTM)23.24倍、PB 1.37倍。技术面收盘4.93元，处于底部区域。核心逻辑：LCD面板全球龙头，行业产能出清后周期回升，OLED业务逐步减亏，227.45亿元经营现金流极为强劲，PB 1.37倍提供安全边际；风险在于面板价格波动与OLED持续亏损。",
+  "bull_points": [
+   "现金流极强：经营活动现金流227.45亿元，为归母净利润52.48亿元的4.3倍",
+   "PB 1.37倍：重资产面板龙头中估值偏低，安全边际充足",
+   "行业格局改善：LCD产能出清完成，双寡头格局下价格战趋缓",
+   "OLED减亏：柔性OLED业务随良率提升与客户拓展持续减亏"
+  ],
+  "bear_points": [
+   "ROE 3.82%偏低：重资产属性下资本回报率仍待改善",
+   "PE 23.24倍偏高：利润基数低导致PE失真，需看PB与周期位置",
+   "面板价格波动：LCD价格若再度下行将直接冲击盈利",
+   "OLED持续亏损：柔性OLED投入巨大，盈利时点不确定"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 15.0316,
+   "ttm": 15.9364,
+   "net_margin": 4.8781,
+   "roe": 5.902,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "OLED占比提升会先拉低综合毛利率（OLED初期亏损），长期才改善",
+    "price_vs_cost": "LCD面板价格是毛利率的核心变量，双寡头格局下议价力增强",
+    "new_business_drag": "OLED产线折旧压力大，是压制综合毛利率的主因"
+   },
+   "note": "京东方毛利率15.03%属面板行业正常水平，其盈利呈强周期特征——LCD价格是毛利率的决定变量。227.45亿元经营现金流是核心亮点，说明即便在微利状态下，巨额折旧仍能通过现金流收回，这是重资产周期股底部的重要安全信号。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 1.3717,
+   "ps_ttm": 0.8846,
+   "pe_ttm": 23.2419,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 1031.32,
+   "net_profit": 52.48,
+   "total_assets": 4390.55,
+   "total_liabilities": 2313.47,
+   "net_assets": 1331.36,
+   "operating_cash_flow": 227.45,
+   "asset_liability_ratio": 52.69,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 4.99,
+   "ma20": 5.45,
+   "ema20": 5.3,
+   "rsi14": 15.2,
+   "macd": {
+    "dif": -0.21,
+    "dea": -0.156,
+    "hist": -0.108
+   },
+   "close": 4.93,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "面板价格再度下行",
+    "severity": "高",
+    "detail": "LCD价格若因新增产能再度下跌，盈利将快速回落"
+   },
+   {
+    "type": "OLED持续亏损",
+    "severity": "中高",
+    "detail": "柔性OLED投入大、盈利时点不确定"
+   },
+   {
+    "type": "重资产折旧压力",
+    "severity": "中",
+    "detail": "巨额产线折旧在需求疲软期严重压制利润"
+   },
+   {
+    "type": "技术路线变化",
+    "severity": "中",
+    "detail": "Mini LED、Micro LED等新技术可能冲击现有格局"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "LCD价格回升+OLED盈亏平衡，2027年净利润达150亿元",
+    "valuation": "18倍PE，对应约2700亿市值",
+    "upside": "+40%"
+   }
+  ],
+  "catalysts": [
+   "LCD面板价格月度走势（核心变量）",
+   "OLED业务减亏进度",
+   "行业新增产能投放节奏",
+   "三季报收入与毛利率"
+  ],
+  "falsification": [
+   "LCD价格再度大幅下跌",
+   "单季归母净利润转亏",
+   "OLED亏损重新扩大",
+   "综合毛利率跌破13%"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润（阈值：转亏）",
+   "综合毛利率（阈值：<13%）",
+   "经营现金流（阈值：大幅下滑）",
+   "OLED业务减亏进度（目标：持续减亏）"
+  ]
+ },
+ "_data": {
+  "code": "000725.SZ",
+  "name": "京东方A",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "电子--光学光电子--面板",
+  "main_business": "显示器件业务、智慧系统产品业务、智慧健康服务业务",
+  "business_mix": "显示器件业务:76.6292%;物联网创新业务:17.9348%;MLED业务:4.2897%;智慧医工业务:0.8758%;传感业务:0.2705%",
+  "gross_margin_mrq": 15.0316,
+  "gross_margin_ttm": 15.9364,
+  "net_margin": 4.8781,
+  "roe_ttm": 5.902,
+  "roic": 1.5758,
+  "ps_ttm": 0.8846,
+  "revenue": 1031.32,
+  "net_profit": 52.48,
+  "total_assets": 4390.55,
+  "total_liabilities": 2313.47,
+  "net_assets": 1331.36,
+  "operating_cash_flow": 227.45
+ },
+ "indicators": {
+  "ma5": 4.99,
+  "ma20": 5.45,
+  "ema20": 5.3,
+  "rsi14": 15.2,
+  "macd": {
+   "dif": -0.21,
+   "dea": -0.156,
+   "hist": -0.108
+  }
+ }
+}
