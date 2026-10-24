@@ -1,0 +1,570 @@
+{
+ "id": "CN-000963-2026-10-24",
+ "symbol": "000963",
+ "market": "CN",
+ "name": "华东医药",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "华东医药",
+  "industry": "主板",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": ""
+ },
+ "overview": {
+  "price": 26.38,
+  "change_pct": 1.4615,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "医药+医美双轮，PE仅13.37倍，现金流25亿稳健",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 29.72,
+   "high": null,
+   "low": null,
+   "close": 29.92,
+   "volume": 6630,
+   "change_pct": 4.9825
+  },
+  {
+   "date": "20260821",
+   "open": 29.39,
+   "high": null,
+   "low": null,
+   "close": 28.1,
+   "volume": 5531,
+   "change_pct": -6.0829
+  },
+  {
+   "date": "20260824",
+   "open": 27.8,
+   "high": null,
+   "low": null,
+   "close": 27.15,
+   "volume": 2691,
+   "change_pct": -3.3808
+  },
+  {
+   "date": "20260825",
+   "open": 27.05,
+   "high": null,
+   "low": null,
+   "close": 27.28,
+   "volume": 1290,
+   "change_pct": 0.4788
+  },
+  {
+   "date": "20260826",
+   "open": 27.31,
+   "high": null,
+   "low": null,
+   "close": 27.31,
+   "volume": 1577,
+   "change_pct": 0.11
+  },
+  {
+   "date": "20260827",
+   "open": 27.53,
+   "high": null,
+   "low": null,
+   "close": 27.68,
+   "volume": 1601,
+   "change_pct": 1.3548
+  },
+  {
+   "date": "20260828",
+   "open": 27.6,
+   "high": null,
+   "low": null,
+   "close": 27.66,
+   "volume": 1082,
+   "change_pct": -0.0723
+  },
+  {
+   "date": "20260831",
+   "open": 27.49,
+   "high": null,
+   "low": null,
+   "close": 27.26,
+   "volume": 1508,
+   "change_pct": -1.4461
+  },
+  {
+   "date": "20260901",
+   "open": 27.26,
+   "high": null,
+   "low": null,
+   "close": 27.38,
+   "volume": 1272,
+   "change_pct": 0.4402
+  },
+  {
+   "date": "20260902",
+   "open": 27.39,
+   "high": null,
+   "low": null,
+   "close": 27.13,
+   "volume": 1480,
+   "change_pct": -0.9131
+  },
+  {
+   "date": "20260903",
+   "open": 27.1,
+   "high": null,
+   "low": null,
+   "close": 27.46,
+   "volume": 1465,
+   "change_pct": 1.2164
+  },
+  {
+   "date": "20260904",
+   "open": 27.38,
+   "high": null,
+   "low": null,
+   "close": 27.37,
+   "volume": 1380,
+   "change_pct": -0.3277
+  },
+  {
+   "date": "20260907",
+   "open": 27.38,
+   "high": null,
+   "low": null,
+   "close": 27.2,
+   "volume": 1121,
+   "change_pct": -0.6211
+  },
+  {
+   "date": "20260908",
+   "open": 27.19,
+   "high": null,
+   "low": null,
+   "close": 27.3,
+   "volume": 906,
+   "change_pct": 0.3676
+  },
+  {
+   "date": "20260909",
+   "open": 27.19,
+   "high": null,
+   "low": null,
+   "close": 26.98,
+   "volume": 1387,
+   "change_pct": -1.1722
+  },
+  {
+   "date": "20260910",
+   "open": 26.88,
+   "high": null,
+   "low": null,
+   "close": 26.62,
+   "volume": 902,
+   "change_pct": -1.3343
+  },
+  {
+   "date": "20260911",
+   "open": 26.59,
+   "high": null,
+   "low": null,
+   "close": 26.26,
+   "volume": 1020,
+   "change_pct": -1.3524
+  },
+  {
+   "date": "20260914",
+   "open": 26.17,
+   "high": null,
+   "low": null,
+   "close": 26.46,
+   "volume": 776,
+   "change_pct": 0.7616
+  },
+  {
+   "date": "20260915",
+   "open": 26.45,
+   "high": null,
+   "low": null,
+   "close": 26.19,
+   "volume": 672,
+   "change_pct": -1.0204
+  },
+  {
+   "date": "20260916",
+   "open": 26.16,
+   "high": null,
+   "low": null,
+   "close": 26.26,
+   "volume": 549,
+   "change_pct": 0.2673
+  },
+  {
+   "date": "20260917",
+   "open": 26.2,
+   "high": null,
+   "low": null,
+   "close": 26.15,
+   "volume": 731,
+   "change_pct": -0.4189
+  },
+  {
+   "date": "20260918",
+   "open": 26.0,
+   "high": null,
+   "low": null,
+   "close": 26.1,
+   "volume": 997,
+   "change_pct": 1.1628
+  },
+  {
+   "date": "20260921",
+   "open": 26.25,
+   "high": null,
+   "low": null,
+   "close": 26.76,
+   "volume": 1807,
+   "change_pct": 2.5287
+  },
+  {
+   "date": "20260922",
+   "open": 26.66,
+   "high": null,
+   "low": null,
+   "close": 26.62,
+   "volume": 1280,
+   "change_pct": -0.5232
+  },
+  {
+   "date": "20260923",
+   "open": 26.52,
+   "high": null,
+   "low": null,
+   "close": 26.5,
+   "volume": 771,
+   "change_pct": -0.4508
+  },
+  {
+   "date": "20260924",
+   "open": 26.43,
+   "high": null,
+   "low": null,
+   "close": 26.06,
+   "volume": 925,
+   "change_pct": -1.6604
+  },
+  {
+   "date": "20260928",
+   "open": 26.8,
+   "high": null,
+   "low": null,
+   "close": 27.02,
+   "volume": 2791,
+   "change_pct": 3.6838
+  },
+  {
+   "date": "20260929",
+   "open": 26.73,
+   "high": null,
+   "low": null,
+   "close": 26.85,
+   "volume": 2001,
+   "change_pct": -0.6292
+  },
+  {
+   "date": "20260930",
+   "open": 26.73,
+   "high": null,
+   "low": null,
+   "close": 27.69,
+   "volume": 3284,
+   "change_pct": 3.1285
+  },
+  {
+   "date": "20261008",
+   "open": 27.69,
+   "high": null,
+   "low": null,
+   "close": 26.95,
+   "volume": 2515,
+   "change_pct": -2.6724
+  },
+  {
+   "date": "20261009",
+   "open": 26.8,
+   "high": null,
+   "low": null,
+   "close": 27.29,
+   "volume": 1654,
+   "change_pct": 1.2616
+  },
+  {
+   "date": "20261012",
+   "open": 27.2,
+   "high": null,
+   "low": null,
+   "close": 26.88,
+   "volume": 1418,
+   "change_pct": -1.5024
+  },
+  {
+   "date": "20261013",
+   "open": 26.66,
+   "high": null,
+   "low": null,
+   "close": 26.58,
+   "volume": 1286,
+   "change_pct": -1.1161
+  },
+  {
+   "date": "20261014",
+   "open": 26.53,
+   "high": null,
+   "low": null,
+   "close": 26.31,
+   "volume": 1019,
+   "change_pct": -1.0158
+  },
+  {
+   "date": "20261015",
+   "open": 26.02,
+   "high": null,
+   "low": null,
+   "close": 26.3,
+   "volume": 1214,
+   "change_pct": -0.038
+  },
+  {
+   "date": "20261016",
+   "open": 26.43,
+   "high": null,
+   "low": null,
+   "close": 26.25,
+   "volume": 1586,
+   "change_pct": -0.1901
+  },
+  {
+   "date": "20261019",
+   "open": 26.1,
+   "high": null,
+   "low": null,
+   "close": 26.49,
+   "volume": 1032,
+   "change_pct": 0.9143
+  },
+  {
+   "date": "20261020",
+   "open": 26.45,
+   "high": null,
+   "low": null,
+   "close": 26.71,
+   "volume": 997,
+   "change_pct": 0.8305
+  },
+  {
+   "date": "20261021",
+   "open": 26.85,
+   "high": null,
+   "low": null,
+   "close": 26.59,
+   "volume": 906,
+   "change_pct": -0.4493
+  },
+  {
+   "date": "20261022",
+   "open": 26.46,
+   "high": null,
+   "low": null,
+   "close": 26.0,
+   "volume": 1193,
+   "change_pct": -2.2189
+  },
+  {
+   "date": "20261023",
+   "open": 25.8,
+   "high": null,
+   "low": null,
+   "close": 26.38,
+   "volume": 1300,
+   "change_pct": 1.4615
+  }
+ ],
+ "financials": {
+  "revenue": 220.67,
+  "revenue_yoy": 1.8072,
+  "net_profit": 18.61,
+  "net_profit_yoy": 2.0274,
+  "roe": 7.31,
+  "pe_ttm": 13.3699,
+  "pb": 1.8634,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "华东医药：注射用DR30206临床申请获批",
+   "source": "同花顺财经",
+   "date": "2026-10-17",
+   "sentiment": "neutral",
+   "summary": "华东医药公告，控股子公司浙江道尔生物科技有限公司近日已收到国家药品监督管理局（NMPA）核准签发的《药物临床试验批准通知书》，由道尔生物申报的注射用DR30206临床试验申请获得批准，适应症为：本品作为巩固治疗，拟用于同步/序贯放化疗后未进展的、局部晚期/不可切除（Ⅲ期）的非小细胞肺癌患者。\n（文章来源：第一财经）\n文章来源：第一财经\n原标题：华东医药：注射用DR30206临床申请获批"
+  },
+  {
+   "title": "华东医药(000963) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "华东医药(000963) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 17 家机构对华东医药的2026年度业绩作出预测；\n预测2026年每股收益 2.14 元，较去年同比增长 9.83%， 预测2026年净利润 37.57 亿元，较去年同比增长 10.03%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"1.61\",\""
+  },
+  {
+   "title": "华东医药控股子公司道尔生物DR10624治疗MASLD/MASH Ⅱ期临床结果入选AASLD 2026最新突破摘要（LBA）并将作口头报告",
+   "source": "同花顺财经",
+   "date": "2026-10-19",
+   "sentiment": "neutral",
+   "summary": "中国浙江杭州，2026年10月19日，华东医药控股子公司浙江道尔生物科技有限公司(“道尔生物”)，一家针对代谢性疾病和癌症开发创新生物治疗药物的临床阶段的生物制药公司，今日宣布其自主研发的同类首创(FIC)的靶向成纤维细胞生长因子21受体(FGF21R)，胰高血糖素受体(GCGR)和胰高血糖素样肽-1受体(GLP-1R)的长效三特异性激动剂DR10624用于治疗代谢相关脂肪性肝病(MASLD)/代"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "华东医药2026H1营收220.67亿元，归母净利润18.61亿元，毛利率32.80%、ROE 7.31%，经营活动现金流24.99亿元，资产负债率仅36%。估值端PE(TTM)13.37倍、PB 1.86倍，处于历史低位。技术面收盘26.38元。核心逻辑：工业微生物与化学制剂基本盘稳固，医美业务（Sinclair）全球化布局打开成长空间，PE 13.37倍估值偏低，财务结构稳健；风险在于集采压力与医美业务减亏进度。",
+  "bull_points": [
+   "估值偏低：PE(TTM)13.37倍、PB 1.86倍，处于历史低位区间",
+   "财务稳健：资产负债率仅36%，现金流24.99亿元",
+   "医美第二曲线：Sinclair全球化布局，少女针等产品高增长",
+   "工业微生物优势：ADC CDMO与合成生物学布局前瞻"
+  ],
+  "bear_points": [
+   "集采压力：化学制剂与抗生素受集采影响，价格承压",
+   "ROE 7.31%偏低：资产回报效率有待提升",
+   "医美减亏慢：Sinclair仍处投入期，盈利贡献有限",
+   "医药工业增长乏力：存量品种竞争激烈，新品接力需时间"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 32.7993,
+   "ttm": 31.8216,
+   "net_margin": 8.3379,
+   "roe": 13.6009,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "高毛利工业微生物与医美占比提升是核心路径",
+    "price_vs_cost": "集采压价是主要压力，成本端相对可控",
+    "new_business_drag": "医美与CDMO前期投入拉低短期毛利"
+   },
+   "note": "华东医药毛利率32.80%在医药行业中属中等，反映其制剂与商业并重的结构。工业微生物与医美板块毛利率显著高于平均水平，结构升级是毛利率上行的核心路径。ROE 7.31%偏低主要因大额现金与在建资产拖累，现金流24.99亿元则验证了盈利质量。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 1.8634,
+   "ps_ttm": 1.0514,
+   "pe_ttm": 13.3699,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 220.67,
+   "net_profit": 18.61,
+   "total_assets": 399.75,
+   "total_liabilities": 141.95,
+   "net_assets": 254.41,
+   "operating_cash_flow": 24.99,
+   "asset_liability_ratio": 35.51,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 26.43,
+   "ma20": 26.62,
+   "ema20": 26.64,
+   "rsi14": 43.16,
+   "macd": {
+    "dif": -0.267,
+    "dea": -0.289,
+    "hist": 0.045
+   },
+   "close": 26.38,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "集采风险",
+    "severity": "中高",
+    "detail": "化学制剂与抗生素持续面临集采压价"
+   },
+   {
+    "type": "医美减亏不及预期",
+    "severity": "中",
+    "detail": "Sinclair投入期长，盈利贡献有限"
+   },
+   {
+    "type": "医药工业增长乏力",
+    "severity": "中",
+    "detail": "存量品种竞争激烈，新品接力需时间"
+   },
+   {
+    "type": "研发失败风险",
+    "severity": "中",
+    "detail": "创新药与生物制品研发存在失败可能"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "医美减亏+工业微生物放量，2027年净利润达55亿元",
+    "valuation": "22倍PE，对应约1210亿市值",
+    "upside": "+45%"
+   }
+  ],
+  "catalysts": [
+   "Sinclair医美业务减亏进度",
+   "工业微生物与CDMO订单",
+   "集采影响范围变化",
+   "三季报收入结构"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超25%",
+   "综合毛利率跌破29%",
+   "医美业务亏损重新扩大",
+   "集采范围进一步扩大"
+  ],
+  "kpi_tracking": [
+   "医美业务盈亏（目标：减亏至盈亏平衡）",
+   "综合毛利率（阈值：<29%）",
+   "工业微生物收入增速（目标：>20%）",
+   "经营现金流/净利润（阈值：<0.7）"
+  ]
+ },
+ "_data": {
+  "code": "000963.SZ",
+  "name": "华东医药",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "",
+  "main_business": "",
+  "business_mix": "",
+  "gross_margin_mrq": 32.7993,
+  "gross_margin_ttm": 31.8216,
+  "net_margin": 8.3379,
+  "roe_ttm": 13.6009,
+  "roic": 6.6488,
+  "ps_ttm": 1.0514,
+  "revenue": 220.67,
+  "net_profit": 18.61,
+  "total_assets": 399.75,
+  "total_liabilities": 141.95,
+  "net_assets": 254.41,
+  "operating_cash_flow": 24.99
+ },
+ "indicators": {
+  "ma5": 26.43,
+  "ma20": 26.62,
+  "ema20": 26.64,
+  "rsi14": 43.16,
+  "macd": {
+   "dif": -0.267,
+   "dea": -0.289,
+   "hist": 0.045
+  }
+ }
+}
