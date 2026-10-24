@@ -29,19 +29,28 @@
   <main class="page-main">
     <div class="container">
       <section class="hero">
-        <p class="eyebrow">CodeBuddy × GitHub Pages</p>
-        <h1>精致的股票分析，静默呈现。</h1>
-        <p>每份报告由 CodeBuddy 在会话中完成取数、技术指标计算与分析结论撰写，结构化落地为数据文件，本站在 GitHub Pages 上静默渲染。不追逐噪音，只保留决策所需的信息层级。</p>
+        <p class="eyebrow">CodeBuddy × 深度分析 × 新闻雷达</p>
+        <h1>重点股票的突发动态，一屏掌握。</h1>
+        <p>雷达持续追踪已覆盖标的的公告、业绩、异动与风险事件，按重要度排序；每份报告由 CodeBuddy 完成取数、技术指标计算与七层框架分析。不追逐噪音，只保留决策所需的信息层级。</p>
         <div class="hero-stats">
           <div class="stat"><div class="stat-value" id="stat-reports">—</div><div class="stat-label">已发布报告</div></div>
           <div class="stat"><div class="stat-value" id="stat-stocks">—</div><div class="stat-label">覆盖标的</div></div>
-          <div class="stat"><div class="stat-value">A股 · 美股</div><div class="stat-label">市场范围</div></div>
+          <div class="stat"><div class="stat-value" id="stat-radar">—</div><div class="stat-label">雷达监控</div></div>
         </div>
       </section>
 
-      <section aria-label="大盘指数">
-        <div class="section-head"><h2>大盘速览</h2><a class="more" href="market.html">查看市场概览 →</a></div>
-        <div class="index-strip" id="index-strip"></div>
+      <section aria-label="股票雷达">
+        <div class="section-head">
+          <h2>股票雷达</h2>
+          <a class="more" href="library.html">进入报告库 →</a>
+        </div>
+        <div class="radar-status" id="radar-status">正在接入雷达…</div>
+        <div class="radar-filters" id="radar-filters" role="group" aria-label="新闻分类筛选"></div>
+        <div class="radar-list" id="radar-list">
+          <div class="card radar-item"><div class="skeleton" style="height:88px"></div></div>
+          <div class="card radar-item"><div class="skeleton" style="height:88px"></div></div>
+          <div class="card radar-item"><div class="skeleton" style="height:88px"></div></div>
+        </div>
       </section>
 
       <section aria-label="最新报告">
@@ -59,22 +68,5 @@
   <script defer src="assets/js/common.js"></script>
   <script defer src="assets/js/charts.js"></script>
   <script defer src="assets/js/render.js"></script>
-  <script>
-    // 首页大盘条
-    document.addEventListener("DOMContentLoaded", async () => {
-      try {
-        const data = await window.SI.loadJSON("data/market.json");
-        document.getElementById("index-strip").innerHTML = data.indices.map((ix) => `
-          <div class="card index-card">
-            <div class="idx-name">${ix.name}</div>
-            <div class="idx-value num">${ix.close.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
-            <div class="idx-chg num ${window.SI.pctClass(ix.change_pct)}">${window.SI.fmtPct(ix.change_pct)}</div>
-          </div>`).join("");
-      } catch (e) {
-        document.getElementById("index-strip").innerHTML =
-          '<div class="empty-state" style="grid-column:1/-1">大盘数据加载失败</div>';
-      }
-    });
-  </script>
 </body>
 </html>
