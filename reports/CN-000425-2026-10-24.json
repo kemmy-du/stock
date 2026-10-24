@@ -1,0 +1,570 @@
+{
+ "id": "CN-000425-2026-10-24",
+ "symbol": "000425",
+ "market": "CN",
+ "name": "徐工机械",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "徐工机械",
+  "industry": "机械设备",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "主要从事工程起重机械、铲运机械、压实机械、混凝土机械、路面机械、消防机械、其他工程机械及工程机械备件的研发、制造和销售。"
+ },
+ "overview": {
+  "price": 7.14,
+  "change_pct": 3.1792,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "工程机械龙头，PB仅1.36倍，现金流41.58亿验证盈利质量",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 8.06,
+   "high": null,
+   "low": null,
+   "close": 8.11,
+   "volume": 7932,
+   "change_pct": 0.6203
+  },
+  {
+   "date": "20260821",
+   "open": 8.08,
+   "high": null,
+   "low": null,
+   "close": 8.01,
+   "volume": 6883,
+   "change_pct": -1.233
+  },
+  {
+   "date": "20260824",
+   "open": 8.0,
+   "high": null,
+   "low": null,
+   "close": 7.94,
+   "volume": 8961,
+   "change_pct": -0.8739
+  },
+  {
+   "date": "20260825",
+   "open": 7.93,
+   "high": null,
+   "low": null,
+   "close": 8.02,
+   "volume": 5267,
+   "change_pct": 1.0076
+  },
+  {
+   "date": "20260826",
+   "open": 8.03,
+   "high": null,
+   "low": null,
+   "close": 8.0,
+   "volume": 7839,
+   "change_pct": -0.2494
+  },
+  {
+   "date": "20260827",
+   "open": 7.96,
+   "high": null,
+   "low": null,
+   "close": 8.01,
+   "volume": 8112,
+   "change_pct": 0.125
+  },
+  {
+   "date": "20260828",
+   "open": 7.96,
+   "high": null,
+   "low": null,
+   "close": 7.95,
+   "volume": 2,
+   "change_pct": -0.7491
+  },
+  {
+   "date": "20260831",
+   "open": 7.95,
+   "high": null,
+   "low": null,
+   "close": 7.89,
+   "volume": 2,
+   "change_pct": -0.7547
+  },
+  {
+   "date": "20260901",
+   "open": 8.0,
+   "high": null,
+   "low": null,
+   "close": 8.24,
+   "volume": 3,
+   "change_pct": 4.436
+  },
+  {
+   "date": "20260902",
+   "open": 8.1,
+   "high": null,
+   "low": null,
+   "close": 7.97,
+   "volume": 2,
+   "change_pct": -3.2767
+  },
+  {
+   "date": "20260903",
+   "open": 8.0,
+   "high": null,
+   "low": null,
+   "close": 7.93,
+   "volume": 9501,
+   "change_pct": -0.5019
+  },
+  {
+   "date": "20260904",
+   "open": 7.98,
+   "high": null,
+   "low": null,
+   "close": 8.14,
+   "volume": 2,
+   "change_pct": 2.6482
+  },
+  {
+   "date": "20260907",
+   "open": 8.19,
+   "high": null,
+   "low": null,
+   "close": 8.31,
+   "volume": 2,
+   "change_pct": 2.0885
+  },
+  {
+   "date": "20260908",
+   "open": 8.45,
+   "high": null,
+   "low": null,
+   "close": 8.33,
+   "volume": 1,
+   "change_pct": 0.2407
+  },
+  {
+   "date": "20260909",
+   "open": 8.37,
+   "high": null,
+   "low": null,
+   "close": 8.38,
+   "volume": 7717,
+   "change_pct": 0.6002
+  },
+  {
+   "date": "20260910",
+   "open": 8.32,
+   "high": null,
+   "low": null,
+   "close": 8.24,
+   "volume": 6108,
+   "change_pct": -1.6706
+  },
+  {
+   "date": "20260911",
+   "open": 8.15,
+   "high": null,
+   "low": null,
+   "close": 8.06,
+   "volume": 6920,
+   "change_pct": -2.1845
+  },
+  {
+   "date": "20260914",
+   "open": 8.0,
+   "high": null,
+   "low": null,
+   "close": 8.1,
+   "volume": 5157,
+   "change_pct": 0.4963
+  },
+  {
+   "date": "20260915",
+   "open": 8.07,
+   "high": null,
+   "low": null,
+   "close": 7.81,
+   "volume": 1,
+   "change_pct": -3.5802
+  },
+  {
+   "date": "20260916",
+   "open": 7.78,
+   "high": null,
+   "low": null,
+   "close": 7.58,
+   "volume": 3,
+   "change_pct": -2.9449
+  },
+  {
+   "date": "20260917",
+   "open": 7.53,
+   "high": null,
+   "low": null,
+   "close": 7.54,
+   "volume": 1,
+   "change_pct": -0.5277
+  },
+  {
+   "date": "20260918",
+   "open": 7.56,
+   "high": null,
+   "low": null,
+   "close": 7.45,
+   "volume": 1,
+   "change_pct": -1.1936
+  },
+  {
+   "date": "20260921",
+   "open": 7.42,
+   "high": null,
+   "low": null,
+   "close": 7.39,
+   "volume": 1,
+   "change_pct": -0.8054
+  },
+  {
+   "date": "20260922",
+   "open": 7.41,
+   "high": null,
+   "low": null,
+   "close": 7.3,
+   "volume": 1,
+   "change_pct": -1.2179
+  },
+  {
+   "date": "20260923",
+   "open": 7.27,
+   "high": null,
+   "low": null,
+   "close": 7.23,
+   "volume": 1,
+   "change_pct": -0.9589
+  },
+  {
+   "date": "20260924",
+   "open": 7.21,
+   "high": null,
+   "low": null,
+   "close": 7.17,
+   "volume": 9172,
+   "change_pct": -0.8299
+  },
+  {
+   "date": "20260928",
+   "open": 7.16,
+   "high": null,
+   "low": null,
+   "close": 7.06,
+   "volume": 7291,
+   "change_pct": -1.5342
+  },
+  {
+   "date": "20260929",
+   "open": 7.04,
+   "high": null,
+   "low": null,
+   "close": 7.05,
+   "volume": 1,
+   "change_pct": -0.1416
+  },
+  {
+   "date": "20260930",
+   "open": 7.05,
+   "high": null,
+   "low": null,
+   "close": 7.2,
+   "volume": 1,
+   "change_pct": 2.1277
+  },
+  {
+   "date": "20261008",
+   "open": 7.15,
+   "high": null,
+   "low": null,
+   "close": 7.18,
+   "volume": 7737,
+   "change_pct": -0.2778
+  },
+  {
+   "date": "20261009",
+   "open": 7.16,
+   "high": null,
+   "low": null,
+   "close": 7.15,
+   "volume": 7265,
+   "change_pct": -0.4178
+  },
+  {
+   "date": "20261012",
+   "open": 7.16,
+   "high": null,
+   "low": null,
+   "close": 7.37,
+   "volume": 1,
+   "change_pct": 3.0769
+  },
+  {
+   "date": "20261013",
+   "open": 7.3,
+   "high": null,
+   "low": null,
+   "close": 7.33,
+   "volume": 1,
+   "change_pct": -0.5427
+  },
+  {
+   "date": "20261014",
+   "open": 7.29,
+   "high": null,
+   "low": null,
+   "close": 7.27,
+   "volume": 9222,
+   "change_pct": -0.8186
+  },
+  {
+   "date": "20261015",
+   "open": 7.2,
+   "high": null,
+   "low": null,
+   "close": 7.03,
+   "volume": 1,
+   "change_pct": -3.3012
+  },
+  {
+   "date": "20261016",
+   "open": 7.09,
+   "high": null,
+   "low": null,
+   "close": 6.91,
+   "volume": 1,
+   "change_pct": -1.707
+  },
+  {
+   "date": "20261019",
+   "open": 6.82,
+   "high": null,
+   "low": null,
+   "close": 7.18,
+   "volume": 1,
+   "change_pct": 3.9074
+  },
+  {
+   "date": "20261020",
+   "open": 7.16,
+   "high": null,
+   "low": null,
+   "close": 7.22,
+   "volume": 6802,
+   "change_pct": 0.5571
+  },
+  {
+   "date": "20261021",
+   "open": 7.18,
+   "high": null,
+   "low": null,
+   "close": 7.02,
+   "volume": 7158,
+   "change_pct": -2.2284
+  },
+  {
+   "date": "20261022",
+   "open": 7.03,
+   "high": null,
+   "low": null,
+   "close": 6.92,
+   "volume": 8467,
+   "change_pct": -1.4245
+  },
+  {
+   "date": "20261023",
+   "open": 6.86,
+   "high": null,
+   "low": null,
+   "close": 7.14,
+   "volume": 9881,
+   "change_pct": 3.1792
+  }
+ ],
+ "financials": {
+  "revenue": 612.47,
+  "revenue_yoy": 11.7478,
+  "net_profit": 39.62,
+  "net_profit_yoy": -9.3146,
+  "roe": 6.33,
+  "pe_ttm": 13.5396,
+  "pb": 1.3551,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "徐工机械[000425]",
+   "source": "同花顺财经",
+   "date": "2026-10-15",
+   "sentiment": "neutral",
+   "summary": "要点一：所属板块 机械行业板块，深成500板块，预亏预减板块，一带一路板块，江苏板块，HS300_板块，稀土永磁板块，融资融券板块。\n要点二：经营范围 工程机械及成套设备、专用汽车、建筑工程机械、矿山机械、环卫机械、商用车、载货汽车、工程机械发动机、通用基础零部件、仪器、仪表制造、加工、销售；环保工程施工。公司是我国工程机械行业的龙头企业，行业竞争力强大,公司主导产品压实机械、铲运机械、路面机械等"
+  },
+  {
+   "title": "徐工机械跌2.09%，成交额2.12亿元，主力资金净流出3005.27万元",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "来源：新浪证券-红岸工作室\n10月21日，徐工机械盘中下跌2.09%，截至10:36，报7.03元/股，成交2.12亿元，换手率0.33%，总市值823.30亿元。\n资金流向方面，主力资金净流出3005.27万元，特大单买入291.68万元，占比1.38%，卖出2299.38万元，占比10.87%；大单买入2524.75万元，占比11.93%，卖出3522.32万元，占比16.64%。\n徐工机械今"
+  },
+  {
+   "title": "徐工机械2026一季报解读：营收增9.26%，现金流增153%，汇兑拖累利润",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "营收297.91亿元增9.26%，归母净利20.56亿元仅增0.86%，经营现金流21.52亿元增153.12%——徐工机械2026年一季报的核心是收入稳增、利润微增、现金流大增。财务费用6.91亿元同比增746.54%，汇兑拖累利润；销售费用降21.08%、回款改善。以下从利润表、现金流、资产负债三个维度拆解。\n利润表——毛利率微升与财务费用拖累\n营业收入297.9057亿元，同比增长9.26%"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "徐工机械2026H1营收612.47亿元，归母净利润39.62亿元，毛利率22.12%、ROE 6.33%，经营活动现金流41.58亿元。估值端PE(TTM)13.54倍、PB 1.36倍，处于历史低位区间。技术面收盘7.14元，随板块回调。核心逻辑：工程机械行业周期底部回升，公司作为龙头受益内需复苏与出口高增，极低估值+现金流改善提供安全边际；风险在于地产基建需求恢复不及预期与海外关税。",
+  "bull_points": [
+   "估值极低：PB 1.36倍、PE(TTM)13.54倍，处于历史低位，安全边际充足",
+   "现金流验证：经营活动现金流41.58亿元超过归母净利润39.62亿元，盈利质量扎实",
+   "出口高增：海外收入占比持续提升，全球化布局对冲国内周期波动",
+   "龙头集中：行业下行期份额向龙头集中，公司市占率稳步提升"
+  ],
+  "bear_points": [
+   "国内需求疲软：地产下行与基建资金到位率影响新机销量",
+   "毛利率22.12%偏低，价格竞争与钢材成本压制盈利",
+   "ROE 6.33%偏低，资产周转与回报率仍有提升空间",
+   "海外关税与本地化要求提升出口成本"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 22.1186,
+   "ttm": 22.6242,
+   "net_margin": 6.5396,
+   "roe": 9.5664,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "高毛利的大型矿机与高空作业平台占比提升是毛利率上行关键",
+    "price_vs_cost": "钢材价格波动直接影响成本，公司通过套保与集中采购对冲",
+    "new_business_drag": "新能源工程机械（电动装载机等）前期投入拉低短期毛利"
+   },
+   "note": "徐工毛利率22.12%符合工程机械行业特征，其盈利改善更多来自规模效应与费用控制而非毛利率提升。现金流41.58亿元超过净利润是关键正面信号，说明收入质量在改善。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 1.3551,
+   "ps_ttm": 0.7796,
+   "pe_ttm": 13.5396,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 612.47,
+   "net_profit": 39.62,
+   "total_assets": 1789.96,
+   "total_liabilities": 1129.5,
+   "net_assets": 645.57,
+   "operating_cash_flow": 41.58,
+   "asset_liability_ratio": 63.1,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 7.1,
+   "ma20": 7.18,
+   "ema20": 7.25,
+   "rsi14": 52.33,
+   "macd": {
+    "dif": -0.189,
+    "dea": -0.203,
+    "hist": 0.03
+   },
+   "close": 7.14,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "国内需求恢复不及预期",
+    "severity": "高",
+    "detail": "地产与基建是核心下游，恢复缓慢将拖累销量"
+   },
+   {
+    "type": "海外贸易壁垒",
+    "severity": "中高",
+    "detail": "关税与本地化要求提升出口成本，影响海外毛利率"
+   },
+   {
+    "type": "价格竞争",
+    "severity": "中",
+    "detail": "行业存量竞争下价格战风险仍存"
+   },
+   {
+    "type": "应收账款风险",
+    "severity": "中",
+    "detail": "工程机械行业账期长，需关注回款质量"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "内需复苏+出口维持高增，2027年净利润达90亿元",
+    "valuation": "18倍PE，对应约1620亿市值",
+    "upside": "+40%"
+   }
+  ],
+  "catalysts": [
+   "月度挖掘机销量数据（行业景气核心）",
+   "海外收入占比与出口增速",
+   "高空作业平台与矿机占比变化",
+   "三季报毛利率与现金流"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超25%",
+   "挖掘机行业月销量连续3个月同比下滑",
+   "综合毛利率跌破20%",
+   "经营活动现金流转负或大幅低于净利润"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润同比（阈值：<-25%）",
+   "综合毛利率（阈值：<20%）",
+   "海外收入占比（目标：持续提升）",
+   "经营现金流/净利润（阈值：<0.8）"
+  ]
+ },
+ "_data": {
+  "code": "000425.SZ",
+  "name": "徐工机械",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "机械设备--工程机械--工程机械整机",
+  "main_business": "主要从事工程起重机械、铲运机械、压实机械、混凝土机械、路面机械、消防机械、其他工程机械及工程机械备件的研发、制造和销售。",
+  "business_mix": "土方机械:29.8849%;其他工程机械、备件及其他:24.0355%;起重机械:20.8116%;矿业机械:9.3004%;高空作业机械:7.1239%;桩工机械:4.6677%;道路机械:4.1760%",
+  "gross_margin_mrq": 22.1186,
+  "gross_margin_ttm": 22.6242,
+  "net_margin": 6.5396,
+  "roe_ttm": 9.5664,
+  "roic": 4.0891,
+  "ps_ttm": 0.7796,
+  "revenue": 612.47,
+  "net_profit": 39.62,
+  "total_assets": 1789.96,
+  "total_liabilities": 1129.5,
+  "net_assets": 645.57,
+  "operating_cash_flow": 41.58
+ },
+ "indicators": {
+  "ma5": 7.1,
+  "ma20": 7.18,
+  "ema20": 7.25,
+  "rsi14": 52.33,
+  "macd": {
+   "dif": -0.189,
+   "dea": -0.203,
+   "hist": 0.03
+  }
+ }
+}
