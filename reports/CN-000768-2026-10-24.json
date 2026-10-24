@@ -1,0 +1,570 @@
+{
+ "id": "CN-000768-2026-10-24",
+ "symbol": "000768",
+ "market": "CN",
+ "name": "中航西飞",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "中航西飞",
+  "industry": "国防军工",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "军民用大中型飞机整机及航空零部件等航空产品的研发、生产和销售,此外公司亦从事运输设备工业、建材工业相关产品及其他产品的生产和销售。"
+ },
+ "overview": {
+  "price": 23.0,
+  "change_pct": 0.8772,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "军机主机厂毛利率仅8%，PE 67倍，盈利与估值严重错配",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 20.87,
+   "high": null,
+   "low": null,
+   "close": 20.94,
+   "volume": 1275,
+   "change_pct": 0.5281
+  },
+  {
+   "date": "20260821",
+   "open": 20.84,
+   "high": null,
+   "low": null,
+   "close": 20.96,
+   "volume": 1158,
+   "change_pct": 0.0955
+  },
+  {
+   "date": "20260824",
+   "open": 20.93,
+   "high": null,
+   "low": null,
+   "close": 21.36,
+   "volume": 2467,
+   "change_pct": 1.9084
+  },
+  {
+   "date": "20260825",
+   "open": 20.7,
+   "high": null,
+   "low": null,
+   "close": 20.46,
+   "volume": 3448,
+   "change_pct": -4.2135
+  },
+  {
+   "date": "20260826",
+   "open": 20.35,
+   "high": null,
+   "low": null,
+   "close": 20.72,
+   "volume": 2766,
+   "change_pct": 1.2708
+  },
+  {
+   "date": "20260827",
+   "open": 20.65,
+   "high": null,
+   "low": null,
+   "close": 21.2,
+   "volume": 2620,
+   "change_pct": 2.3166
+  },
+  {
+   "date": "20260828",
+   "open": 21.4,
+   "high": null,
+   "low": null,
+   "close": 21.72,
+   "volume": 3825,
+   "change_pct": 2.4528
+  },
+  {
+   "date": "20260831",
+   "open": 21.86,
+   "high": null,
+   "low": null,
+   "close": 21.96,
+   "volume": 2715,
+   "change_pct": 1.105
+  },
+  {
+   "date": "20260901",
+   "open": 21.9,
+   "high": null,
+   "low": null,
+   "close": 22.62,
+   "volume": 4980,
+   "change_pct": 3.0055
+  },
+  {
+   "date": "20260902",
+   "open": 22.64,
+   "high": null,
+   "low": null,
+   "close": 23.02,
+   "volume": 7101,
+   "change_pct": 1.7683
+  },
+  {
+   "date": "20260903",
+   "open": 23.29,
+   "high": null,
+   "low": null,
+   "close": 23.04,
+   "volume": 3680,
+   "change_pct": 0.0869
+  },
+  {
+   "date": "20260904",
+   "open": 23.01,
+   "high": null,
+   "low": null,
+   "close": 23.7,
+   "volume": 5346,
+   "change_pct": 2.8646
+  },
+  {
+   "date": "20260907",
+   "open": 23.48,
+   "high": null,
+   "low": null,
+   "close": 23.28,
+   "volume": 3879,
+   "change_pct": -1.7722
+  },
+  {
+   "date": "20260908",
+   "open": 23.31,
+   "high": null,
+   "low": null,
+   "close": 23.55,
+   "volume": 2366,
+   "change_pct": 1.1598
+  },
+  {
+   "date": "20260909",
+   "open": 23.41,
+   "high": null,
+   "low": null,
+   "close": 23.95,
+   "volume": 3958,
+   "change_pct": 1.6985
+  },
+  {
+   "date": "20260910",
+   "open": 23.77,
+   "high": null,
+   "low": null,
+   "close": 23.5,
+   "volume": 2928,
+   "change_pct": -1.8789
+  },
+  {
+   "date": "20260911",
+   "open": 23.29,
+   "high": null,
+   "low": null,
+   "close": 23.54,
+   "volume": 2853,
+   "change_pct": 0.1702
+  },
+  {
+   "date": "20260914",
+   "open": 23.5,
+   "high": null,
+   "low": null,
+   "close": 22.62,
+   "volume": 3242,
+   "change_pct": -3.9082
+  },
+  {
+   "date": "20260915",
+   "open": 22.74,
+   "high": null,
+   "low": null,
+   "close": 22.3,
+   "volume": 1867,
+   "change_pct": -1.4147
+  },
+  {
+   "date": "20260916",
+   "open": 22.25,
+   "high": null,
+   "low": null,
+   "close": 22.35,
+   "volume": 2077,
+   "change_pct": 0.2242
+  },
+  {
+   "date": "20260917",
+   "open": 22.35,
+   "high": null,
+   "low": null,
+   "close": 22.22,
+   "volume": 1506,
+   "change_pct": -0.5817
+  },
+  {
+   "date": "20260918",
+   "open": 22.31,
+   "high": null,
+   "low": null,
+   "close": 22.35,
+   "volume": 1735,
+   "change_pct": 0.5851
+  },
+  {
+   "date": "20260921",
+   "open": 22.35,
+   "high": null,
+   "low": null,
+   "close": 22.91,
+   "volume": 2190,
+   "change_pct": 2.5056
+  },
+  {
+   "date": "20260922",
+   "open": 23.05,
+   "high": null,
+   "low": null,
+   "close": 22.84,
+   "volume": 1962,
+   "change_pct": -0.3055
+  },
+  {
+   "date": "20260923",
+   "open": 22.9,
+   "high": null,
+   "low": null,
+   "close": 22.71,
+   "volume": 1541,
+   "change_pct": -0.5692
+  },
+  {
+   "date": "20260924",
+   "open": 22.63,
+   "high": null,
+   "low": null,
+   "close": 22.1,
+   "volume": 1807,
+   "change_pct": -2.686
+  },
+  {
+   "date": "20260928",
+   "open": 22.2,
+   "high": null,
+   "low": null,
+   "close": 22.92,
+   "volume": 4218,
+   "change_pct": 3.7104
+  },
+  {
+   "date": "20260929",
+   "open": 22.93,
+   "high": null,
+   "low": null,
+   "close": 22.5,
+   "volume": 2862,
+   "change_pct": -1.8325
+  },
+  {
+   "date": "20260930",
+   "open": 22.51,
+   "high": null,
+   "low": null,
+   "close": 23.12,
+   "volume": 3184,
+   "change_pct": 2.7556
+  },
+  {
+   "date": "20261008",
+   "open": 23.12,
+   "high": null,
+   "low": null,
+   "close": 22.6,
+   "volume": 2109,
+   "change_pct": -2.2491
+  },
+  {
+   "date": "20261009",
+   "open": 22.55,
+   "high": null,
+   "low": null,
+   "close": 22.31,
+   "volume": 1965,
+   "change_pct": -1.2832
+  },
+  {
+   "date": "20261012",
+   "open": 22.4,
+   "high": null,
+   "low": null,
+   "close": 22.06,
+   "volume": 1620,
+   "change_pct": -1.1206
+  },
+  {
+   "date": "20261013",
+   "open": 22.01,
+   "high": null,
+   "low": null,
+   "close": 23.41,
+   "volume": 5921,
+   "change_pct": 6.1197
+  },
+  {
+   "date": "20261014",
+   "open": 23.63,
+   "high": null,
+   "low": null,
+   "close": 23.63,
+   "volume": 4903,
+   "change_pct": 0.9398
+  },
+  {
+   "date": "20261015",
+   "open": 23.41,
+   "high": null,
+   "low": null,
+   "close": 23.19,
+   "volume": 2576,
+   "change_pct": -1.862
+  },
+  {
+   "date": "20261016",
+   "open": 23.4,
+   "high": null,
+   "low": null,
+   "close": 23.59,
+   "volume": 3532,
+   "change_pct": 1.7249
+  },
+  {
+   "date": "20261019",
+   "open": 23.54,
+   "high": null,
+   "low": null,
+   "close": 23.84,
+   "volume": 2902,
+   "change_pct": 1.0598
+  },
+  {
+   "date": "20261020",
+   "open": 23.6,
+   "high": null,
+   "low": null,
+   "close": 23.67,
+   "volume": 1990,
+   "change_pct": -0.7131
+  },
+  {
+   "date": "20261021",
+   "open": 23.57,
+   "high": null,
+   "low": null,
+   "close": 23.05,
+   "volume": 2626,
+   "change_pct": -2.6193
+  },
+  {
+   "date": "20261022",
+   "open": 23.06,
+   "high": null,
+   "low": null,
+   "close": 22.8,
+   "volume": 1758,
+   "change_pct": -1.0846
+  },
+  {
+   "date": "20261023",
+   "open": 22.59,
+   "high": null,
+   "low": null,
+   "close": 23.0,
+   "volume": 2385,
+   "change_pct": 0.8772
+  }
+ ],
+ "financials": {
+  "revenue": 141.86,
+  "revenue_yoy": -26.9372,
+  "net_profit": 4.9,
+  "net_profit_yoy": -28.4479,
+  "roe": 2.61,
+  "pe_ttm": 67.1747,
+  "pb": 2.8552,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "中航西飞市盈率（TTM）66.59倍：10月22日历史分位13.9%，处于历史低位区间",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "截至2026年10月22日收盘，中航西飞市盈率（TTM）报66.59倍。同花顺iFind数据显示，该数值位于13.9%历史分位，处于历史低位区间，当日值较行业估值高13.73倍。此前最近一次接近13.9%历史分位是在2026年9月28日。 2016年10月24日至2026年10月22日，中航西飞市盈率（TTM）的30%和70%分位值分别为73.02倍和108.08倍。 中航西飞市盈率（TTM）走势"
+  },
+  {
+   "title": "中航西飞：公司持有西飞民机认缴出资比例为18.8895%",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "证券之星消息，中航西飞(000768)10月23日在投资者关系平台上答复投资者关心的问题。投资者：请问贵公司持有中航西飞民用飞机有限责任公司实际股份是18.889%还是30.41%？谢谢中航西飞董秘：您好！谢谢您对公司的关注。截至目前，公司持有中航西飞民用飞机有限责任公司（以下简称 “西飞民机”）的认缴出资比例为18.8895%，该比例以公司认缴出资额占西飞民机注册资本总额计算，公司享有对应认缴份"
+  },
+  {
+   "title": "中航西飞(000768) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "中航西飞(000768) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 15 家机构对中航西飞的2026年度业绩作出预测；\n预测2026年每股收益 0.44 元，较去年同比增长 6.05%， 预测2026年净利润 12.16 亿元，较去年同比增长 5.62%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"0.39\",\"1"
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "中航西飞2026H1营收141.86亿元，归母净利润仅4.90亿元，毛利率8.13%、ROE 2.61%，经营活动现金流-6.39亿元。估值端PE(TTM)67.17倍、PB 2.86倍。技术面收盘23.00元，处于高位。核心矛盾：作为军机主机厂享有稀缺性与长期订单确定性，但当前盈利能力极弱（净利率3.5%），PE 67.17倍完全依赖军贸与新型号放量预期，现金流为负进一步削弱说服力，属于典型的「故事定价」标的。",
+  "bull_points": [
+   "军机主机厂稀缺性：国内大中型军机唯一上市平台，战略地位无可替代",
+   "订单确定性：军品采购计划性强，长期收入可见度高",
+   "军贸潜力：运20等型号出口打开新空间，军贸利润率高",
+   "C919产业链：作为机体结构件供应商受益国产大飞机量产"
+  ],
+  "bear_points": [
+   "盈利能力极弱：归母净利润4.90亿元、净利率3.5%、ROE 2.61%",
+   "估值极端：PE(TTM)67.17倍，在军工板块中仍属高位",
+   "现金流为负：经营活动现金流-6.39亿元，营运资本占用大",
+   "毛利率8.13%偏低：主机厂定价机制压制盈利空间"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 8.1296,
+   "ttm": 7.0467,
+   "net_margin": 3.4746,
+   "roe": 4.2504,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "新型号军机占比提升理论上改善毛利，但主机厂定价机制限制空间",
+    "price_vs_cost": "军品定价受成本加成机制约束，缺乏议价弹性",
+    "new_business_drag": "C919等民品业务前期投入大、毛利低于军品预期"
+   },
+   "note": "中航西飞毛利率8.13%显著低于军工行业平均水平，反映军品主机厂的成本加成定价机制——利润率被政策约束在较低水平。这不是经营问题而是体制性问题，因此毛利率与净利率长期难以大幅改善，投资逻辑只能依赖营收放量摊薄费用，而非盈利能力提升。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.8552,
+   "ps_ttm": 1.7872,
+   "pe_ttm": 67.1747,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 141.86,
+   "net_profit": 4.9,
+   "total_assets": 785.92,
+   "total_liabilities": 558.36,
+   "net_assets": 223.99,
+   "operating_cash_flow": -6.39,
+   "asset_liability_ratio": 71.05,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 23.27,
+   "ma20": 22.93,
+   "ema20": 22.98,
+   "rsi14": 50.67,
+   "macd": {
+    "dif": 0.229,
+    "dea": 0.267,
+    "hist": -0.076
+   },
+   "close": 23.0,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "估值回归风险",
+    "severity": "高",
+    "detail": "PE 67.17倍若业绩不放量，面临大幅回调"
+   },
+   {
+    "type": "盈利改善缓慢",
+    "severity": "中高",
+    "detail": "定价机制限制下净利率难以快速提升"
+   },
+   {
+    "type": "现金流压力",
+    "severity": "中高",
+    "detail": "经营现金流为负，需关注回款与存货占用"
+   },
+   {
+    "type": "订单节奏波动",
+    "severity": "中",
+    "detail": "军品采购计划调整可能造成季度业绩波动"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "悲观",
+    "assumption": "业绩不放量+估值回归，2027年净利润仅12亿元",
+    "valuation": "PB回落至2倍，对应市值约380亿元",
+    "upside": "-40%"
+   }
+  ],
+  "catalysts": [
+   "新型号军机定型与批产进度",
+   "军贸出口订单落地",
+   "C919机体结构件交付节奏",
+   "三季报收入增速与毛利率"
+  ],
+  "falsification": [
+   "单季归母净利润同比降幅超30%",
+   "毛利率继续下滑",
+   "经营现金流持续为负",
+   "军贸订单迟迟不能落地"
+  ],
+  "kpi_tracking": [
+   "单季归母净利润同比（阈值：<-30%）",
+   "综合毛利率（阈值：<7%）",
+   "经营现金流（阈值：持续为负）",
+   "军贸出口订单（目标：落地）"
+  ]
+ },
+ "_data": {
+  "code": "000768.SZ",
+  "name": "中航西飞",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "国防军工--航空装备Ⅱ--航空装备Ⅲ",
+  "main_business": "军民用大中型飞机整机及航空零部件等航空产品的研发、生产和销售,此外公司亦从事运输设备工业、建材工业相关产品及其他产品的生产和销售。",
+  "business_mix": "航空产品:98.8645%;其他:1.1355%",
+  "gross_margin_mrq": 8.1296,
+  "gross_margin_ttm": 7.0467,
+  "net_margin": 3.4746,
+  "roe_ttm": 4.2504,
+  "roic": 2.0632,
+  "ps_ttm": 1.7872,
+  "revenue": 141.86,
+  "net_profit": 4.9,
+  "total_assets": 785.92,
+  "total_liabilities": 558.36,
+  "net_assets": 223.99,
+  "operating_cash_flow": -6.39
+ },
+ "indicators": {
+  "ma5": 23.27,
+  "ma20": 22.93,
+  "ema20": 22.98,
+  "rsi14": 50.67,
+  "macd": {
+   "dif": 0.229,
+   "dea": 0.267,
+   "hist": -0.076
+  }
+ }
+}
