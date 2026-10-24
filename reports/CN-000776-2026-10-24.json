@@ -1,0 +1,570 @@
+{
+ "id": "CN-000776-2026-10-24",
+ "symbol": "000776",
+ "market": "CN",
+ "name": "广发证券",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "广发证券",
+  "industry": "非银金融",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "证券经纪;证券投资咨询;与证券交易、证券投资活动有关的财务顾问。"
+ },
+ "overview": {
+  "price": 18.84,
+  "change_pct": 1.5633,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "头部券商归母116.52亿，但金融股估值锚缺失，看β不看α",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 20.46,
+   "high": null,
+   "low": null,
+   "close": 20.3,
+   "volume": 4302,
+   "change_pct": -0.4414
+  },
+  {
+   "date": "20260821",
+   "open": 20.3,
+   "high": null,
+   "low": null,
+   "close": 20.56,
+   "volume": 3415,
+   "change_pct": 1.2808
+  },
+  {
+   "date": "20260824",
+   "open": 20.47,
+   "high": null,
+   "low": null,
+   "close": 20.64,
+   "volume": 5009,
+   "change_pct": 0.3891
+  },
+  {
+   "date": "20260825",
+   "open": 20.51,
+   "high": null,
+   "low": null,
+   "close": 20.43,
+   "volume": 3539,
+   "change_pct": -1.0174
+  },
+  {
+   "date": "20260826",
+   "open": 20.36,
+   "high": null,
+   "low": null,
+   "close": 21.18,
+   "volume": 9467,
+   "change_pct": 3.6711
+  },
+  {
+   "date": "20260827",
+   "open": 21.02,
+   "high": null,
+   "low": null,
+   "close": 21.59,
+   "volume": 8440,
+   "change_pct": 1.9358
+  },
+  {
+   "date": "20260828",
+   "open": 21.54,
+   "high": null,
+   "low": null,
+   "close": 21.43,
+   "volume": 4229,
+   "change_pct": -0.7411
+  },
+  {
+   "date": "20260831",
+   "open": 21.49,
+   "high": null,
+   "low": null,
+   "close": 21.82,
+   "volume": 7844,
+   "change_pct": 1.8199
+  },
+  {
+   "date": "20260901",
+   "open": 21.77,
+   "high": null,
+   "low": null,
+   "close": 21.9,
+   "volume": 5364,
+   "change_pct": 0.3666
+  },
+  {
+   "date": "20260902",
+   "open": 21.8,
+   "high": null,
+   "low": null,
+   "close": 21.4,
+   "volume": 5843,
+   "change_pct": -2.2831
+  },
+  {
+   "date": "20260903",
+   "open": 21.44,
+   "high": null,
+   "low": null,
+   "close": 22.15,
+   "volume": 1,
+   "change_pct": 3.5047
+  },
+  {
+   "date": "20260904",
+   "open": 22.27,
+   "high": null,
+   "low": null,
+   "close": 22.2,
+   "volume": 6595,
+   "change_pct": 0.2257
+  },
+  {
+   "date": "20260907",
+   "open": 22.37,
+   "high": null,
+   "low": null,
+   "close": 21.81,
+   "volume": 4913,
+   "change_pct": -1.7568
+  },
+  {
+   "date": "20260908",
+   "open": 21.9,
+   "high": null,
+   "low": null,
+   "close": 21.63,
+   "volume": 4471,
+   "change_pct": -0.8253
+  },
+  {
+   "date": "20260909",
+   "open": 21.52,
+   "high": null,
+   "low": null,
+   "close": 21.64,
+   "volume": 3434,
+   "change_pct": 0.0462
+  },
+  {
+   "date": "20260910",
+   "open": 21.55,
+   "high": null,
+   "low": null,
+   "close": 21.72,
+   "volume": 3626,
+   "change_pct": 0.3697
+  },
+  {
+   "date": "20260911",
+   "open": 21.48,
+   "high": null,
+   "low": null,
+   "close": 20.9,
+   "volume": 7559,
+   "change_pct": -3.7753
+  },
+  {
+   "date": "20260914",
+   "open": 20.74,
+   "high": null,
+   "low": null,
+   "close": 20.49,
+   "volume": 4824,
+   "change_pct": -1.9617
+  },
+  {
+   "date": "20260915",
+   "open": 20.52,
+   "high": null,
+   "low": null,
+   "close": 20.31,
+   "volume": 3165,
+   "change_pct": -0.8785
+  },
+  {
+   "date": "20260916",
+   "open": 20.31,
+   "high": null,
+   "low": null,
+   "close": 20.31,
+   "volume": 5269,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260917",
+   "open": 20.1,
+   "high": null,
+   "low": null,
+   "close": 20.02,
+   "volume": 3626,
+   "change_pct": -1.4279
+  },
+  {
+   "date": "20260918",
+   "open": 20.15,
+   "high": null,
+   "low": null,
+   "close": 20.79,
+   "volume": 5853,
+   "change_pct": 3.8462
+  },
+  {
+   "date": "20260921",
+   "open": 20.78,
+   "high": null,
+   "low": null,
+   "close": 20.98,
+   "volume": 4400,
+   "change_pct": 0.9139
+  },
+  {
+   "date": "20260922",
+   "open": 20.98,
+   "high": null,
+   "low": null,
+   "close": 20.96,
+   "volume": 4365,
+   "change_pct": -0.0953
+  },
+  {
+   "date": "20260923",
+   "open": 20.96,
+   "high": null,
+   "low": null,
+   "close": 20.83,
+   "volume": 2693,
+   "change_pct": -0.6202
+  },
+  {
+   "date": "20260924",
+   "open": 20.74,
+   "high": null,
+   "low": null,
+   "close": 20.37,
+   "volume": 3796,
+   "change_pct": -2.2084
+  },
+  {
+   "date": "20260928",
+   "open": 20.3,
+   "high": null,
+   "low": null,
+   "close": 19.81,
+   "volume": 4143,
+   "change_pct": -2.7491
+  },
+  {
+   "date": "20260929",
+   "open": 19.71,
+   "high": null,
+   "low": null,
+   "close": 19.74,
+   "volume": 2646,
+   "change_pct": -0.3534
+  },
+  {
+   "date": "20260930",
+   "open": 19.8,
+   "high": null,
+   "low": null,
+   "close": 19.88,
+   "volume": 2735,
+   "change_pct": 0.7092
+  },
+  {
+   "date": "20261008",
+   "open": 19.8,
+   "high": null,
+   "low": null,
+   "close": 19.32,
+   "volume": 4329,
+   "change_pct": -2.8169
+  },
+  {
+   "date": "20261009",
+   "open": 19.32,
+   "high": null,
+   "low": null,
+   "close": 19.82,
+   "volume": 5339,
+   "change_pct": 2.588
+  },
+  {
+   "date": "20261012",
+   "open": 19.8,
+   "high": null,
+   "low": null,
+   "close": 19.82,
+   "volume": 2941,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20261013",
+   "open": 19.69,
+   "high": null,
+   "low": null,
+   "close": 19.83,
+   "volume": 4402,
+   "change_pct": 0.0505
+  },
+  {
+   "date": "20261014",
+   "open": 19.61,
+   "high": null,
+   "low": null,
+   "close": 19.5,
+   "volume": 3898,
+   "change_pct": -0.4086
+  },
+  {
+   "date": "20261015",
+   "open": 19.22,
+   "high": null,
+   "low": null,
+   "close": 19.47,
+   "volume": 5102,
+   "change_pct": -0.1538
+  },
+  {
+   "date": "20261016",
+   "open": 19.55,
+   "high": null,
+   "low": null,
+   "close": 19.27,
+   "volume": 4336,
+   "change_pct": -1.0272
+  },
+  {
+   "date": "20261019",
+   "open": 19.12,
+   "high": null,
+   "low": null,
+   "close": 19.37,
+   "volume": 3482,
+   "change_pct": 0.5189
+  },
+  {
+   "date": "20261020",
+   "open": 19.32,
+   "high": null,
+   "low": null,
+   "close": 18.88,
+   "volume": 4876,
+   "change_pct": -2.5297
+  },
+  {
+   "date": "20261021",
+   "open": 18.95,
+   "high": null,
+   "low": null,
+   "close": 18.68,
+   "volume": 3627,
+   "change_pct": -1.0593
+  },
+  {
+   "date": "20261022",
+   "open": 18.72,
+   "high": null,
+   "low": null,
+   "close": 18.55,
+   "volume": 4743,
+   "change_pct": -0.6959
+  },
+  {
+   "date": "20261023",
+   "open": 18.4,
+   "high": null,
+   "low": null,
+   "close": 18.84,
+   "volume": 5867,
+   "change_pct": 1.5633
+  }
+ ],
+ "financials": {
+  "revenue": 268.83,
+  "revenue_yoy": 74.5857,
+  "net_profit": 116.52,
+  "net_profit_yoy": 82.2694,
+  "roe": 8.08,
+  "pe_ttm": null,
+  "pb": null,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "看一下广发证券的融资数据。",
+   "source": "同花顺财经",
+   "date": "2026-10-22",
+   "sentiment": "neutral",
+   "summary": "2026年10月21日，广发证券融资余额为40.1亿元，处于历史中位水平，短期呈现温和下降态势，融资交易行为表现为温和减仓。融资买入活跃度一般，杠杆水平较低。整体来看，当日融资盘面呈现中性偏弱特征，资金参与意愿有限，杠杆资金整体处于收缩通道。\n具体而言，广发证券当日融资余额为40.1亿元，在两市融资余额排名中位列第72位，在证券Ⅱ行业融资余额排名中位列第5位，处于行业前列。以行业平均融资余额26."
+  },
+  {
+   "title": "广发证券净利百亿，林传辉有远见",
+   "source": "同花顺财经",
+   "date": "2026-10-07",
+   "sentiment": "neutral",
+   "summary": "能在半年时间里将净利润做到百亿级，并实现80%以上增长的券商，全行业只有两家，广发证券是其中之一。\n今年上半年，资本市场出现大幅度波动，券商板块的业绩分化也更加明显。在这一背景下，广发证券公布了一份跑出增长加速度的半年报：营收268.83亿元，同比增长74.59%；归母净利润116.52亿元‌，增速达到80.10%。\n图片\n来源：广发证券官网\n在百亿级券商中，广发证券的净利润排位进一步提升至行业第"
+  },
+  {
+   "title": "广发证券(000776) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "广发证券(000776) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 21 家机构对广发证券的2026年度业绩作出预测；\n预测2026年每股收益 2.51 元，较去年同比增长 49.4%， 预测2026年净利润 198.59 亿元，较去年同比增长 44.94%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"0.99\","
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "广发证券2026H1营收268.83亿元，归母净利润116.52亿元，ROE 8.08%，经营活动现金流300.63亿元，资产负债率85%。技术面收盘18.84元。核心逻辑：公司为头部综合券商，投行、资管、经纪业务均衡，资管业务优势突出；但证券行业强β属性，业绩与市场成交量和指数高度相关，个体α难以对冲市场波动，属于跟随市场节奏的标的，需结合市场环境判断。",
+  "bull_points": [
+   "头部券商地位：综合实力行业前列，资管业务为核心差异化优势",
+   "盈利能力强：归母净利润116.52亿元、ROE 8.08%，在券商中居前",
+   "现金流充沛：经营活动现金流300.63亿元",
+   "业务均衡：投行、资管、经纪、自营结构分散，抗波动能力强"
+  ],
+  "bear_points": [
+   "强β属性：业绩与市场成交量和指数高度相关，个体难以对冲市场下行",
+   "杠杆经营：资产负债率85%，市场下行时风险敞口放大",
+   "估值锚缺失：金融股PE/PB受市场情绪影响大，缺乏稳定估值基准",
+   "佣金率下行：经纪业务佣金率长期承压"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": null,
+   "ttm": null,
+   "net_margin": 47.4982,
+   "roe": 13.6691,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "资管、投行等轻资产业务占比是ROE与估值溢价的核心变量",
+    "price_vs_cost": "市场利率与成交量直接影响各业务线收入",
+    "new_business_drag": "财富管理转型前期投入拉低短期回报"
+   },
+   "note": "广发证券为金融企业，毛利率不适用。其核心分析维度为ROE、杠杆倍数、轻资产业务（资管/投行）占比与市场成交量的相关性，而非制造业毛利率框架。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": null,
+   "ps_ttm": null,
+   "pe_ttm": null,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 268.83,
+   "net_profit": 116.52,
+   "total_assets": 11929.62,
+   "total_liabilities": 10091.78,
+   "net_assets": 1767.88,
+   "operating_cash_flow": 300.63,
+   "asset_liability_ratio": 84.59,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 18.86,
+   "ma20": 19.74,
+   "ema20": 19.59,
+   "rsi14": 34.1,
+   "macd": {
+    "dif": -0.515,
+    "dea": -0.421,
+    "hist": -0.189
+   },
+   "close": 18.84,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "市场成交萎缩",
+    "severity": "高",
+    "detail": "成交量是券商业绩的核心驱动，萎缩将直接冲击收入"
+   },
+   {
+    "type": "市场下行",
+    "severity": "高",
+    "detail": "自营与两融业务在市场下行时风险放大"
+   },
+   {
+    "type": "佣金率下行",
+    "severity": "中",
+    "detail": "经纪业务价格竞争持续，费率长期承压"
+   },
+   {
+    "type": "监管政策变化",
+    "severity": "中",
+    "detail": "投行、资管监管政策调整影响业务开展"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "市场活跃度提升+资管优势放大，2027年净利润达180亿元",
+    "valuation": "1.8倍PB，对应市值约2200亿元",
+    "upside": "+25%"
+   }
+  ],
+  "catalysts": [
+   "月度A股成交量与两融余额",
+   "资管业务规模与收入",
+   "投行IPO/再融资节奏",
+   "市场政策与流动性环境"
+  ],
+  "falsification": [
+   "月度成交量连续大幅萎缩",
+   "自营业务出现大额亏损",
+   "归母净利润同比降幅超30%",
+   "杠杆倍数被动攀升"
+  ],
+  "kpi_tracking": [
+   "月度A股成交量（阈值：持续萎缩）",
+   "归母净利润同比（阈值：<-30%）",
+   "资管业务收入占比（目标：持续提升）",
+   "杠杆倍数（阈值：被动攀升）"
+  ]
+ },
+ "_data": {
+  "code": "000776.SZ",
+  "name": "广发证券",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "非银金融--证券Ⅱ--证券Ⅲ",
+  "main_business": "证券经纪;证券投资咨询;与证券交易、证券投资活动有关的财务顾问。",
+  "business_mix": "投资收益:18.8866%;手续费及佣金收入-经纪业务-证券经纪业务收入-代理买卖证券业务:16.1819%;手续费及佣金收入-基金管理业务收入:16.0517%;利息收入-融出资金利息收入:12.8859%;公允价值变动收益:11.9923%;利息收入-货币资金及结算备付金利息收入:7.8218%;利息收入-其他债权投资利息收入:5.0101%;手续费及佣金收入-经纪业务-证券经纪业务收入-代销金融产品业务:2.4461%;手续费及佣金收入-经纪业务-证券经纪业务收入-交易单元席位租赁:1.7740%;手续费及佣金收入-投资银行业务收入-证券承销业务:1.6820%;手续费及佣金收入-资产管理业务收入:1.2245%;其他收益:1.1665%;手续费及佣金收入-其他手续费及佣金收入:1.1288%;利息收入-买入返售金融资产利息收入-股票质押回购利息收入:0.6185%;手续费及佣金收入-投资咨询业务收入:0.4501%;其他业务收入:0.3785%;手续费及佣金收入-投资银行业务收入-财务顾问业务:0.1802%;利息收入-其他:0.1240%;手续费及佣金收入-投资银行业务收入-证券保荐业务:0.1158%;资产处置收益:0.0196%;利息收入-融资租赁及售后回租利息收入:0.0043%;利息收入-债权投资利息收入:0.0042%;利息收入-买入返售金融资产利息收入-约定购回利息收入:0.0042%;汇兑收益:-0.1516%",
+  "gross_margin_mrq": null,
+  "gross_margin_ttm": null,
+  "net_margin": 47.4982,
+  "roe_ttm": 13.6691,
+  "roic": null,
+  "ps_ttm": null,
+  "revenue": 268.83,
+  "net_profit": 116.52,
+  "total_assets": 11929.62,
+  "total_liabilities": 10091.78,
+  "net_assets": 1767.88,
+  "operating_cash_flow": 300.63
+ },
+ "indicators": {
+  "ma5": 18.86,
+  "ma20": 19.74,
+  "ema20": 19.59,
+  "rsi14": 34.1,
+  "macd": {
+   "dif": -0.515,
+   "dea": -0.421,
+   "hist": -0.189
+  }
+ }
+}
