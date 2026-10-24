@@ -1,0 +1,570 @@
+{
+ "id": "CN-000538-2026-10-24",
+ "symbol": "000538",
+ "market": "CN",
+ "name": "云南白药",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "云南白药",
+  "industry": "医药生物",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "制造和销售以云南白药系列产品和天然植物药系列产品为主的各类药品。"
+ },
+ "overview": {
+  "price": 52.4,
+  "change_pct": -0.6258,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "中药消费品基本盘稳健，但增长乏力，估值与成长性不匹配",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 49.83,
+   "high": null,
+   "low": null,
+   "close": 50.21,
+   "volume": 716,
+   "change_pct": 0.9246
+  },
+  {
+   "date": "20260821",
+   "open": 50.01,
+   "high": null,
+   "low": null,
+   "close": 49.33,
+   "volume": 860,
+   "change_pct": -1.7526
+  },
+  {
+   "date": "20260824",
+   "open": 49.29,
+   "high": null,
+   "low": null,
+   "close": 49.5,
+   "volume": 826,
+   "change_pct": 0.3446
+  },
+  {
+   "date": "20260825",
+   "open": 49.5,
+   "high": null,
+   "low": null,
+   "close": 50.0,
+   "volume": 674,
+   "change_pct": 1.0101
+  },
+  {
+   "date": "20260826",
+   "open": 50.0,
+   "high": null,
+   "low": null,
+   "close": 50.25,
+   "volume": 631,
+   "change_pct": 0.5
+  },
+  {
+   "date": "20260827",
+   "open": 50.04,
+   "high": null,
+   "low": null,
+   "close": 49.99,
+   "volume": 599,
+   "change_pct": -0.5174
+  },
+  {
+   "date": "20260828",
+   "open": 50.0,
+   "high": null,
+   "low": null,
+   "close": 50.0,
+   "volume": 511,
+   "change_pct": 0.02
+  },
+  {
+   "date": "20260831",
+   "open": 50.51,
+   "high": null,
+   "low": null,
+   "close": 50.39,
+   "volume": 1068,
+   "change_pct": 0.78
+  },
+  {
+   "date": "20260901",
+   "open": 50.29,
+   "high": null,
+   "low": null,
+   "close": 50.68,
+   "volume": 1038,
+   "change_pct": 0.5755
+  },
+  {
+   "date": "20260902",
+   "open": 50.68,
+   "high": null,
+   "low": null,
+   "close": 50.6,
+   "volume": 571,
+   "change_pct": -0.1579
+  },
+  {
+   "date": "20260903",
+   "open": 50.57,
+   "high": null,
+   "low": null,
+   "close": 50.77,
+   "volume": 593,
+   "change_pct": 0.336
+  },
+  {
+   "date": "20260904",
+   "open": 50.77,
+   "high": null,
+   "low": null,
+   "close": 51.02,
+   "volume": 744,
+   "change_pct": 0.4924
+  },
+  {
+   "date": "20260907",
+   "open": 51.01,
+   "high": null,
+   "low": null,
+   "close": 50.57,
+   "volume": 961,
+   "change_pct": -0.882
+  },
+  {
+   "date": "20260908",
+   "open": 50.5,
+   "high": null,
+   "low": null,
+   "close": 50.87,
+   "volume": 642,
+   "change_pct": 0.5932
+  },
+  {
+   "date": "20260909",
+   "open": 50.72,
+   "high": null,
+   "low": null,
+   "close": 50.47,
+   "volume": 514,
+   "change_pct": -0.7863
+  },
+  {
+   "date": "20260910",
+   "open": 50.37,
+   "high": null,
+   "low": null,
+   "close": 50.4,
+   "volume": 528,
+   "change_pct": -0.1387
+  },
+  {
+   "date": "20260911",
+   "open": 50.2,
+   "high": null,
+   "low": null,
+   "close": 50.4,
+   "volume": 779,
+   "change_pct": 0.0
+  },
+  {
+   "date": "20260914",
+   "open": 50.33,
+   "high": null,
+   "low": null,
+   "close": 50.76,
+   "volume": 815,
+   "change_pct": 0.7143
+  },
+  {
+   "date": "20260915",
+   "open": 50.62,
+   "high": null,
+   "low": null,
+   "close": 50.74,
+   "volume": 486,
+   "change_pct": -0.0394
+  },
+  {
+   "date": "20260916",
+   "open": 50.69,
+   "high": null,
+   "low": null,
+   "close": 50.84,
+   "volume": 755,
+   "change_pct": 0.1971
+  },
+  {
+   "date": "20260917",
+   "open": 50.75,
+   "high": null,
+   "low": null,
+   "close": 51.39,
+   "volume": 962,
+   "change_pct": 1.0818
+  },
+  {
+   "date": "20260918",
+   "open": 51.3,
+   "high": null,
+   "low": null,
+   "close": 51.05,
+   "volume": 840,
+   "change_pct": -0.6616
+  },
+  {
+   "date": "20260921",
+   "open": 51.0,
+   "high": null,
+   "low": null,
+   "close": 51.09,
+   "volume": 731,
+   "change_pct": 0.0784
+  },
+  {
+   "date": "20260922",
+   "open": 51.09,
+   "high": null,
+   "low": null,
+   "close": 51.32,
+   "volume": 786,
+   "change_pct": 0.4502
+  },
+  {
+   "date": "20260923",
+   "open": 51.25,
+   "high": null,
+   "low": null,
+   "close": 51.36,
+   "volume": 768,
+   "change_pct": 0.0779
+  },
+  {
+   "date": "20260924",
+   "open": 50.41,
+   "high": null,
+   "low": null,
+   "close": 49.87,
+   "volume": 694,
+   "change_pct": -0.8943
+  },
+  {
+   "date": "20260928",
+   "open": 49.87,
+   "high": null,
+   "low": null,
+   "close": 50.33,
+   "volume": 699,
+   "change_pct": 0.9224
+  },
+  {
+   "date": "20260929",
+   "open": 50.29,
+   "high": null,
+   "low": null,
+   "close": 50.24,
+   "volume": 465,
+   "change_pct": -0.1788
+  },
+  {
+   "date": "20260930",
+   "open": 50.25,
+   "high": null,
+   "low": null,
+   "close": 50.44,
+   "volume": 715,
+   "change_pct": 0.3981
+  },
+  {
+   "date": "20261008",
+   "open": 50.57,
+   "high": null,
+   "low": null,
+   "close": 50.89,
+   "volume": 915,
+   "change_pct": 0.8921
+  },
+  {
+   "date": "20261009",
+   "open": 50.9,
+   "high": null,
+   "low": null,
+   "close": 51.4,
+   "volume": 1163,
+   "change_pct": 1.0022
+  },
+  {
+   "date": "20261012",
+   "open": 51.4,
+   "high": null,
+   "low": null,
+   "close": 52.07,
+   "volume": 1091,
+   "change_pct": 1.3035
+  },
+  {
+   "date": "20261013",
+   "open": 52.0,
+   "high": null,
+   "low": null,
+   "close": 51.99,
+   "volume": 773,
+   "change_pct": -0.1536
+  },
+  {
+   "date": "20261014",
+   "open": 52.0,
+   "high": null,
+   "low": null,
+   "close": 52.65,
+   "volume": 1039,
+   "change_pct": 1.2695
+  },
+  {
+   "date": "20261015",
+   "open": 52.64,
+   "high": null,
+   "low": null,
+   "close": 52.9,
+   "volume": 1359,
+   "change_pct": 0.4748
+  },
+  {
+   "date": "20261016",
+   "open": 52.89,
+   "high": null,
+   "low": null,
+   "close": 53.08,
+   "volume": 1291,
+   "change_pct": 0.3403
+  },
+  {
+   "date": "20261019",
+   "open": 52.9,
+   "high": null,
+   "low": null,
+   "close": 54.19,
+   "volume": 1674,
+   "change_pct": 2.0912
+  },
+  {
+   "date": "20261020",
+   "open": 53.9,
+   "high": null,
+   "low": null,
+   "close": 53.38,
+   "volume": 1154,
+   "change_pct": -1.4947
+  },
+  {
+   "date": "20261021",
+   "open": 53.38,
+   "high": null,
+   "low": null,
+   "close": 52.8,
+   "volume": 1071,
+   "change_pct": -1.0865
+  },
+  {
+   "date": "20261022",
+   "open": 52.85,
+   "high": null,
+   "low": null,
+   "close": 52.73,
+   "volume": 940,
+   "change_pct": -0.1326
+  },
+  {
+   "date": "20261023",
+   "open": 52.77,
+   "high": null,
+   "low": null,
+   "close": 52.4,
+   "volume": 1079,
+   "change_pct": -0.6258
+  }
+ ],
+ "financials": {
+  "revenue": 218.84,
+  "revenue_yoy": 2.9495,
+  "net_profit": 37.01,
+  "net_profit_yoy": 1.4445,
+  "roe": 9.04,
+  "pe_ttm": 17.905,
+  "pb": 2.3899,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "持续回馈股东！云南白药2026年特别分红落地",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "2026年上半年，中药行业面临多重发展压力，整体业绩承压。2026年上半年，申万中药板块市值100亿元以上上市公司共18家。 其中仅3家企业实现营业收入、归母净利润、经营活动现金流量净额三项指标同比增长，头部企业盈利质量分化明显。 在行业整体环境偏弱的背景下，云南白药保持稳健经营底色，2026年上半年营业收入218.84亿元，同比增长2.95%；实现归母净利润37.01亿元，同比增长1.88%； "
+  },
+  {
+   "title": "云南白药“千草堂”入选2026年云南省“绿色云品”品牌目录",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "10月14日，云南省农业农村厅发布《关于2026年云南省“绿色云品”品牌目录入选名单的公示》。云南白药集团中药资源事业群提报的中药材品牌“千草堂”成功入选。 通过加强源头管理、规范加工流程、完善仓储管理与质量追溯，该品牌不断提升中药材质量管理水平，为客户提供来源可溯、品质有保障的道地药材产品，推动优质中药材资源与市场需求有效衔接。 未来，云南白药集团中药资源事业群将持续深化“千草堂”品牌建设，提升"
+  },
+  {
+   "title": "云南白药集团获云南省首款特殊医学用途全营养配方食品注册及生产许可",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "2026年10月9日，云南白药集团中央研究院昆明中心（云南省药物研究所）正式获得云南省市场监督管理局核发的特殊医学用途配方食品（简称特医食品）生产许可证， 这是继今年2月28日获全省首张特医食品注册证之后的一项新的关键生产资质。标志着公司已满足特医食品从生产到销售的全部法定条件并成为云南省首家完成“注册+生产”全链条贯通的特殊医学用途配方食品企业。 对云南白药集团而言，特医食品项目的实施不仅是产品"
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "云南白药2026H1营收218.84亿元，归母净利润37.01亿元，毛利率30.06%、ROE 9.04%，经营活动现金流41.06亿元。估值端PE(TTM)17.91倍、PB 2.39倍。技术面收盘52.40元，处于震荡区间。核心逻辑：白药气雾剂等核心品种基本盘稳固、品牌壁垒深厚，现金流健康；但整体收入增长乏力，医药商业板块毛利低拖累综合毛利率，成长性不足是主要制约，属于典型的稳健但缺乏弹性的标的。",
+  "bull_points": [
+   "品牌壁垒：云南白药气雾剂等核心品种市占率稳固，品牌认知度极高",
+   "现金流健康：经营活动现金流41.06亿元超过归母净利润37.01亿元",
+   "财务稳健：资产负债率仅26%，无有息负债压力，分红能力强",
+   "多元化布局：牙膏等健康品业务已成为重要利润来源"
+  ],
+  "bear_points": [
+   "增长乏力：核心品种增长放缓，新品类尚未形成有效接力",
+   "医药商业拖累：低毛利的分销业务占比高，拉低综合毛利率至30.06%",
+   "估值不低：PE(TTM)17.91倍对应个位数增长，PEG缺乏吸引力",
+   "牙膏业务竞争加剧：外资品牌下沉与国货崛起挤压份额"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 30.0591,
+   "ttm": 29.1123,
+   "net_margin": 16.8947,
+   "roe": 12.7443,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "低毛利医药商业占比高是综合毛利率偏低的主因，工业板块占比提升才能改善",
+    "price_vs_cost": "中药材价格波动影响成本，核心品种具备提价能力",
+    "new_business_drag": "健康品与医美等新业务前期投入拉低短期毛利"
+   },
+   "note": "云南白药毛利率30.06%呈结构性偏低，核心原因是低毛利的医药商业（分销）业务占比过高。若剔除商业板块，工业板块毛利率应在60%以上。观察重点应是工业板块收入增速与占比变化，而非综合毛利率。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.3899,
+   "ps_ttm": 2.236,
+   "pe_ttm": 17.905,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 218.84,
+   "net_profit": 37.01,
+   "total_assets": 551.45,
+   "total_liabilities": 140.97,
+   "net_assets": 409.73,
+   "operating_cash_flow": 41.06,
+   "asset_liability_ratio": 25.56,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 53.1,
+   "ma20": 51.81,
+   "ema20": 52.07,
+   "rsi14": 67.28,
+   "macd": {
+    "dif": 0.633,
+    "dea": 0.567,
+    "hist": 0.134
+   },
+   "close": 52.4,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "核心品种增长放缓",
+    "severity": "高",
+    "detail": "气雾剂等主力品种已进入成熟期，增长空间有限"
+   },
+   {
+    "type": "医药商业盈利弱",
+    "severity": "中高",
+    "detail": "分销业务毛利低且占用资金，拖累整体回报率"
+   },
+   {
+    "type": "竞争加剧",
+    "severity": "中",
+    "detail": "牙膏等健康品面临外资与国货双向竞争"
+   },
+   {
+    "type": "新业务不确定性",
+    "severity": "中",
+    "detail": "医美、中药创新药等新方向需要时间验证"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "工业板块占比提升+健康品高增，2027年净利润达85亿元",
+    "valuation": "22倍PE，对应约1870亿市值",
+    "upside": "+15%"
+   }
+  ],
+  "catalysts": [
+   "气雾剂等核心品种收入增速",
+   "医药商业板块收入与毛利变化",
+   "健康品（牙膏）市占率与收入增速",
+   "三季报工业板块占比"
+  ],
+  "falsification": [
+   "核心品种收入连续两季同比下滑",
+   "综合毛利率跌破27%",
+   "健康品业务收入增速转负",
+   "经营活动现金流转负"
+  ],
+  "kpi_tracking": [
+   "工业板块收入占比（目标：持续提升）",
+   "综合毛利率（阈值：<27%）",
+   "经营现金流/净利润（阈值：<0.8）",
+   "健康品业务收入增速（阈值：<5%）"
+  ]
+ },
+ "_data": {
+  "code": "000538.SZ",
+  "name": "云南白药",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "医药生物--中药Ⅱ--中药Ⅲ",
+  "main_business": "制造和销售以云南白药系列产品和天然植物药系列产品为主的各类药品。",
+  "business_mix": "批发零售:60.9012%;工业产品(自制):38.8868%;其他:0.1230%;其他服务:0.0889%;农产品:0.0000%",
+  "gross_margin_mrq": 30.0591,
+  "gross_margin_ttm": 29.1123,
+  "net_margin": 16.8947,
+  "roe_ttm": 12.7443,
+  "roic": 8.8799,
+  "ps_ttm": 2.236,
+  "revenue": 218.84,
+  "net_profit": 37.01,
+  "total_assets": 551.45,
+  "total_liabilities": 140.97,
+  "net_assets": 409.73,
+  "operating_cash_flow": 41.06
+ },
+ "indicators": {
+  "ma5": 53.1,
+  "ma20": 51.81,
+  "ema20": 52.07,
+  "rsi14": 67.28,
+  "macd": {
+   "dif": 0.633,
+   "dea": 0.567,
+   "hist": 0.134
+  }
+ }
+}
