@@ -1,0 +1,570 @@
+{
+ "id": "CN-000807-2026-10-24",
+ "symbol": "000807",
+ "market": "CN",
+ "name": "云铝股份",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "云铝股份",
+  "industry": "有色金属",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "重熔用铝锭及铝加工制品、炭素及炭素制品、氧化铝的加工及销售。"
+ },
+ "overview": {
+  "price": 25.16,
+  "change_pct": 2.069,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "水电铝一体化ROE 21.89%，PE仅7.95倍，绿电成本优势显著",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 26.28,
+   "high": null,
+   "low": null,
+   "close": 25.26,
+   "volume": 8531,
+   "change_pct": -2.6965
+  },
+  {
+   "date": "20260821",
+   "open": 25.47,
+   "high": null,
+   "low": null,
+   "close": 25.88,
+   "volume": 6505,
+   "change_pct": 2.4545
+  },
+  {
+   "date": "20260824",
+   "open": 26.28,
+   "high": null,
+   "low": null,
+   "close": 26.29,
+   "volume": 5891,
+   "change_pct": 1.5842
+  },
+  {
+   "date": "20260825",
+   "open": 26.16,
+   "high": null,
+   "low": null,
+   "close": 26.13,
+   "volume": 4414,
+   "change_pct": -0.6086
+  },
+  {
+   "date": "20260826",
+   "open": 26.2,
+   "high": null,
+   "low": null,
+   "close": 26.35,
+   "volume": 7131,
+   "change_pct": 0.8419
+  },
+  {
+   "date": "20260827",
+   "open": 26.28,
+   "high": null,
+   "low": null,
+   "close": 26.69,
+   "volume": 6371,
+   "change_pct": 1.2903
+  },
+  {
+   "date": "20260828",
+   "open": 27.1,
+   "high": null,
+   "low": null,
+   "close": 27.23,
+   "volume": 9074,
+   "change_pct": 2.0232
+  },
+  {
+   "date": "20260831",
+   "open": 26.81,
+   "high": null,
+   "low": null,
+   "close": 27.11,
+   "volume": 6208,
+   "change_pct": -0.4407
+  },
+  {
+   "date": "20260901",
+   "open": 27.29,
+   "high": null,
+   "low": null,
+   "close": 27.06,
+   "volume": 6178,
+   "change_pct": -0.1844
+  },
+  {
+   "date": "20260902",
+   "open": 26.93,
+   "high": null,
+   "low": null,
+   "close": 26.57,
+   "volume": 5684,
+   "change_pct": -1.8108
+  },
+  {
+   "date": "20260903",
+   "open": 26.98,
+   "high": null,
+   "low": null,
+   "close": 27.38,
+   "volume": 1,
+   "change_pct": 3.0486
+  },
+  {
+   "date": "20260904",
+   "open": 27.44,
+   "high": null,
+   "low": null,
+   "close": 26.95,
+   "volume": 6157,
+   "change_pct": -1.5705
+  },
+  {
+   "date": "20260907",
+   "open": 26.82,
+   "high": null,
+   "low": null,
+   "close": 26.79,
+   "volume": 3815,
+   "change_pct": -0.5937
+  },
+  {
+   "date": "20260908",
+   "open": 26.95,
+   "high": null,
+   "low": null,
+   "close": 27.49,
+   "volume": 6954,
+   "change_pct": 2.6129
+  },
+  {
+   "date": "20260909",
+   "open": 27.84,
+   "high": null,
+   "low": null,
+   "close": 29.03,
+   "volume": 1,
+   "change_pct": 5.602
+  },
+  {
+   "date": "20260910",
+   "open": 29.03,
+   "high": null,
+   "low": null,
+   "close": 28.33,
+   "volume": 6063,
+   "change_pct": -2.4113
+  },
+  {
+   "date": "20260911",
+   "open": 27.5,
+   "high": null,
+   "low": null,
+   "close": 27.29,
+   "volume": 7615,
+   "change_pct": -3.671
+  },
+  {
+   "date": "20260914",
+   "open": 27.02,
+   "high": null,
+   "low": null,
+   "close": 27.02,
+   "volume": 4147,
+   "change_pct": -0.9894
+  },
+  {
+   "date": "20260915",
+   "open": 27.04,
+   "high": null,
+   "low": null,
+   "close": 27.06,
+   "volume": 4429,
+   "change_pct": 0.148
+  },
+  {
+   "date": "20260916",
+   "open": 27.11,
+   "high": null,
+   "low": null,
+   "close": 27.16,
+   "volume": 5335,
+   "change_pct": 0.3695
+  },
+  {
+   "date": "20260917",
+   "open": 26.7,
+   "high": null,
+   "low": null,
+   "close": 26.91,
+   "volume": 4521,
+   "change_pct": -0.9205
+  },
+  {
+   "date": "20260918",
+   "open": 27.36,
+   "high": null,
+   "low": null,
+   "close": 27.37,
+   "volume": 5779,
+   "change_pct": 1.7094
+  },
+  {
+   "date": "20260921",
+   "open": 27.18,
+   "high": null,
+   "low": null,
+   "close": 26.77,
+   "volume": 5638,
+   "change_pct": -2.1922
+  },
+  {
+   "date": "20260922",
+   "open": 26.58,
+   "high": null,
+   "low": null,
+   "close": 26.95,
+   "volume": 4662,
+   "change_pct": 0.6724
+  },
+  {
+   "date": "20260923",
+   "open": 27.09,
+   "high": null,
+   "low": null,
+   "close": 26.58,
+   "volume": 3501,
+   "change_pct": -1.3729
+  },
+  {
+   "date": "20260924",
+   "open": 26.51,
+   "high": null,
+   "low": null,
+   "close": 26.03,
+   "volume": 5036,
+   "change_pct": -2.0692
+  },
+  {
+   "date": "20260928",
+   "open": 25.5,
+   "high": null,
+   "low": null,
+   "close": 25.37,
+   "volume": 5247,
+   "change_pct": -2.5355
+  },
+  {
+   "date": "20260929",
+   "open": 25.35,
+   "high": null,
+   "low": null,
+   "close": 26.47,
+   "volume": 6844,
+   "change_pct": 4.3358
+  },
+  {
+   "date": "20260930",
+   "open": 25.99,
+   "high": null,
+   "low": null,
+   "close": 26.2,
+   "volume": 3970,
+   "change_pct": -1.02
+  },
+  {
+   "date": "20261008",
+   "open": 26.16,
+   "high": null,
+   "low": null,
+   "close": 26.3,
+   "volume": 4004,
+   "change_pct": 0.3817
+  },
+  {
+   "date": "20261009",
+   "open": 26.15,
+   "high": null,
+   "low": null,
+   "close": 26.6,
+   "volume": 4932,
+   "change_pct": 1.1407
+  },
+  {
+   "date": "20261012",
+   "open": 26.68,
+   "high": null,
+   "low": null,
+   "close": 25.95,
+   "volume": 3795,
+   "change_pct": -2.4436
+  },
+  {
+   "date": "20261013",
+   "open": 25.81,
+   "high": null,
+   "low": null,
+   "close": 26.55,
+   "volume": 4720,
+   "change_pct": 2.3121
+  },
+  {
+   "date": "20261014",
+   "open": 26.3,
+   "high": null,
+   "low": null,
+   "close": 26.27,
+   "volume": 3545,
+   "change_pct": -1.0546
+  },
+  {
+   "date": "20261015",
+   "open": 25.78,
+   "high": null,
+   "low": null,
+   "close": 25.03,
+   "volume": 6772,
+   "change_pct": -4.7202
+  },
+  {
+   "date": "20261016",
+   "open": 25.38,
+   "high": null,
+   "low": null,
+   "close": 25.21,
+   "volume": 3837,
+   "change_pct": 0.7191
+  },
+  {
+   "date": "20261019",
+   "open": 25.39,
+   "high": null,
+   "low": null,
+   "close": 25.62,
+   "volume": 3098,
+   "change_pct": 1.6263
+  },
+  {
+   "date": "20261020",
+   "open": 25.59,
+   "high": null,
+   "low": null,
+   "close": 25.32,
+   "volume": 4904,
+   "change_pct": -1.171
+  },
+  {
+   "date": "20261021",
+   "open": 25.2,
+   "high": null,
+   "low": null,
+   "close": 24.93,
+   "volume": 4056,
+   "change_pct": -1.5403
+  },
+  {
+   "date": "20261022",
+   "open": 25.0,
+   "high": null,
+   "low": null,
+   "close": 24.65,
+   "volume": 3914,
+   "change_pct": -1.1231
+  },
+  {
+   "date": "20261023",
+   "open": 24.34,
+   "high": null,
+   "low": null,
+   "close": 25.16,
+   "volume": 4139,
+   "change_pct": 2.069
+  }
+ ],
+ "financials": {
+  "revenue": 349.81,
+  "revenue_yoy": 20.3002,
+  "net_profit": 76.84,
+  "net_profit_yoy": 178.4147,
+  "roe": 21.89,
+  "pe_ttm": 7.9534,
+  "pb": 2.2865,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "云铝股份：数据创造绿色价值 AI赋能电力交易",
+   "source": "同花顺财经",
+   "date": "2026-10-21",
+   "sentiment": "neutral",
+   "summary": "1、云铝股份“碳索绿电鑫云聚能”项目荣获2026届全国精益数智化创新大赛五星作品奖。 该项目利用人工智能、大数据等技术推动资源集中管理、数据融合贯通和经验模型化，创新打造“碳索绿电鑫云聚能”虚拟电厂运营管理与电力现货交易辅助决策一体化AI应用系统，探索人工智能赋能能源管理的新模式。AI。数智赋能。 在近日举办的2026届全国精益数智化创新大赛中，云铝股份（000807）“碳索绿电鑫云聚能”项目荣获"
+  },
+  {
+   "title": "云铝股份涨2.07%",
+   "source": "同花顺财经",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "summary": "拥有灵活高效民营机制的上海佐永新能源科技有限公司共同在昆明市设立云南创能斐源金属燃料电池有限公司。2017年12月13日晚公告，拟收购创能公司余下的66%股权。收购完成后创能公司将成为云铝股份的全资子公司。 该公司为铝空气电池研发的平台公司，云铝股份还称创能公司与另一公司的部分产品已进入应用测试阶段。 云铝股份公告称，创能公司和慧创绿能在通信基站备用电源、应急备用电源及新能源车配套电源等领域的产品"
+  },
+  {
+   "title": "云铝股份(000807)股吧_云铝股份怎么样_分析讨论社区—东方财富网",
+   "source": "同花顺财经",
+   "date": "2026-10-03",
+   "sentiment": "neutral",
+   "summary": "云铝股份(000807)股吧_云铝股份怎么样_分析讨论社区—东方财富网。公司信息更新报告：铝价持续高位公司盈利可期，提高分红凸显红利价值。公司事件点评报告：电解铝量价齐升带来利润增长，二季度经营强劲。 公司信息更新报告：吨铝利润走扩推动业绩增长，持续提高分红增强信心。2025年半年报点评：氧化铝价格下行推升公司毛利率，中期分红比例持续提升。公司信息更新报告：原铝产量有望进一步抬升，绿色价值独具优势"
+  }
+ ],
+ "analysis": {
+  "rating": "增持",
+  "summary": "云铝股份2026H1营收349.81亿元，归母净利润76.84亿元，毛利率31.84%、ROE 21.89%，经营活动现金流83.77亿元，资产负债率仅16%。估值端PE(TTM)7.95倍、PB 2.29倍。技术面收盘25.16元，处于高位。核心逻辑：水电铝一体化布局使电力成本远低于煤电铝同行，ROE 21.89%在电解铝行业顶尖，绿电铝溢价叠加双碳政策红利，PE 7.95倍估值偏低；风险在于铝价波动与云南来水情况。",
+  "bull_points": [
+   "水电铝成本优势：绿电占比超85%，电力成本显著低于煤电铝同行",
+   "ROE 21.89%：在电解铝行业中顶尖水平",
+   "绿电铝溢价：双碳背景下绿色铝溢价逐步显现，欧盟CBAM提供额外收益",
+   "财务稳健：资产负债率仅16%，现金流83.77亿元"
+  ],
+  "bear_points": [
+   "铝价波动：电解铝价格是业绩核心变量，波动直接影响利润",
+   "云南来水风险：枯水期限电可能影响产能利用率",
+   "产能天花板：电解铝产能指标受限，成长空间明确但有限",
+   "周期属性：行业整体呈周期性，当前或处盈利高位"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 31.8381,
+   "ttm": 25.9711,
+   "net_margin": 25.2084,
+   "roe": 28.7482,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "铝锭与铝加工产品结构决定综合毛利，加工深度提升是方向",
+    "price_vs_cost": "绿电成本稳定且低于煤电，是毛利率优势的核心来源",
+    "new_business_drag": "绿电铝认证与高端铝合金等新业务前期投入"
+   },
+   "note": "云铝股份毛利率31.84%显著高于煤电铝同行（通常10-15%），核心原因是绿电成本优势。这是可持续的结构性优势而非周期性红利，也是ROE 21.89%的根源。需关注枯水期限电对产能利用率的影响，这比毛利率本身更关键。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.2865,
+   "ps_ttm": 1.3231,
+   "pe_ttm": 7.9534,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 349.81,
+   "net_profit": 76.84,
+   "total_assets": 505.15,
+   "total_liabilities": 79.84,
+   "net_assets": 381.61,
+   "operating_cash_flow": 83.77,
+   "asset_liability_ratio": 15.81,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 25.14,
+   "ma20": 25.97,
+   "ema20": 25.81,
+   "rsi14": 48.41,
+   "macd": {
+    "dif": -0.421,
+    "dea": -0.278,
+    "hist": -0.287
+   },
+   "close": 25.16,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "铝价大幅下跌",
+    "severity": "高",
+    "detail": "铝价是业绩核心变量"
+   },
+   {
+    "type": "云南枯水期限电",
+    "severity": "中高",
+    "detail": "来水不足导致限电将直接影响产能利用率"
+   },
+   {
+    "type": "产能天花板",
+    "severity": "中",
+    "detail": "电解铝产能指标受限，规模扩张空间明确但有限"
+   },
+   {
+    "type": "周期见顶风险",
+    "severity": "中",
+    "detail": "行业盈利或处高位，需警惕周期性回落"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "乐观",
+    "assumption": "铝价维持高位+绿电溢价扩大，2027年净利润达130亿元",
+    "valuation": "10倍PE，对应约1300亿市值",
+    "upside": "+25%"
+   }
+  ],
+  "catalysts": [
+   "电解铝价格与库存走势",
+   "云南来水与限电情况",
+   "绿电铝溢价与CBAM收益",
+   "三季报产能利用率"
+  ],
+  "falsification": [
+   "铝价大幅下跌",
+   "枯水期限电导致产能利用率大幅下降",
+   "综合毛利率跌破25%",
+   "归母净利润同比降幅超30%"
+  ],
+  "kpi_tracking": [
+   "综合毛利率（阈值：<25%）",
+   "产能利用率（阈值：受限电大幅下降）",
+   "绿电铝溢价（目标：扩大）",
+   "归母净利润同比（阈值：<-30%）"
+  ]
+ },
+ "_data": {
+  "code": "000807.SZ",
+  "name": "云铝股份",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "有色金属--工业金属--铝",
+  "main_business": "重熔用铝锭及铝加工制品、炭素及炭素制品、氧化铝的加工及销售。",
+  "business_mix": "电解铝:56.8008%;铝加工产品:42.0079%;其他:1.1912%",
+  "gross_margin_mrq": 31.8381,
+  "gross_margin_ttm": 25.9711,
+  "net_margin": 25.2084,
+  "roe_ttm": 28.7482,
+  "roic": 21.3694,
+  "ps_ttm": 1.3231,
+  "revenue": 349.81,
+  "net_profit": 76.84,
+  "total_assets": 505.15,
+  "total_liabilities": 79.84,
+  "net_assets": 381.61,
+  "operating_cash_flow": 83.77
+ },
+ "indicators": {
+  "ma5": 25.14,
+  "ma20": 25.97,
+  "ema20": 25.81,
+  "rsi14": 48.41,
+  "macd": {
+   "dif": -0.421,
+   "dea": -0.278,
+   "hist": -0.287
+  }
+ }
+}
