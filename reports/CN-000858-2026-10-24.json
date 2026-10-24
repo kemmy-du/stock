@@ -1,0 +1,570 @@
+{
+ "id": "CN-000858-2026-10-24",
+ "symbol": "000858",
+ "market": "CN",
+ "name": "五粮液",
+ "generated_at": "2026-10-24T20:00:00+08:00",
+ "company": {
+  "full_name": "五粮液",
+  "industry": "食品饮料",
+  "listed_at": "",
+  "exchange": "深交所",
+  "main_business": "“五粮液”及其系列白酒的生产和销售"
+ },
+ "overview": {
+  "price": 73.86,
+  "change_pct": 2.9695,
+  "currency": "CNY",
+  "as_of": "20261023"
+ },
+ "cover": "高端白酒PE 21.9倍不算低，现金流-21.54亿是核心警讯",
+ "price_series": [
+  {
+   "date": "20260820",
+   "open": 71.91,
+   "high": null,
+   "low": null,
+   "close": 72.09,
+   "volume": 1603,
+   "change_pct": 0.2782
+  },
+  {
+   "date": "20260821",
+   "open": 71.96,
+   "high": null,
+   "low": null,
+   "close": 71.19,
+   "volume": 1971,
+   "change_pct": -1.2484
+  },
+  {
+   "date": "20260824",
+   "open": 71.2,
+   "high": null,
+   "low": null,
+   "close": 71.48,
+   "volume": 2126,
+   "change_pct": 0.4074
+  },
+  {
+   "date": "20260825",
+   "open": 71.5,
+   "high": null,
+   "low": null,
+   "close": 71.52,
+   "volume": 1803,
+   "change_pct": 0.056
+  },
+  {
+   "date": "20260826",
+   "open": 70.98,
+   "high": null,
+   "low": null,
+   "close": 71.9,
+   "volume": 1969,
+   "change_pct": 0.5313
+  },
+  {
+   "date": "20260827",
+   "open": 71.81,
+   "high": null,
+   "low": null,
+   "close": 71.12,
+   "volume": 3208,
+   "change_pct": -1.0848
+  },
+  {
+   "date": "20260828",
+   "open": 71.12,
+   "high": null,
+   "low": null,
+   "close": 71.51,
+   "volume": 2304,
+   "change_pct": 0.5484
+  },
+  {
+   "date": "20260831",
+   "open": 71.42,
+   "high": null,
+   "low": null,
+   "close": 71.27,
+   "volume": 2524,
+   "change_pct": -0.3356
+  },
+  {
+   "date": "20260901",
+   "open": 71.18,
+   "high": null,
+   "low": null,
+   "close": 71.83,
+   "volume": 3013,
+   "change_pct": 0.7857
+  },
+  {
+   "date": "20260902",
+   "open": 71.61,
+   "high": null,
+   "low": null,
+   "close": 70.82,
+   "volume": 2622,
+   "change_pct": -1.4061
+  },
+  {
+   "date": "20260903",
+   "open": 70.82,
+   "high": null,
+   "low": null,
+   "close": 70.68,
+   "volume": 1801,
+   "change_pct": -0.1977
+  },
+  {
+   "date": "20260904",
+   "open": 70.68,
+   "high": null,
+   "low": null,
+   "close": 71.98,
+   "volume": 4511,
+   "change_pct": 1.8393
+  },
+  {
+   "date": "20260907",
+   "open": 71.81,
+   "high": null,
+   "low": null,
+   "close": 71.46,
+   "volume": 2622,
+   "change_pct": -0.7224
+  },
+  {
+   "date": "20260908",
+   "open": 71.43,
+   "high": null,
+   "low": null,
+   "close": 71.65,
+   "volume": 1972,
+   "change_pct": 0.2659
+  },
+  {
+   "date": "20260909",
+   "open": 71.64,
+   "high": null,
+   "low": null,
+   "close": 71.16,
+   "volume": 1787,
+   "change_pct": -0.6839
+  },
+  {
+   "date": "20260910",
+   "open": 71.08,
+   "high": null,
+   "low": null,
+   "close": 70.48,
+   "volume": 2231,
+   "change_pct": -0.9556
+  },
+  {
+   "date": "20260911",
+   "open": 70.3,
+   "high": null,
+   "low": null,
+   "close": 69.75,
+   "volume": 2313,
+   "change_pct": -1.0358
+  },
+  {
+   "date": "20260914",
+   "open": 69.76,
+   "high": null,
+   "low": null,
+   "close": 69.85,
+   "volume": 1173,
+   "change_pct": 0.1434
+  },
+  {
+   "date": "20260915",
+   "open": 69.95,
+   "high": null,
+   "low": null,
+   "close": 69.7,
+   "volume": 967,
+   "change_pct": -0.2147
+  },
+  {
+   "date": "20260916",
+   "open": 69.6,
+   "high": null,
+   "low": null,
+   "close": 69.26,
+   "volume": 1541,
+   "change_pct": -0.6313
+  },
+  {
+   "date": "20260917",
+   "open": 69.01,
+   "high": null,
+   "low": null,
+   "close": 69.13,
+   "volume": 1179,
+   "change_pct": -0.1877
+  },
+  {
+   "date": "20260918",
+   "open": 69.11,
+   "high": null,
+   "low": null,
+   "close": 70.0,
+   "volume": 1786,
+   "change_pct": 1.2585
+  },
+  {
+   "date": "20260921",
+   "open": 69.96,
+   "high": null,
+   "low": null,
+   "close": 70.27,
+   "volume": 1695,
+   "change_pct": 0.3857
+  },
+  {
+   "date": "20260922",
+   "open": 70.18,
+   "high": null,
+   "low": null,
+   "close": 70.54,
+   "volume": 1398,
+   "change_pct": 0.3842
+  },
+  {
+   "date": "20260923",
+   "open": 70.31,
+   "high": null,
+   "low": null,
+   "close": 70.34,
+   "volume": 1736,
+   "change_pct": -0.2835
+  },
+  {
+   "date": "20260924",
+   "open": 70.1,
+   "high": null,
+   "low": null,
+   "close": 69.67,
+   "volume": 1318,
+   "change_pct": -0.9525
+  },
+  {
+   "date": "20260928",
+   "open": 69.5,
+   "high": null,
+   "low": null,
+   "close": 68.91,
+   "volume": 1536,
+   "change_pct": -1.0909
+  },
+  {
+   "date": "20260929",
+   "open": 68.87,
+   "high": null,
+   "low": null,
+   "close": 68.77,
+   "volume": 1093,
+   "change_pct": -0.2032
+  },
+  {
+   "date": "20260930",
+   "open": 68.84,
+   "high": null,
+   "low": null,
+   "close": 70.06,
+   "volume": 1949,
+   "change_pct": 1.8758
+  },
+  {
+   "date": "20261008",
+   "open": 70.05,
+   "high": null,
+   "low": null,
+   "close": 70.14,
+   "volume": 1684,
+   "change_pct": 0.1142
+  },
+  {
+   "date": "20261009",
+   "open": 70.15,
+   "high": null,
+   "low": null,
+   "close": 70.56,
+   "volume": 1786,
+   "change_pct": 0.5988
+  },
+  {
+   "date": "20261012",
+   "open": 70.57,
+   "high": null,
+   "low": null,
+   "close": 71.06,
+   "volume": 1653,
+   "change_pct": 0.7086
+  },
+  {
+   "date": "20261013",
+   "open": 71.04,
+   "high": null,
+   "low": null,
+   "close": 70.46,
+   "volume": 1978,
+   "change_pct": -0.8444
+  },
+  {
+   "date": "20261014",
+   "open": 70.3,
+   "high": null,
+   "low": null,
+   "close": 70.82,
+   "volume": 1720,
+   "change_pct": 0.5109
+  },
+  {
+   "date": "20261015",
+   "open": 70.66,
+   "high": null,
+   "low": null,
+   "close": 71.3,
+   "volume": 2905,
+   "change_pct": 0.6778
+  },
+  {
+   "date": "20261016",
+   "open": 70.98,
+   "high": null,
+   "low": null,
+   "close": 72.07,
+   "volume": 3023,
+   "change_pct": 1.0799
+  },
+  {
+   "date": "20261019",
+   "open": 71.96,
+   "high": null,
+   "low": null,
+   "close": 72.82,
+   "volume": 3243,
+   "change_pct": 1.0407
+  },
+  {
+   "date": "20261020",
+   "open": 72.65,
+   "high": null,
+   "low": null,
+   "close": 72.85,
+   "volume": 2273,
+   "change_pct": 0.0412
+  },
+  {
+   "date": "20261021",
+   "open": 72.85,
+   "high": null,
+   "low": null,
+   "close": 72.0,
+   "volume": 2289,
+   "change_pct": -1.1668
+  },
+  {
+   "date": "20261022",
+   "open": 71.99,
+   "high": null,
+   "low": null,
+   "close": 71.73,
+   "volume": 2164,
+   "change_pct": -0.37499999999999
+  },
+  {
+   "date": "20261023",
+   "open": 71.78,
+   "high": null,
+   "low": null,
+   "close": 73.86,
+   "volume": 4731,
+   "change_pct": 2.9695
+  }
+ ],
+ "financials": {
+  "revenue": 284.17,
+  "revenue_yoy": 20.8707,
+  "net_profit": 87.53,
+  "net_profit_yoy": 84.3355,
+  "roe": 7.14,
+  "pe_ttm": 21.913,
+  "pb": 2.643,
+  "report_period": "2026-06-30"
+ },
+ "news": [
+  {
+   "title": "宜宾五粮液股份有限公司",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "法人代表人是邓敏，成立于1998-04-21，注册资本388160.8005万人民币，注册地址四川省宜宾市翠屏区岷江西路150号，主营业务主营:酒类产品及相关辅助产品(瓶盖、商标、标识及包装制品)的生产经营;兼营:饮料、药品、水果种植、农业种植、进出口业务、物业管理、投资管理(不得从事非法集资、吸收公众资金等金融活动)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)。，所属行业制造业、酒"
+  },
+  {
+   "title": "五粮液(000858) 盈利预测-业绩预测 业绩预测详表 研报评级",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "五粮液(000858) 盈利预测-业绩预测 业绩预测详表 研报评级\n业绩预测\n截至2026-10-23，6个月以内共有 19 家机构对五粮液的2026年度业绩作出预测；\n预测2026年每股收益 3.91 元，较去年同比增长 69.5%， 预测2026年净利润 151.89 亿元，较去年同比增长 69.63%\n业绩预测\n净利润 预测净利润 每股收益 预测每股收益\n[[\"2019\",\"4.48\",\"1"
+  },
+  {
+   "title": "五粮液(000858) 财务分析-财务诊断 财务指标 收支拆解 指标变动说明 资产负债构成 财报点评 杜邦分析 原始财报",
+   "source": "同花顺财经",
+   "date": "2026-10-24",
+   "sentiment": "neutral",
+   "summary": "五粮液(000858) 财务分析-财务诊断 财务指标 收支拆解 指标变动说明 资产负债构成 财报点评 杜邦分析 原始财报\n财务诊断\n报告期 2026年中报\n2026\n一季 中报 三季 年报\n财务有所下降，食品饮料-白酒Ⅱ行业排名7/20详情>\n盈利能力\n成长能力\n营运能力\n偿债能力\n现金流\n本期总资产收益率(ROA)4.80%，去年同期为2.49%，总资产收益能力大幅提升[行业排名7/20]\n本期"
+  }
+ ],
+ "analysis": {
+  "rating": "中性",
+  "summary": "五粮液2026H1营收284.17亿元，归母净利润87.53亿元，毛利率80.29%、ROE 7.14%，经营活动现金流-21.54亿元。估值端PE(TTM)21.91倍、PB 2.64倍。技术面收盘73.86元，随白酒板块深度回调。核心矛盾：品牌与毛利率80%依然顶尖，但经营现金流转负是强烈的渠道警讯，说明报表利润未转化为现金回款，PE 21.91倍在行业调整期缺乏安全边际。",
+  "bull_points": [
+   "品牌力稳固：普五千元价格带核心单品，品牌认知度极高",
+   "毛利率80.29%：高端白酒顶级水平，盈利能力突出",
+   "产品矩阵完善：普五+1618+低度+系列酒覆盖多价格带",
+   "渠道改革：数字化营销与控盘分利模式提升渠道效率"
+  ],
+  "bear_points": [
+   "现金流转负：经营活动现金流-21.54亿元，与87.53亿元净利润严重背离",
+   "PE 21.91倍不低：在行业调整期缺乏安全边际",
+   "ROE 7.14%偏低：渠道扩张与费用投入压制回报",
+   "行业调整：白酒去库存周期中，次高端与高端均承压"
+  ]
+ },
+ "deep_analysis": {
+  "gross_margin": {
+   "current": 80.2949,
+   "ttm": 79.0959,
+   "net_margin": 31.6579,
+   "roe": 11.0427,
+   "trend": "stable",
+   "series_quarterly": [],
+   "peer_compare": [],
+   "attribution": {
+    "product_mix": "普五占比与系列酒结构决定综合毛利率，系列酒扩张会拉低毛利",
+    "price_vs_cost": "高端白酒提价能力强，成本影响极小",
+    "new_business_drag": "低度酒与浓香系列酒推广前期投入"
+   },
+   "note": "五粮液毛利率80.29%无需担忧，核心警讯在现金流：-21.54亿元经营现金流对应87.53亿元净利润，净利润现金含量为负，这是白酒行业调整期最危险的信号——说明渠道打款意愿显著减弱、报表利润超前于真实回款。此信号比任何估值指标都重要。"
+  },
+  "valuation": {
+   "market_cap": null,
+   "pb": 2.643,
+   "ps_ttm": 6.31,
+   "pe_ttm": 21.913,
+   "peer_pb_range": null,
+   "implied_assumption": "",
+   "note": ""
+  },
+  "balance_sheet": {
+   "revenue": 284.17,
+   "net_profit": 87.53,
+   "total_assets": 1849.99,
+   "total_liabilities": 640.55,
+   "net_assets": 1184.8,
+   "operating_cash_flow": -21.54,
+   "asset_liability_ratio": 34.62,
+   "note": ""
+  },
+  "technical": {
+   "ma5": 72.65,
+   "ma20": 70.91,
+   "ema20": 71.41,
+   "rsi14": 78.55,
+   "macd": {
+    "dif": 0.549,
+    "dea": 0.208,
+    "hist": 0.683
+   },
+   "close": 73.86,
+   "as_of": "20261023"
+  },
+  "risks": [
+   {
+    "type": "渠道现金流持续恶化",
+    "severity": "高",
+    "detail": "经营现金流转负若延续，说明渠道压力远超预期"
+   },
+   {
+    "type": "行业调整超预期",
+    "severity": "高",
+    "detail": "白酒去库存周期延长将影响量价"
+   },
+   {
+    "type": "高端价格带竞争",
+    "severity": "中",
+    "detail": "茅台下沉与国窖上行挤压千元带"
+   },
+   {
+    "type": "估值回归",
+    "severity": "中高",
+    "detail": "PE 21.91倍在行业调整期缺乏支撑"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "悲观",
+    "assumption": "渠道持续承压+行业调整延长，2027年净利润降至160亿元",
+    "valuation": "15倍PE，对应约2400亿市值",
+    "upside": "-25%"
+   }
+  ],
+  "catalysts": [
+   "合同负债与经营现金流变化（最核心）",
+   "普五批价走势",
+   "渠道库存去化进度",
+   "三季报现金流是否转正"
+  ],
+  "falsification": [
+   "经营现金流连续两季为负",
+   "合同负债大幅下滑",
+   "单季归母净利润同比降幅超30%",
+   "普五批价跌破关键价位"
+  ],
+  "kpi_tracking": [
+   "经营现金流（阈值：连续两季为负）",
+   "合同负债环比（阈值：连续下滑）",
+   "综合毛利率（阈值：<78%）",
+   "单季归母净利润同比（阈值：<-30%）"
+  ]
+ },
+ "_data": {
+  "code": "000858.SZ",
+  "name": "五粮液",
+  "board": "主板",
+  "priority": 1,
+  "industry_full": "食品饮料--白酒Ⅱ--白酒Ⅲ",
+  "main_business": "“五粮液”及其系列白酒的生产和销售",
+  "business_mix": "酒类产品:91.5503%;非酒类产品:8.4497%",
+  "gross_margin_mrq": 80.2949,
+  "gross_margin_ttm": 79.0959,
+  "net_margin": 31.6579,
+  "roe_ttm": 11.0427,
+  "roic": 6.7412,
+  "ps_ttm": 6.31,
+  "revenue": 284.17,
+  "net_profit": 87.53,
+  "total_assets": 1849.99,
+  "total_liabilities": 640.55,
+  "net_assets": 1184.8,
+  "operating_cash_flow": -21.54
+ },
+ "indicators": {
+  "ma5": 72.65,
+  "ma20": 70.91,
+  "ema20": 71.41,
+  "rsi14": 78.55,
+  "macd": {
+   "dif": 0.549,
+   "dea": 0.208,
+   "hist": 0.683
+  }
+ }
+}
