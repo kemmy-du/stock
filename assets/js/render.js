@@ -65,10 +65,108 @@
       $("#stat-reports").textContent = all.length;
       const stocks = new Set(all.map((r) => r.symbol + r.market));
       $("#stat-stocks").textContent = stocks.size;
+      // 雷达监控数（取雷达数据的 monitored 字段）
+      try {
+        const radar = await loadJSON("data/radar.json");
+        $("#stat-radar").textContent = radar.monitored || "—";
+      } catch (e) { /* 雷达数据缺失时忽略 */ }
       lazySparks($("#report-grid"), 12);
     } catch (e) {
       $("#report-grid").innerHTML = `<div class="empty-state">报告加载失败：${esc(e.message)}</div>`;
     }
+  }
+
+  /* ---------- 股票雷达：重点股票突发新闻 ---------- */
+  const RADAR_FILTERS = [
+    { key: "all", label: "全部" },
+    { key: "突发", label: "突发" },
+    { key: "利好", label: "利好" },
+    { key: "利空", label: "利空" },
+    { key: "公告", label: "公告" },
+  ];
+
+  function radarItemHTML(it) {
+    const cls = it.sentiment === "negative" ? "is-negative"
+      : it.sentiment === "positive" ? "is-positive" : "";
+    const tags = (it.tags || []).map((t) => {
+      const tc = t === "利空" ? "tag-neg" : t === "利好" ? "tag-pos" : t === "突发" ? "tag-hot" : "";
+      return `<span class="ri-tag ${tc}">${esc(t)}</span>`;
+    }).join("");
+    const link = it.has_report
+      ? `<a class="ri-report" href="report.html#${encodeURIComponent(it.report_id)}">查看报告 →</a>`
+      : "";
+    return `
+    <article class="radar-item ${cls}">
+      <div class="ri-head">
+        <span class="ri-stock">${marketBadge(it.market)}${esc(it.stock_name)}<span class="ri-code num">${esc(it.stock_code)}</span></span>
+        <span class="ri-tags">${tags}</span>
+      </div>
+      <h3 class="ri-title">${esc(it.title)}</h3>
+      <p class="ri-sum">${esc(it.summary)}</p>
+      <div class="ri-meta">
+        <span class="num">${esc(it.date)}</span>
+        ${link}
+      </div>
+    </article>`;
+  }
+
+  async function initRadar() {
+    if (!$("#radar-list")) return;
+    let data = null;
+    try {
+      data = await loadJSON("data/radar.json");
+    } catch (e) {
+      $("#radar-list").innerHTML =
+        `<div class="empty-state">雷达数据暂未生成，请稍后重试。</div>`;
+      return;
+    }
+    const items = data.items || [];
+    const state = { filter: "all" };
+
+    // 状态条
+    const statusEl = $("#radar-status");
+    if (statusEl) {
+      const stocks = new Set(items.map((i) => i.stock_code));
+      statusEl.innerHTML =
+        `监控 <b class="num">${data.monitored || stocks.size}</b> 只重点标的 · ` +
+        `近 ${data.window_days || 7} 日 <b class="num">${items.length}</b> 条动态 · ` +
+        `更新于 <span class="num">${esc(data.generated_at || "")}</span>`;
+    }
+
+    // 筛选条（含计数）
+    const chipsEl = $("#radar-filters");
+    if (chipsEl) {
+      const count = (key) => key === "all"
+        ? items.length
+        : items.filter((i) => (i.tags || []).indexOf(key) >= 0).length;
+      chipsEl.innerHTML = RADAR_FILTERS.map((f) => `
+        <button class="chip${state.filter === f.key ? " active" : ""}" data-filter="${f.key}">
+          ${f.label}<span class="chip-cnt num">${count(f.key)}</span>
+        </button>`).join("");
+      $$("#radar-filters .chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          state.filter = chip.dataset.filter;
+          $$("#radar-filters .chip").forEach((c) =>
+            c.classList.toggle("active", c === chip));
+          renderList();
+        });
+      });
+    }
+
+    function renderList() {
+      const list = state.filter === "all"
+        ? items
+        : items.filter((i) => (i.tags || []).indexOf(state.filter) >= 0);
+      const box = $("#radar-list");
+      if (!box) return;
+      if (!list.length) {
+        box.innerHTML = `<div class="empty-state">该分类下暂无动态</div>`;
+        return;
+      }
+      box.innerHTML = list.map(radarItemHTML).join("");
+    }
+
+    renderList();
   }
 
   async function initMarket() {
@@ -553,6 +651,7 @@ ${valuationSectionHTML}${riskSectionHTML}
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    initRadar();
     initIndex();
     initMarket();
     initLibrary();
