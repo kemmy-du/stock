@@ -85,7 +85,7 @@
     { key: "公告", label: "公告" },
   ];
 
-  function radarItemHTML(it) {
+  function radarItemHTML(it, isNew) {
     const cls = it.sentiment === "negative" ? "is-negative"
       : it.sentiment === "positive" ? "is-positive" : "";
     const tags = (it.tags || []).map((t) => {
@@ -96,10 +96,10 @@
       ? `<a class="ri-report" href="report.html#${encodeURIComponent(it.report_id)}">查看报告 →</a>`
       : "";
     return `
-    <article class="radar-item ${cls}">
+    <article class="radar-item ${cls}${isNew ? " is-new" : ""}">
       <div class="ri-head">
         <span class="ri-stock">${marketBadge(it.market)}${esc(it.stock_name)}<span class="ri-code num">${esc(it.stock_code)}</span></span>
-        <span class="ri-tags">${tags}</span>
+        <span class="ri-tags">${isNew ? '<span class="ri-new">NEW</span>' : ""}${tags}</span>
       </div>
       <h3 class="ri-title">${esc(it.title)}</h3>
       <p class="ri-sum">${esc(it.summary)}</p>
@@ -110,35 +110,60 @@
     </article>`;
   }
 
+  /* 雷达自动刷新周期（毫秒） */
+  const RADAR_REFRESH_MS = 60000;
+
   async function initRadar() {
-    if (!$("#radar-list")) return;
-    let data = null;
-    try {
-      data = await loadJSON("data/radar.json");
-    } catch (e) {
-      $("#radar-list").innerHTML =
-        `<div class="empty-state">雷达数据暂未生成，请稍后重试。</div>`;
-      return;
-    }
-    const items = data.items || [];
-    const state = { filter: "all" };
+    const box = $("#radar-list");
+    if (!box) return;
 
-    // 状态条
     const statusEl = $("#radar-status");
+    const chipsEl = $("#radar-filters");
+
+    const state = {
+      items: [],
+      meta: {},
+      known: {},   // 出现过的条目 id，用于识别新增
+      fresh: {},   // 最近一次变化中新增的条目 id，渲染时打 NEW
+      filter: "all",
+      sig: "",     // 数据指纹：无变化则不重绘
+      newCount: 0,
+      timer: null,
+      ticker: null,
+      nextAt: 0,
+      busy: false,
+      fail: 0,
+      loaded: false,
+    };
+
+    /* 状态条：只构建一次，后续仅更新文本，避免闪烁与事件丢失 */
+    let rsMain = null, rsTick = null, rsBtn = null;
     if (statusEl) {
-      const stocks = new Set(items.map((i) => i.stock_code));
       statusEl.innerHTML =
-        `监控 <b class="num">${data.monitored || stocks.size}</b> 只重点标的 · ` +
-        `近 ${data.window_days || 7} 日 <b class="num">${items.length}</b> 条动态 · ` +
-        `更新于 <span class="num">${esc(data.generated_at || "")}</span>`;
+        '<span class="rs-main">正在接入雷达…</span>' +
+        '<span class="rs-live"><i class="rs-dot"></i><span class="rs-tick">—</span></span>' +
+        '<button type="button" class="rs-btn" id="radar-refresh-btn" aria-label="立即刷新雷达">刷新</button>';
+      rsMain = $(".rs-main", statusEl);
+      rsTick = $(".rs-tick", statusEl);
+      rsBtn = $("#radar-refresh-btn");
+      if (rsBtn) rsBtn.addEventListener("click", () => { refresh(true); });
     }
 
-    // 筛选条（含计数）
-    const chipsEl = $("#radar-filters");
-    if (chipsEl) {
+    function renderStatus() {
+      if (!rsMain) return;
+      const stocks = new Set(state.items.map((i) => i.stock_code));
+      rsMain.innerHTML =
+        `监控 <b class="num">${state.meta.monitored || stocks.size}</b> 只重点标的 · ` +
+        `近 ${state.meta.window_days || 7} 日 <b class="num">${state.items.length}</b> 条动态 · ` +
+        `更新于 <span class="num">${esc(state.meta.generated_at || "")}</span>` +
+        (state.newCount ? ` · <b class="rs-new">${state.newCount} 条新增</b>` : "");
+    }
+
+    function renderChips() {
+      if (!chipsEl) return;
       const count = (key) => key === "all"
-        ? items.length
-        : items.filter((i) => (i.tags || []).indexOf(key) >= 0).length;
+        ? state.items.length
+        : state.items.filter((i) => (i.tags || []).indexOf(key) >= 0).length;
       chipsEl.innerHTML = RADAR_FILTERS.map((f) => `
         <button class="chip${state.filter === f.key ? " active" : ""}" data-filter="${f.key}">
           ${f.label}<span class="chip-cnt num">${count(f.key)}</span>
@@ -155,18 +180,119 @@
 
     function renderList() {
       const list = state.filter === "all"
-        ? items
-        : items.filter((i) => (i.tags || []).indexOf(state.filter) >= 0);
-      const box = $("#radar-list");
-      if (!box) return;
+        ? state.items
+        : state.items.filter((i) => (i.tags || []).indexOf(state.filter) >= 0);
       if (!list.length) {
-        box.innerHTML = `<div class="empty-state">该分类下暂无动态</div>`;
+        box.innerHTML = `<div class="empty-state">${state.filter === "all" ? "暂无动态" : "该分类下暂无动态"}</div>`;
         return;
       }
-      box.innerHTML = list.map(radarItemHTML).join("");
+      // 新增条目插在顶部会顶高列表，滚动位置在列表下方时补偿，保持视口内容不动
+      const topAbs = box.getBoundingClientRect().top + window.pageYOffset;
+      const h0 = box.offsetHeight;
+      box.innerHTML = list.map((it) => radarItemHTML(it, !!state.fresh[it.id])).join("");
+      const delta = box.offsetHeight - h0;
+      if (delta > 0 && window.pageYOffset > topAbs) {
+        window.scrollTo(0, window.pageYOffset + delta);
+      }
     }
 
-    renderList();
+    function setTick(text, failed) {
+      if (!rsTick) return;
+      rsTick.textContent = text;
+      if (rsTick.parentNode) rsTick.parentNode.classList.toggle("is-failed", !!failed);
+    }
+
+    function countdown() {
+      if (state.busy || !rsTick) return;
+      const left = Math.max(0, Math.round((state.nextAt - Date.now()) / 1000));
+      setTick(state.fail ? `刷新失败，${left}s 后重试` : `${left}s 后刷新`, !!state.fail);
+    }
+
+    function schedule() {
+      clearTimeout(state.timer);
+      // 失败后指数退避，上限 5 分钟
+      const wait = state.fail
+        ? Math.min(RADAR_REFRESH_MS * Math.pow(2, state.fail), 300000)
+        : RADAR_REFRESH_MS;
+      state.nextAt = Date.now() + wait;
+      state.timer = setTimeout(() => { refresh(false); }, wait);
+      countdown();
+    }
+
+    async function refresh(manual) {
+      if (state.busy) return;
+      state.busy = true;
+      if (rsBtn) {
+        rsBtn.disabled = true;
+        rsBtn.classList.add("is-busy");
+        rsBtn.textContent = "刷新中";
+      }
+      if (manual) setTick("正在刷新…", false);
+      try {
+        const d = await loadJSON("data/radar.json", { noCache: true });
+        const items = d.items || [];
+        // 指纹覆盖生成时间 + 全部条目 id：任一增删都会变化，无变化则不重绘
+        const sig = (d.generated_at || "") + "|" + items.map((i) => i.id).join(",");
+        state.fail = 0;
+        if (sig !== state.sig) {
+          const fresh = {};
+          let added = 0;
+          items.forEach((it) => {
+            if (!state.known[it.id]) {
+              state.known[it.id] = true;
+              if (state.loaded) { fresh[it.id] = true; added++; }
+            }
+          });
+          if (state.loaded) {
+            if (added) {
+              state.fresh = fresh;
+              state.newCount += added;
+            } else {
+              state.fresh = {};
+            }
+          }
+          state.items = items;
+          state.meta = {
+            monitored: d.monitored,
+            window_days: d.window_days,
+            generated_at: d.generated_at,
+          };
+          state.sig = sig;
+          renderStatus();
+          renderChips();
+          renderList();
+        }
+        state.loaded = true;
+      } catch (e) {
+        state.fail++;
+        if (!state.loaded) {
+          box.innerHTML = `<div class="empty-state">雷达数据暂未生成，将自动重试。</div>`;
+        }
+      } finally {
+        state.busy = false;
+        if (rsBtn) {
+          rsBtn.disabled = false;
+          rsBtn.classList.remove("is-busy");
+          rsBtn.textContent = "刷新";
+        }
+        schedule();
+      }
+    }
+
+    // 标签页隐藏时停止轮询，回到前台立即补刷一次
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        clearTimeout(state.timer);
+        clearInterval(state.ticker);
+        state.ticker = null;
+      } else {
+        refresh(false);
+        if (!state.ticker) state.ticker = setInterval(countdown, 1000);
+      }
+    });
+
+    await refresh(false);
+    if (!state.ticker) state.ticker = setInterval(countdown, 1000);
   }
 
   async function initMarket() {

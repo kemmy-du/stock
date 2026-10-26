@@ -106,9 +106,15 @@
   }
 
   const jsonCache = {};
-  async function loadJSON(url) {
-    if (jsonCache[url]) return jsonCache[url];
-    const res = await fetch(url, { cache: "no-store" });
+  // opts.noCache = true：跳过内存缓存并追加时间戳参数，用于定时刷新时拿最新数据
+  // 注意缓存 key 始终用原始 url，避免时间戳导致缓存无限增长
+  async function loadJSON(url, opts) {
+    const noCache = !!(opts && opts.noCache);
+    if (!noCache && jsonCache[url]) return jsonCache[url];
+    const reqUrl = noCache
+      ? url + (url.indexOf("?") >= 0 ? "&" : "?") + "_t=" + Date.now()
+      : url;
+    const res = await fetch(reqUrl, { cache: "no-store" });
     if (!res.ok) throw new Error(`加载失败: ${url} (${res.status})`);
     const data = await res.json();
     jsonCache[url] = data;
