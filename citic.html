@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F5F7" />
+  <title>中信多空 · 股析 StockInsight</title>
+  <meta name="description" content="中信期货多空持仓实时展示：多头、空头、净持仓与当日增减，数据来自东方财富期货龙虎榜。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%2322262B'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20text-anchor='middle'%20fill='white'%20font-family='sans-serif'%20font-weight='700'%3E%E6%9E%90%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <noscript>
+    <div style="margin:16px;padding:16px;border:1px solid #d3d6dc;border-radius:10px;font:14px/1.6 -apple-system,'PingFang SC',sans-serif;color:#33383f;background:#fff">
+      当前浏览器禁用了 JavaScript，页面数据无法加载。请在系统浏览器中开启 JavaScript 后重试。
+    </div>
+  </noscript>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">析</span>
+        <span>股析 <small>STOCKINSIGHT</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">菜单</button>
+      <nav class="nav-links" id="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">中信期货 · 会员持仓龙虎榜</p>
+        <h1>中信期货的多单与空单，一屏掌握。</h1>
+        <p>实时拉取东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓），展示中信期货在各合约上的多头、空头持仓、净持仓及当日增减。</p>
+      </section>
+
+      <div class="citic-kpis" id="citic-kpis">
+        <div class="card kpi"><div class="kpi-label">数据日期</div><div class="kpi-value num" id="kpi-date">—</div></div>
+        <div class="card kpi"><div class="kpi-label">多头持仓合计</div><div class="kpi-value num up" id="kpi-long">—</div></div>
+        <div class="card kpi"><div class="kpi-label">空头持仓合计</div><div class="kpi-value num down" id="kpi-short">—</div></div>
+        <div class="card kpi"><div class="kpi-label">净持仓合计</div><div class="kpi-value num" id="kpi-net">—</div></div>
+      </div>
+
+      <div class="section-head" style="margin-top:0">
+        <h2>合约持仓明细</h2>
+        <div class="radar-status" id="citic-status">正在接入数据…</div>
+      </div>
+
+      <div class="citic-toolbar">
+        <label class="search-box">
+          <span aria-hidden="true" style="color:var(--color-text-3)">⌕</span>
+          <input id="citic-search" type="search" placeholder="搜索合约代码（如 IF、TL、MA）…" aria-label="搜索合约" />
+        </label>
+        <div class="citic-exchange" id="citic-exchange" role="group" aria-label="交易所筛选">
+          <button class="chip active" data-ex="ALL">全部</button>
+          <button class="chip" data-ex="CFFEX">中金所</button>
+          <button class="chip" data-ex="SHFE">上期所</button>
+          <button class="chip" data-ex="DCE">大商所</button>
+          <button class="chip" data-ex="CZCE">郑商所</button>
+          <button class="chip" data-ex="GFEX">广期所</button>
+          <button class="chip" data-ex="INE">能源中心</button>
+        </div>
+      </div>
+
+      <div class="citic-table-wrap">
+        <table class="citic-table">
+          <thead>
+            <tr>
+              <th data-sort="code" class="sortable num-left">合约</th>
+              <th data-sort="long" class="sortable num active desc">多头持仓</th>
+              <th data-sort="lp" class="sortable num">多头增减</th>
+              <th data-sort="short" class="sortable num">空头持仓</th>
+              <th data-sort="sp" class="sortable num">空头增减</th>
+              <th data-sort="net" class="sortable num">净持仓</th>
+              <th data-sort="np" class="sortable num">净增减</th>
+            </tr>
+          </thead>
+          <tbody id="citic-body">
+            <tr><td colspan="7"><div class="skeleton" style="height:320px"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="citic-note">数据来源：东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓）。期货持仓为日频数据，盘中不更新；本页每 5 分钟自动拉取最新交易日数据。仅供研究参考，不构成投资建议。</p>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script defer src="assets/js/common.js"></script>
+  <script defer src="assets/js/citic.js"></script>
+</body>
+</html>

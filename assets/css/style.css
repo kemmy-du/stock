@@ -521,6 +521,69 @@ img, canvas { display: block; max-width: 100%; }
 .radar-item.is-new { animation: ri-flash 2.4s ease-out 1; }
 @keyframes ri-flash { from { background: var(--up-bg); } to { background: var(--color-surface); } }
 
+/* ---------- 中信多空 ---------- */
+.citic-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+.kpi { padding: var(--space-4) var(--space-5); }
+.kpi-label { font-size: var(--text-xs); color: var(--color-text-2); margin-bottom: var(--space-2); }
+.kpi-value { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.citic-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.citic-exchange { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+.citic-table-wrap { overflow-x: auto; }
+.citic-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  font-size: var(--text-sm);
+}
+.citic-table th, .citic-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: right;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+.citic-table th.num-left, .citic-table td.c-cell-code { text-align: left; }
+.citic-table thead th {
+  background: var(--color-surface-2);
+  color: var(--color-text-2);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  cursor: default;
+}
+.citic-table th.sortable { cursor: pointer; user-select: none; }
+.citic-table th.sortable:hover { color: var(--color-text-1); }
+.citic-table th.sortable::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  opacity: 0.35;
+  font-size: 0.7em;
+}
+.citic-table th.sortable.asc::after { content: "▲"; opacity: 0.9; }
+.citic-table th.sortable.desc::after { content: "▼"; opacity: 0.9; }
+.citic-table tbody tr:last-child td { border-bottom: none; }
+.citic-table tbody tr:hover { background: var(--color-surface-2); }
+.c-cell-code { display: flex; flex-direction: column; gap: 2px; line-height: 1.3; }
+.c-code { font-weight: 650; color: var(--color-text-1); }
+.c-ex { font-size: 11px; color: var(--color-text-3); }
+.citic-note { margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-3); line-height: 1.6; }
+
 .radar-filters { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
 .radar-filters .chip { display: inline-flex; align-items: center; gap: 5px; }
 .chip-cnt {
@@ -904,6 +967,8 @@ img, canvas { display: block; max-width: 100%; }
   .rs-btn { min-height: 40px; padding: 8px 16px; display: inline-flex; align-items: center; }
   .section-tab { min-height: 40px; padding: 8px 16px; display: inline-flex; align-items: center; }
   .side-item { min-height: 44px; }
+  .citic-kpis { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .citic-table th, .citic-table td { padding: var(--space-2) var(--space-3); }
   .nav-toggle { min-height: 40px; padding: 8px 14px; }
 
   /* 大盘条：横滑改两列网格 */

@@ -6,6 +6,7 @@
     { href: "index.html", label: "首页" },
     { href: "library.html", label: "报告库" },
     { href: "market.html", label: "市场概览" },
+    { href: "citic.html", label: "中信多空" },
     { href: "about.html", label: "关于" },
   ];
 
@@ -194,8 +195,42 @@
     if (document.querySelector(".skeleton")) failHint("加载超时，请检查网络后重试。");
   }, 12000);
 
+  /* JSONP 请求：用于跨域调用支持 callback 参数的接口（如东方财富数据中心），绕过浏览器 CORS */
+  function loadJSONP(url, opts) {
+    opts = opts || {};
+    const name = "si_jsonp_" + Math.random().toString(36).slice(2);
+    const sep = url.indexOf("?") >= 0 ? "&" : "?";
+    const target = url + sep + "callback=" + name + "&_=" + Date.now();
+    return new Promise((resolve, reject) => {
+      let done = false;
+      const timer = setTimeout(() => {
+        if (done) return;
+        done = true; cleanup();
+        reject(new Error("JSONP 请求超时"));
+      }, opts.timeout || 15000);
+      function cleanup() {
+        try { delete window[name]; } catch (e) {}
+        if (script && script.parentNode) script.parentNode.removeChild(script);
+        clearTimeout(timer);
+      }
+      window[name] = function (data) {
+        if (done) return;
+        done = true; cleanup();
+        resolve(data);
+      };
+      const script = document.createElement("script");
+      script.src = target;
+      script.onerror = function () {
+        if (done) return;
+        done = true; cleanup();
+        reject(new Error("JSONP 脚本加载失败"));
+      };
+      (document.head || document.body).appendChild(script);
+    });
+  }
+
   window.SI = {
-    $, $$, loadJSON, fmtPrice, fmtPct, pctClass, fmtVolume, fmtMoney,
+    $, $$, loadJSON, loadJSONP, fmtPrice, fmtPct, pctClass, fmtVolume, fmtMoney,
     ratingBadge, sentimentBadge, marketBadge, basePath, MARKET_LABEL,
     isWeChat, failHint,
   };
