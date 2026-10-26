@@ -1,20 +1,41 @@
 /* 股析 StockInsight — 中信期货多空持仓实时展示 */
 (function () {
   "use strict";
-  const { $, $$, loadJSONP } = window.SI;
+  const { $, $$ } = window.SI;
 
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   // 东方财富数据中心 · 期货龙虎榜（会员成交持仓），按机构简称筛选中信期货
-  const API = "https://datacenter-web.eastmoney.com/api/data/v1/get"
-    + "?reportName=RPT_FUTU_DAILYPOSITION&columns=ALL"
-    + "&filter=" + encodeURIComponent("(ORG_NAME_ABBR_NEW='中信期货')")
-    + "&pageSize=500&source=WEB&client=WEB";
+  // 关键：仅对中文值做 encodeURIComponent，外层用双引号，括号与引号不编码
+  const API_ROOT = "https://datacenter-web.eastmoney.com/api/data/v1/get";
+  const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")";
 
-  const REFRESH_MS = 5 * 60 * 1000;
+  function buildUrl(extraFilter, sort) {
+    let url = API_ROOT
+      + "?reportName=RPT_FUTU_DAILYPOSITION&columns=ALL"
+      + "&filter=" + MEMBER_FILTER + (extraFilter || "")
+      + "&pageSize=500&source=WEB&client=WEB";
+    if (sort) url += "&sortColumns=TRADE_DATE&sortTypes=-1";
+    return url;
+  }
 
-  // 合约代码后缀 → 交易所
+  // 两步取数：1) 取最新交易日；2) 拉该日全量（避免混入历史旧日期）
+  async function fetchCitic() {
+    const head = await fetch(buildUrl("", true), { cache: "no-store" });
+    if (!head.ok) throw new Error("接口请求失败 " + head.status);
+    const hj = await head.json();
+    const hd = hj && hj.result && hj.result.data && hj.result.data[0];
+    if (!hd) throw new Error("暂无中信期货持仓数据");
+    const date = (hd.TRADE_DATE || "").slice(0, 10);
+
+    const day = await fetch(buildUrl("(TRADE_DATE='" + date + "')"), { cache: "no-store" });
+    if (!day.ok) throw new Error("接口请求失败 " + day.status);
+    const dj = await day.json();
+    return { date, rows: (dj && dj.result && dj.result.data) || [] };
+  }
+
+  // 交易所代码后缀 → 交易所
   const EX_MAP = { CFE: "CFFEX", SHF: "SHFE", DCE: "DCE", CZC: "CZCE", GFE: "GFEX", INE: "INE" };
   const EX_LABEL = { CFFEX: "中金所", SHFE: "上期所", DCE: "大商所", CZCE: "郑商所", GFEX: "广期所", INE: "能源中心" };
 
@@ -33,6 +54,19 @@
   }
   function clsOf(n) { return n > 0 ? "up" : n < 0 ? "down" : "flat"; }
 
+  // 每天 07:00 的下一个时刻
+  function next7() {
+    const now = new Date();
+    const n = new Date(now);
+    n.setHours(7, 0, 0, 0);
+    if (n <= now) n.setDate(n.getDate() + 1);
+    return n;
+  }
+  function next7Label() {
+    const n = next7();
+    return (n.getDate() === new Date().getDate() ? "今天" : "明天") + " 07:00";
+  }
+
   async function initCitic() {
     const body = $("#citic-body");
     if (!body) return;
@@ -47,7 +81,6 @@
       timer: null, ticker: null, nextAt: 0, busy: false, fail: 0, loaded: false,
     };
 
-    // 状态条：一次构建，后续仅改文本
     let rsMain = null, rsTick = null, rsBtn = null;
     if (statusEl) {
       statusEl.innerHTML =
@@ -67,12 +100,23 @@
     }
     function countdown() {
       if (state.busy || !rsTick) return;
-      const left = Math.max(0, Math.round((state.nextAt - Date.now()) / 1000));
-      setTick(state.fail ? `刷新失败，${left}s 后重试` : `${left}s 后刷新`, !!state.fail);
+      if (state.fail) {
+        const left = Math.max(0, Math.round((state.nextAt - Date.now()) / 1000));
+        setTick(`刷新失败，${Math.max(1, Math.ceil(left / 60))} 分钟后重试`, true);
+        return;
+      }
+      const left = Math.max(0, Math.round((next7() - Date.now()) / 1000));
+      const hh = String(Math.floor(left / 3600)).padStart(2, "0");
+      const mm = String(Math.floor((left % 3600) / 60)).padStart(2, "0");
+      const ss = String(left % 60).padStart(2, "0");
+      setTick(`下次更新 ${next7Label()}（${hh}:${mm}:${ss} 后）`, false);
     }
     function schedule() {
       clearTimeout(state.timer);
-      const wait = state.fail ? Math.min(REFRESH_MS * Math.pow(2, state.fail), 600000) : REFRESH_MS;
+      // 成功后每天 7 点；失败则指数退避重试（1/2/4/8… 分钟，上限 10 分钟）
+      const wait = state.fail === 0
+        ? next7() - Date.now()
+        : Math.min(60000 * Math.pow(2, state.fail - 1), 600000);
       state.nextAt = Date.now() + wait;
       state.timer = setTimeout(() => { refresh(false); }, wait);
       countdown();
@@ -153,17 +197,8 @@
       if (rsBtn) { rsBtn.disabled = true; rsBtn.classList.add("is-busy"); rsBtn.textContent = "刷新中"; }
       if (manual) setTick("正在刷新…", false);
       try {
-        const json = await loadJSONP(API, { timeout: 15000 });
-        const data = (json && json.result && json.result.data) || [];
-        if (!data.length) throw new Error("接口返回为空");
-        // 取最新交易日
-        let maxDate = "";
-        data.forEach((r) => {
-          const d = (r.TRADE_DATE || "").slice(0, 10);
-          if (d > maxDate) maxDate = d;
-        });
-        const rows = data.filter((r) => (r.TRADE_DATE || "").slice(0, 10) === maxDate);
-        state.date = maxDate;
+        const { date, rows } = await fetchCitic();
+        state.date = date;
         state.rows = rows;
         state.fail = 0;
         renderStatus();
@@ -204,7 +239,7 @@
       });
     });
 
-    // 后台标签页暂停轮询，回前台补刷
+    // 后台标签页暂停倒计时，回前台补刷
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) {
         clearTimeout(state.timer);
