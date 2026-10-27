@@ -210,9 +210,9 @@
         return `
         <tr>
           <td class="c-cell-code"><span class="c-code num">${esc(r.SECURITY_CODE)}</span><span class="c-ex">${EX_LABEL[ex] || ex}</span></td>
-          <td class="num">${fmtInt(long)}</td>
+          <td class="num up">${fmtInt(long)}</td>
           <td class="num ${clsOf(lp)}">${fmtDelta(lp)}</td>
-          <td class="num">${fmtInt(short)}</td>
+          <td class="num down">${fmtInt(short)}</td>
           <td class="num ${clsOf(sp)}">${fmtDelta(sp)}</td>
           <td class="num ${clsOf(net)}">${(net > 0 ? "+" : "") + fmtInt(net)}</td>
           <td class="num ${clsOf(np)}">${fmtDelta(np)}</td>
@@ -251,17 +251,20 @@
         const ld = prev ? cur.long - prev.long : null;
         const sd = prev ? cur.short - prev.short : null;
         const nd = prev ? cur.net - prev.net : null;
-        const cell = (val, isDelta) => {
+        const cell = (val, isDelta, color) => {
           if (val == null) return '<td class="num flat">—</td>';
-          const cls = isDelta ? clsOf(val) : (val > 0 ? "up" : val < 0 ? "down" : "");
+          let cls;
+          if (isDelta) cls = clsOf(val);
+          else if (color === "up" || color === "down") cls = color;
+          else cls = val > 0 ? "up" : val < 0 ? "down" : "";
           const txt = isDelta ? fmtDelta(val) : fmtInt(val);
           return '<td class="num ' + cls + '">' + txt + '</td>';
         };
         return '<tr>'
           + '<td class="c-cell-code"><span class="c-code num">' + esc(cur.date.slice(5)) + '</span></td>'
-          + cell(cur.long, false) + cell(ld, true)
-          + cell(cur.short, false) + cell(sd, true)
-          + cell(cur.net, false) + cell(nd, true)
+          + cell(cur.long, false, "up") + cell(ld, true)
+          + cell(cur.short, false, "down") + cell(sd, true)
+          + cell(cur.net, false, "") + cell(nd, true)
           + '</tr>';
       }).join("");
     }
