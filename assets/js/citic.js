@@ -10,40 +10,63 @@
   // 关键：仅对中文值做 encodeURIComponent，外层用双引号，括号与引号不编码
   const API_ROOT = "https://datacenter-web.eastmoney.com/api/data/v1/get";
   const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")";
+  // 只取页面用到的列，响应体约为 columns=ALL 的 1/6
+  const COLUMNS = "SECURITY_CODE,TRADE_DATE,LONG_POSITION,SHORT_POSITION,LP_CHANGE,SP_CHANGE";
+  const PAGE_SIZE = 500;   // 服务端单页硬上限
+  const TARGET_DAYS = 5;   // 对比展示的完整交易日数
+  const MAX_PAGES = 10;
 
-  function buildUrl(extraFilter, sort) {
-    let url = API_ROOT
-      + "?reportName=RPT_FUTU_DAILYPOSITION&columns=ALL"
-      + "&filter=" + MEMBER_FILTER + (extraFilter || "")
-      + "&pageSize=500&source=WEB&client=WEB";
-    if (sort) url += "&sortColumns=TRADE_DATE&sortTypes=-1";
-    return url;
+  function buildUrl(pageNumber) {
+    return API_ROOT
+      + "?reportName=RPT_FUTU_DAILYPOSITION&columns=" + COLUMNS
+      + "&filter=" + MEMBER_FILTER
+      + "&pageSize=" + PAGE_SIZE
+      + "&pageNumber=" + pageNumber
+      + "&sortColumns=TRADE_DATE&sortTypes=-1"
+      + "&source=WEB&client=WEB";
   }
 
-  // 两步取数：1) 取最新交易日；2) 拉该日全量（避免混入历史旧日期）
+  function fetchPage(pageNumber) {
+    return fetch(buildUrl(pageNumber), { cache: "no-store" }).then((res) => {
+      if (!res.ok) throw new Error("接口请求失败 " + res.status);
+      return res.json();
+    }).then((j) => (j && j.result && j.result.data) || []);
+  }
+
+  // 单页上限 500 行，一天约 290 行，需翻页聚合；最老一天可能被页边界截断，需丢弃
   async function fetchCitic() {
-    const head = await fetch(buildUrl("", true), { cache: "no-store" });
-    if (!head.ok) throw new Error("接口请求失败 " + head.status);
-    const hj = await head.json();
-    const hd = hj && hj.result && hj.result.data && hj.result.data[0];
-    if (!hd) throw new Error("暂无中信期货持仓数据");
-    const latestDate = (hd.TRADE_DATE || "").slice(0, 10);
-
-    const all = await fetch(buildUrl("", true), { cache: "no-store" });
-    if (!all.ok) throw new Error("接口请求失败 " + all.status);
-    const aj = await all.json();
-    const allData = (aj && aj.result && aj.result.data) || [];
-
-    const dateSet = new Set();
     const dateMap = {};
-    for (const r of allData) {
-      const d = (r.TRADE_DATE || "").slice(0, 10);
-      if (!d || d > latestDate) continue;
-      dateSet.add(d);
-      (dateMap[d] = dateMap[d] || []).push(r);
+    let reachedEnd = false;
+
+    function consume(data) {
+      if (!data || !data.length) { reachedEnd = true; return; }
+      for (const r of data) {
+        const d = (r.TRADE_DATE || "").slice(0, 10);
+        if (d) (dateMap[d] = dateMap[d] || []).push(r);
+      }
+      if (data.length < PAGE_SIZE) reachedEnd = true;
     }
-    const dates = Array.from(dateSet).sort().reverse();
-    return { date: latestDate, rows: dateMap[latestDate] || [], dateMap, dates };
+
+    // 前 4 页并行（约覆盖 6 个交易日，足够 5 个完整日）
+    const first = await Promise.all([1, 2, 3, 4].map(fetchPage));
+    first.forEach(consume);
+
+    // 极端情况下数据不足，继续顺序补页
+    let page = 5;
+    while (!reachedEnd && Object.keys(dateMap).length <= TARGET_DAYS && page <= MAX_PAGES) {
+      consume(await fetchPage(page));
+      page++;
+    }
+
+    const sorted = Object.keys(dateMap).sort().reverse();
+    // 未取到数据末尾时，最老的一天可能不完整 → 丢弃
+    const complete = reachedEnd ? sorted : sorted.slice(0, Math.max(0, sorted.length - 1));
+    const useDates = complete.slice(0, TARGET_DAYS);
+    if (!useDates.length) throw new Error("暂无中信期货持仓数据");
+
+    const prunedMap = {};
+    for (const d of useDates) prunedMap[d] = dateMap[d];
+    return { date: useDates[0], rows: prunedMap[useDates[0]], dateMap: prunedMap, dates: useDates };
   }
 
   // 交易所代码后缀 → 交易所
@@ -87,7 +110,7 @@
     const exEl = $("#citic-exchange");
 
     const state = {
-      rows: [], date: "", dateMap: {}, prevDate: "",
+      rows: [], date: "", dateMap: {}, dates: [],
       filter: "ALL", q: "", sort: "long", dir: -1,
       timer: null, ticker: null, nextAt: 0, busy: false, fail: 0, loaded: false,
     };
@@ -208,7 +231,7 @@
       const dateEl = document.getElementById("citic-compare-date");
       if (!wrap || !dateEl) return;
       const dm = state.dateMap;
-      const dates = Object.keys(dm).sort().reverse().slice(0, 5);
+      const dates = (state.dates && state.dates.length ? state.dates : Object.keys(dm).sort().reverse()).slice(0, TARGET_DAYS);
       if (dates.length < 2) {
         wrap.innerHTML = '<tr><td colspan="7" class="empty-state">暂无历史数据，无法对比</td></tr>';
         dateEl.textContent = "";
@@ -258,7 +281,7 @@
         state.date = date;
         state.rows = rows;
         state.dateMap = dateMap || {};
-        state.prevDate = (dates && dates[1]) || "";
+        state.dates = dates || [];
         state.fail = 0;
         renderStatus();
         renderKPIs(rows);
@@ -268,7 +291,10 @@
       } catch (e) {
         state.fail++;
         if (!state.loaded) {
-          body.innerHTML = '<tr><td colspan="7" class="empty-state">数据加载失败，将自动重试。</td></tr>';
+          const fail = '<tr><td colspan="7" class="empty-state">数据加载失败，将自动重试。</td></tr>';
+          body.innerHTML = fail;
+          const cmp = document.getElementById("citic-compare-body");
+          if (cmp) cmp.innerHTML = fail;
         }
       } finally {
         state.busy = false;
