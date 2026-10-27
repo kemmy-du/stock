@@ -9,12 +9,14 @@
   // 东方财富数据中心 · 期货龙虎榜（会员成交持仓），按机构简称筛选中信期货
   // 关键：仅对中文值做 encodeURIComponent，外层用双引号，括号与引号不编码
   const API_ROOT = "https://datacenter-web.eastmoney.com/api/data/v1/get";
-  const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")";
+  // 只取股指期货：IF 沪深300、IH 上证50、IC 中证500、IM 中证1000
+  const INDEX_CODES = ["IF", "IH", "IC", "IM"];
+  const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")"
+    + "(TRADE_CODE in (" + INDEX_CODES.map((c) => "\"" + c + "\"").join(",") + "))";
   // 只取页面用到的列，响应体约为 columns=ALL 的 1/6
-  const COLUMNS = "SECURITY_CODE,TRADE_DATE,LONG_POSITION,SHORT_POSITION,LP_CHANGE,SP_CHANGE";
-  const PAGE_SIZE = 500;   // 服务端单页硬上限
+  const COLUMNS = "SECURITY_CODE,TRADE_CODE,TRADE_DATE,LONG_POSITION,SHORT_POSITION,LP_CHANGE,SP_CHANGE";
+  const PAGE_SIZE = 200;   // 单页约 13 个交易日，够 5 日对比（服务端上限 500）
   const TARGET_DAYS = 5;   // 对比展示的完整交易日数
-  const MAX_PAGES = 10;
 
   function buildUrl(pageNumber) {
     return API_ROOT
@@ -33,50 +35,29 @@
     }).then((j) => (j && j.result && j.result.data) || []);
   }
 
-  // 单页上限 500 行，一天约 290 行，需翻页聚合；最老一天可能被页边界截断，需丢弃
+  // 单个交易日约 15 行，单页即可覆盖 5 个交易日；数据异常不足时补第二页
   async function fetchCitic() {
     const dateMap = {};
-    let reachedEnd = false;
-
-    function consume(data) {
-      if (!data || !data.length) { reachedEnd = true; return; }
+    for (let page = 1; page <= 4; page++) {
+      const data = await fetchPage(page);
+      if (!data || !data.length) break;
       for (const r of data) {
         const d = (r.TRADE_DATE || "").slice(0, 10);
         if (d) (dateMap[d] = dateMap[d] || []).push(r);
       }
-      if (data.length < PAGE_SIZE) reachedEnd = true;
+      if (Object.keys(dateMap).length > TARGET_DAYS || data.length < PAGE_SIZE) break;
     }
 
-    // 前 4 页并行（约覆盖 6 个交易日，足够 5 个完整日）
-    const first = await Promise.all([1, 2, 3, 4].map(fetchPage));
-    first.forEach(consume);
+    const dates = Object.keys(dateMap).sort().reverse().slice(0, TARGET_DAYS);
+    if (!dates.length) throw new Error("暂无中信期货股指期货持仓数据");
 
-    // 极端情况下数据不足，继续顺序补页
-    let page = 5;
-    while (!reachedEnd && Object.keys(dateMap).length <= TARGET_DAYS && page <= MAX_PAGES) {
-      consume(await fetchPage(page));
-      page++;
-    }
-
-    const sorted = Object.keys(dateMap).sort().reverse();
-    // 未取到数据末尾时，最老的一天可能不完整 → 丢弃
-    const complete = reachedEnd ? sorted : sorted.slice(0, Math.max(0, sorted.length - 1));
-    const useDates = complete.slice(0, TARGET_DAYS);
-    if (!useDates.length) throw new Error("暂无中信期货持仓数据");
-
-    const prunedMap = {};
-    for (const d of useDates) prunedMap[d] = dateMap[d];
-    return { date: useDates[0], rows: prunedMap[useDates[0]], dateMap: prunedMap, dates: useDates };
+    const map = {};
+    for (const d of dates) map[d] = dateMap[d];
+    return { date: dates[0], rows: map[dates[0]], dateMap: map, dates };
   }
 
-  // 交易所代码后缀 → 交易所
-  const EX_MAP = { CFE: "CFFEX", SHF: "SHFE", DCE: "DCE", CZC: "CZCE", GFE: "GFEX", INE: "INE" };
-  const EX_LABEL = { CFFEX: "中金所", SHFE: "上期所", DCE: "大商所", CZCE: "郑商所", GFEX: "广期所", INE: "能源中心" };
-
-  function exOf(code) {
-    const m = /\.([A-Z]{3})$/.exec(code || "");
-    return m ? (EX_MAP[m[1]] || m[1]) : "";
-  }
+  const INDEX_LABEL = { IF: "沪深300", IH: "上证50", IC: "中证500", IM: "中证1000" };
+  const productOf = (r) => r.TRADE_CODE || (/^[A-Z]+/.exec(r.SECURITY_CODE || "") || [""])[0];
   function fmtInt(n) {
     if (n == null || isNaN(n)) return "—";
     return Number(n).toLocaleString("zh-CN");
@@ -197,7 +178,7 @@
 
     function visibleRows() {
       let list = state.rows;
-      if (state.filter !== "ALL") list = list.filter((r) => exOf(r.SECURITY_CODE) === state.filter);
+      if (state.filter !== "ALL") list = list.filter((r) => productOf(r) === state.filter);
       if (state.q) {
         const q = state.q.toLowerCase();
         list = list.filter((r) => (r.SECURITY_CODE || "").toLowerCase().indexOf(q) >= 0);
@@ -233,10 +214,10 @@
         const lp = +r.LP_CHANGE || 0;
         const sp = +r.SP_CHANGE || 0;
         const np = lp - sp;
-        const ex = exOf(r.SECURITY_CODE);
+        const p = productOf(r);
         return `
         <tr>
-          <td class="c-cell-code"><span class="c-code num">${esc(r.SECURITY_CODE)}</span><span class="c-ex">${EX_LABEL[ex] || ex}</span></td>
+          <td class="c-cell-code"><span class="c-code num">${esc(r.SECURITY_CODE)}</span><span class="c-ex">${INDEX_LABEL[p] || p}</span></td>
           <td class="num up">${fmtInt(long)}</td>
           <td class="num ${clsOf(lp)}">${fmtDelta(lp)}</td>
           <td class="num down">${fmtInt(short)}</td>

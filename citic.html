@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#F4F5F7" />
-  <title>中信多空 · 股析 StockInsight</title>
-  <meta name="description" content="中信期货多空持仓实时展示：多头、空头、净持仓与当日增减，数据来自东方财富期货龙虎榜。" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261027c" />
+  <title>中信股指期货多空 · 股析 StockInsight</title>
+  <meta name="description" content="中信期货股指期货（IF/IH/IC/IM）多空持仓展示：多头、空头、净持仓与当日增减，数据来自东方财富期货龙虎榜。" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261027d" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%2322262B'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20text-anchor='middle'%20fill='white'%20font-family='sans-serif'%20font-weight='700'%3E%E6%9E%90%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -29,9 +29,9 @@
   <main class="page-main">
     <div class="container">
       <section class="hero">
-        <p class="eyebrow">中信期货 · 会员持仓龙虎榜</p>
-        <h1>中信期货的多单与空单，一屏掌握。</h1>
-        <p>实时拉取东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓），展示中信期货在各合约上的多头、空头持仓、净持仓及当日增减。</p>
+        <p class="eyebrow">中信期货 · 股指期货会员持仓龙虎榜</p>
+        <h1>中信期货的股指期货多单与空单，一屏掌握。</h1>
+        <p>实时拉取东方财富期货龙虎榜（中金所每日盘后公布的前 20 会员持仓），仅统计沪深300（IF）、上证50（IH）、中证500（IC）、中证1000（IM）四类股指期货合约的多头、空头持仓、净持仓及当日增减。</p>
       </section>
 
       <div class="citic-kpis" id="citic-kpis">
@@ -71,7 +71,7 @@
           </tbody>
         </table>
       </div>
-      <p class="citic-note">按日对比：中信期货全部合约持仓汇总的前后两个交易日变化。仅供研究参考，不构成投资建议。</p>
+      <p class="citic-note">按日对比：中信期货股指期货（IF/IH/IC/IM）持仓汇总的近 5 个交易日变化。仅供研究参考，不构成投资建议。</p>
 
       <div class="section-head">
         <h2>合约持仓明细</h2>
@@ -81,16 +81,14 @@
       <div class="citic-toolbar">
         <label class="search-box">
           <span aria-hidden="true" style="color:var(--color-text-3)">⌕</span>
-          <input id="citic-search" type="search" placeholder="搜索合约代码（如 IF、TL、MA）…" aria-label="搜索合约" />
+          <input id="citic-search" type="search" placeholder="搜索合约代码（如 IF2612）…" aria-label="搜索合约" />
         </label>
-        <div class="citic-exchange" id="citic-exchange" role="group" aria-label="交易所筛选">
+        <div class="citic-exchange" id="citic-exchange" role="group" aria-label="品种筛选">
           <button class="chip active" data-ex="ALL">全部</button>
-          <button class="chip" data-ex="CFFEX">中金所</button>
-          <button class="chip" data-ex="SHFE">上期所</button>
-          <button class="chip" data-ex="DCE">大商所</button>
-          <button class="chip" data-ex="CZCE">郑商所</button>
-          <button class="chip" data-ex="GFEX">广期所</button>
-          <button class="chip" data-ex="INE">能源中心</button>
+          <button class="chip" data-ex="IF">沪深300</button>
+          <button class="chip" data-ex="IH">上证50</button>
+          <button class="chip" data-ex="IC">中证500</button>
+          <button class="chip" data-ex="IM">中证1000</button>
         </div>
       </div>
 
@@ -112,13 +110,13 @@
           </tbody>
         </table>
       </div>
-      <p class="citic-note">数据来源：东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓）。期货持仓为日频数据，盘中不更新；交易日 15:30 后每 10 分钟检查当日新数据，其余时间次日 07:00 自动更新。仅供研究参考，不构成投资建议。</p>
+      <p class="citic-note">数据来源：东方财富期货龙虎榜（中金所每日盘后公布的前 20 会员持仓），仅统计股指期货 IF/IH/IC/IM。期货持仓为日频数据，盘中不更新；交易日 15:30 后每 10 分钟检查当日新数据，其余时间次日 07:00 自动更新。仅供研究参考，不构成投资建议。</p>
     </div>
   </main>
 
   <footer class="footer" id="footer"></footer>
 
-  <script defer src="assets/js/common.js?v=20261027c"></script>
-  <script defer src="assets/js/citic.js?v=20261027c"></script>
+  <script defer src="assets/js/common.js?v=20261027d"></script>
+  <script defer src="assets/js/citic.js?v=20261027d"></script>
 </body>
 </html>
