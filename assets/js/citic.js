@@ -88,6 +88,13 @@
   }
   function clsOf(n) { return n > 0 ? "up" : n < 0 ? "down" : "flat"; }
 
+  const POLL_START = 15 * 60 + 30;  // 盘后 15:30 起开始检查当日数据
+  const POLL_STOP = 21 * 60;        // 21:00 后不再轮询
+  const POLL_STEP = 10 * 60 * 1000; // 每 10 分钟一次
+
+  const pad2 = (n) => String(n).padStart(2, "0");
+  const localDate = (d) => d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+
   // 每天 07:00 的下一个时刻
   function next7() {
     const now = new Date();
@@ -95,10 +102,6 @@
     n.setHours(7, 0, 0, 0);
     if (n <= now) n.setDate(n.getDate() + 1);
     return n;
-  }
-  function next7Label() {
-    const n = next7();
-    return (n.getDate() === new Date().getDate() ? "今天" : "明天") + " 07:00";
   }
 
   async function initCitic() {
@@ -132,6 +135,30 @@
       rsTick.textContent = text;
       if (rsTick.parentNode) rsTick.parentNode.classList.toggle("is-failed", !!failed);
     }
+    function clockLabel(d) {
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const target = new Date(d); target.setHours(0, 0, 0, 0);
+      const diff = Math.round((target - today) / 86400000);
+      const prefix = diff === 0 ? "今天" : diff === 1 ? "明天" : "周" + "日一二三四五六"[d.getDay()];
+      return prefix + " " + pad2(d.getHours()) + ":" + pad2(d.getMinutes());
+    }
+
+    // 交易日盘后 15:30-21:00 每 10 分钟检查当日持仓是否已公布；
+    // 当日数据已到位、非交易日或窗口外，则退化为次日 07:00 兜底
+    function nextRunAt() {
+      const now = new Date();
+      const weekday = now.getDay() >= 1 && now.getDay() <= 5;
+      const stop = new Date(now); stop.setHours(Math.floor(POLL_STOP / 60), POLL_STOP % 60, 0, 0);
+      if (weekday && now < stop && state.date !== localDate(now)) {
+        const slot = new Date(now); slot.setHours(Math.floor(POLL_START / 60), POLL_START % 60, 0, 0);
+        if (slot <= now) {
+          slot.setTime(slot.getTime() + (Math.floor((now - slot) / POLL_STEP) + 1) * POLL_STEP);
+        }
+        if (slot <= stop) return slot;
+      }
+      return next7();
+    }
+
     function countdown() {
       if (state.busy || !rsTick) return;
       if (state.fail) {
@@ -139,17 +166,17 @@
         setTick(`刷新失败，${Math.max(1, Math.ceil(left / 60))} 分钟后重试`, true);
         return;
       }
-      const left = Math.max(0, Math.round((next7() - Date.now()) / 1000));
+      const left = Math.max(0, Math.round((state.nextAt - Date.now()) / 1000));
       const hh = String(Math.floor(left / 3600)).padStart(2, "0");
       const mm = String(Math.floor((left % 3600) / 60)).padStart(2, "0");
       const ss = String(left % 60).padStart(2, "0");
-      setTick(`下次更新 ${next7Label()}（${hh}:${mm}:${ss} 后）`, false);
+      setTick(`下次更新 ${clockLabel(new Date(state.nextAt))}（${hh}:${mm}:${ss} 后）`, false);
     }
     function schedule() {
       clearTimeout(state.timer);
-      // 成功后每天 7 点；失败则指数退避重试（1/2/4/8… 分钟，上限 10 分钟）
+      // 成功后按 nextRunAt 计划；失败则指数退避重试（1/2/4/8… 分钟，上限 10 分钟）
       const wait = state.fail === 0
-        ? next7() - Date.now()
+        ? Math.max(1000, nextRunAt() - Date.now())
         : Math.min(60000 * Math.pow(2, state.fail - 1), 600000);
       state.nextAt = Date.now() + wait;
       state.timer = setTimeout(() => { refresh(false); }, wait);
@@ -245,7 +272,7 @@
         return { date: d, long: l, short: s, net: l - s };
       });
 
-      dateEl.textContent = "近 " + sums.length + " 个交易日";
+      dateEl.textContent = "近 " + sums.length + " 个交易日 · 截至 " + sums[0].date.slice(5);
       wrap.innerHTML = sums.map((cur, i) => {
         const prev = i < sums.length - 1 ? sums[i + 1] : null;
         const ld = prev ? cur.long - prev.long : null;
