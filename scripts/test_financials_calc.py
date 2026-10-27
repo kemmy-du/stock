@@ -1,4 +1,7 @@
 import unittest
+from datetime import date
+
+from build_financials import quarter_ends
 from financials_calc import (
     quarter_no, prev_quarter_end, same_quarter_last_year,
     single_from_cum, pct, ratio, annual_sum, build_metrics,
@@ -69,6 +72,21 @@ class TestDerive(unittest.TestCase):
         self.assertAlmostEqual(m["y_rev"], 1000.0)
         self.assertAlmostEqual(m["y_rev_yoy"], 25.0)  # 1000 vs 800
         self.assertAlmostEqual(m["y_nm"], 10.0)
+
+
+class TestQuarterEnds(unittest.TestCase):
+    def test_no_future_dates(self):
+        ends = quarter_ends(date(2026, 10, 27), 12)
+        self.assertEqual(ends[0], "2026-09-30")
+        self.assertEqual(ends[1], "2026-06-30")
+        self.assertEqual(ends[2], "2026-03-31")
+        self.assertEqual(len(ends), 12)
+        self.assertTrue(all(e <= "2026-09-30" for e in ends))
+        self.assertEqual(ends[-1], "2023-12-31")
+
+    def test_year_boundary(self):
+        ends = quarter_ends(date(2027, 1, 5), 2)
+        self.assertEqual(ends, ["2026-12-31", "2026-09-30"])
 
 
 if __name__ == "__main__":
