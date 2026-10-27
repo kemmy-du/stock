@@ -1078,8 +1078,8 @@ img, canvas { display: block; max-width: 100%; }
 }
 .fin-toolbar .radar-status { margin-left: auto; }
 .fin-table-wrap { max-height: 72vh; overflow: auto; overscroll-behavior: contain; }
-.fin-table { font-size: var(--text-sm); }
-.fin-table th, .fin-table td { padding: var(--space-2) var(--space-3); }
+.fin-table { width: max-content; min-width: 100%; font-size: var(--text-sm); }
+.fin-table th, .fin-table td { padding: var(--space-2) 8px; }
 .fin-table thead th { z-index: 3; }
 .fin-table .fin-c1,
 .fin-table .fin-c2 {
@@ -1089,7 +1089,14 @@ img, canvas { display: block; max-width: 100%; }
   background: var(--color-surface);
   text-align: left;
 }
-.fin-table .fin-c2 { left: 76px; }
+.fin-table .fin-c1 { width: 76px; min-width: 76px; max-width: 76px; }
+.fin-table .fin-c2 { left: 76px; width: 126px; min-width: 126px; max-width: 126px; }
+.fin-table .fin-c2 > span:first-child {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .fin-table thead .fin-c1,
 .fin-table thead .fin-c2 { background: var(--color-surface-2); z-index: 5; }
 .fin-table tbody tr { cursor: pointer; }
@@ -1212,6 +1219,7 @@ img, canvas { display: block; max-width: 100%; }
 }
 .fin-drawer-metrics span { color: var(--color-text-2); }
 .fin-drawer-metrics b { font-variant-numeric: tabular-nums; }
+.fin-drawer-metrics .wide { grid-column: 1 / -1; }
 
 @media (max-width: 640px) {
   .fin-toolbar { gap: var(--space-2); }
