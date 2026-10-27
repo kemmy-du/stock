@@ -638,6 +638,8 @@ img, canvas { display: block; max-width: 100%; }
 .citic-legends b.up { color: var(--color-up, #c0392b); }
 .citic-legends b.down { color: var(--color-down, #27ae60); }
 .citic-compare-wrap { margin-top: var(--space-6); }
+.citic-compare-table thead tr:first-child th[colspan] { border-bottom: none; }
+.citic-compare-table thead tr:last-child th { font-size: var(--text-xs); color: var(--color-text-3); }
 
 .radar-filters { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
 .radar-filters .chip { display: inline-flex; align-items: center; gap: 5px; }

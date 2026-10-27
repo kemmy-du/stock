@@ -208,35 +208,39 @@
       const dateEl = document.getElementById("citic-compare-date");
       if (!wrap || !dateEl) return;
       const dm = state.dateMap;
-      const dates = Object.keys(dm).sort().reverse();
+      const dates = Object.keys(dm).sort().reverse().slice(0, 5);
       if (dates.length < 2) {
-        wrap.innerHTML = '<tr><td colspan="4" class="empty-state">暂无历史数据，无法对比</td></tr>';
+        wrap.innerHTML = '<tr><td colspan="7" class="empty-state">暂无历史数据，无法对比</td></tr>';
         dateEl.textContent = "";
         return;
       }
-      const latest = dates[0], prev = dates[1];
-      const lRows = dm[latest], pRows = dm[prev];
-      const lLong = sumField(lRows, "LONG_POSITION");
-      const lShort = sumField(lRows, "SHORT_POSITION");
-      const lNet = lLong - lShort;
-      const pLong = sumField(pRows, "LONG_POSITION");
-      const pShort = sumField(pRows, "SHORT_POSITION");
-      const pNet = pLong - pShort;
 
-      dateEl.textContent = prev + " → " + latest;
-      const cell = (val, isDelta) => {
-        const cls = isDelta ? clsOf(val) : (val > 0 ? "up" : val < 0 ? "down" : "");
-        const txt = isDelta ? fmtDelta(val) : fmtInt(val);
-        return '<td class="num ' + cls + '">' + txt + '</td>';
-      };
-      const row = (label, pVal, lVal) => {
-        const d = lVal - pVal;
-        return '<tr><td class="c-cell-code"><span class="c-code num">' + esc(label) + '</span></td>'
-          + cell(pVal, false) + cell(lVal, false) + cell(d, true) + '</tr>';
-      };
-      wrap.innerHTML = row("多单（多头持仓）", pLong, lLong)
-        + row("空单（空头持仓）", pShort, lShort)
-        + row("净持仓", pNet, lNet);
+      const sums = dates.map((d) => {
+        const rows = dm[d];
+        const l = sumField(rows, "LONG_POSITION");
+        const s = sumField(rows, "SHORT_POSITION");
+        return { date: d, long: l, short: s, net: l - s };
+      });
+
+      dateEl.textContent = "近 " + sums.length + " 个交易日";
+      wrap.innerHTML = sums.map((cur, i) => {
+        const prev = i < sums.length - 1 ? sums[i + 1] : null;
+        const ld = prev ? cur.long - prev.long : null;
+        const sd = prev ? cur.short - prev.short : null;
+        const nd = prev ? cur.net - prev.net : null;
+        const cell = (val, isDelta) => {
+          if (val == null) return '<td class="num flat">—</td>';
+          const cls = isDelta ? clsOf(val) : (val > 0 ? "up" : val < 0 ? "down" : "");
+          const txt = isDelta ? fmtDelta(val) : fmtInt(val);
+          return '<td class="num ' + cls + '">' + txt + '</td>';
+        };
+        return '<tr>'
+          + '<td class="c-cell-code"><span class="c-code num">' + esc(cur.date.slice(5)) + '</span></td>'
+          + cell(cur.long, false) + cell(ld, true)
+          + cell(cur.short, false) + cell(sd, true)
+          + cell(cur.net, false) + cell(nd, true)
+          + '</tr>';
+      }).join("");
     }
 
     function renderStatus() {
