@@ -27,12 +27,23 @@
     const hj = await head.json();
     const hd = hj && hj.result && hj.result.data && hj.result.data[0];
     if (!hd) throw new Error("暂无中信期货持仓数据");
-    const date = (hd.TRADE_DATE || "").slice(0, 10);
+    const latestDate = (hd.TRADE_DATE || "").slice(0, 10);
 
-    const day = await fetch(buildUrl("(TRADE_DATE='" + date + "')"), { cache: "no-store" });
-    if (!day.ok) throw new Error("接口请求失败 " + day.status);
-    const dj = await day.json();
-    return { date, rows: (dj && dj.result && dj.result.data) || [] };
+    const all = await fetch(buildUrl("", true), { cache: "no-store" });
+    if (!all.ok) throw new Error("接口请求失败 " + all.status);
+    const aj = await all.json();
+    const allData = (aj && aj.result && aj.result.data) || [];
+
+    const dateSet = new Set();
+    const dateMap = {};
+    for (const r of allData) {
+      const d = (r.TRADE_DATE || "").slice(0, 10);
+      if (!d || d > latestDate) continue;
+      dateSet.add(d);
+      (dateMap[d] = dateMap[d] || []).push(r);
+    }
+    const dates = Array.from(dateSet).sort().reverse();
+    return { date: latestDate, rows: dateMap[latestDate] || [], dateMap, dates };
   }
 
   // 交易所代码后缀 → 交易所
@@ -76,7 +87,7 @@
     const exEl = $("#citic-exchange");
 
     const state = {
-      rows: [], date: "",
+      rows: [], date: "", dateMap: {}, prevDate: "",
       filter: "ALL", q: "", sort: "long", dir: -1,
       timer: null, ticker: null, nextAt: 0, busy: false, fail: 0, loaded: false,
     };
@@ -186,6 +197,48 @@
       }).join("");
     }
 
+    function sumField(rows, field) {
+      let s = 0;
+      for (const r of rows) s += (+r[field] || 0);
+      return s;
+    }
+
+    function renderComparison() {
+      const wrap = document.getElementById("citic-compare-body");
+      const dateEl = document.getElementById("citic-compare-date");
+      if (!wrap || !dateEl) return;
+      const dm = state.dateMap;
+      const dates = Object.keys(dm).sort().reverse();
+      if (dates.length < 2) {
+        wrap.innerHTML = '<tr><td colspan="4" class="empty-state">暂无历史数据，无法对比</td></tr>';
+        dateEl.textContent = "";
+        return;
+      }
+      const latest = dates[0], prev = dates[1];
+      const lRows = dm[latest], pRows = dm[prev];
+      const lLong = sumField(lRows, "LONG_POSITION");
+      const lShort = sumField(lRows, "SHORT_POSITION");
+      const lNet = lLong - lShort;
+      const pLong = sumField(pRows, "LONG_POSITION");
+      const pShort = sumField(pRows, "SHORT_POSITION");
+      const pNet = pLong - pShort;
+
+      dateEl.textContent = prev + " → " + latest;
+      const cell = (val, isDelta) => {
+        const cls = isDelta ? clsOf(val) : (val > 0 ? "up" : val < 0 ? "down" : "");
+        const txt = isDelta ? fmtDelta(val) : fmtInt(val);
+        return '<td class="num ' + cls + '">' + txt + '</td>';
+      };
+      const row = (label, pVal, lVal) => {
+        const d = lVal - pVal;
+        return '<tr><td class="c-cell-code"><span class="c-code num">' + esc(label) + '</span></td>'
+          + cell(pVal, false) + cell(lVal, false) + cell(d, true) + '</tr>';
+      };
+      wrap.innerHTML = row("多单（多头持仓）", pLong, lLong)
+        + row("空单（空头持仓）", pShort, lShort)
+        + row("净持仓", pNet, lNet);
+    }
+
     function renderStatus() {
       if (!rsMain) return;
       rsMain.innerHTML = `数据日期 <span class="num">${esc(state.date)}</span> · 共 <b class="num">${state.rows.length}</b> 个合约持仓`;
@@ -197,13 +250,16 @@
       if (rsBtn) { rsBtn.disabled = true; rsBtn.classList.add("is-busy"); rsBtn.textContent = "刷新中"; }
       if (manual) setTick("正在刷新…", false);
       try {
-        const { date, rows } = await fetchCitic();
+        const { date, rows, dateMap, dates } = await fetchCitic();
         state.date = date;
         state.rows = rows;
+        state.dateMap = dateMap || {};
+        state.prevDate = (dates && dates[1]) || "";
         state.fail = 0;
         renderStatus();
         renderKPIs(rows);
         renderTable();
+        renderComparison();
         state.loaded = true;
       } catch (e) {
         state.fail++;

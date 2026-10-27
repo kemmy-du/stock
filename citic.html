@@ -40,6 +40,11 @@
         <div class="card kpi"><div class="kpi-label">空头持仓合计</div><div class="kpi-value num down" id="kpi-short">—</div></div>
         <div class="card kpi"><div class="kpi-label">净持仓合计</div><div class="kpi-value num" id="kpi-net">—</div></div>
       </div>
+      <div class="citic-legends">
+        <span><b class="up">多单（多头持仓）</b>：看涨持仓，持有者预期价格上涨获利</span>
+        <span><b class="down">空单（空头持仓）</b>：看跌持仓，持有者预期价格下跌获利</span>
+        <span><b>净持仓</b> = 多单 − 空单，正值偏多，负值偏空</span>
+      </div>
 
       <div class="section-head" style="margin-top:0">
         <h2>合约持仓明细</h2>
@@ -80,6 +85,26 @@
           </tbody>
         </table>
       </div>
+      <div class="section-head" style="margin-top:var(--space-6)">
+        <h2>按日持仓对比</h2>
+        <div class="radar-status" id="citic-compare-date"></div>
+      </div>
+      <div class="citic-table-wrap citic-compare-wrap">
+        <table class="citic-table citic-compare-table">
+          <thead>
+            <tr>
+              <th class="num-left">指标</th>
+              <th class="num">前日</th>
+              <th class="num">当日</th>
+              <th class="num">变化</th>
+            </tr>
+          </thead>
+          <tbody id="citic-compare-body">
+            <tr><td colspan="4"><div class="skeleton" style="height:80px"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="citic-note">按日对比：中信期货全部合约持仓汇总的前后两个交易日变化。数据来源：东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓）。仅供研究参考，不构成投资建议。</p>
       <p class="citic-note">数据来源：东方财富期货龙虎榜（期货交易所每日盘后公布的前 20 会员持仓）。期货持仓为日频数据，盘中不更新；本页每 5 分钟自动拉取最新交易日数据。仅供研究参考，不构成投资建议。</p>
     </div>
   </main>
