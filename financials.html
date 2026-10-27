@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F5F7" />
+  <title>财报汇总 · 股析 StockInsight</title>
+  <meta name="description" content="全 A 股财报汇总：营收、归母净利、扣非、毛利率、净利率、估值与环比同比，多列排序与个股趋势图。" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261028a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%2322262B'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20text-anchor='middle'%20fill='white'%20font-family='sans-serif'%20font-weight='700'%3E%E6%9E%90%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <noscript>
+    <div style="margin:16px;padding:16px;border:1px solid #d3d6dc;border-radius:10px;font:14px/1.6 -apple-system,'PingFang SC',sans-serif;color:#33383f;background:#fff">
+      当前浏览器禁用了 JavaScript，页面数据无法加载。请在系统浏览器中开启 JavaScript 后重试。
+    </div>
+  </noscript>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">析</span>
+        <span>股析 <small>STOCKINSIGHT</small></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">菜单</button>
+      <nav class="nav-links" id="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">全 A 股 · 财报汇总</p>
+        <h1>一屏看完全 A 股的财报成色。</h1>
+        <p>营收、归母净利、扣非净利、毛利率、净利率与估值指标，按最新报告期汇总；支持多列组合排序、搜索与个股趋势图。</p>
+      </section>
+
+      <div class="fin-toolbar">
+        <label class="search-box">
+          <span aria-hidden="true" style="color:var(--color-text-3)">⌕</span>
+          <input id="fin-search" type="search" placeholder="搜索代码或名称，如 600519、茅台…" aria-label="搜索股票" />
+        </label>
+        <div class="citic-exchange" id="fin-view" role="group" aria-label="视图切换">
+          <button class="chip active" data-view="q">季度</button>
+          <button class="chip" data-view="y">年度</button>
+        </div>
+        <button type="button" class="chip" id="fin-reset">重置排序</button>
+        <div class="radar-status" id="fin-status">正在加载快照…</div>
+      </div>
+
+      <div class="citic-table-wrap fin-table-wrap">
+        <table class="citic-table fin-table">
+          <thead id="fin-head"></thead>
+          <tbody id="fin-body">
+            <tr><td colspan="15"><div class="skeleton" style="height:320px"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fin-pager" id="fin-pager"></div>
+      <p class="citic-note" id="fin-total">仅供研究参考，不构成投资建议。</p>
+      <p class="citic-note">数据来源：东方财富财报指标与估值数据。金额单位为亿元；动态市盈率 = 总市值 ÷ 年化归母净利；环比/同比为单季口径。</p>
+    </div>
+  </main>
+
+  <div class="fin-mask" id="fin-mask" hidden></div>
+  <aside class="fin-drawer" id="fin-drawer" role="dialog" aria-modal="true" aria-labelledby="fin-drawer-title" hidden>
+    <div class="fin-drawer-head">
+      <div>
+        <h2 id="fin-drawer-title">—</h2>
+        <p class="fin-drawer-sub" id="fin-drawer-sub"></p>
+      </div>
+      <button type="button" class="fin-close" id="fin-close" aria-label="关闭">关闭</button>
+    </div>
+    <div class="fin-drawer-body" id="fin-drawer-body">
+      <div class="citic-exchange" id="fin-chart-view" role="group" aria-label="趋势口径">
+        <button class="chip active" data-view="q">按季度</button>
+        <button class="chip" data-view="y">按年度</button>
+      </div>
+      <div class="fin-chart" id="fin-chart"></div>
+      <div class="fin-drawer-metrics" id="fin-drawer-metrics"></div>
+    </div>
+  </aside>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script defer src="assets/js/common.js?v=20261028a"></script>
+  <script defer src="assets/js/charts.js?v=20261028a"></script>
+  <script defer src="assets/js/financials-core.js?v=20261028a"></script>
+  <script defer src="assets/js/financials.js?v=20261028a"></script>
+</body>
+</html>
