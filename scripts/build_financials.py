@@ -8,7 +8,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 
 from financials_calc import build_metrics
 
@@ -17,6 +17,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0", "Referer": "https://data.eastmoney.com/"
 PAGE = 500
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "data", "financials.json")
+CST = timezone(timedelta(hours=8))
 
 FIELDS = [
     "code", "name", "period",
@@ -105,8 +106,17 @@ def to_float(v):
     return f if f is not None and math.isfinite(f) else None
 
 
+def tidy(v):
+    """页面只展示两位小数；同时去掉多余小数位以缩小快照体积。"""
+    if not isinstance(v, float):
+        return v
+    v = round(v, 2)
+    return int(v) if v.is_integer() else v
+
+
 def main():
-    today = date.today()
+    now = datetime.now(CST)
+    today = now.date()
     dates = quarter_ends(today)
     print("quarter ends:", ", ".join(dates), file=sys.stderr)
 
@@ -171,12 +181,12 @@ def main():
             "pe_dyn": pe_dyn,
             "pb": info["pb"], "mcap": mcap, "fcap": info["fcap"],
         }
-        out_rows.append([row[f] for f in FIELDS])
+        out_rows.append([tidy(row[f]) for f in FIELDS])
 
     mi = FIELDS.index("mcap")
     out_rows.sort(key=lambda r: (r[mi] is None, -(r[mi] or 0)))
     payload = {
-        "generated_at": time.strftime("%Y-%m-%d %H:%M"),
+        "generated_at": now.strftime("%Y-%m-%d %H:%M"),
         "trade_date": trade_date,
         "coverage": {"dates": coverage, "total": len(out_rows)},
         "fields": FIELDS,

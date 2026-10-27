@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from build_financials import quarter_ends
+from build_financials import quarter_ends, tidy
 from financials_calc import (
     quarter_no, prev_quarter_end, same_quarter_last_year,
     single_from_cum, pct, ratio, annual_sum, build_metrics,
@@ -72,6 +72,14 @@ class TestDerive(unittest.TestCase):
         self.assertAlmostEqual(m["y_rev"], 1000.0)
         self.assertAlmostEqual(m["y_rev_yoy"], 25.0)  # 1000 vs 800
         self.assertAlmostEqual(m["y_nm"], 10.0)
+
+
+class TestTidy(unittest.TestCase):
+    def test_rounds_and_keeps_types(self):
+        self.assertEqual(tidy(13.659185495701873), 13.66)
+        self.assertEqual(tidy(2.0), 2)
+        self.assertIsNone(tidy(None))
+        self.assertEqual(tidy("600519"), "600519")
 
 
 class TestQuarterEnds(unittest.TestCase):

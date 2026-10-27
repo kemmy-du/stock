@@ -168,7 +168,7 @@
 
   async function load() {
     try {
-      const res = await fetch("data/financials.json", { cache: "no-store" });
+      const res = await fetch("data/financials.json", { cache: "no-cache" });
       if (!res.ok) throw new Error("快照加载失败 " + res.status);
       const snap = C.fromSnapshot(await res.json());
       state.rows = snap.rows;
