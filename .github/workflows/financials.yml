@@ -1,0 +1,37 @@
+name: Update financials snapshot
+
+on:
+  schedule:
+    - cron: "30 10 * * 1-5"   # 北京时间 18:30（周一至周五）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: financials-snapshot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python3 -m unittest discover -s scripts -p "test_*.py" -v
+      - name: Build snapshot
+        run: python3 scripts/build_financials.py
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/financials.json)" ]; then
+            echo "no changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/financials.json
+          git commit -m "chore(financials): 更新财报快照"
+          git push
