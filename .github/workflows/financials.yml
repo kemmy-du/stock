@@ -2,6 +2,7 @@ name: Update financials snapshot
 
 on:
   schedule:
+    - cron: "0 23 * * *"      # 北京时间次日 07:00（每天）
     - cron: "30 10 * * 1-5"   # 北京时间 18:30（周一至周五）
   workflow_dispatch:
 

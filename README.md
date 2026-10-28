@@ -86,7 +86,7 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 - 数据：东方财富 `RPT_F10_FINANCE_MAINFINADATA`（财报指标）+ `RPT_VALUEANALYSIS_DET`（最新交易日估值），覆盖全部 A 股（含北交所）
 - 口径：季度视图全部为**单季数据**（不是累计值）：一季报 = Q1 累计，二季报 = 中报 − Q1，三季报 = 三季报累计 − 中报，四季报 = 年报 − 三季报；环比 = 本季单季 ÷ 上一单季 − 1，同比 = 本季单季 ÷ 去年同季单季 − 1；毛利率 = 单季毛利润 ÷ 单季营收；动态 PE = 总市值 ÷ 年化归母净利；「报告期」列标注该行单季所属季度（如 2026二季报，可排序）；连续两个季度无财报的退市整理股不纳入
 - 年度视图：取最新报告期的上一年度，四个单季齐全才汇总，报告期显示为「2025年报」
-- 更新：GitHub Actions 每交易日 18:30（北京时间）运行 `scripts/build_financials.py`，数据有变化才提交；也可在 Actions 页手动触发 `workflow_dispatch`
+- 更新：GitHub Actions 每天 07:00 与每交易日 18:30（北京时间）各运行一次 `scripts/build_financials.py`，数据有变化才提交；也可在 Actions 页手动触发 `workflow_dispatch`
 - 本地：`python3 scripts/build_financials.py` 生成 `data/financials.json`，再打开 `financials.html`
 - 测试：`cd scripts && python3 -m unittest test_financials_calc -v`、`node scripts/test_financials_core.js`
 
