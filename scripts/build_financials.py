@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
-from financials_calc import build_metrics
+from financials_calc import build_metrics, new_codes
 
 API = "https://datacenter-web.eastmoney.com/api/data/v1/get"
 HEADERS = {"User-Agent": "Mozilla/5.0", "Referer": "https://data.eastmoney.com/"}
@@ -114,6 +114,17 @@ def tidy(v):
     return int(v) if v.is_integer() else v
 
 
+def load_periods(path):
+    """读取旧快照的 {code: period}；文件缺失或损坏时按空处理。"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return {str(r[0]): r[FIELDS.index("period")]
+                for r in data.get("rows", []) if r and r[0]}
+    except (OSError, ValueError, KeyError, TypeError, IndexError):
+        return {}
+
+
 def main():
     now = datetime.now(CST)
     today = now.date()
@@ -185,10 +196,15 @@ def main():
 
     mi = FIELDS.index("mcap")
     out_rows.sort(key=lambda r: (r[mi] is None, -(r[mi] or 0)))
+    pi = FIELDS.index("period")
+    cur_periods = {str(r[0]): r[pi] for r in out_rows if r and r[0]}
+    added = new_codes(load_periods(OUT), cur_periods)
+    print(f"  new disclosures: {len(added)}", file=sys.stderr)
     payload = {
         "generated_at": now.strftime("%Y-%m-%d %H:%M"),
         "trade_date": trade_date,
         "coverage": {"dates": coverage, "total": len(out_rows)},
+        "new_codes": added,
         "fields": FIELDS,
         "rows": out_rows,
     }

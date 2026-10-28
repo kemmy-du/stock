@@ -57,6 +57,8 @@
       rows,
       generatedAt: (data && data.generated_at) || "—",
       tradeDate: (data && data.trade_date) || "—",
+      newCodes: (data && Array.isArray(data.new_codes))
+        ? data.new_codes.map(String) : [],
     };
   }
 

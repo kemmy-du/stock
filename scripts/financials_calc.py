@@ -46,6 +46,17 @@ def annual_sum(cum, year):
     return None if any(v is None for v in vals) else sum(vals)
 
 
+def new_codes(prev_periods, cur_periods):
+    """本次相比上一快照「新披露财报」的代码：报告期变新，或上一快照没有该股。
+
+    prev_periods / cur_periods: {code: period}；返回按代码排序的列表。
+    """
+    return sorted(
+        code for code, period in cur_periods.items()
+        if period and (code not in prev_periods or period > prev_periods[code])
+    )
+
+
 def build_metrics(series, latest):
     """series: {date: {rev,np,deduct,gross}}；latest: 最新报告期。"""
     year = int(latest[:4])

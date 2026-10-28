@@ -46,6 +46,7 @@
     query: "", page: 1, size: 100,
     sortKeys: [{ key: "mcap", dir: -1 }],
     chartMode: "q", current: null, historyCache: {},
+    newCodes: new Set(), onlyNew: false,
     generatedAt: "—", tradeDate: "—", pushed: false,
   };
 
@@ -76,8 +77,14 @@
     return "";
   }
 
+  function isNew(code) {
+    return state.newCodes.has(String(code));
+  }
+
   function currentRows() {
-    return C.sortRows(C.filterRows(state.rows, state.query), state.sortKeys);
+    let rows = C.filterRows(state.rows, state.query);
+    if (state.onlyNew) rows = rows.filter((r) => isNew(r.code));
+    return C.sortRows(rows, state.sortKeys);
   }
 
   function renderHead() {
@@ -114,7 +121,8 @@
             return '<td class="fin-c1"><span class="num">' + esc(r.code) + "</span></td>";
           }
           if (col.key === "name") {
-            return '<td class="fin-c2"><span>' + esc(r.name) + "</span></td>";
+            return '<td class="fin-c2"><span>' + esc(r.name) + "</span>" +
+              (isNew(r.code) ? '<span class="fin-badge-new">新</span>' : "") + "</td>";
           }
           if (col.key === "period") {
             return '<td class="fin-c3">' + esc(periodText(r, state.view)) + "</td>";
@@ -164,6 +172,18 @@
       "</span> · 覆盖 <b class=\"num\">" + state.rows.length + "</b> 只 A 股";
   }
 
+  function updateNewChip() {
+    const chip = els.newChip;
+    if (!chip) return;
+    const n = state.newCodes.size;
+    chip.hidden = n === 0;
+    chip.classList.toggle("active", state.onlyNew && n > 0);
+    chip.setAttribute("aria-pressed", state.onlyNew ? "true" : "false");
+    const cnt = $("#fin-new-cnt");
+    if (cnt) cnt.textContent = String(n);
+    if (n === 0 && state.onlyNew) state.onlyNew = false;
+  }
+
   function syncSortKeys() {
     const cols = VIEW_COLUMNS[state.view];
     state.sortKeys = state.sortKeys.filter((k) => cols.some((c) => c.key === k.key));
@@ -176,8 +196,10 @@
       if (!res.ok) throw new Error("快照加载失败 " + res.status);
       const snap = C.fromSnapshot(await res.json());
       state.rows = snap.rows;
+      state.newCodes = new Set(snap.newCodes);
       state.generatedAt = snap.generatedAt;
       state.tradeDate = snap.tradeDate;
+      updateNewChip();
       updateStatus();
       renderHead();
       renderBody();
@@ -217,6 +239,15 @@
       renderHead();
       renderBody();
     });
+    if (els.newChip) {
+      els.newChip.addEventListener("click", () => {
+        state.onlyNew = !state.onlyNew;
+        state.page = 1;
+        updateNewChip();
+        scrollTableTop();
+        renderBody();
+      });
+    }
     els.head.addEventListener("click", (e) => {
       const th = e.target.closest("th[data-key]");
       if (!th) return;
@@ -446,6 +477,7 @@
     els.status = $("#fin-status");
     els.search = $("#fin-search");
     els.reset = $("#fin-reset");
+    els.newChip = $("#fin-new-chip");
     els.head = $("#fin-head");
     els.body = $("#fin-body");
     els.pager = $("#fin-pager");

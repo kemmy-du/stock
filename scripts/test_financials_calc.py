@@ -4,7 +4,7 @@ from datetime import date
 from build_financials import quarter_ends, tidy
 from financials_calc import (
     quarter_no, prev_quarter_end, same_quarter_last_year,
-    single_from_cum, pct, ratio, annual_sum, build_metrics,
+    single_from_cum, pct, ratio, annual_sum, build_metrics, new_codes,
 )
 
 
@@ -95,6 +95,24 @@ class TestQuarterEnds(unittest.TestCase):
     def test_year_boundary(self):
         ends = quarter_ends(date(2027, 1, 5), 2)
         self.assertEqual(ends, ["2026-12-31", "2026-09-30"])
+
+
+class TestNewCodes(unittest.TestCase):
+    def test_period_advanced_and_new_stock(self):
+        prev = {"600000": "2026-06-30", "600001": "2026-09-30", "600002": "2026-06-30"}
+        cur = {"600000": "2026-09-30", "600001": "2026-09-30", "600003": "2026-09-30"}
+        self.assertEqual(new_codes(prev, cur), ["600000", "600003"])
+
+    def test_empty_prev_marks_all(self):
+        self.assertEqual(new_codes({}, {"1": "2026-09-30", "2": "2026-06-30"}),
+                           ["1", "2"])
+
+    def test_no_period_not_marked(self):
+        self.assertEqual(new_codes({"1": "2026-06-30"}, {"1": None}), [])
+
+    def test_identical_snapshot(self):
+        prev = {"1": "2026-06-30", "2": "2026-03-31"}
+        self.assertEqual(new_codes(prev, dict(prev)), [])
 
 
 if __name__ == "__main__":
