@@ -301,13 +301,16 @@
     return state.rows.find((r) => String(r.code) === String(code)) || null;
   }
 
-  function metricRow(label, value, wide) {
+  function metricRow(label, value, wide, cls) {
     return '<div' + (wide ? ' class="wide"' : "") + "><span>" + label +
-      "</span><b class=\"num\">" + value + "</b></div>";
+      '</span><b class="num' + (cls ? " " + cls : "") + '">' + value + "</b></div>";
   }
   function yiSuffix(v) {
     const s = C.formatYi(v);
     return s === "—" ? s : s + " 亿";
+  }
+  function pctCell(v) {
+    return [ C.formatPct(v), v > 0 ? "up" : v < 0 ? "down" : "" ];
   }
 
   function renderDrawerMetrics(row) {
@@ -318,19 +321,30 @@
     const ded = isY ? v("y_deduct") : v("q_deduct");
     const gm = isY ? v("y_gm") : v("q_gm");
     const nm = isY ? v("y_nm") : v("q_nm");
-    const yoyRev = isY ? v("y_rev_yoy") : v("rev_yoy");
-    const yoyNp = isY ? v("y_np_yoy") : v("np_yoy");
-    $("#fin-drawer-metrics").innerHTML = [
+    const qoqRev = pctCell(isY ? null : v("rev_qoq"));
+    const qoqNp = pctCell(isY ? null : v("np_qoq"));
+    const yoyRev = pctCell(isY ? v("y_rev_yoy") : v("rev_yoy"));
+    const yoyNp = pctCell(isY ? v("y_np_yoy") : v("np_yoy"));
+    const rows = [
       metricRow(isY ? "全年营收" : "单季营收", yiSuffix(rev)),
       metricRow(isY ? "全年归母" : "单季归母", yiSuffix(np)),
       metricRow("扣非净利", yiSuffix(ded)),
       metricRow("毛利率", gm == null ? "—" : C.formatNum(gm, 1) + "%"),
       metricRow("净利率", nm == null ? "—" : C.formatNum(nm, 1) + "%"),
-      metricRow(isY ? "全年营收同比" : "单季营收同比", C.formatPct(yoyRev)),
-      metricRow(isY ? "全年归母同比" : "单季归母同比", C.formatPct(yoyNp)),
+    ];
+    if (!isY) {
+      rows.push(
+        metricRow("单季营收环比", qoqRev[0], false, qoqRev[1]),
+        metricRow("单季归母环比", qoqNp[0], false, qoqNp[1]),
+      );
+    }
+    rows.push(
+      metricRow(isY ? "全年营收同比" : "单季营收同比", yoyRev[0], false, yoyRev[1]),
+      metricRow(isY ? "全年归母同比" : "单季归母同比", yoyNp[0], false, yoyNp[1]),
       metricRow("动态 PE / PB", C.formatNum(v("pe_dyn"), 1) + " / " + C.formatNum(v("pb"), 2)),
       metricRow("总市值 / 流通", yiSuffix(v("mcap")) + " / " + yiSuffix(v("fcap")), true),
-    ].join("");
+    );
+    $("#fin-drawer-metrics").innerHTML = rows.join("");
   }
 
   async function renderChart() {
