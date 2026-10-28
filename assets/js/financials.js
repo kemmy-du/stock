@@ -7,7 +7,8 @@
   const VIEW_COLUMNS = {
     q: [
       { key: "code", label: "代码", cls: "fin-c1", type: "text", hint: "股票代码" },
-      { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票简称与最新报告期" },
+      { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票中文简称" },
+      { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "该股最新披露的报告期，如 2026三季报" },
       { key: "q_rev", label: "营收", type: "yi", hint: "单季营业总收入" },
       { key: "q_np", label: "归母净利", type: "yi", hint: "单季归母净利润" },
       { key: "q_deduct", label: "扣非净利", type: "yi", hint: "单季扣非归母净利润" },
@@ -24,7 +25,8 @@
     ],
     y: [
       { key: "code", label: "代码", cls: "fin-c1", type: "text", hint: "股票代码" },
-      { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票简称与最新报告期" },
+      { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票中文简称" },
+      { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "年度数据所属报告期，如 2025年报" },
       { key: "y_rev", label: "营收", type: "yi", hint: "上一完整年度营业总收入" },
       { key: "y_np", label: "归母净利", type: "yi", hint: "上一完整年度归母净利润" },
       { key: "y_deduct", label: "扣非净利", type: "yi", hint: "上一完整年度扣非归母净利润" },
@@ -112,8 +114,10 @@
             return '<td class="fin-c1"><span class="num">' + esc(r.code) + "</span></td>";
           }
           if (col.key === "name") {
-            return '<td class="fin-c2"><span>' + esc(r.name) + '</span><span class="fin-period">' +
-              esc(periodText(r, state.view)) + "</span></td>";
+            return '<td class="fin-c2"><span>' + esc(r.name) + "</span></td>";
+          }
+          if (col.key === "period") {
+            return '<td class="fin-c3">' + esc(periodText(r, state.view)) + "</td>";
           }
           return '<td class="' + cellCls(col, r[col.key]) + '">' + fmtCell(col, r[col.key]) + "</td>";
         }).join("");
@@ -179,7 +183,8 @@
       renderBody();
       openFromHash();
     } catch (e) {
-      els.body.innerHTML = '<tr><td colspan="15" class="empty-state" style="border:0">数据加载失败，请稍后重试。</td></tr>';
+      els.body.innerHTML = '<tr><td colspan="' + VIEW_COLUMNS[state.view].length +
+        '" class="empty-state" style="border:0">数据加载失败，请稍后重试。</td></tr>';
       failHint("财报数据加载失败，请稍后重试。");
     }
   }

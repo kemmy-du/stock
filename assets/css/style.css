@@ -1102,7 +1102,14 @@ img, canvas { display: block; max-width: 100%; }
 .fin-table tbody tr { cursor: pointer; }
 .fin-table tbody tr:hover .fin-c1,
 .fin-table tbody tr:hover .fin-c2 { background: var(--color-surface-2); }
-.fin-table .fin-period { display: block; font-size: var(--text-xs); color: var(--color-text-3); }
+.fin-table .fin-c3 {
+  width: 88px;
+  min-width: 88px;
+  max-width: 88px;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--color-text-2);
+}
 .fin-sort-badge {
   display: inline-block;
   min-width: 14px;
