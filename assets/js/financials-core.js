@@ -39,9 +39,9 @@
     const year = dateStr.slice(0, 4);
     const md = dateStr.slice(5);
     if (md === "03-31") return year + "一季报";
-    if (md === "06-30") return year + "中报";
+    if (md === "06-30") return year + "二季报";
     if (md === "09-30") return year + "三季报";
-    if (md === "12-31") return year + "年报";
+    if (md === "12-31") return year + "四季报";
     return dateStr;
   }
 

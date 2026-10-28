@@ -14,8 +14,10 @@ assert.strictEqual(core.formatPct(12.345), "+12.35%");
 assert.strictEqual(core.formatPct(-5), "-5.00%");
 assert.strictEqual(core.formatPct(null), "—");
 assert.strictEqual(core.formatNum(12.345, 1), "12.3");
+assert.strictEqual(core.periodLabel("2026-03-31"), "2026一季报");
+assert.strictEqual(core.periodLabel("2026-06-30"), "2026二季报");
 assert.strictEqual(core.periodLabel("2026-09-30"), "2026三季报");
-assert.strictEqual(core.periodLabel("2025-12-31"), "2025年报");
+assert.strictEqual(core.periodLabel("2025-12-31"), "2025四季报");
 
 assert.deepStrictEqual(
   core.filterRows(rows, "茅台").map((r) => r.code),

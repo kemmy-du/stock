@@ -8,7 +8,7 @@
     q: [
       { key: "code", label: "代码", cls: "fin-c1", type: "text", hint: "股票代码" },
       { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票中文简称" },
-      { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "该股最新披露的报告期，如 2026三季报" },
+      { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "该行单季数据所属季度，如 2026二季报（4–6 月）" },
       { key: "q_rev", label: "营收", type: "yi", hint: "单季营业总收入" },
       { key: "q_np", label: "归母净利", type: "yi", hint: "单季归母净利润" },
       { key: "q_deduct", label: "扣非净利", type: "yi", hint: "单季扣非归母净利润" },
