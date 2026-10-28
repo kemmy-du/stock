@@ -92,4 +92,32 @@ assert.deepStrictEqual(s1.newCodes, ["600519", "000001"]);
 const s2 = core.fromSnapshot({ fields: snapFields, rows: [] });
 assert.deepStrictEqual(s2.newCodes, []);
 
+// 筛选：季度口径、空值不匹配、亏损保护、年度口径切换
+const fRows = [
+  { code: "A", period: "2026-09-30", q_np: 10, y_np: 20, rev_yoy: 30, y_rev_yoy: 10,
+    np_yoy: 40, y_np_yoy: -5, pe_dyn: 12, pb: 2, mcap: 200 * 1e8,
+    q_gm: 40, y_gm: 35, q_nm: 12, y_nm: 9, q_deduct: 9, y_deduct: 18 },
+  { code: "B", period: "2026-06-30", q_np: -5, y_np: -8, rev_yoy: 10, y_rev_yoy: 20,
+    np_yoy: null, y_np_yoy: 15, pe_dyn: null, pb: 1, mcap: 50 * 1e8,
+    q_gm: null, y_gm: null, q_nm: -3, y_nm: -2, q_deduct: -4, y_deduct: -6 },
+  { code: "C", period: "2026-09-30", q_np: 8, y_np: 9, rev_yoy: 5, y_rev_yoy: 5,
+    np_yoy: 0, y_np_yoy: 0, pe_dyn: 80, pb: 5, mcap: 1000 * 1e8,
+    q_gm: 38, y_gm: 39, q_nm: 20, y_nm: 21, q_deduct: 7, y_deduct: 8 },
+];
+const codes = (list) => list.map((r) => r.code);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, {}, "q")), ["A", "B", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { periods: ["2026-09-30"] }, "q")), ["A", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { profit: "profit" }, "q")), ["A", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { profit: "loss" }, "q")), ["B"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { revYoyMin: 20 }, "q")), ["A"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { npYoyMin: 0 }, "q")), ["A", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { peMin: 10, peMax: 50 }, "q")), ["A"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { mcapMin: 100 * 1e8 }, "q")), ["A", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { gmMin: 30 }, "q")), ["A", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { deductRatioMin: 85 }, "q")), ["A", "C"]);
+// 年度口径：同比/毛利/净利/扣非改用 y_*，报告期筛选忽略
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { npYoyMin: 0 }, "y")), ["B", "C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { gmMin: 36 }, "y")), ["C"]);
+assert.deepStrictEqual(codes(core.filterByConditions(fRows, { periods: ["2026-09-30"] }, "y")), ["A", "B", "C"]);
+
 console.log("financials-core tests passed");

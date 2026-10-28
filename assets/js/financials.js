@@ -47,11 +47,38 @@
     sortKeys: [{ key: "mcap", dir: -1 }],
     chartMode: "q", current: null, historyCache: {},
     newCodes: new Set(), onlyNew: false,
+    filters: emptyFilters(), periodOptions: [],
     generatedAt: "—", tradeDate: "—", pushed: false,
   };
 
+  const NUM_INPUTS = {
+    revYoyMin: "f-rev-yoy", npYoyMin: "f-np-yoy",
+    peMin: "f-pe-min", peMax: "f-pe-max",
+    pbMin: "f-pb-min", pbMax: "f-pb-max",
+    mcapMin: "f-mcap-min", mcapMax: "f-mcap-max",
+    gmMin: "f-gm", nmMin: "f-nm", deductRatioMin: "f-deduct",
+  };
+  const SINGLE_FILTERS = {
+    revYoy: ["revYoyMin"], npYoy: ["npYoyMin"],
+    gm: ["gmMin"], nm: ["nmMin"], deduct: ["deductRatioMin"],
+  };
+  const RANGE_FILTERS = {
+    pe: ["peMin", "peMax"], pb: ["pbMin", "pbMax"], mcap: ["mcapMin", "mcapMax"],
+  };
+
+  function emptyFilters() {
+    return {
+      periods: [], profit: "all",
+      revYoyMin: null, npYoyMin: null,
+      peMin: null, peMax: null, pbMin: null, pbMax: null,
+      mcapMin: null, mcapMax: null,
+      gmMin: null, nmMin: null, deductRatioMin: null,
+    };
+  }
+
   const els = {};
   let timer = null;
+  let filterTimer = null;
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
@@ -84,6 +111,7 @@
   function currentRows() {
     let rows = C.filterRows(state.rows, state.query);
     if (state.onlyNew) rows = rows.filter((r) => isNew(r.code));
+    rows = C.filterByConditions(rows, toConditions(), state.view);
     return C.sortRows(rows, state.sortKeys);
   }
 
@@ -112,8 +140,10 @@
     const pg = C.paginate(rows, state.page, state.size);
     state.page = pg.page;
     if (!pg.items.length) {
+      const narrowed = activeFilterCount() > 0 || state.query.trim() || state.onlyNew;
       els.body.innerHTML = '<tr><td colspan="' + cols.length +
-        '" class="empty-state" style="border:0">无匹配股票</td></tr>';
+        '" class="empty-state" style="border:0">' +
+        (narrowed ? "无匹配股票，试试放宽筛选或搜索" : "无匹配股票") + "</td></tr>";
     } else {
       els.body.innerHTML = pg.items.map((r) => {
         const tds = cols.map((col) => {
@@ -135,6 +165,7 @@
     renderPager(rows.length, pg);
     els.total.textContent = "共 " + rows.length + " 只 · 快照 " + state.generatedAt +
       " · 仅供研究参考，不构成投资建议。";
+    updateFilterSummary(rows.length);
   }
 
   function renderPager(total, pg) {
@@ -184,6 +215,162 @@
     if (n === 0 && state.onlyNew) state.onlyNew = false;
   }
 
+  /* ---------- 筛选 ---------- */
+
+  function numValue(id) {
+    const el = document.getElementById(id);
+    if (!el || el.value.trim() === "") return null;
+    const n = Number(el.value);
+    return isFinite(n) ? n : null;
+  }
+
+  function setNumValue(key, value) {
+    const el = document.getElementById(NUM_INPUTS[key]);
+    if (el) el.value = value == null ? "" : String(value);
+  }
+
+  function syncNumberFilters() {
+    Object.keys(NUM_INPUTS).forEach((k) => { state.filters[k] = numValue(NUM_INPUTS[k]); });
+  }
+
+  function toConditions() {
+    const f = state.filters;
+    return {
+      periods: f.periods, profit: f.profit,
+      revYoyMin: f.revYoyMin, npYoyMin: f.npYoyMin,
+      peMin: f.peMin, peMax: f.peMax, pbMin: f.pbMin, pbMax: f.pbMax,
+      mcapMin: f.mcapMin == null ? null : f.mcapMin * 1e8,
+      mcapMax: f.mcapMax == null ? null : f.mcapMax * 1e8,
+      gmMin: f.gmMin, nmMin: f.nmMin, deductRatioMin: f.deductRatioMin,
+    };
+  }
+
+  function activeFilterCount() {
+    const f = state.filters;
+    let n = state.view === "y" ? 0 : f.periods.length;
+    if (f.profit !== "all") n += 1;
+    ["revYoyMin", "npYoyMin", "gmMin", "nmMin", "deductRatioMin"].forEach((k) => {
+      if (f[k] != null) n += 1;
+    });
+    if (f.peMin != null || f.peMax != null) n += 1;
+    if (f.pbMin != null || f.pbMax != null) n += 1;
+    if (f.mcapMin != null || f.mcapMax != null) n += 1;
+    return n;
+  }
+
+  function updateFilterBadge() {
+    if (!els.filterBtn) return;
+    const n = activeFilterCount();
+    els.filterCnt.hidden = n === 0;
+    els.filterCnt.textContent = String(n);
+    els.filterBtn.classList.toggle("active", n > 0);
+  }
+
+  function updatePeriodGroup() {
+    const group = $("#fin-group-period");
+    if (group) group.hidden = state.view === "y";
+  }
+
+  function renderPeriodChips() {
+    if (!els.periods) return;
+    const selected = state.filters.periods;
+    let html = '<button type="button" class="chip' + (selected.length ? "" : " active") +
+      '" data-period="">全部</button>';
+    html += state.periodOptions.map((p) =>
+      '<button type="button" class="chip' + (selected.indexOf(p) >= 0 ? " active" : "") +
+      '" data-period="' + esc(p) + '">' + esc(C.periodLabel(p)) + "</button>").join("");
+    els.periods.innerHTML = html;
+  }
+
+  function renderProfitChips() {
+    $$("#fin-profit .chip").forEach((c) =>
+      c.classList.toggle("active", c.dataset.profit === state.filters.profit));
+  }
+
+  function filterChip(kind, text, value) {
+    return '<button type="button" data-clear="' + kind + '"' +
+      (value ? ' data-value="' + esc(value) + '"' : "") +
+      ' aria-label="移除筛选：' + esc(text) + '">' + esc(text) + " ×</button>";
+  }
+
+  function rangeText(min, max) {
+    if (min != null && max != null) return min + "–" + max;
+    if (min != null) return "≥" + min;
+    return "≤" + max;
+  }
+
+  function renderActiveFilters() {
+    const box = els.activeFilters;
+    if (!box) return;
+    const f = state.filters;
+    const parts = [];
+    if (state.view !== "y") {
+      f.periods.forEach((p) => parts.push(filterChip("period", "报告期 " + C.periodLabel(p), p)));
+    }
+    if (f.profit !== "all") parts.push(filterChip("profit", f.profit === "profit" ? "仅盈利" : "仅亏损"));
+    if (f.revYoyMin != null) parts.push(filterChip("revYoy", "营收同比 ≥" + f.revYoyMin + "%"));
+    if (f.npYoyMin != null) parts.push(filterChip("npYoy", "归母同比 ≥" + f.npYoyMin + "%"));
+    if (f.peMin != null || f.peMax != null) parts.push(filterChip("pe", "PE " + rangeText(f.peMin, f.peMax)));
+    if (f.pbMin != null || f.pbMax != null) parts.push(filterChip("pb", "PB " + rangeText(f.pbMin, f.pbMax)));
+    if (f.mcapMin != null || f.mcapMax != null) {
+      parts.push(filterChip("mcap", "市值 " + rangeText(f.mcapMin, f.mcapMax) + " 亿"));
+    }
+    if (f.gmMin != null) parts.push(filterChip("gm", "毛利率 ≥" + f.gmMin + "%"));
+    if (f.nmMin != null) parts.push(filterChip("nm", "净利率 ≥" + f.nmMin + "%"));
+    if (f.deductRatioMin != null) parts.push(filterChip("deduct", "扣非/归母 ≥" + f.deductRatioMin + "%"));
+    box.hidden = parts.length === 0;
+    box.innerHTML = parts.join("");
+  }
+
+  function refreshQuick() {
+    $$("#f-mcap-quick .chip").forEach((c) => {
+      c.classList.toggle("active",
+        state.filters.mcapMax == null && state.filters.mcapMin != null &&
+        Number(c.dataset.min) === state.filters.mcapMin);
+    });
+  }
+
+  function applyFilters() {
+    state.page = 1;
+    scrollTableTop();
+    renderActiveFilters();
+    updateFilterBadge();
+    renderBody();
+  }
+
+  function clearFilter(kind, value) {
+    const f = state.filters;
+    if (kind === "period") {
+      f.periods = f.periods.filter((p) => p !== value);
+      renderPeriodChips();
+    } else if (kind === "profit") {
+      f.profit = "all";
+      renderProfitChips();
+    } else {
+      const keys = SINGLE_FILTERS[kind] || RANGE_FILTERS[kind];
+      if (!keys) return;
+      keys.forEach((k) => { f[k] = null; setNumValue(k, null); });
+      if (kind === "mcap") refreshQuick();
+    }
+    applyFilters();
+  }
+
+  function resetFilters() {
+    state.filters = emptyFilters();
+    Object.keys(NUM_INPUTS).forEach((k) => setNumValue(k, null));
+    renderPeriodChips();
+    renderProfitChips();
+    refreshQuick();
+    applyFilters();
+  }
+
+  function updateFilterSummary(total) {
+    const el = $("#fin-filter-summary");
+    if (!el) return;
+    el.textContent = "当前命中 " + total +
+      " 只 · 同比/毛利率/扣非占比按当前视图口径（季度=单季，年度=全年）；报告期筛选仅季度视图生效。";
+  }
+
   function syncSortKeys() {
     const cols = VIEW_COLUMNS[state.view];
     state.sortKeys = state.sortKeys.filter((k) => cols.some((c) => c.key === k.key));
@@ -199,6 +386,13 @@
       state.newCodes = new Set(snap.newCodes);
       state.generatedAt = snap.generatedAt;
       state.tradeDate = snap.tradeDate;
+      state.periodOptions = Array.from(new Set(state.rows.map((r) => r.period).filter(Boolean)))
+        .sort().reverse();
+      renderPeriodChips();
+      renderProfitChips();
+      updatePeriodGroup();
+      renderActiveFilters();
+      updateFilterBadge();
       updateNewChip();
       updateStatus();
       renderHead();
@@ -228,6 +422,9 @@
         $$("#fin-view .chip").forEach((c) => c.classList.toggle("active", c === chip));
         state.page = 1;
         syncSortKeys();
+        updatePeriodGroup();
+        renderActiveFilters();
+        updateFilterBadge();
         scrollTableTop();
         renderHead();
         renderBody();
@@ -246,6 +443,64 @@
         updateNewChip();
         scrollTableTop();
         renderBody();
+      });
+    }
+    if (els.filterBtn) {
+      els.filterBtn.addEventListener("click", () => {
+        const open = els.filterPanel.hidden;
+        els.filterPanel.hidden = !open;
+        els.filterBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      els.filterClear.addEventListener("click", resetFilters);
+      els.periods.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-period]");
+        if (!btn) return;
+        const p = btn.dataset.period;
+        const list = state.filters.periods;
+        if (!p) {
+          list.length = 0;
+        } else {
+          const i = list.indexOf(p);
+          if (i >= 0) list.splice(i, 1); else list.push(p);
+          if (list.length === state.periodOptions.length) list.length = 0;
+        }
+        renderPeriodChips();
+        applyFilters();
+      });
+      els.profit.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-profit]");
+        if (!btn) return;
+        state.filters.profit = btn.dataset.profit;
+        renderProfitChips();
+        applyFilters();
+      });
+      const quick = $("#f-mcap-quick");
+      if (quick) {
+        quick.addEventListener("click", (e) => {
+          const btn = e.target.closest("button[data-min]");
+          if (!btn) return;
+          setNumValue("mcapMin", btn.dataset.min);
+          setNumValue("mcapMax", null);
+          syncNumberFilters();
+          refreshQuick();
+          applyFilters();
+        });
+      }
+      Object.keys(NUM_INPUTS).forEach((k) => {
+        const el = document.getElementById(NUM_INPUTS[k]);
+        if (!el) return;
+        el.addEventListener("input", () => {
+          clearTimeout(filterTimer);
+          filterTimer = setTimeout(() => {
+            syncNumberFilters();
+            refreshQuick();
+            applyFilters();
+          }, 200);
+        });
+      });
+      els.activeFilters.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-clear]");
+        if (btn) clearFilter(btn.dataset.clear, btn.dataset.value);
       });
     }
     els.head.addEventListener("click", (e) => {
@@ -478,6 +733,13 @@
     els.search = $("#fin-search");
     els.reset = $("#fin-reset");
     els.newChip = $("#fin-new-chip");
+    els.filterBtn = $("#fin-filter-btn");
+    els.filterCnt = $("#fin-filter-cnt");
+    els.filterPanel = $("#fin-filter-panel");
+    els.filterClear = $("#fin-filter-clear");
+    els.periods = $("#f-periods");
+    els.profit = $("#fin-profit");
+    els.activeFilters = $("#fin-active-filters");
     els.head = $("#fin-head");
     els.body = $("#fin-body");
     els.pager = $("#fin-pager");

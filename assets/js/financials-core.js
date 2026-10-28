@@ -70,6 +70,52 @@
       String(r.name || "").toLowerCase().includes(q));
   }
 
+  function isNum(v) { return typeof v === "number" && isFinite(v); }
+
+  function inRange(v, min, max) {
+    if (!isNum(v)) return false;
+    if (isNum(min) && v < min) return false;
+    if (isNum(max) && v > max) return false;
+    return true;
+  }
+
+  function filterByConditions(rows, filters, mode) {
+    const f = filters || {};
+    const annual = mode === "y";
+    const periods = !annual && Array.isArray(f.periods) && f.periods.length
+      ? new Set(f.periods) : null;
+    const npKey = annual ? "y_np" : "q_np";
+    const deductKey = annual ? "y_deduct" : "q_deduct";
+    const yoyRevKey = annual ? "y_rev_yoy" : "rev_yoy";
+    const yoyNpKey = annual ? "y_np_yoy" : "np_yoy";
+    const gmKey = annual ? "y_gm" : "q_gm";
+    const nmKey = annual ? "y_nm" : "q_nm";
+    const profit = f.profit && f.profit !== "all" ? f.profit : null;
+    const ranges = ["peMin", "peMax", "pbMin", "pbMax", "mcapMin", "mcapMax"];
+    const floors = ["revYoyMin", "npYoyMin", "gmMin", "nmMin", "deductRatioMin"];
+    const active = periods || profit ||
+      ranges.some((k) => isNum(f[k])) || floors.some((k) => isNum(f[k]));
+    if (!active) return rows;
+
+    return rows.filter((r) => {
+      if (periods && !periods.has(r.period)) return false;
+      if (profit === "profit" && !(isNum(r[npKey]) && r[npKey] > 0)) return false;
+      if (profit === "loss" && !(isNum(r[npKey]) && r[npKey] < 0)) return false;
+      if (isNum(f.revYoyMin) && !(isNum(r[yoyRevKey]) && r[yoyRevKey] >= f.revYoyMin)) return false;
+      if (isNum(f.npYoyMin) && !(isNum(r[yoyNpKey]) && r[yoyNpKey] >= f.npYoyMin)) return false;
+      if ((isNum(f.peMin) || isNum(f.peMax)) && !inRange(r.pe_dyn, f.peMin, f.peMax)) return false;
+      if ((isNum(f.pbMin) || isNum(f.pbMax)) && !inRange(r.pb, f.pbMin, f.pbMax)) return false;
+      if ((isNum(f.mcapMin) || isNum(f.mcapMax)) && !inRange(r.mcap, f.mcapMin, f.mcapMax)) return false;
+      if (isNum(f.gmMin) && !(isNum(r[gmKey]) && r[gmKey] >= f.gmMin)) return false;
+      if (isNum(f.nmMin) && !(isNum(r[nmKey]) && r[nmKey] >= f.nmMin)) return false;
+      if (isNum(f.deductRatioMin)) {
+        if (!(isNum(r[npKey]) && r[npKey] > 0 && isNum(r[deductKey]))) return false;
+        if (r[deductKey] / r[npKey] * 100 < f.deductRatioMin) return false;
+      }
+      return true;
+    });
+  }
+
   function cmp(a, b) {
     if (typeof a === "string" || typeof b === "string") {
       return String(a).localeCompare(String(b), "zh-CN");
@@ -170,7 +216,7 @@
 
   const api = {
     FIELDS, formatYi, formatNum, formatPct, periodLabel,
-    fromSnapshot, filterRows, sortRows, paginate, trendSeries,
+    fromSnapshot, filterRows, filterByConditions, sortRows, paginate, trendSeries,
   };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.FinCore = api;
