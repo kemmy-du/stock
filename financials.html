@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#F4F5F7" />
   <title>财报汇总 · 股析 StockInsight</title>
   <meta name="description" content="全 A 股财报汇总：营收、归母净利、扣非、毛利率、净利率、估值与环比同比，多列排序与个股趋势图。" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261028f" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261028g" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%2322262B'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20text-anchor='middle'%20fill='white'%20font-family='sans-serif'%20font-weight='700'%3E%E6%9E%90%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -64,10 +64,10 @@
               <button type="button" class="chip" data-profit="loss">仅亏损</button>
             </div>
           </div>
-          <div class="fin-filter-group">
-            <h3>成长（≥ %）</h3>
-            <label class="fin-field"><span>营收同比</span><input id="f-rev-yoy" type="number" step="1" inputmode="decimal" placeholder="不限" /></label>
-            <label class="fin-field"><span>归母同比</span><input id="f-np-yoy" type="number" step="1" inputmode="decimal" placeholder="不限" /></label>
+          <div class="fin-filter-group" id="fin-group-growth">
+            <h3>单季环比（≥ %）</h3>
+            <label class="fin-field"><span>营收环比</span><input id="f-rev-qoq" type="number" step="1" inputmode="decimal" placeholder="不限" /></label>
+            <label class="fin-field"><span>归母环比</span><input id="f-np-qoq" type="number" step="1" inputmode="decimal" placeholder="不限" /></label>
           </div>
           <div class="fin-filter-group">
             <h3>估值</h3>
@@ -134,9 +134,9 @@
 
   <footer class="footer" id="footer"></footer>
 
-  <script defer src="assets/js/common.js?v=20261028f"></script>
-  <script defer src="assets/js/charts.js?v=20261028f"></script>
-  <script defer src="assets/js/financials-core.js?v=20261028f"></script>
-  <script defer src="assets/js/financials.js?v=20261028f"></script>
+  <script defer src="assets/js/common.js?v=20261028g"></script>
+  <script defer src="assets/js/charts.js?v=20261028g"></script>
+  <script defer src="assets/js/financials-core.js?v=20261028g"></script>
+  <script defer src="assets/js/financials.js?v=20261028g"></script>
 </body>
 </html>

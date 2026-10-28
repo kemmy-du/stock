@@ -52,14 +52,14 @@
   };
 
   const NUM_INPUTS = {
-    revYoyMin: "f-rev-yoy", npYoyMin: "f-np-yoy",
+    revQoqMin: "f-rev-qoq", npQoqMin: "f-np-qoq",
     peMin: "f-pe-min", peMax: "f-pe-max",
     pbMin: "f-pb-min", pbMax: "f-pb-max",
     mcapMin: "f-mcap-min", mcapMax: "f-mcap-max",
     gmMin: "f-gm", nmMin: "f-nm", deductRatioMin: "f-deduct",
   };
   const SINGLE_FILTERS = {
-    revYoy: ["revYoyMin"], npYoy: ["npYoyMin"],
+    revQoq: ["revQoqMin"], npQoq: ["npQoqMin"],
     gm: ["gmMin"], nm: ["nmMin"], deduct: ["deductRatioMin"],
   };
   const RANGE_FILTERS = {
@@ -69,7 +69,7 @@
   function emptyFilters() {
     return {
       periods: [], profit: "all",
-      revYoyMin: null, npYoyMin: null,
+      revQoqMin: null, npQoqMin: null,
       peMin: null, peMax: null, pbMin: null, pbMax: null,
       mcapMin: null, mcapMax: null,
       gmMin: null, nmMin: null, deductRatioMin: null,
@@ -237,7 +237,7 @@
     const f = state.filters;
     return {
       periods: f.periods, profit: f.profit,
-      revYoyMin: f.revYoyMin, npYoyMin: f.npYoyMin,
+      revQoqMin: f.revQoqMin, npQoqMin: f.npQoqMin,
       peMin: f.peMin, peMax: f.peMax, pbMin: f.pbMin, pbMax: f.pbMax,
       mcapMin: f.mcapMin == null ? null : f.mcapMin * 1e8,
       mcapMax: f.mcapMax == null ? null : f.mcapMax * 1e8,
@@ -247,9 +247,14 @@
 
   function activeFilterCount() {
     const f = state.filters;
-    let n = state.view === "y" ? 0 : f.periods.length;
+    const quarter = state.view !== "y";
+    let n = quarter ? f.periods.length : 0;
     if (f.profit !== "all") n += 1;
-    ["revYoyMin", "npYoyMin", "gmMin", "nmMin", "deductRatioMin"].forEach((k) => {
+    if (quarter) {
+      if (f.revQoqMin != null) n += 1;
+      if (f.npQoqMin != null) n += 1;
+    }
+    ["gmMin", "nmMin", "deductRatioMin"].forEach((k) => {
       if (f[k] != null) n += 1;
     });
     if (f.peMin != null || f.peMax != null) n += 1;
@@ -266,9 +271,12 @@
     els.filterBtn.classList.toggle("active", n > 0);
   }
 
-  function updatePeriodGroup() {
-    const group = $("#fin-group-period");
-    if (group) group.hidden = state.view === "y";
+  function updateViewGroups() {
+    const annual = state.view === "y";
+    ["#fin-group-period", "#fin-group-growth"].forEach((sel) => {
+      const group = $(sel);
+      if (group) group.hidden = annual;
+    });
   }
 
   function renderPeriodChips() {
@@ -308,8 +316,10 @@
       f.periods.forEach((p) => parts.push(filterChip("period", "报告期 " + C.periodLabel(p), p)));
     }
     if (f.profit !== "all") parts.push(filterChip("profit", f.profit === "profit" ? "仅盈利" : "仅亏损"));
-    if (f.revYoyMin != null) parts.push(filterChip("revYoy", "营收同比 ≥" + f.revYoyMin + "%"));
-    if (f.npYoyMin != null) parts.push(filterChip("npYoy", "归母同比 ≥" + f.npYoyMin + "%"));
+    if (state.view !== "y") {
+      if (f.revQoqMin != null) parts.push(filterChip("revQoq", "营收环比 ≥" + f.revQoqMin + "%"));
+      if (f.npQoqMin != null) parts.push(filterChip("npQoq", "归母环比 ≥" + f.npQoqMin + "%"));
+    }
     if (f.peMin != null || f.peMax != null) parts.push(filterChip("pe", "PE " + rangeText(f.peMin, f.peMax)));
     if (f.pbMin != null || f.pbMax != null) parts.push(filterChip("pb", "PB " + rangeText(f.pbMin, f.pbMax)));
     if (f.mcapMin != null || f.mcapMax != null) {
@@ -368,7 +378,7 @@
     const el = $("#fin-filter-summary");
     if (!el) return;
     el.textContent = "当前命中 " + total +
-      " 只 · 同比/毛利率/扣非占比按当前视图口径（季度=单季，年度=全年）；报告期筛选仅季度视图生效。";
+      " 只 · 毛利率/净利率/扣非占比按当前视图口径（季度=单季，年度=全年）；报告期与环比筛选仅季度视图生效。";
   }
 
   function syncSortKeys() {
@@ -390,7 +400,7 @@
         .sort().reverse();
       renderPeriodChips();
       renderProfitChips();
-      updatePeriodGroup();
+      updateViewGroups();
       renderActiveFilters();
       updateFilterBadge();
       updateNewChip();
@@ -422,7 +432,7 @@
         $$("#fin-view .chip").forEach((c) => c.classList.toggle("active", c === chip));
         state.page = 1;
         syncSortKeys();
-        updatePeriodGroup();
+        updateViewGroups();
         renderActiveFilters();
         updateFilterBadge();
         scrollTableTop();
