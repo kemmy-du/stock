@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 10:18",
+ "generated_at": "2026-10-29 10:49",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 176,
+ "total": 179,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -911,6 +911,24 @@
    "report_id": "CN-000895-2026-10-24"
   },
   {
+   "id": "966db1b01bf0fea7",
+   "title": "格力电器（000651）2026年三季报简析：净利润同比下降19.51%",
+   "stock_code": "000651",
+   "stock_name": "格力电器",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "据证券之星公开数据整理，近期格力电器（000651）发布2026年三季报。根据财报显示，格力电器净利润同比下降19.51%。 截至本报告期末，公司营业总收入1265.44亿元，同比下降8.07%，归母净利润172.74亿元，同比下降19.51%。 公司历史上的财报较为好看。偿债能力：公司现金资产非常健康。融资分红：公司",
+   "url": "https://wap.stockstar.com/detail/RB2026102800047087",
+   "has_report": true,
+   "report_id": "CN-000651-2026-10-24"
+  },
+  {
    "id": "543c840b0eb7931f",
    "title": "铜陵有色：第三季度净利润20.54亿元，同比增516.76%",
    "stock_code": "000630",
@@ -1665,6 +1683,23 @@
    "score": 30,
    "summary": "本报讯(记者张敏)10月26日，华东医药股份有限公司(以下简称“华东医药”)对外宣布， 共有3项自研ADC研究与1项独家市场推广产品的Ⅲ期研究更新结果入选2026年欧洲肿瘤内科学会(European Societyfor Medical Oncology，ESMO)年会。 其中，ROR1靶向抗体偶联药物(ADC)HDM",
    "url": "http://news.10jqka.com.cn/19700122/c681117860.shtml",
+   "has_report": true,
+   "report_id": "CN-000963-2026-10-24"
+  },
+  {
+   "id": "b403287e0a732bd4",
+   "title": "ESMO 2026︱华东医药 3 项自研ADC创新药研究成果以及1项独家市场推广创新产品亮相国际舞台",
+   "stock_code": "000963",
+   "stock_name": "华东医药",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "2026 年欧洲肿瘤内科学会（ESMO）年会于当地时间 10 月 23 日至 27 日在西班牙马德里召开。 华东医药（SZ.000963）共有 3 项自研 ADC 研究与 1 项独家市场推广产品的Ⅲ期研究更新结果入选本次大会。 其中，ROR1 靶向抗体偶联药物（ADC）HDM2005 在转移性去势抵抗性前列腺癌与非霍奇",
+   "url": "http://news.10jqka.com.cn/19700122/c681113314.shtml",
    "has_report": true,
    "report_id": "CN-000963-2026-10-24"
   },
@@ -2721,6 +2756,23 @@
    "url": "https://baijiahao.baidu.com/s?for=pc&id=1880167037506597217&wfr=spider",
    "has_report": true,
    "report_id": "CN-000975-2026-10-24"
+  },
+  {
+   "id": "97fd6d423cab844e",
+   "title": "中航西飞股价跌5.05%",
+   "stock_code": "000768",
+   "stock_name": "中航西飞",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "来源：新浪基金∞工作室\n10月27日，中航西飞跌5.05%，截至发稿，报22.57元/股，成交5.95亿元，换手率0.92%，总市值627.58亿元。\n资料显示，中航西安飞机工业集团股份有限公司位于陕西省西安市阎良区西飞大道一号，成立日期1997年6月18日，上市日期1997年6月26日，公司主营业务涉及军用大中型飞机",
+   "url": "https://baijiahao.baidu.com/s?for=pc&id=1880184524187169240&wfr=spider",
+   "has_report": true,
+   "report_id": "CN-000768-2026-10-24"
   },
   {
    "id": "b4c719764fb00949",
