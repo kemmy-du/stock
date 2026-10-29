@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 20:02",
+ "generated_at": "2026-10-29 20:33",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 256,
+ "total": 264,
  "items": [
   {
    "id": "6b2953d5595ab105",
@@ -95,6 +95,23 @@
    "url": "https://stock.cfi.cn/p20261028000471.html",
    "has_report": true,
    "report_id": "CN-000651-2026-10-24"
+  },
+  {
+   "id": "dac4bfba94f7a748",
+   "title": "苹果M6 MacBook Pro的OLED触控屏支持Apple Pencil吗？",
+   "stock_code": "AAPL",
+   "stock_name": "苹果",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "先给结论：M6款MacBook Pro并未配备OLED触控屏，它沿用的仍是14.2英寸Liquid视网膜XDR屏，没有触控层，自然谈不上支持Apple Pencil； 传闻中的OLED触控屏属于另一条更高端的产品线，搭载的是M5 Pro、M5 Max芯片，与这次上架的M6入门款并不是同一台机器。 芯片方案：该机沿用M5",
+   "url": "https://t.cj.sina.com.cn/articles/view/7879996057/1d5af3299068021m24?finpagefr=p_103",
+   "has_report": true,
+   "report_id": "US-AAPL-2026-10-18"
   },
   {
    "id": "7696c1e5f3c2efb4",
@@ -724,6 +741,24 @@
    "url": "https://www.gelonghui.com/news/5337933",
    "has_report": true,
    "report_id": "CN-000768-2026-10-24"
+  },
+  {
+   "id": "bd6d1b67f4884584",
+   "title": "格力电器混改7年，高瓴资本416亿入局账面仍浮亏近20%",
+   "stock_code": "000651",
+   "stock_name": "格力电器",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "negative",
+   "tags": [
+    "利好",
+    "利空"
+   ],
+   "score": 60,
+   "summary": "10月26日晚，格力电器（000651.SZ）发布2026年第三季度报告。财报数据显示，2026年第三季度，格力电器实现营业收入约366.78亿元，同比下滑7.97%；归母净利润约39.96亿元，同比下滑43.31%。 今年前三季度，格力电器营收约1260.75亿元，同比下降8.1%；归母净利润约172.74亿元，同比",
+   "url": "http://news.10jqka.com.cn/19700122/c681229946.shtml",
+   "has_report": true,
+   "report_id": "CN-000651-2026-10-24"
   },
   {
    "id": "3f5ecc5643dcfe8b",
@@ -1499,6 +1534,24 @@
    "url": "http://news.10jqka.com.cn/19700122/c681256041.shtml",
    "has_report": true,
    "report_id": "CN-000333-2026-10-24"
+  },
+  {
+   "id": "9c8ce7058244b83d",
+   "title": "长安汽车：2026年第四次临时股东会决议公告",
+   "stock_code": "000625",
+   "stock_name": "长安汽车",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "证券日报网讯 10月29日，长安汽车发布公告称，公司于2026年10月29日召开2026年第四次临时股东会，审议通过《关于调整内部借款的议案》《关于增补董事的议案》。",
+   "url": "http://news.10jqka.com.cn/19700122/c681255319.shtml",
+   "has_report": true,
+   "report_id": "CN-000625-2026-10-24"
   },
   {
    "id": "6ac14185850e7d6b",
@@ -2376,6 +2429,23 @@
    "report_id": "CN-000858-2026-10-24"
   },
   {
+   "id": "886c0495fb361f16",
+   "title": "沃格光电：2026年第三季度报告",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "证券日报网讯 10月29日，沃格光电发布2026年第三季度报告称，公司2026年第三季度实现营业收入637,628,458.25元，同比下降10.21%；实现归属于上市公司股东的净利润-63,699,071.36元。",
+   "url": "http://news.10jqka.com.cn/19700122/c681257248.shtml",
+   "has_report": true,
+   "report_id": "CN-603773-2026-10-18"
+  },
+  {
    "id": "9f9911c6513dd27d",
    "title": "创新放量势如破竹！华东医药商业化提速，研发管线厚积薄发",
    "stock_code": "000963",
@@ -3243,6 +3313,40 @@
    "report_id": "CN-000596-2026-10-24"
   },
   {
+   "id": "19f6a99656b2ff7c",
+   "title": "[三季报]云南白药(000538):2026年三季度报告",
+   "stock_code": "000538",
+   "stock_name": "云南白药",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "| | |原标题:云南白药:2026年三季度报告证券代码：000538 证券简称：云南白药 公告编号：2026-34 云南白药集团股份有限公司2026年第三季度报告2026年 10月云南白药集团股份有限公司2026年第三季度报告本公司及董事会全体成员保证信息披露的内容真实、准确、完整，没有虚假记载、误导性陈述或重大遗漏",
+   "url": "https://stock.cfi.cn/p20261029003548.html",
+   "has_report": true,
+   "report_id": "CN-000538-2026-10-24"
+  },
+  {
+   "id": "0f617c150c52f721",
+   "title": "云南白药(000538):第十一届董事会2026年第七次会议决议",
+   "stock_code": "000538",
+   "stock_name": "云南白药",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "| | |原标题:云南白药:第十一届董事会2026年第七次会议决议公告股票代码：000538 股票简称：云南白药 公告编号：2026-33云南白药集团股份有限公司第十一届董事会 2026年第七次会议决议公告本公司及董事会全体成员保证信息披露内容的真实、准确、完整，没有虚假记载、误导性陈述或重大遗漏。 云南白药集团股份有",
+   "url": "https://cfi.net.cn/p20261029003547.html",
+   "has_report": true,
+   "report_id": "CN-000538-2026-10-24"
+  },
+  {
    "id": "108748f7a17f832e",
    "title": "格力电器交出上市以来最冷三季报 多元化不及预期国补退坡加剧经营压力_ZAKER新闻",
    "stock_code": "000651",
@@ -3649,6 +3753,40 @@
    "url": "http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/company/rptid/846585754111/index.phtml",
    "has_report": true,
    "report_id": "CN-000895-2026-10-24"
+  },
+  {
+   "id": "4d0ab7a19ff6c757",
+   "title": "长安汽车10月28日市盈率（TTM）27.25倍，历史分位76.6%（历史中高区间）",
+   "stock_code": "000625",
+   "stock_name": "长安汽车",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "截至2026年10月28日收盘，长安汽车市盈率（TTM）报27.25倍。同花顺iFind数据显示，该数值位于76.6%历史分位，处于历史中高区间，当日值较行业估值高10.27倍。 此前最近一次接近76.6%历史分位是在2026年10月27日。 统计区间覆盖2016年10月31日至2026年10月28日。其间长安汽车市盈",
+   "url": "http://news.10jqka.com.cn/19700122/c681212755.shtml",
+   "has_report": true,
+   "report_id": "CN-000625-2026-10-24"
+  },
+  {
+   "id": "f7f86a12afad6205",
+   "title": "携手三十载：中信特钢与SKF深化协同创新 共探高端轴承材料前沿技术",
+   "stock_code": "000708",
+   "stock_name": "中信特钢",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "10月28日，SKF集团MSG主席Michael Svensson率队到访中信特钢。中信特钢副董事长、总裁罗元东，总裁助理许晓红参加接待活动，公司科技部及下属企业的相关研发生产团队参加交流。 MSG团队负责SKF集团材料冶炼工艺路径的审批、材料标准制定等工作，为实现卓越的轴承性能提供坚实保障。 本次交流围绕材料性能基础",
+   "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDA5NTA5MQ==&chksm=882a3e95b26a88a57575c290d19db6e383232f0809ef1352b2d7ebdd9362a1ec115f72d8c8d1&idx=1&mid=2857917677&sn=5ee41959f2cdea18064999da3408dde9",
+   "has_report": true,
+   "report_id": "CN-000708-2026-10-24"
   },
   {
    "id": "d07115de333eb961",
