@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 15:25",
+ "generated_at": "2026-10-29 15:56",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 204,
+ "total": 205,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -1659,6 +1659,23 @@
    "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwvsih2986880.shtml",
    "has_report": true,
    "report_id": "CN-000063-2026-10-18"
+  },
+  {
+   "id": "8ab142ee5d84699a",
+   "title": "盐湖股份：公司高度重视市值管理工作",
+   "stock_code": "000792",
+   "stock_name": "盐湖股份",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "证券之星消息，盐湖股份(000792)10月29日在投资者关系平台上答复投资者关心的问题。投资者：尊敬的侯总、雷总！ 公司账上净现金约310亿（已扣除负债），10月23日总市值1177亿，假如整体收购，实际只需要867亿，今年净利润按120亿算，实际PE大约是7倍出头。比很多高负债的银行股估值还低！请问以后公司市值怎么",
+   "url": "https://wap.stockstar.com/detail/RB2026102900033430",
+   "has_report": true,
+   "report_id": "CN-000792-2026-10-24"
   },
   {
    "id": "9f9911c6513dd27d",
