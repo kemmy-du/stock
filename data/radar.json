@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 10:49",
+ "generated_at": "2026-10-29 11:19",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 179,
+ "total": 189,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -259,6 +259,24 @@
    "url": "https://www.bilibili.com/opus/1263435591613153281",
    "has_report": true,
    "report_id": "CN-000975-2026-10-24"
+  },
+  {
+   "id": "62a44a0f6f0fc05b",
+   "title": "格力电器，三季度净利大降43%！",
+   "stock_code": "000651",
+   "stock_name": "格力电器",
+   "market": "CN",
+   "date": "2026-10-26",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利空"
+   ],
+   "score": 85,
+   "summary": "今年上半年，公司归母净利润同比下降7.87%，第三季度降幅扩大至43.31%。 空调行业销量降幅扩大。 格力电器主业承压。 对于业绩下滑，格力电器表示，主要受消费电器业务同比下降影响。 面对行业需求收缩、竞争加剧，格力电器表示，公司采取差异化竞争策略，聚焦中高端市场，营收规模有所下降。同时，在原材料价格高企的背景下，公",
+   "url": "https://baijiahao.baidu.com/s?for=pc&id=1880128409853126816&wfr=spider",
+   "has_report": true,
+   "report_id": "CN-000651-2026-10-24"
   },
   {
    "id": "bd1febcee443d53f",
@@ -575,6 +593,23 @@
    "url": "https://stock.stockstar.com/RB2026102700041398.shtml",
    "has_report": true,
    "report_id": "CN-000938-2026-10-24"
+  },
+  {
+   "id": "7c1dd36d98fe1149",
+   "title": "A股千元股，只剩茅台了！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "今日，科技股高开低走，A股第二高价股联讯仪器震荡下挫，跌破千元关口。截至发稿，联讯仪器跌超4%，报999.97元/股，总市值为1519亿元。继源杰科技之后，联讯仪器成为本月又一只出局的千元股，当前A股千元股仅剩贵州茅台一只。消息面上，联讯仪器近日发布关于公司近期生产经营情况的公告，目前生产经营活动、订单交付及生产扩建等",
+   "url": "http://news.10jqka.com.cn/19700122/c681142933.shtml",
+   "has_report": true,
+   "report_id": "CN-600519-2026-10-18"
   },
   {
    "id": "fbddaae7053b2fbb",
@@ -1324,6 +1359,24 @@
    "report_id": "CN-000657-2026-10-24"
   },
   {
+   "id": "875fbd1b6a1eec21",
+   "title": "“AI钻头”正当时，中钨高新前三季度净利大增227.93%，拟再投1.31亿元扩产",
+   "stock_code": "000657",
+   "stock_name": "中钨高新",
+   "market": "CN",
+   "date": "2026-10-23",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "海财经.证券导报记者文达 10月22日晚间，中钨高新(000657)正式发布2026年第三季度报告，受益于钨精矿价格上行与PCB微钻业务量价齐升，公司前三季度营收、利润均实现大幅增长。 对于业绩大幅增长的原因，中钨高新表示，主要系报告期内钨精矿均价同比上涨，公司依托全产业链成本优势带动上下游盈利空间扩大； 同日，中钨高",
+   "url": "http://news.10jqka.com.cn/19700122/c681010736.shtml",
+   "has_report": true,
+   "report_id": "CN-000657-2026-10-24"
+  },
+  {
    "id": "ce48345b895264e6",
    "title": "美的集团：以集中竞价方式累计回购A股股份1.38亿股",
    "stock_code": "000333",
@@ -1704,6 +1757,23 @@
    "report_id": "CN-000963-2026-10-24"
   },
   {
+   "id": "558495c16d6979ef",
+   "title": "翻开茅台、五粮液等32家头部酒企的碳账本",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "21世纪经济报道记者卢陶然 编者按：2026年是A股上市公司ESG强制披露的元年。近日，由中国酒业协会、21世纪经济报道编制，中创碳投提供数据支持的《2025年中国酒业ESG发展报告》（下称《报告》）正式发布。《报告》的评价分析依托中国酒业ESG评级平台完成，该平台是全国首个酒类专业垂直ESG评级平台。 白酒三季报进入",
+   "url": "http://news.10jqka.com.cn/19700122/c681150861.shtml",
+   "has_report": true,
+   "report_id": "CN-600519-2026-10-18"
+  },
+  {
    "id": "18747d55969dbe34",
    "title": "云铝股份6项科技成果通过评价",
    "stock_code": "000807",
@@ -1736,23 +1806,6 @@
    "url": "http://news.10jqka.com.cn/19700122/c681094089.shtml",
    "has_report": true,
    "report_id": "CN-000063-2026-10-18"
-  },
-  {
-   "id": "ba96a13963e8b4f1",
-   "title": "格力电器，三季度净利大降43%！",
-   "stock_code": "000651",
-   "stock_name": "格力电器",
-   "market": "CN",
-   "date": "2026-10-26",
-   "sentiment": "positive",
-   "tags": [
-    "利好"
-   ],
-   "score": 30,
-   "summary": "【导读】格力电器第三季度净利润同比下降43.31%，空调行业销量降幅逐季扩大，公司盈利能力承压。中国基金报记者 牛思若。格力电器盈利压力进一步显现。10月26日晚间，格力电器披露2026年第三季度报告。 今年上半年，公司归母净利润同比下降7.87%，第三季度降幅扩大至43.31%。空调行业销量降幅扩大。格力电器主业承压",
-   "url": "https://baijiahao.baidu.com/s?for=pc&id=1880128560910038059&wfr=spider",
-   "has_report": true,
-   "report_id": "CN-000651-2026-10-24"
   },
   {
    "id": "e5de2f2dc874501d",
@@ -1838,6 +1891,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c681092147.shtml",
    "has_report": true,
    "report_id": "CN-000063-2026-10-18"
+  },
+  {
+   "id": "8be9c1a53c815b26",
+   "title": "京东方A(000725)股吧_京东方A怎么样_分析讨论社区—东方财富网",
+   "stock_code": "000725",
+   "stock_name": "京东方A",
+   "market": "CN",
+   "date": "2026-10-25",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "京东方A(000725)股吧_京东方A怎么样_分析讨论社区—东方财富网\n1H26营收利润同比增长，玻璃基载板、光互连开拓新增长曲线\n利润高增与股东回报共振，从“规模扩张”迈入“价值增长”时代\n京东方首次覆盖报告：大尺寸优势突出，LCD基本盘稳固，AMOLED打造新增长极\n2025年半年报点评：多领域市场拓展成果涌现，半",
+   "url": "https://guba.eastmoney.com/list,000725,2,f.html",
+   "has_report": true,
+   "report_id": "CN-000725-2026-10-24"
   },
   {
    "id": "5c9f05d0239ccd9c",
@@ -1957,6 +2027,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c681015463.shtml",
    "has_report": true,
    "report_id": "CN-600519-2026-10-18"
+  },
+  {
+   "id": "7ff34ca13c172bfd",
+   "title": "中钨高新前三季度营收增85.57% 净利增227.93%",
+   "stock_code": "000657",
+   "stock_name": "中钨高新",
+   "market": "CN",
+   "date": "2026-10-23",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "中钨高新材料股份有限公司发布2026年第三季度报告。年初至报告期末，公司实现营业收入23,698,795,559.88元，同比增长85.57%； 归属于上市公司股东的净利润2,978,831,102.50元，同比增长227.93%。 公司表示，营业收入同比上升主要系本期钨相关产品价格较上年同期上涨。 对于业绩增长，公司",
+   "url": "http://news.10jqka.com.cn/19700122/c681014898.shtml",
+   "has_report": true,
+   "report_id": "CN-000657-2026-10-24"
   },
   {
    "id": "7773bd4e636de8e3",
@@ -2248,6 +2335,23 @@
    "report_id": "US-TSLA-2026-10-18"
   },
   {
+   "id": "5262320167d5ca4a",
+   "title": "茅台、药明康德重回公募十大重仓！公募重仓格局生变",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "谁是被动增持，谁被主动看多？公募三季度重仓格局又有新变化。公募头号重仓股悬念不大，中际旭创以1700.44亿元公募持仓总市值守住榜首，在143家机构、2413只产品的簇拥下，同步拿下重仓公募家数与产品数两项第一。但真正的分化藏在榜单深处：单看榜单，公募十大重仓股仍是“满目科技”，但把公募整体与主动基金两张持仓表对照来看",
+   "url": "http://news.10jqka.com.cn/19700122/c681207352.shtml",
+   "has_report": true,
+   "report_id": "CN-600519-2026-10-18"
+  },
+  {
    "id": "8111323b2710326b",
    "title": "双汇发展：2026年第三季度净利润13.37亿元，同比下降18.27%",
    "stock_code": "000895",
@@ -2365,6 +2469,23 @@
    "url": "https://finance.sina.com.cn/stock/t/2026-10-29/doc-iniwvwra6121005.shtml",
    "has_report": true,
    "report_id": "US-AAPL-2026-10-18"
+  },
+  {
+   "id": "691ee24224b996af",
+   "title": "泸州老窖资本控股有限责任公司",
+   "stock_code": "000568",
+   "stock_name": "泸州老窖",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "法人代表人是付宗要，成立于2022-12-20，注册资本202660.9861万人民币，注册地址四川自贸区川南临港片区临港大道二段10号，主营业务一般项目:自有资金投资的资产管理服务;企业总部管理;融资咨询服务;供应链管理服务;信息咨询服务(不含许可类信息咨询服务);社会经济咨询服务;企业管理咨询;财务咨询;税务服务;",
+   "url": "https://www.kuaicha356.com/outer/company/Q122E32F70",
+   "has_report": true,
+   "report_id": "CN-000568-2026-10-24"
   },
   {
    "id": "d07115de333eb961",
@@ -2535,6 +2656,40 @@
    "url": "http://news.10jqka.com.cn/19700122/c681197689.shtml",
    "has_report": true,
    "report_id": "CN-600519-2026-10-18"
+  },
+  {
+   "id": "9930cfb19480c958",
+   "title": "特斯拉探索中心正式签约入驻万阅Park",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "10月27日，山东书苑置业有限责任公司与特斯拉汽车销售服务(济南)有限公司签约仪式在万阅Park举行，标志着山东首座特斯拉探索中心正式落户枣庄薛城。 特斯拉探索中心落户于此，既是特斯拉在枣庄的品牌体验与用户服务核心窗口，更将打造面向鲁南市民的未来科技体验平台，激发公众尤其是青少年的创新热情。 山东出版万阅文化广场是政企",
+   "url": "http://news.10jqka.com.cn/19700122/c681203314.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
+   "id": "0bca503fe2d90828",
+   "title": "特斯拉(TSLA.US)与SpaceX(SPCX.US)合并如何定价？500美元是说服股东的关键价？",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "LumaSenti管理合伙人LarryGoldberg表示，特斯拉(TSLA.US)股东无需溢价即可从与SpaceX(SPCX.US)合并中受益，同时提出每股500美元作为可能说服投资者支持交易的数字。 特斯拉周二上涨4%，收于407.46美元;SpaceX上涨1%，至148.58美元。 Goldberg：500美元折",
+   "url": "http://news.10jqka.com.cn/19700122/c681193728.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
   },
   {
    "id": "c81765d05e83df91",
@@ -2773,6 +2928,23 @@
    "url": "https://baijiahao.baidu.com/s?for=pc&id=1880184524187169240&wfr=spider",
    "has_report": true,
    "report_id": "CN-000768-2026-10-24"
+  },
+  {
+   "id": "3998acb0e0398f3f",
+   "title": "盐湖股份：实控人与控股股东已就同业竞争出具承诺",
+   "stock_code": "000792",
+   "stock_name": "盐湖股份",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "证券之星消息，盐湖股份(000792)10月26日在投资者关系平台上答复投资者关心的问题。投资者：汇信同业竞争问题，能不能在现在尽快安排？ 碳酸锂现在价格下来了，可能还会继续向下，汇信再不注入，可能估值越来越低，不符合大股东的利益，如果最终五矿集团利益受损，贵司相关领导会有责任的，我们中小股东也会替五矿集团感到惋惜的。",
+   "url": "https://wap.stockstar.com/detail/RB2026102700011173",
+   "has_report": true,
+   "report_id": "CN-000792-2026-10-24"
   },
   {
    "id": "b4c719764fb00949",
