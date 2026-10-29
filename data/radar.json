@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 13:53",
+ "generated_at": "2026-10-29 14:24",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 199,
+ "total": 200,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -75,6 +75,23 @@
    "url": "http://www.baidu.com/s?wd=%E7%89%B9%E6%96%AF%E6%8B%89%E8%82%A1%E4%BB%B7&usm=3&tn=bds&ie=utf-8&rsv_pq=fe80a1d40014c3f5&oq=%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%98%3A%E7%89%B9%E6%96%AF%E6%8B%89%E6%B6%A84.04%25&rsv_t=a5c6iQrHANohBx9LqaOp5k3yTKF1oEo86B5vvD07Raf%2Fifcvsa0wrKwE&rsf=101636703&rsv_dl=0_prs_28608_9",
    "has_report": true,
    "report_id": "US-TSLA-2026-10-18"
+  },
+  {
+   "id": "e34e2d2fdf1da6bb",
+   "title": "徐工机械涨3.18%",
+   "stock_code": "000425",
+   "stock_name": "徐工机械",
+   "market": "CN",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "来源：新浪证券-红岸工作室\n10月23日，徐工机械涨3.18%，成交额6.95亿元，换手率1.10%，总市值836.18亿元。\n异动分析\n雅下水电概念+国企改革+高端装备+一带一路\n1、根据2025年7月22日互动易：公司建立的完整的新能源主机及核心零部件全产业线体系，徐工集团新能源产品渗透率达到18%，徐工机械新能源",
+   "url": "https://www.163.com/dy/article/L9UDE5QS05568W0A.html",
+   "has_report": true,
+   "report_id": "CN-000425-2026-10-24"
   },
   {
    "id": "bf7b769aacec7059",
@@ -2647,6 +2664,23 @@
    "report_id": "CN-603773-2026-10-18"
   },
   {
+   "id": "a8fb16570f39b57e",
+   "title": "无方向盘和脚踏板，特斯拉无人驾驶电动车将“开入”进博会",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "10月29日至11月1日，特斯拉赛博无人驾驶电动车Tesla Cybercab来到上海东方明珠展出，记者实地体验车内感受。此后，这辆车将“开入”第九届进博会。",
+   "url": "http://news.10jqka.com.cn/19700122/c681233193.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
    "id": "d07115de333eb961",
    "title": "中信特钢斩获2026年“数据要素×”大赛全国总决赛三等奖",
    "stock_code": "000708",
@@ -3342,23 +3376,6 @@
    "url": "https://www.yoojia.com/article/10114443035079396661.html",
    "has_report": true,
    "report_id": "US-TSLA-2026-10-18"
-  },
-  {
-   "id": "c97c8c997aaddccb",
-   "title": "徐工机械涨2.02%",
-   "stock_code": "000425",
-   "stock_name": "徐工机械",
-   "market": "CN",
-   "date": "2026-10-23",
-   "sentiment": "neutral",
-   "tags": [
-    "动态"
-   ],
-   "score": 0,
-   "summary": "来源：新浪证券-红岸工作室\n10月23日，徐工机械盘中上涨2.02%，截至11:28，报7.06元/股，成交3.24亿元，换手率0.52%，总市值826.81亿元。\n资金流向方面，主力资金净流入662.14万元，特大单买入2684.34万元，占比8.30%，卖出1431.68万元，占比4.43%；大单买入5678.64",
-   "url": "https://baijiahao.baidu.com/s?for=pc&id=1879809573860520986&wfr=spider",
-   "has_report": true,
-   "report_id": "CN-000425-2026-10-24"
   },
   {
    "id": "5b1f998ec89ec808",
