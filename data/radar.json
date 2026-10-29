@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 12:52",
+ "generated_at": "2026-10-29 13:22",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 195,
+ "total": 196,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -3052,6 +3052,23 @@
    "url": "https://wap.stockstar.com/detail/RB2026102700011173",
    "has_report": true,
    "report_id": "CN-000792-2026-10-24"
+  },
+  {
+   "id": "a1763174bb1896e7",
+   "title": "华东医药GLP-1/GIP双靶点长效激动剂HDM1005注射液完成阻塞性睡眠呼吸暂停合并肥胖或超重适应症中国Ⅲ期临床研究首例受试者随机给药",
+   "stock_code": "000963",
+   "stock_name": "华东医药",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "近日，华东医药股份有限公司(以下简称“公司”)全资子公司杭州中美华东制药有限公司(以下简称“中美华东”)自主研发的GLP-1/GIP双靶点长效激动剂HDM1005注射液， 先后完成阻塞性睡眠呼吸暂停(OSA)合并肥胖或超重适应症两项中国Ⅲ期临床研究(HDM1005-304和HDM1005-305)的首例试验参与者随机给",
+   "url": "http://news.10jqka.com.cn/19700122/c681137290.shtml",
+   "has_report": true,
+   "report_id": "CN-000963-2026-10-24"
   },
   {
    "id": "b4c719764fb00949",
