@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 09:16",
+ "generated_at": "2026-10-29 09:47",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 158,
+ "total": 171,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -60,6 +60,23 @@
    "report_id": "CN-000651-2026-10-24"
   },
   {
+   "id": "7696c1e5f3c2efb4",
+   "title": "特斯拉股价",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "特斯拉(TSLA)股票股价_股价行情_财报_数据报告 - 雪球。 特斯拉(TSLA) 2小时前 · 来自新闻 美股异动|特斯拉涨超2%创逾三个月新高,获巴克莱看高至450美元 来源:格隆汇APP 格隆汇10月27日|特斯拉(TSLA.US)涨超2%,报399.64美元, 创7月15日以来新高,总市值接近1.6万亿美元。",
+   "url": "http://www.baidu.com/s?wd=%E7%89%B9%E6%96%AF%E6%8B%89%E8%82%A1%E4%BB%B7&usm=3&tn=bds&ie=utf-8&rsv_pq=fe80a1d40014c3f5&oq=%E7%BE%8E%E8%82%A1%E6%94%B6%E7%9B%98%3A%E7%89%B9%E6%96%AF%E6%8B%89%E6%B6%A84.04%25&rsv_t=a5c6iQrHANohBx9LqaOp5k3yTKF1oEo86B5vvD07Raf%2Fifcvsa0wrKwE&rsf=101636703&rsv_dl=0_prs_28608_9",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
    "id": "bf7b769aacec7059",
    "title": "长安汽车：已累计回购2.14亿股股份 耗资逾10亿元超下限",
    "stock_code": "000625",
@@ -113,6 +130,24 @@
    "url": "https://24h.jrj.com.cn/2026/10/28180158912918.shtml#rss",
    "has_report": true,
    "report_id": "CN-000651-2026-10-24"
+  },
+  {
+   "id": "67df59565bc2e052",
+   "title": "五粮液2026年第三季度报：单季度断崖式下跌，见底了吗？",
+   "stock_code": "000858",
+   "stock_name": "五粮液",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利空"
+   ],
+   "score": 85,
+   "summary": "五粮液的三季报，把白酒行业“报表出清”的残酷性体现得很彻底：累计数据看似平稳，但单季数据断崖式下跌，真实需求压力在Q3集中暴露。 &#128202;五粮液三季报：单季营收-37.7%，利润-48.3%前三季度累计：营收328.58亿元，同比+7.25%归母净利润97.11亿元，同比+49.98%扣非净利润94.41亿元",
+   "url": "http://news.10jqka.com.cn/19700122/c681179035.shtml",
+   "has_report": true,
+   "report_id": "CN-000858-2026-10-24"
   },
   {
    "id": "2823f836f6b42cb0",
@@ -471,6 +506,24 @@
    "report_id": "CN-000725-2026-10-24"
   },
   {
+   "id": "f355c0a580d714f1",
+   "title": "紫光股份：公司正积极推进定增相关工作",
+   "stock_code": "000938",
+   "stock_name": "紫光股份",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "negative",
+   "tags": [
+    "利好",
+    "利空"
+   ],
+   "score": 60,
+   "summary": "证券之星消息，紫光股份(000938)10月27日在投资者关系平台上答复投资者关心的问题。 投资者：请问董秘，公司股价在持续下跌，管理层或者大股东是否有相关举措提振股价，另外公司发布的定增目前进度是到哪了紫光股份董秘：您好，公司正积极推进定增相关工作，具体进展请以公司公告为准。 本文数据来源于深圳证券交易所互动易，仅供",
+   "url": "https://stock.stockstar.com/RB2026102700041398.shtml",
+   "has_report": true,
+   "report_id": "CN-000938-2026-10-24"
+  },
+  {
    "id": "fbddaae7053b2fbb",
    "title": "本周盘点（10.19-10.23）：中油资本周跌0.77%，主力资金合计净流出2586.42万元",
    "stock_code": "000617",
@@ -606,6 +659,24 @@
    "url": "http://news.10jqka.com.cn/19700122/c681211017.shtml",
    "has_report": true,
    "report_id": "CN-000651-2026-10-24"
+  },
+  {
+   "id": "d4748d52735f65ae",
+   "title": "国金证券：给予中兴通讯买入评级",
+   "stock_code": "000063",
+   "stock_name": "中兴通讯",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "国金证券股份有限公司张真桢近期对中兴通讯进行研究并发布了研究报告《Q3利润转增，算力接棒增长》，给予中兴通讯买入评级。 中兴通讯(000063) 2026年10月26日，中兴通讯发布2026年三季度业绩：前三季度实现营收1168.38亿元，同比+16.23%；归母净利润40.60亿元，同比-23.71%； 扣非归母净利",
+   "url": "https://stock.stockstar.com/RB2026102900015602.shtml",
+   "has_report": true,
+   "report_id": "CN-000063-2026-10-18"
   },
   {
    "id": "6ac14185850e7d6b",
@@ -929,6 +1000,24 @@
    "url": "http://news.10jqka.com.cn/19700122/c681119429.shtml",
    "has_report": true,
    "report_id": "CN-000063-2026-10-18"
+  },
+  {
+   "id": "5cd79044968f5d89",
+   "title": "双汇发展三季报：营收428亿元 净利36亿元，新渠道成为重要增量",
+   "stock_code": "000895",
+   "stock_name": "双汇发展",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "【大河财立方记者徐兵】10月27日，双汇发展(000895.SZ)发布2026年三季度报告。 报告显示，前三季度，公司实现营业收入428.1亿元，同比下降3.85%；归属于上市公司股东的净利润36.42亿元，同比下降7.99%；肉类产品总外销量273.1万吨，同比增长9.74%。 公司称，前三季度，公司收入、利润同比出",
+   "url": "http://news.10jqka.com.cn/19700122/c681144207.shtml",
+   "has_report": true,
+   "report_id": "CN-000895-2026-10-24"
   },
   {
    "id": "dc34ad310b4739a4",
@@ -1492,6 +1581,23 @@
    "report_id": "CN-000938-2026-10-24"
   },
   {
+   "id": "7ae1c7c4e72bfaaf",
+   "title": "华东医药携多款核心管线亮相ESMO年会 肿瘤创新布局持续提速",
+   "stock_code": "000963",
+   "stock_name": "华东医药",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "本报讯(记者张敏)10月26日，华东医药股份有限公司(以下简称“华东医药”)对外宣布， 共有3项自研ADC研究与1项独家市场推广产品的Ⅲ期研究更新结果入选2026年欧洲肿瘤内科学会(European Societyfor Medical Oncology，ESMO)年会。 其中，ROR1靶向抗体偶联药物(ADC)HDM",
+   "url": "http://news.10jqka.com.cn/19700122/c681117860.shtml",
+   "has_report": true,
+   "report_id": "CN-000963-2026-10-24"
+  },
+  {
    "id": "18747d55969dbe34",
    "title": "云铝股份6项科技成果通过评价",
    "stock_code": "000807",
@@ -2002,6 +2108,40 @@
    "report_id": "CN-000657-2026-10-24"
   },
   {
+   "id": "55e473ec7894007d",
+   "title": "五个要素与一道护城河——五粮液核心竞争力为何难以复制",
+   "stock_code": "000858",
+   "stock_name": "五粮液",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "在披露三季报时，五粮液表示，当前白酒行业处于周期性调整阶段，公司主动顺应周期，独有的产区、古窖池群、品质、品牌、消费群体共同构成其不可复制的核心竞争力，这一点保持不变。 这番表述出现在一份承压的季报旁边。 第三季度公司营业收入44.42亿元，同比下降37.68%；归母净利润9.58亿元，同比下降48.25%，原因是市场",
+   "url": "http://news.10jqka.com.cn/19700122/c681209847.shtml",
+   "has_report": true,
+   "report_id": "CN-000858-2026-10-24"
+  },
+  {
+   "id": "6e159a9e85cc72fc",
+   "title": "2027年产能售罄，特斯拉储能却掉队了",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "特斯拉的储能业务，越来越让人看不懂了。近日，特斯拉交出了2026年三季度成绩单。整体业绩承压，总营收同比微降，净利润更是大跌43%。然而，在这份略显黯淡的财报中，储能板块的数据却呈现出另一番景象。 首先是装机数据与营收的背离。三季度，特斯拉储能装机量达到13.7GWh，同比增长9.6%，创下年内新高；但能源发电与储能业",
+   "url": "http://news.10jqka.com.cn/19700122/c681202925.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
    "id": "8111323b2710326b",
    "title": "双汇发展：2026年第三季度净利润13.37亿元，同比下降18.27%",
    "stock_code": "000895",
@@ -2223,6 +2363,57 @@
    "report_id": "US-TSLA-2026-10-18"
   },
   {
+   "id": "31e61947e2d173b5",
+   "title": "Apple Watch 立功，苹果连发 2 个用户健康故事",
+   "stock_code": "AAPL",
+   "stock_name": "苹果",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "IT之家 10 月 28 日消息，苹果公司今天（10 月 28 日）更新“Apple Watch 真实故事”系列视频，新增两位用户案例，称其借助 Apple Watch 的健康监测与运动激励功能改善了健康状况。 IT之家注：该系列此前也曾分享过用户因静息心率异常警报而及时就医、确诊并接受癌症治疗的经历。在最新发布的两段",
+   "url": "https://www.ithome.com/1/018/725.htm",
+   "has_report": true,
+   "report_id": "US-AAPL-2026-10-18"
+  },
+  {
+   "id": "9d6c46d259f3d651",
+   "title": "特斯拉宣布进军越南市场，将与本土巨头 VinFast 展开竞争",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "IT之家10月28日消息，特斯拉招聘人员Ricky Ip今天在X平台宣布，特斯拉正式进军越南市场，现正招聘销售经理、开发人员、采购经理等职位。 据IT之家此前援引外媒消息，特斯拉已于今年9月在越南注册实体公司“Tesla Motors Vietnam”，注册资本约为777亿越南盾(IT之家注：现汇率约合2,004.7万",
+   "url": "http://news.10jqka.com.cn/19700122/c681210242.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
+   "id": "4803d564a366db69",
+   "title": "AI不让叫了？特朗普持续施压，特斯拉跟进改名",
+   "stock_code": "TSLA",
+   "stock_name": "特斯拉",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "【文/观察者网 周盛明 编辑/高莘】 据外媒10月27日报道，特斯拉已在Model 3、Model Y和Cybertruck的官方车主手册中，将多处驾驶计算机名称改为“SI Computer”。 SI是“Super Intelligence”的缩写，即“超级智能”。 此前，特斯拉使用过“FSD Computer”和“A",
+   "url": "http://news.10jqka.com.cn/19700122/c681199348.shtml",
+   "has_report": true,
+   "report_id": "US-TSLA-2026-10-18"
+  },
+  {
    "id": "c81765d05e83df91",
    "title": "茅台股份官网",
    "stock_code": "600519",
@@ -2425,6 +2616,23 @@
    "url": "https://baijiahao.baidu.com/s?for=pc&id=1880165352554025278&wfr=spider",
    "has_report": true,
    "report_id": "CN-000807-2026-10-24"
+  },
+  {
+   "id": "0c0804365f30f217",
+   "title": "山金国际涨2.03%，成交额2.13亿元，主力资金净流出815.04万元",
+   "stock_code": "000975",
+   "stock_name": "山金国际",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "来源：新浪证券-红岸工作室。10月27日，山金国际盘中上涨2.03%，截至10:10，报22.67元/股，成交2.13亿元，换手率0.38%，总市值628.53亿元。 资金流向方面，主力资金净流出815.04万元，特大单买入368.38万元，占比1.73%，卖出1126.47万元，占比5.29%；大单买入3534.34",
+   "url": "https://baijiahao.baidu.com/s?for=pc&id=1880167037506597217&wfr=spider",
+   "has_report": true,
+   "report_id": "CN-000975-2026-10-24"
   },
   {
    "id": "b4c719764fb00949",
@@ -2680,6 +2888,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c681037751.shtml",
    "has_report": true,
    "report_id": "CN-000425-2026-10-24"
+  },
+  {
+   "id": "5df97f1e0e65c172",
+   "title": "紫光股份旗下公司更名为紫光闪迪存储技术公司",
+   "stock_code": "000938",
+   "stock_name": "紫光股份",
+   "market": "CN",
+   "date": "2026-10-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "【紫光股份旗下公司更名为紫光闪迪存储技术公司】财联社10月23日电，企查查显示，近日，紫光西部数据有限公司发生工商变更，企业名称变更为“紫光闪迪存储技术有限公司”。 企查查显示，该公司成立于2016年3月，法定代表人为章雷，注册资本1.29亿美元，主营企业级、消费级磁盘存储、固态存储及车规级存储芯片等产品与解决方案，现",
+   "url": "https://www.toutiao.com/article/7699733252843520563/",
+   "has_report": true,
+   "report_id": "CN-000938-2026-10-24"
   },
   {
    "id": "662e8f0c7fa8e9bd",
