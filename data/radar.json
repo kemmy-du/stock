@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 19:00",
+ "generated_at": "2026-10-29 19:31",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 242,
+ "total": 247,
  "items": [
   {
    "id": "6b2953d5595ab105",
@@ -20,6 +20,25 @@
    "score": 135,
    "summary": "沃格光电公告，2026年第三季度营业收入6.38亿元，同比下降10.21%；归属于上市公司股东的净利润亏损6369.91万元，归属于上市公司股东的扣除非经常性损益的净利润亏损7000.81万元。 2026年前三季度营业收入18.66亿元，同比下降1.81%；归属于上市公司股东的净利润亏损1.87亿元，扣除非经常性损益的",
    "url": "http://news.10jqka.com.cn/19700122/c681248721.shtml",
+   "has_report": true,
+   "report_id": "CN-603773-2026-10-18"
+  },
+  {
+   "id": "86f45339729f7469",
+   "title": "沃格光电(603773.SH)前三季净亏损1.87亿元",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利好",
+    "利空"
+   ],
+   "score": 135,
+   "summary": "格隆汇10月29日丨沃格光电(603773.SH)发布2026年三季报显示，公司前三季实现营业总收入18.66亿元，同比下滑1.81%；归母净利润-1.87亿元；扣非归母净利润-2.04亿元。",
+   "url": "https://www.gelonghui.com/news/5337849",
    "has_report": true,
    "report_id": "CN-603773-2026-10-18"
   },
@@ -110,6 +129,25 @@
    "url": "https://www.163.com/dy/article/L9UDE5QS05568W0A.html",
    "has_report": true,
    "report_id": "CN-000425-2026-10-24"
+  },
+  {
+   "id": "d680ec01229bb8da",
+   "title": "古井贡酒：Q3单季营收增长3.69%至26.39亿元",
+   "stock_code": "000596",
+   "stock_name": "古井贡酒",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利好",
+    "利空"
+   ],
+   "score": 85,
+   "summary": "10月29日，古井贡酒发布2026年三季报。当中披露公司第三季度营收增长3.69%至26.39亿元。归属净利下滑68.04%至9544.93万元。前三季度营收减少22.25%至127.7亿元，归属净利下滑42.94%至22.6亿元。 (企业公告)",
+   "url": "http://news.10jqka.com.cn/19700122/c681253785.shtml",
+   "has_report": true,
+   "report_id": "CN-000596-2026-10-24"
   },
   {
    "id": "bf7b769aacec7059",
@@ -579,6 +617,24 @@
    "url": "http://news.10jqka.com.cn/19700122/c681250490.shtml",
    "has_report": true,
    "report_id": "CN-000792-2026-10-24"
+  },
+  {
+   "id": "cb2c1dbe59923950",
+   "title": "中油资本(000617.SZ)：前三季净利润45.93亿元，同比增长14.67%",
+   "stock_code": "000617",
+   "stock_name": "中油资本",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "negative",
+   "tags": [
+    "利好",
+    "利空"
+   ],
+   "score": 60,
+   "summary": "格隆汇10月29日丨中油资本(000617.SZ)公布三季度报告，公司前三季实现营业总收入225.56亿元，同比下滑12.25%；归母净利润45.93亿元，同比增长14.67%；扣非归母净利润44.90亿元，同比增长15.84%。",
+   "url": "https://www.gelonghui.com/news/5337826",
+   "has_report": true,
+   "report_id": "CN-000617-2026-10-24"
   },
   {
    "id": "3f5ecc5643dcfe8b",
@@ -1300,6 +1356,42 @@
    "url": "http://news.10jqka.com.cn/19700122/c681231366.shtml",
    "has_report": true,
    "report_id": "CN-000963-2026-10-24"
+  },
+  {
+   "id": "416f190aa4587c11",
+   "title": "潍柴动力：前三季度净利润同比增长20.06%",
+   "stock_code": "000338",
+   "stock_name": "潍柴动力",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "财联社10月29日电，潍柴动力(000338.SZ)公告称，第三季度营业收入为580.08亿元，同比增长1.03%；归属于上市公司股东的净利润为29.57亿元，同比下降8.56%。 前三季度营业收入为1811.71亿元，同比增长6.21%；归属于上市公司股东的净利润为106.59亿元，同比增长20.06%。 小财注：公",
+   "url": "https://api3.cls.cn/share/article/2519539?os=web&sv=8.4.6&app=CailianpressWeb",
+   "has_report": true,
+   "report_id": "CN-000338-2026-10-24"
+  },
+  {
+   "id": "01c247d27ee7052a",
+   "title": "中油资本中期分红预案：拟每10股派发现金股利0.55元",
+   "stock_code": "000617",
+   "stock_name": "中油资本",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "10月29日，中油资本（000617）发布公告，公司拟每10股派发现金股利0.55元（含税），预计总派发金额为6.95亿元。",
+   "url": "https://www.caizhongshe.cn/article-7521526774556718648.html",
+   "has_report": true,
+   "report_id": "CN-000617-2026-10-24"
   },
   {
    "id": "6ac14185850e7d6b",
@@ -2177,23 +2269,6 @@
    "report_id": "CN-000858-2026-10-24"
   },
   {
-   "id": "c3572f7f205a76c6",
-   "title": "中油资本：前三季度净利润同比增长14.67%",
-   "stock_code": "000617",
-   "stock_name": "中油资本",
-   "market": "CN",
-   "date": "2026-10-29",
-   "sentiment": "positive",
-   "tags": [
-    "利好"
-   ],
-   "score": 30,
-   "summary": "南财智讯10月29日电，中油资本发布三季度报告，前三季度公司实现营业收入225.56亿元，同比下降12.25%；归属于上市公司股东的净利润45.93亿元，同比增长14.67%。 报告期内，公司经营活动产生的现金流量净额较上年同期增加，主要原因为客户存款和同业存放款项净增加额增加。",
-   "url": "https://m.21jingji.com/timeline/560c0039dc332f13bfb67922bd273fa2.html",
-   "has_report": true,
-   "report_id": "CN-000617-2026-10-24"
-  },
-  {
    "id": "9f9911c6513dd27d",
    "title": "创新放量势如破竹！华东医药商业化提速，研发管线厚积薄发",
    "stock_code": "000963",
@@ -3008,6 +3083,23 @@
    "url": "https://m.21jingji.com/timeline/db7c20e26a2788bab82db184f94eb5e2.html",
    "has_report": true,
    "report_id": "CN-000938-2026-10-24"
+  },
+  {
+   "id": "61c65c2754d454f3",
+   "title": "营收利润暴跌，五粮液终于断崖式亮相",
+   "stock_code": "000858",
+   "stock_name": "五粮液",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "前三季度赚了97个亿，同比涨了将近五成；可拆开7到9月这一个季度，只落袋9.58亿，直接膝盖斩。\n五粮液这份三季报，把白酒行业眼下那种拧巴劲儿，一张表就说透了。\n10月27日晚披露的2026年三季报，总数看着并不差：前三季度营收328.58亿元，同比增长7.25%；归母净利润97.11亿元，增长49.98%；扣非净利润",
+   "url": "https://www.163.com/dy/article/LADRM53T0550A7UY.html?f=post1603_tab_news",
+   "has_report": true,
+   "report_id": "CN-000858-2026-10-24"
   },
   {
    "id": "108748f7a17f832e",
