@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 13:22",
+ "generated_at": "2026-10-29 13:53",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 196,
+ "total": 199,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -1054,6 +1054,24 @@
    "report_id": "CN-000963-2026-10-24"
   },
   {
+   "id": "9a80bb5f91b8ea1c",
+   "title": "贵州茅台：10月28日召开董事会会议",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "每经AI快讯，贵州茅台（SH 600519，收盘价：1431.9元）10月29日晚间发布公告称，公司第四届2025年度第十三次董事会会议于2025年10月28日在茅台国际大酒店会议室召开。会议审议了《2025年第三季度报告》等文件。\n2024年1至12月份，贵州茅台的营业收入构成为：白酒占比97.97%，其他业务占比2",
+   "url": "https://www.nbd.com.cn/rss/zaker/articles/4120417.html",
+   "has_report": true,
+   "report_id": "CN-600519-2026-10-18"
+  },
+  {
    "id": "543c840b0eb7931f",
    "title": "铜陵有色：第三季度净利润20.54亿元，同比增516.76%",
    "stock_code": "000630",
@@ -1590,6 +1608,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c680996466.shtml",
    "has_report": true,
    "report_id": "CN-000807-2026-10-24"
+  },
+  {
+   "id": "954c6c8fceb10ef2",
+   "title": "高盛料AIDC发电业务成潍柴动力核心增长引擎 H股目标价55.5港元",
+   "stock_code": "000338",
+   "stock_name": "潍柴动力",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "观点网讯：10月29日，高盛发表研报指，潍柴动力正转型发展AIDC发电业务，预料可成为核心纯利增长引擎，并于2027年贡献约50%纯利。 高盛指出，AIDC发电业务中的燃气发电机(RICE)业务将带动短期增长，对盈利增长的贡献将持续提升，而固态氧化物燃料电池(SOFC)则由2028年起形成规模。 该行认为，稳健的在手订",
+   "url": "http://news.10jqka.com.cn/19700122/c681232308.shtml",
+   "has_report": true,
+   "report_id": "CN-000338-2026-10-24"
   },
   {
    "id": "9f9911c6513dd27d",
@@ -2593,6 +2628,23 @@
    "url": "https://www.kuaicha356.com/outer/company/Q122E32F70",
    "has_report": true,
    "report_id": "CN-000568-2026-10-24"
+  },
+  {
+   "id": "4601ab7919393e1f",
+   "title": "沃格光电10月28日市盈率（TTM）-61.92倍，历史分位28.6%（历史中低区间）",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-10-29",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据同花顺iFind数据，截至2026年10月28日收盘，沃格光电市盈率（TTM）为-61.92倍，位于28.6%历史分位，处于历史中低区间，当日值较行业估值低84.69倍。 此前最近一次接近28.6%历史分位是在2026年10月27日。 统计区间覆盖2018年4月17日至2026年10月28日。其间沃格光电市盈率（TT",
+   "url": "http://news.10jqka.com.cn/19700122/c681228067.shtml",
+   "has_report": true,
+   "report_id": "CN-603773-2026-10-18"
   },
   {
    "id": "d07115de333eb961",
