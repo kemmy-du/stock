@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 11:19",
+ "generated_at": "2026-10-29 11:50",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 189,
+ "total": 190,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -962,6 +962,24 @@
    "url": "https://wap.stockstar.com/detail/RB2026102800047087",
    "has_report": true,
    "report_id": "CN-000651-2026-10-24"
+  },
+  {
+   "id": "69b9e2a2d67226a6",
+   "title": "双汇发展三季报：销量逆势增长，周期底部跑出结构红利",
+   "stock_code": "000895",
+   "stock_name": "双汇发展",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "近日，双汇发展发布2026年第三季度报告。前三季度，公司实现营业收入428.1亿元，同比下降3.85%；归属于上市公司股东的净利润36.42亿元，同比下降7.99%；肉类产品总外销量273.1万吨，同比增长9.74%。 行业低迷期，中小屠宰场因资金、环保与检验检疫门槛加速退出，具备全国化布局与冷链能力的头部企业反而获得",
+   "url": "https://www.163.com/dy/article/LABPUUMU05198CJN.html?f=post2020_dy_recommends",
+   "has_report": true,
+   "report_id": "CN-000895-2026-10-24"
   },
   {
    "id": "543c840b0eb7931f",
