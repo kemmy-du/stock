@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 14:54",
+ "generated_at": "2026-10-29 15:25",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 203,
+ "total": 204,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -3274,6 +3274,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c681069962.shtml",
    "has_report": true,
    "report_id": "CN-000776-2026-10-24"
+  },
+  {
+   "id": "d58d3e0e59f5e03c",
+   "title": "格力电器股价走势",
+   "stock_code": "000651",
+   "stock_name": "格力电器",
+   "market": "CN",
+   "date": "2026-10-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "格力电器(000651)最新价格_行情_走势图-手机东方财富 财经门户,提供专业的财经、股票、基金资讯及数据。 手机东方财富网是东方财富网的手机门户网站,为亿万用户打造一个手机联通世界的超级平台,提供7*24小时全面及时的财经中文资讯,内容覆盖国内外突发事件、股市资讯、全球新闻、产业资讯、实用信息等。 手机东方财富网触",
+   "url": "http://www.baidu.com/s?wd=%E6%A0%BC%E5%8A%9B%E7%94%B5%E5%99%A8%E8%82%A1%E4%BB%B7%E8%B5%B0%E5%8A%BF&tn=bds&rsf=100636703&rsp=7&f=1&rs_src=0&rsv_pq=f6cea5bc0030a060&rsv_t=b76ectkVVPV5WDZ3zHNfU7D5oO%2BxeGGFvkr4XTIDiAVNw%2FZ4m7JbAUB7&rsv_dl=brs_28338_8",
+   "has_report": true,
+   "report_id": "CN-000651-2026-10-24"
   },
   {
    "id": "2aca7b99553c10f2",
