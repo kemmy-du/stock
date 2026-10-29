@@ -6,7 +6,6 @@
     { href: "index.html", label: "首页" },
     { href: "library.html", label: "报告库" },
     { href: "market.html", label: "市场概览" },
-    { href: "financials.html", label: "财报" },
     { href: "citic.html", label: "中信多空" },
     { href: "about.html", label: "关于" },
   ];
