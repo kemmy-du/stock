@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29 12:21",
+ "generated_at": "2026-10-29 12:52",
  "window_days": 7,
  "monitored": 28,
  "fetched": 28,
- "total": 193,
+ "total": 195,
  "items": [
   {
    "id": "f1fa13ec222ebf55",
@@ -167,6 +167,24 @@
    "url": "https://cfi.net.cn/p20261028001687.html",
    "has_report": true,
    "report_id": "CN-000858-2026-10-24"
+  },
+  {
+   "id": "35ad59fd8fe3debc",
+   "title": "中钨高新业绩暴增228% 微钻放量+钨矿注入双轮驱动",
+   "stock_code": "000657",
+   "stock_name": "中钨高新",
+   "market": "CN",
+   "date": "2026-10-28",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 85,
+   "summary": "| | | CFi.CN讯：数据显示，中钨高新2026年前三季度营收236.99亿元，同比增85.57%；归母净利润29.79亿元，大增227.93%，扣非净利增速更达279.94%。 利润增速远超收入，主因钨精矿涨价叠加全产业链成本优势，以及PCB微钻业务量价齐升。 近期机构研报指出，公司高端微钻产品已进入放量期，毛",
+   "url": "https://stock.cfi.cn/p20261028003511.html",
+   "has_report": true,
+   "report_id": "CN-000657-2026-10-24"
   },
   {
    "id": "2823f836f6b42cb0",
@@ -1844,6 +1862,23 @@
    "url": "http://news.10jqka.com.cn/19700122/c681150861.shtml",
    "has_report": true,
    "report_id": "CN-600519-2026-10-18"
+  },
+  {
+   "id": "214523baadae13ff",
+   "title": "中兴通讯Q3净利大增，算力营收占比提升，毛利仍阶段性承压",
+   "stock_code": "000063",
+   "stock_name": "中兴通讯",
+   "market": "CN",
+   "date": "2026-10-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "10月26日，中兴通讯(000063.SZ/00763.HK)发布2026年第三季度报告。 财报数据显示，今年第三季度，中兴通讯实现营业收入388.13亿元，同比增长33.99%；归母净利润13.07亿元，同比大幅增长394.46%。 不过，拉长周期至前三季度，公司的盈利压力依然明显。 今年1至9月，中兴通讯累计实现营",
+   "url": "http://news.10jqka.com.cn/19700122/c681122493.shtml",
+   "has_report": true,
+   "report_id": "CN-000063-2026-10-18"
   },
   {
    "id": "18747d55969dbe34",
