@@ -9,55 +9,40 @@
   // 东方财富数据中心 · 期货龙虎榜（会员成交持仓），按机构简称筛选中信期货
   // 关键：仅对中文值做 encodeURIComponent，外层用双引号，括号与引号不编码
   const API_ROOT = "https://datacenter-web.eastmoney.com/api/data/v1/get";
-  // 只取股指期货：IF 沪深300、IH 上证50、IC 中证500、IM 中证1000
-  const INDEX_CODES = ["IF", "IH", "IC", "IM"];
-  const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")"
-    + "(TRADE_CODE in (" + INDEX_CODES.map((c) => "\"" + c + "\"").join(",") + "))";
-  // 只取页面用到的列，响应体约为 columns=ALL 的 1/6
-  const COLUMNS = "SECURITY_CODE,TRADE_CODE,TRADE_DATE,LONG_POSITION,SHORT_POSITION,LP_CHANGE,SP_CHANGE";
-  const PAGE_SIZE = 200;   // 单页约 13 个交易日，够 5 日对比（服务端上限 500）
-  const TARGET_DAYS = 5;   // 对比展示的完整交易日数
+  const MEMBER_FILTER = "(ORG_NAME_ABBR_NEW=\"" + encodeURIComponent("中信期货") + "\")";
 
-  function buildUrl(pageNumber) {
-    return API_ROOT
-      + "?reportName=RPT_FUTU_DAILYPOSITION&columns=" + COLUMNS
-      + "&filter=" + MEMBER_FILTER
-      + "&pageSize=" + PAGE_SIZE
-      + "&pageNumber=" + pageNumber
-      + "&sortColumns=TRADE_DATE&sortTypes=-1"
-      + "&source=WEB&client=WEB";
+  function buildUrl(extraFilter, sort) {
+    let url = API_ROOT
+      + "?reportName=RPT_FUTU_DAILYPOSITION&columns=ALL"
+      + "&filter=" + MEMBER_FILTER + (extraFilter || "")
+      + "&pageSize=500&source=WEB&client=WEB";
+    if (sort) url += "&sortColumns=TRADE_DATE&sortTypes=-1";
+    return url;
   }
 
-  function fetchPage(pageNumber) {
-    return fetch(buildUrl(pageNumber), { cache: "no-store" }).then((res) => {
-      if (!res.ok) throw new Error("接口请求失败 " + res.status);
-      return res.json();
-    }).then((j) => (j && j.result && j.result.data) || []);
-  }
-
-  // 单个交易日约 15 行，单页即可覆盖 5 个交易日；数据异常不足时补第二页
+  // 两步取数：1) 取最新交易日；2) 拉该日全量（避免混入历史旧日期）
   async function fetchCitic() {
-    const dateMap = {};
-    for (let page = 1; page <= 4; page++) {
-      const data = await fetchPage(page);
-      if (!data || !data.length) break;
-      for (const r of data) {
-        const d = (r.TRADE_DATE || "").slice(0, 10);
-        if (d) (dateMap[d] = dateMap[d] || []).push(r);
-      }
-      if (Object.keys(dateMap).length > TARGET_DAYS || data.length < PAGE_SIZE) break;
-    }
+    const head = await fetch(buildUrl("", true), { cache: "no-store" });
+    if (!head.ok) throw new Error("接口请求失败 " + head.status);
+    const hj = await head.json();
+    const hd = hj && hj.result && hj.result.data && hj.result.data[0];
+    if (!hd) throw new Error("暂无中信期货持仓数据");
+    const date = (hd.TRADE_DATE || "").slice(0, 10);
 
-    const dates = Object.keys(dateMap).sort().reverse().slice(0, TARGET_DAYS);
-    if (!dates.length) throw new Error("暂无中信期货股指期货持仓数据");
-
-    const map = {};
-    for (const d of dates) map[d] = dateMap[d];
-    return { date: dates[0], rows: map[dates[0]], dateMap: map, dates };
+    const day = await fetch(buildUrl("(TRADE_DATE='" + date + "')"), { cache: "no-store" });
+    if (!day.ok) throw new Error("接口请求失败 " + day.status);
+    const dj = await day.json();
+    return { date, rows: (dj && dj.result && dj.result.data) || [] };
   }
 
-  const INDEX_LABEL = { IF: "沪深300", IH: "上证50", IC: "中证500", IM: "中证1000" };
-  const productOf = (r) => r.TRADE_CODE || (/^[A-Z]+/.exec(r.SECURITY_CODE || "") || [""])[0];
+  // 交易所代码后缀 → 交易所
+  const EX_MAP = { CFE: "CFFEX", SHF: "SHFE", DCE: "DCE", CZC: "CZCE", GFE: "GFEX", INE: "INE" };
+  const EX_LABEL = { CFFEX: "中金所", SHFE: "上期所", DCE: "大商所", CZCE: "郑商所", GFEX: "广期所", INE: "能源中心" };
+
+  function exOf(code) {
+    const m = /\.([A-Z]{3})$/.exec(code || "");
+    return m ? (EX_MAP[m[1]] || m[1]) : "";
+  }
   function fmtInt(n) {
     if (n == null || isNaN(n)) return "—";
     return Number(n).toLocaleString("zh-CN");
@@ -69,13 +54,6 @@
   }
   function clsOf(n) { return n > 0 ? "up" : n < 0 ? "down" : "flat"; }
 
-  const POLL_START = 15 * 60 + 30;  // 盘后 15:30 起开始检查当日数据
-  const POLL_STOP = 21 * 60;        // 21:00 后不再轮询
-  const POLL_STEP = 10 * 60 * 1000; // 每 10 分钟一次
-
-  const pad2 = (n) => String(n).padStart(2, "0");
-  const localDate = (d) => d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
-
   // 每天 07:00 的下一个时刻
   function next7() {
     const now = new Date();
@@ -83,6 +61,10 @@
     n.setHours(7, 0, 0, 0);
     if (n <= now) n.setDate(n.getDate() + 1);
     return n;
+  }
+  function next7Label() {
+    const n = next7();
+    return (n.getDate() === new Date().getDate() ? "今天" : "明天") + " 07:00";
   }
 
   async function initCitic() {
@@ -94,7 +76,7 @@
     const exEl = $("#citic-exchange");
 
     const state = {
-      rows: [], date: "", dateMap: {}, dates: [],
+      rows: [], date: "",
       filter: "ALL", q: "", sort: "long", dir: -1,
       timer: null, ticker: null, nextAt: 0, busy: false, fail: 0, loaded: false,
     };
@@ -116,30 +98,6 @@
       rsTick.textContent = text;
       if (rsTick.parentNode) rsTick.parentNode.classList.toggle("is-failed", !!failed);
     }
-    function clockLabel(d) {
-      const today = new Date(); today.setHours(0, 0, 0, 0);
-      const target = new Date(d); target.setHours(0, 0, 0, 0);
-      const diff = Math.round((target - today) / 86400000);
-      const prefix = diff === 0 ? "今天" : diff === 1 ? "明天" : "周" + "日一二三四五六"[d.getDay()];
-      return prefix + " " + pad2(d.getHours()) + ":" + pad2(d.getMinutes());
-    }
-
-    // 交易日盘后 15:30-21:00 每 10 分钟检查当日持仓是否已公布；
-    // 当日数据已到位、非交易日或窗口外，则退化为次日 07:00 兜底
-    function nextRunAt() {
-      const now = new Date();
-      const weekday = now.getDay() >= 1 && now.getDay() <= 5;
-      const stop = new Date(now); stop.setHours(Math.floor(POLL_STOP / 60), POLL_STOP % 60, 0, 0);
-      if (weekday && now < stop && state.date !== localDate(now)) {
-        const slot = new Date(now); slot.setHours(Math.floor(POLL_START / 60), POLL_START % 60, 0, 0);
-        if (slot <= now) {
-          slot.setTime(slot.getTime() + (Math.floor((now - slot) / POLL_STEP) + 1) * POLL_STEP);
-        }
-        if (slot <= stop) return slot;
-      }
-      return next7();
-    }
-
     function countdown() {
       if (state.busy || !rsTick) return;
       if (state.fail) {
@@ -147,17 +105,17 @@
         setTick(`刷新失败，${Math.max(1, Math.ceil(left / 60))} 分钟后重试`, true);
         return;
       }
-      const left = Math.max(0, Math.round((state.nextAt - Date.now()) / 1000));
+      const left = Math.max(0, Math.round((next7() - Date.now()) / 1000));
       const hh = String(Math.floor(left / 3600)).padStart(2, "0");
       const mm = String(Math.floor((left % 3600) / 60)).padStart(2, "0");
       const ss = String(left % 60).padStart(2, "0");
-      setTick(`下次更新 ${clockLabel(new Date(state.nextAt))}（${hh}:${mm}:${ss} 后）`, false);
+      setTick(`下次更新 ${next7Label()}（${hh}:${mm}:${ss} 后）`, false);
     }
     function schedule() {
       clearTimeout(state.timer);
-      // 成功后按 nextRunAt 计划；失败则指数退避重试（1/2/4/8… 分钟，上限 10 分钟）
+      // 成功后每天 7 点；失败则指数退避重试（1/2/4/8… 分钟，上限 10 分钟）
       const wait = state.fail === 0
-        ? Math.max(1000, nextRunAt() - Date.now())
+        ? next7() - Date.now()
         : Math.min(60000 * Math.pow(2, state.fail - 1), 600000);
       state.nextAt = Date.now() + wait;
       state.timer = setTimeout(() => { refresh(false); }, wait);
@@ -178,7 +136,7 @@
 
     function visibleRows() {
       let list = state.rows;
-      if (state.filter !== "ALL") list = list.filter((r) => productOf(r) === state.filter);
+      if (state.filter !== "ALL") list = list.filter((r) => exOf(r.SECURITY_CODE) === state.filter);
       if (state.q) {
         const q = state.q.toLowerCase();
         list = list.filter((r) => (r.SECURITY_CODE || "").toLowerCase().indexOf(q) >= 0);
@@ -214,66 +172,17 @@
         const lp = +r.LP_CHANGE || 0;
         const sp = +r.SP_CHANGE || 0;
         const np = lp - sp;
-        const p = productOf(r);
+        const ex = exOf(r.SECURITY_CODE);
         return `
         <tr>
-          <td class="c-cell-code"><span class="c-code num">${esc(r.SECURITY_CODE)}</span><span class="c-ex">${INDEX_LABEL[p] || p}</span></td>
-          <td class="num up">${fmtInt(long)}</td>
+          <td class="c-cell-code"><span class="c-code num">${esc(r.SECURITY_CODE)}</span><span class="c-ex">${EX_LABEL[ex] || ex}</span></td>
+          <td class="num">${fmtInt(long)}</td>
           <td class="num ${clsOf(lp)}">${fmtDelta(lp)}</td>
-          <td class="num down">${fmtInt(short)}</td>
+          <td class="num">${fmtInt(short)}</td>
           <td class="num ${clsOf(sp)}">${fmtDelta(sp)}</td>
           <td class="num ${clsOf(net)}">${(net > 0 ? "+" : "") + fmtInt(net)}</td>
           <td class="num ${clsOf(np)}">${fmtDelta(np)}</td>
         </tr>`;
-      }).join("");
-    }
-
-    function sumField(rows, field) {
-      let s = 0;
-      for (const r of rows) s += (+r[field] || 0);
-      return s;
-    }
-
-    function renderComparison() {
-      const wrap = document.getElementById("citic-compare-body");
-      const dateEl = document.getElementById("citic-compare-date");
-      if (!wrap || !dateEl) return;
-      const dm = state.dateMap;
-      const dates = (state.dates && state.dates.length ? state.dates : Object.keys(dm).sort().reverse()).slice(0, TARGET_DAYS);
-      if (dates.length < 2) {
-        wrap.innerHTML = '<tr><td colspan="7" class="empty-state">暂无历史数据，无法对比</td></tr>';
-        dateEl.textContent = "";
-        return;
-      }
-
-      const sums = dates.map((d) => {
-        const rows = dm[d];
-        const l = sumField(rows, "LONG_POSITION");
-        const s = sumField(rows, "SHORT_POSITION");
-        return { date: d, long: l, short: s, net: l - s };
-      });
-
-      dateEl.textContent = "近 " + sums.length + " 个交易日 · 截至 " + sums[0].date.slice(5);
-      wrap.innerHTML = sums.map((cur, i) => {
-        const prev = i < sums.length - 1 ? sums[i + 1] : null;
-        const ld = prev ? cur.long - prev.long : null;
-        const sd = prev ? cur.short - prev.short : null;
-        const nd = prev ? cur.net - prev.net : null;
-        const cell = (val, isDelta, color) => {
-          if (val == null) return '<td class="num flat">—</td>';
-          let cls;
-          if (isDelta) cls = clsOf(val);
-          else if (color === "up" || color === "down") cls = color;
-          else cls = val > 0 ? "up" : val < 0 ? "down" : "";
-          const txt = isDelta ? fmtDelta(val) : fmtInt(val);
-          return '<td class="num ' + cls + '">' + txt + '</td>';
-        };
-        return '<tr>'
-          + '<td class="c-cell-code"><span class="c-code num">' + esc(cur.date.slice(5)) + '</span></td>'
-          + cell(cur.long, false, "up") + cell(ld, true)
-          + cell(cur.short, false, "down") + cell(sd, true)
-          + cell(cur.net, false, "") + cell(nd, true)
-          + '</tr>';
       }).join("");
     }
 
@@ -288,24 +197,18 @@
       if (rsBtn) { rsBtn.disabled = true; rsBtn.classList.add("is-busy"); rsBtn.textContent = "刷新中"; }
       if (manual) setTick("正在刷新…", false);
       try {
-        const { date, rows, dateMap, dates } = await fetchCitic();
+        const { date, rows } = await fetchCitic();
         state.date = date;
         state.rows = rows;
-        state.dateMap = dateMap || {};
-        state.dates = dates || [];
         state.fail = 0;
         renderStatus();
         renderKPIs(rows);
         renderTable();
-        renderComparison();
         state.loaded = true;
       } catch (e) {
         state.fail++;
         if (!state.loaded) {
-          const fail = '<tr><td colspan="7" class="empty-state">数据加载失败，将自动重试。</td></tr>';
-          body.innerHTML = fail;
-          const cmp = document.getElementById("citic-compare-body");
-          if (cmp) cmp.innerHTML = fail;
+          body.innerHTML = '<tr><td colspan="7" class="empty-state">数据加载失败，将自动重试。</td></tr>';
         }
       } finally {
         state.busy = false;
