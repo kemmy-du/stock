@@ -33,7 +33,7 @@
     document.querySelectorAll(".chart-line").forEach((el) => { el.innerHTML = ""; });
   }
 
-  function ensureEcharts(onReady, onFail) {
+  function ensureEcharts(onReady) {
     if (window.echarts) { onReady(); return; }
     if (!echartsPromise) {
       echartsPromise = new Promise((resolve, reject) => {
@@ -59,10 +59,7 @@
       });
     }
     // then(onReady, onFail) 而非 .catch：避免 onReady 内部异常被误判成加载失败
-    echartsPromise.then(onReady, () => {
-      showChartFallback();
-      if (onFail) onFail();
-    });
+    echartsPromise.then(onReady, showChartFallback);
   }
 
   /* resize 防抖 + 尺寸守卫：鸿蒙等设备地址栏收起/键盘弹出会连续触发 resize，
@@ -409,86 +406,5 @@
     });
   }
 
-  /* 财报趋势：营收/归母柱状 + 毛利率/净利率折线（双轴） */
-  let finChart = null;
-  let finResizeBound = false;
-
-  function initFinancialTrend(el, data) {
-    if (!el) return;
-    ensureEcharts(() => {
-      if (!data || !data.labels.length) {
-        el.innerHTML = '<div class="chart-fallback">暂无可展示的历史数据</div>';
-        return;
-      }
-      if (finChart && !finChart.isDisposed()) finChart.dispose();
-      finChart = window.echarts.init(el);
-      finChart.setOption({
-        animationDuration: 400,
-        textStyle: { fontFamily: "-apple-system, PingFang SC, sans-serif" },
-        tooltip: {
-          trigger: "axis",
-          confine: true,
-          backgroundColor: "rgba(255,255,255,0.96)",
-          borderColor: "#E2E4E8",
-          textStyle: { color: "#17191C", fontSize: 12 },
-          extraCssText: "box-shadow:0 4px 14px rgba(23,25,28,.08);border-radius:8px;",
-        },
-        legend: { top: 0, right: 0, textStyle: { color: "#757A83", fontSize: 11 } },
-        grid: { left: 52, right: 44, top: 40, bottom: 28 },
-        xAxis: {
-          type: "category",
-          data: data.labels,
-          axisLine: { lineStyle: { color: "#ECEEF1" } },
-          axisTick: { show: false },
-          axisLabel: { color: "#757A83", fontSize: 10 },
-        },
-        yAxis: [
-          {
-            type: "value",
-            splitLine: { lineStyle: { color: "#ECEEF1" } },
-            axisLabel: { color: "#757A83", fontSize: 10 },
-          },
-          {
-            type: "value",
-            splitLine: { show: false },
-            axisLabel: { color: "#757A83", fontSize: 10 },
-          },
-        ],
-        series: [
-          {
-            name: "营收", type: "bar", data: data.revenue, yAxisIndex: 0,
-            barMaxWidth: 16, itemStyle: { color: "rgba(194,64,47,0.75)", borderRadius: [2, 2, 0, 0] },
-            tooltip: { valueFormatter: (v) => (v == null ? "—" : v + " 亿") },
-          },
-          {
-            name: "归母净利", type: "bar", data: data.profit, yAxisIndex: 0,
-            barMaxWidth: 16, itemStyle: { color: "rgba(117,122,131,0.75)", borderRadius: [2, 2, 0, 0] },
-            tooltip: { valueFormatter: (v) => (v == null ? "—" : v + " 亿") },
-          },
-          {
-            name: "毛利率", type: "line", data: data.gm, yAxisIndex: 1,
-            symbol: "circle", symbolSize: 5, connectNulls: true,
-            lineStyle: { width: 2, color: "#22262B" }, itemStyle: { color: "#22262B" },
-            tooltip: { valueFormatter: (v) => (v == null ? "—" : v + "%") },
-          },
-          {
-            name: "净利率", type: "line", data: data.nm, yAxisIndex: 1,
-            symbol: "circle", symbolSize: 5, connectNulls: true,
-            lineStyle: { width: 2, color: "#A8ADB5" }, itemStyle: { color: "#A8ADB5" },
-            tooltip: { valueFormatter: (v) => (v == null ? "—" : v + "%") },
-          },
-        ],
-      }, true);
-      if (!finResizeBound) {
-        finResizeBound = true;
-        onResize(el, () => {
-          if (finChart && !finChart.isDisposed()) finChart.resize();
-        });
-      }
-    }, () => {
-      el.innerHTML = '<div class="chart-fallback">图表组件加载失败（网络原因）。</div>';
-    });
-  }
-
-  window.SICharts = { initReportChart, initSparklines, initLineChart, initPeerChart, initFinancialTrend };
+  window.SICharts = { initReportChart, initSparklines, initLineChart, initPeerChart };
 })();
