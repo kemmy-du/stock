@@ -19,6 +19,7 @@
       { key: "mcap", label: "总市值", type: "yi", hint: "总市值（亿元）" },
       { key: "fcap", label: "流通市值", type: "yi", hint: "流通市值（亿元）" },
       { key: "holders", label: "股东总数", type: "count", hint: "最新披露的股东户数，悬停可看截至日期" },
+      { key: "avg_hold", label: "人均持股", type: "count", hint: "股东户均持股数（股），悬停可看截至日期" },
       { key: "rev_qoq", label: "营收环比", type: "pctSigned", hint: "本季单季营收 vs 上一单季营收" },
       { key: "np_qoq", label: "归母环比", type: "pctSigned", hint: "本季单季归母净利 vs 上一单季" },
       { key: "rev_yoy", label: "营收同比", type: "pctSigned", hint: "本季单季营收 vs 去年同季单季" },
@@ -38,6 +39,7 @@
       { key: "mcap", label: "总市值", type: "yi", hint: "总市值（亿元）" },
       { key: "fcap", label: "流通市值", type: "yi", hint: "流通市值（亿元）" },
       { key: "holders", label: "股东总数", type: "count", hint: "最新披露的股东户数，悬停可看截至日期" },
+      { key: "avg_hold", label: "人均持股", type: "count", hint: "股东户均持股数（股），悬停可看截至日期" },
       { key: "y_rev_yoy", label: "营收同比", type: "pctSigned", hint: "年度营收相对上一年度" },
       { key: "y_np_yoy", label: "归母同比", type: "pctSigned", hint: "年度归母净利相对上一年度" },
     ],
@@ -161,10 +163,10 @@
           if (col.key === "period") {
             return '<td class="fin-c3">' + esc(periodText(r, state.view)) + "</td>";
           }
-          if (col.key === "holders") {
+          if (col.key === "holders" || col.key === "avg_hold") {
             const tip = r.holders_date ? "截至 " + r.holders_date : "最新披露";
             return '<td class="num" title="' + esc(tip) + '">' +
-              fmtCell(col, r.holders) + "</td>";
+              fmtCell(col, r[col.key]) + "</td>";
           }
           return '<td class="' + cellCls(col, r[col.key]) + '">' + fmtCell(col, r[col.key]) + "</td>";
         }).join("");

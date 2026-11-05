@@ -21,7 +21,7 @@ CST = timezone(timedelta(hours=8))
 
 FIELDS = [
     "code", "name", "period",
-    "holders", "holders_date",
+    "holders", "holders_date", "avg_hold",
     "q_rev", "q_np", "q_deduct", "q_gm", "q_nm",
     "rev_qoq", "np_qoq", "rev_yoy", "np_yoy",
     "pe_dyn", "pb", "mcap", "fcap",
@@ -100,9 +100,9 @@ def load_valuation():
 
 
 def load_holders():
-    """最新披露的股东户数；返回 {code: (户数, 截至日期)}。"""
+    """最新披露的股东户数；返回 {code: (户数, 截至日期, 户均持股数)}。"""
     rows = fetch_all("RPT_HOLDERNUMLATEST",
-                     "SECURITY_CODE,HOLDER_NUM,END_DATE", "")
+                     "SECURITY_CODE,HOLDER_NUM,AVG_HOLD_NUM,END_DATE", "")
     out = {}
     for r in rows:
         code = r.get("SECURITY_CODE")
@@ -110,7 +110,8 @@ def load_holders():
         if not code or num is None:
             continue
         end = (r.get("END_DATE") or "")[:10] or None
-        out[code] = (int(num), end)
+        avg = to_float(r.get("AVG_HOLD_NUM"))
+        out[code] = (int(num), end, None if avg is None else int(round(avg)))
     return out
 
 
@@ -210,6 +211,7 @@ def main():
             "code": code, "name": info["name"], "period": latest,
             "holders": held[0] if held else None,
             "holders_date": held[1] if held else None,
+            "avg_hold": held[2] if held else None,
             **m,
             "pe_dyn": pe_dyn,
             "pb": info["pb"], "mcap": mcap, "fcap": info["fcap"],
