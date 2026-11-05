@@ -18,6 +18,7 @@
       { key: "pb", label: "PB", type: "num", hint: "市净率（MRQ）" },
       { key: "mcap", label: "总市值", type: "yi", hint: "总市值（亿元）" },
       { key: "fcap", label: "流通市值", type: "yi", hint: "流通市值（亿元）" },
+      { key: "holders", label: "股东总数", type: "count", hint: "最新披露的股东户数，悬停可看截至日期" },
       { key: "rev_qoq", label: "营收环比", type: "pctSigned", hint: "本季单季营收 vs 上一单季营收" },
       { key: "np_qoq", label: "归母环比", type: "pctSigned", hint: "本季单季归母净利 vs 上一单季" },
       { key: "rev_yoy", label: "营收同比", type: "pctSigned", hint: "本季单季营收 vs 去年同季单季" },
@@ -36,6 +37,7 @@
       { key: "pb", label: "PB", type: "num", hint: "市净率（MRQ）" },
       { key: "mcap", label: "总市值", type: "yi", hint: "总市值（亿元）" },
       { key: "fcap", label: "流通市值", type: "yi", hint: "流通市值（亿元）" },
+      { key: "holders", label: "股东总数", type: "count", hint: "最新披露的股东户数，悬停可看截至日期" },
       { key: "y_rev_yoy", label: "营收同比", type: "pctSigned", hint: "年度营收相对上一年度" },
       { key: "y_np_yoy", label: "归母同比", type: "pctSigned", hint: "年度归母净利相对上一年度" },
     ],
@@ -91,6 +93,7 @@
       case "yi": return C.formatYi(v);
       case "pct": return v == null ? "—" : C.formatNum(v, 1) + "%";
       case "pctSigned": return C.formatPct(v);
+      case "count": return C.formatNum(v, 0);
       case "num": return C.formatNum(v, v != null && Math.abs(v) < 100 ? 2 : 1);
       default: return v == null ? "—" : String(v);
     }
@@ -100,7 +103,8 @@
     if (col.type === "yi" && (col.key === "q_np" || col.key === "y_np")) {
       return "num " + clsOf(v);
     }
-    if (col.type === "yi" || col.type === "num" || col.type === "pct") return "num";
+    if (col.type === "yi" || col.type === "num" || col.type === "pct" ||
+        col.type === "count") return "num";
     return "";
   }
 
@@ -156,6 +160,11 @@
           }
           if (col.key === "period") {
             return '<td class="fin-c3">' + esc(periodText(r, state.view)) + "</td>";
+          }
+          if (col.key === "holders") {
+            const tip = r.holders_date ? "截至 " + r.holders_date : "最新披露";
+            return '<td class="num" title="' + esc(tip) + '">' +
+              fmtCell(col, r.holders) + "</td>";
           }
           return '<td class="' + cellCls(col, r[col.key]) + '">' + fmtCell(col, r[col.key]) + "</td>";
         }).join("");

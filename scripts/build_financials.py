@@ -21,6 +21,7 @@ CST = timezone(timedelta(hours=8))
 
 FIELDS = [
     "code", "name", "period",
+    "holders", "holders_date",
     "q_rev", "q_np", "q_deduct", "q_gm", "q_nm",
     "rev_qoq", "np_qoq", "rev_yoy", "np_yoy",
     "pe_dyn", "pb", "mcap", "fcap",
@@ -98,6 +99,21 @@ def load_valuation():
     raise RuntimeError("估值数据为空")
 
 
+def load_holders():
+    """最新披露的股东户数；返回 {code: (户数, 截至日期)}。"""
+    rows = fetch_all("RPT_HOLDERNUMLATEST",
+                     "SECURITY_CODE,HOLDER_NUM,END_DATE", "")
+    out = {}
+    for r in rows:
+        code = r.get("SECURITY_CODE")
+        num = to_float(r.get("HOLDER_NUM"))
+        if not code or num is None:
+            continue
+        end = (r.get("END_DATE") or "")[:10] or None
+        out[code] = (int(num), end)
+    return out
+
+
 def to_float(v):
     try:
         f = None if v is None else float(v)
@@ -145,6 +161,9 @@ def main():
         }
     print(f"valuation {trade_date}: {len(universe)} codes", file=sys.stderr)
 
+    holders = load_holders()
+    print(f"holders: {len(holders)} codes", file=sys.stderr)
+
     series = {}
     coverage = {}
     for d in dates:
@@ -186,8 +205,11 @@ def main():
         mcap = info["mcap"]
         annualized = cum_np * 4 / q if cum_np and cum_np > 0 else None
         pe_dyn = mcap / annualized if mcap and annualized else None
+        held = holders.get(code)
         row = {
             "code": code, "name": info["name"], "period": latest,
+            "holders": held[0] if held else None,
+            "holders_date": held[1] if held else None,
             **m,
             "pe_dyn": pe_dyn,
             "pb": info["pb"], "mcap": mcap, "fcap": info["fcap"],
