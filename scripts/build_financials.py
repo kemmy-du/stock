@@ -21,7 +21,7 @@ CST = timezone(timedelta(hours=8))
 
 FIELDS = [
     "code", "name", "period",
-    "holders", "holders_date", "avg_hold",
+    "holders", "holders_date", "avg_hold", "avg_hold_date",
     "q_rev", "q_np", "q_deduct", "q_gm", "q_nm",
     "rev_qoq", "np_qoq", "rev_yoy", "np_yoy",
     "pe_dyn", "pb", "mcap", "fcap",
@@ -115,6 +115,28 @@ def load_holders():
     return out
 
 
+def load_holder_totals(codes):
+    """F10 股东人数（含 A/B/H 股）；返回 {code: (总户数, 截至日期)}。"""
+    out, page = {}, 1
+    while page <= 80:
+        rows = fetch("RPT_F10_EH_HOLDERNUM",
+                     "SECURITY_CODE,END_DATE,HOLDER_TOTAL_NUM", "",
+                     page, PAGE, "END_DATE,SECURITY_CODE", "-1,1")
+        for r in rows:
+            code = r.get("SECURITY_CODE")
+            if code not in codes or code in out:
+                continue
+            num = to_float(r.get("HOLDER_TOTAL_NUM"))
+            if num is None:
+                continue
+            out[code] = (int(num), (r.get("END_DATE") or "")[:10] or None)
+        if len(rows) < PAGE or len(out) >= len(codes):
+            break
+        page += 1
+        time.sleep(0.05)
+    return out
+
+
 def to_float(v):
     try:
         f = None if v is None else float(v)
@@ -165,6 +187,9 @@ def main():
     holders = load_holders()
     print(f"holders: {len(holders)} codes", file=sys.stderr)
 
+    totals = load_holder_totals(set(universe))
+    print(f"holder totals (A/B/H): {len(totals)} codes", file=sys.stderr)
+
     series = {}
     coverage = {}
     for d in dates:
@@ -207,11 +232,13 @@ def main():
         annualized = cum_np * 4 / q if cum_np and cum_np > 0 else None
         pe_dyn = mcap / annualized if mcap and annualized else None
         held = holders.get(code)
+        total = totals.get(code)
         row = {
             "code": code, "name": info["name"], "period": latest,
-            "holders": held[0] if held else None,
-            "holders_date": held[1] if held else None,
+            "holders": total[0] if total else (held[0] if held else None),
+            "holders_date": total[1] if total else (held[1] if held else None),
             "avg_hold": held[2] if held else None,
+            "avg_hold_date": held[1] if held else None,
             **m,
             "pe_dyn": pe_dyn,
             "pb": info["pb"], "mcap": mcap, "fcap": info["fcap"],

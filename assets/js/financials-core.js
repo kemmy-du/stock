@@ -4,7 +4,7 @@
 
   const FIELDS = [
     "code", "name", "period",
-    "holders", "holders_date", "avg_hold",
+    "holders", "holders_date", "avg_hold", "avg_hold_date",
     "q_rev", "q_np", "q_deduct", "q_gm", "q_nm",
     "rev_qoq", "np_qoq", "rev_yoy", "np_yoy",
     "pe_dyn", "pb", "mcap", "fcap",
