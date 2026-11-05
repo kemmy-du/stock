@@ -22,14 +22,25 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 ├── library.html          # 报告库：侧边栏（市场→标的）+ 搜索筛选
 ├── report.html           # 报告详情：章节锚点菜单 + ECharts
 ├── market.html           # 市场概览：指数速览 + 已覆盖标的
+├── financials.html       # 财报汇总：全 A 股指标列表 + 个股趋势
+├── citic.html            # 中信多空：股指期货会员持仓（IF/IH/IC/IM）
 ├── about.html            # 关于与免责声明
 ├── assets/
 │   ├── css/style.css     # 灰色精致主题（web-design skill 令牌体系）
 │   ├── js/common.js      # 导航 / 格式化 / 数据加载
-│   ├── js/charts.js      # ECharts 灰色主题（K线 + 迷你走势）
+│   ├── js/charts.js      # ECharts 灰色主题（K线 + 迷你走势 + 财报趋势）
+│   ├── js/financials-core.js  # 财报纯逻辑（排序/搜索/分页/趋势序列，可 Node 测试）
+│   ├── js/financials.js  # 财报列表与个股面板
 │   └── js/render.js      # 各页面渲染逻辑
 ├── data/market.json      # 指数快照
 ├── data/radar.json       # 雷达快照（新闻条目，由报告流程生成）
+├── data/financials.json  # 财报汇总快照（脚本生成）
+├── scripts/
+│   ├── financials_calc.py       # 单季/同比/年化计算
+│   ├── build_financials.py      # 财报快照生成
+│   ├── test_financials_calc.py  # 计算单元测试
+│   └── test_financials_core.js  # 前端逻辑测试
+├── .github/workflows/financials.yml  # 每交易日 18:30 自动更新快照
 └── reports/
     ├── index.json        # 报告索引
     └── <市场>-<代码>-<日期>.json
@@ -69,6 +80,16 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 - 数据分两层：`data/radar.json` 是离线快照（报告流程生成）；页面再按当前选中标的调用东方财富新闻搜索接口 `search-api-web.eastmoney.com/search/jsonp` 拉取实时新闻，与快照合并去重后按时间倒序展示。
 - 交互：顶部下拉框选择单一标的（不再整屏罗列全部标的），分类 chips 只统计当前标的；状态条显示快照时间、实时条数、最近同步时刻。
 - 刷新：默认每 60 秒自动同步一次当前标的，"同步"按钮可立即拉取；有新条目时插入顶部并打 `NEW`，失败按指数退避重试。
+
+## 财报汇总
+
+- 数据：东方财富 `RPT_F10_FINANCE_MAINFINADATA`（财报指标）+ `RPT_VALUEANALYSIS_DET`（最新交易日估值），覆盖全部 A 股（含北交所）
+- 口径：季度视图全部为**单季数据**（不是累计值）：一季报 = Q1 累计，二季报 = 中报 − Q1，三季报 = 三季报累计 − 中报，四季报 = 年报 − 三季报；环比 = 本季单季 ÷ 上一单季 − 1，同比 = 本季单季 ÷ 去年同季单季 − 1；毛利率 = 单季毛利润 ÷ 单季营收；动态 PE = 总市值 ÷ 年化归母净利；「报告期」列标注该行单季所属季度（如 2026二季报，可排序）；连续两个季度无财报的退市整理股不纳入
+- 年度视图：取最新报告期的上一年度，四个单季齐全才汇总，报告期显示为「2025年报」
+- 筛选：报告期（多选，选项随快照动态生成）、盈利状态、单季营收/归母环比下限、动态 PE/PB 区间、总市值区间、毛利率/净利率/扣非占归母下限；与搜索、多列排序、分页叠加，条件以标签展示可单独移除；年度视图下报告期与环比筛选隐藏，其余阈值改用全年口径
+- 更新：GitHub Actions 每天 07:00 与每交易日 18:30（北京时间）各运行一次 `scripts/build_financials.py`，数据有变化才提交；也可在 Actions 页手动触发 `workflow_dispatch`
+- 本地：`python3 scripts/build_financials.py` 生成 `data/financials.json`，再打开 `financials.html`
+- 测试：`cd scripts && python3 -m unittest test_financials_calc -v`、`node scripts/test_financials_core.js`
 
 ## 设计说明
 
