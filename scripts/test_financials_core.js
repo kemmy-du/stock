@@ -84,16 +84,18 @@ assert.strictEqual(bank.gm[0], null);
 assert.strictEqual(bank.revenue[0], 700);
 
 // fromSnapshot：new_codes 透出为字符串数组，缺失时为空
-const snapFields = ["code", "name", "period", "holders", "holders_date", "avg_free"];
+const snapFields = ["code", "name", "period", "holders", "holders_date", "avg_free", "holders_qoq", "avg_free_qoq"];
 const s1 = core.fromSnapshot({
   fields: snapFields,
-  rows: [["600519", "贵州茅台", "2026-09-30", 12345, "2026-09-30", 8765]],
+  rows: [["600519", "贵州茅台", "2026-09-30", 12345, "2026-09-30", 8765, -1.37, 1.39]],
   new_codes: [600519, "000001"],
 });
 assert.deepStrictEqual(s1.newCodes, ["600519", "000001"]);
 assert.strictEqual(s1.rows[0].holders, 12345);
 assert.strictEqual(s1.rows[0].holders_date, "2026-09-30");
 assert.strictEqual(s1.rows[0].avg_free, 8765);
+assert.strictEqual(s1.rows[0].holders_qoq, -1.37);
+assert.strictEqual(s1.rows[0].avg_free_qoq, 1.39);
 const s2 = core.fromSnapshot({ fields: snapFields, rows: [] });
 assert.deepStrictEqual(s2.newCodes, []);
 

@@ -21,7 +21,7 @@ CST = timezone(timedelta(hours=8))
 
 FIELDS = [
     "code", "name", "period",
-    "holders", "holders_date", "avg_free",
+    "holders", "holders_date", "avg_free", "holders_qoq", "avg_free_qoq",
     "q_rev", "q_np", "q_deduct", "q_gm", "q_nm",
     "rev_qoq", "np_qoq", "rev_yoy", "np_yoy",
     "pe_dyn", "pb", "mcap", "fcap",
@@ -100,11 +100,12 @@ def load_valuation():
 
 
 def load_holders(codes):
-    """F10 股东人数与人均流通股（含 A/B/H 股）；返回 {code: (总户数, 人均流通股, 截至日期)}。"""
+    """F10 股东人数与人均流通股（含 A/B/H 股）；返回 {code: (总户数, 人均流通股, 截至日期, 户数环比, 人均流通股环比)}。"""
     out, page = {}, 1
     while page <= 80:
         rows = fetch("RPT_F10_EH_HOLDERNUM",
-                     "SECURITY_CODE,END_DATE,HOLDER_TOTAL_NUM,AVG_FREE_SHARES",
+                     "SECURITY_CODE,END_DATE,HOLDER_TOTAL_NUM,AVG_FREE_SHARES,"
+                     "TOTAL_NUM_RATIO,AVG_FREESHARES_RATIO",
                      "", page, PAGE, "END_DATE,SECURITY_CODE", "-1,1")
         for r in rows:
             code = r.get("SECURITY_CODE")
@@ -115,7 +116,9 @@ def load_holders(codes):
                 continue
             avg = to_float(r.get("AVG_FREE_SHARES"))
             out[code] = (int(total), None if avg is None else int(round(avg)),
-                         (r.get("END_DATE") or "")[:10] or None)
+                         (r.get("END_DATE") or "")[:10] or None,
+                         to_float(r.get("TOTAL_NUM_RATIO")),
+                         to_float(r.get("AVG_FREESHARES_RATIO")))
         if len(rows) < PAGE or len(out) >= len(codes):
             break
         page += 1
@@ -220,6 +223,8 @@ def main():
             "holders": held[0] if held else None,
             "holders_date": held[2] if held else None,
             "avg_free": held[1] if held else None,
+            "holders_qoq": held[3] if held else None,
+            "avg_free_qoq": held[4] if held else None,
             **m,
             "pe_dyn": pe_dyn,
             "pb": info["pb"], "mcap": mcap, "fcap": info["fcap"],
