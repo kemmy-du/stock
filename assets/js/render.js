@@ -639,7 +639,7 @@
     const renderRows = () => {
       const list = rows();
       if (!list.length) {
-        $("#lib-list").innerHTML = `<div class="empty-state">没有符合条件的报告</div>`;
+        $("#lib-list").innerHTML = `<div class="empty-state">${all.length ? "没有符合条件的报告" : "暂无已发布报告"}</div>`;
         $("#lib-pager-wrap").innerHTML = "";
         return;
       }

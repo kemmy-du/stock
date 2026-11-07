@@ -3,6 +3,8 @@
 静态股票分析报告网站，由 CodeBuddy 生成报告数据，GitHub Pages 托管渲染。
 访问地址：<https://kemmy-du.github.io/stock>
 
+> 报告库当前为空：2026-11-07 已取消全部已发布报告（删除 `reports/*.json`，`reports/index.json` 置为 `[]`）；报告页面保留，显示空状态。CodeBuddy 发布目录已同步清理，避免雷达流水线重新推送旧报告。
+
 ## 架构
 
 ```
