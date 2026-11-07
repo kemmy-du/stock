@@ -730,9 +730,14 @@
     const gm = da ? da.gross_margin : null;
     const sectionTabs = ["概览", "行情走势", "技术指标"];
     if (gm) sectionTabs.push("盈利能力与毛利率");
+    if (da && (da.industry || da.position)) sectionTabs.push("行业与地位");
+    if (da && da.technology) sectionTabs.push("技术与护城河");
+    if (da && da.rd_trend && da.rd_trend.length) sectionTabs.push("研发投入");
     sectionTabs.push("财务摘要");
+    if (da && da.founder) sectionTabs.push("创始人与治理");
     if (da && da.valuation) sectionTabs.push("估值与情景");
     if (da && da.risks) sectionTabs.push("风险与证伪");
+    if (da && da.scores) sectionTabs.push("综合评分");
     sectionTabs.push("新闻公告", "AI 结论");
 
     const riskLevelCls = (lv) => {
@@ -881,6 +886,113 @@ ${kv("资产负债率", b.asset_liability_ratio, "%")}
       </section>
     ` : "";
 
+    // 行业与地位
+    const industryPositionHTML = (da && (da.industry || da.position)) ? (() => {
+      const ind = da.industry || {};
+      const pos = da.position || {};
+      const kv = (k, v) => `<div class="kv"><div class="k">${k}</div><div class="v" style="font-size:var(--text-base)">${esc(v == null || v === "" ? "—" : v)}</div></div>`;
+      return `
+      <section class="card panel" id="sec-行业与地位">
+        <div class="panel-head"><h2>行业与地位</h2><span class="hint">赛道前景 · 竞争位势</span></div>
+        <div class="kv-grid">
+          ${kv("行业规模", ind.scale)}
+          ${kv("行业增速 CAGR", ind.cagr)}
+          ${kv("渗透率阶段", ind.penetration)}
+          ${kv("生命周期", ind.lifecycle)}
+          ${kv("行业集中度", ind.concentration)}
+          ${kv("行业排名", pos.rank)}
+          ${kv("市占率", pos.market_share)}
+          ${kv("份额趋势", pos.share_trend)}
+          ${kv("定价权", pos.pricing_power)}
+        </div>
+        ${ind.drivers && ind.drivers.length ? `<h3 class="sub-head">驱动因素</h3><ul class="attr-list">${ind.drivers.map((d) => `<li><span>${esc(d)}</span></li>`).join("")}</ul>` : ""}
+        <p class="analysis-summary">${esc(ind.note || pos.note || "")}</p>
+      </section>`;
+    })() : "";
+
+    // 技术与护城河
+    const technologyHTML = (da && da.technology) ? (() => {
+      const t = da.technology;
+      const kv = (k, v) => `<div class="kv"><div class="k">${k}</div><div class="v" style="font-size:var(--text-base)">${esc(v == null || v === "" ? "—" : v)}</div></div>`;
+      return `
+      <section class="card panel" id="sec-技术与护城河">
+        <div class="panel-head"><h2>技术与护城河</h2><span class="hint">领先度 · 可持续性</span></div>
+        <div class="kv-grid">
+          ${kv("迭代速度", t.iteration)}
+          ${kv("发明专利", t.patents_invention)}
+          ${kv("护城河可持续(年)", t.moat_duration_years)}
+          ${kv("伪护城河风险", t.fake_moat_risk)}
+        </div>
+        ${t.leading_metrics && t.leading_metrics.length ? `<h3 class="sub-head">核心性能领先</h3><ul class="attr-list">${t.leading_metrics.map((m) => `<li><span>${esc(m)}</span></li>`).join("")}</ul>` : ""}
+        ${t.moat_sources && t.moat_sources.length ? `<h3 class="sub-head">护城河来源</h3><ul class="attr-list">${t.moat_sources.map((m) => `<li><span>${esc(m)}</span></li>`).join("")}</ul>` : ""}
+        <p class="analysis-summary">${esc(t.note || "")}</p>
+      </section>`;
+    })() : "";
+
+    // 研发投入（近5年趋势图 + 明细表）
+    const rdSectionHTML = (da && da.rd_trend && da.rd_trend.length) ? `
+      <section class="card panel" id="sec-研发投入">
+        <div class="panel-head"><h2>研发投入</h2><span class="hint">近 ${da.rd_trend.length} 年趋势 · 投入强度</span></div>
+        <div class="chart-line" id="rd-trend-chart" role="img" aria-label="${esc(r.name)} 研发投入趋势图"></div>
+        <p class="chart-note">柱为研发投入（亿元，深色费用化／浅色资本化），红线为占营收比（右轴）</p>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead><tr><th>年度</th><th>研发投入(亿)</th><th>占营收比</th><th>研发人员</th><th>人员占比</th></tr></thead>
+            <tbody>
+              ${da.rd_trend.map((d) => `<tr><td>${esc(d.year)}</td><td class="num">${(((d.rd_expense || 0) + (d.rd_capitalized || 0))).toFixed(2)}</td><td class="num">${d.rd_ratio == null ? "—" : esc(d.rd_ratio) + "%"}</td><td class="num">${d.rd_headcount == null ? "—" : esc(d.rd_headcount)}</td><td class="num">${d.rd_headcount_ratio == null ? "—" : esc(d.rd_headcount_ratio) + "%"}</td></tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
+        <p class="analysis-summary">${esc(da.rd_note || "")}</p>
+      </section>` : "";
+
+    // 创始人与治理
+    const founderHTML = (da && da.founder) ? (() => {
+      const f = da.founder;
+      const kv = (k, v) => `<div class="kv"><div class="k">${k}</div><div class="v" style="font-size:var(--text-base)">${esc(v == null || v === "" ? "—" : v)}</div></div>`;
+      return `
+      <section class="card panel" id="sec-创始人与治理">
+        <div class="panel-head"><h2>创始人与治理</h2><span class="hint">背景 · 风格 · 诚信</span></div>
+        <div class="kv-grid">
+          ${kv("创始人背景", f.background)}
+          ${kv("性格特质", f.personality)}
+          ${kv("资本配置", f.capital_allocation)}
+          ${kv("诚信记录", f.integrity)}
+          ${kv("股权激励", f.incentive)}
+        </div>
+        <p class="analysis-summary">${esc(f.note || "")}</p>
+      </section>`;
+    })() : "";
+
+    // 综合评分
+    const scoresHTML = (da && da.scores) ? (() => {
+      const s = da.scores;
+      const rows = [
+        ["行业赛道", "15%", s.industry],
+        ["竞争位势", "15%", s.position],
+        ["技术领先与护城河", "25%", s.technology],
+        ["研发投入", "15%", s.rd],
+        ["创始人与治理", "10%", s.founder],
+        ["财务质量", "10%", s.financial],
+        ["成长前瞻", "5%", s.forward],
+        ["估值", "5%", s.valuation],
+      ];
+      return `
+      <section class="card panel" id="sec-综合评分">
+        <div class="panel-head"><h2>综合评分</h2><span class="hint">加权评分 · 一票否决</span></div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead><tr><th>维度</th><th>权重</th><th>得分(1–5)</th></tr></thead>
+            <tbody>
+              ${rows.map((row) => `<tr><td>${row[0]}</td><td class="num">${row[1]}</td><td class="num">${row[2] == null ? "—" : esc(row[2])}</td></tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div class="callout"><strong>综合分 ${esc(s.composite)} / 100</strong>${s.veto_triggered ? " · 触发一票否决（" + esc(s.veto_reason || "") + "）" : ""} → 评级 ${esc(r.analysis.rating)}</div>
+        <p class="analysis-summary">${esc(s.note || "")}</p>
+      </section>`;
+    })() : "";
+
     $("#report-body").innerHTML = `
       <header class="card stock-header">
         <div>
@@ -939,7 +1051,7 @@ ${governanceCardsHTML}        </div>
         </div>
       </section>
 
-${gmSectionHTML}
+${gmSectionHTML}${industryPositionHTML}${technologyHTML}${rdSectionHTML}
       <section class="card panel" id="sec-财务摘要">
         <div class="panel-head"><h2>财务摘要</h2><span class="hint">${esc(fin.report_period || "最新报告期")}</span></div>
         <div class="table-scroll">
@@ -956,7 +1068,7 @@ ${gmSectionHTML}
         </div>
 ${balanceSheetCardsHTML}      </section>
 
-${valuationSectionHTML}${riskSectionHTML}
+${founderHTML}${valuationSectionHTML}${riskSectionHTML}${scoresHTML}
       <section class="card panel" id="sec-新闻公告">
         <div class="panel-head"><h2>新闻公告</h2><span class="hint">近期相关资讯 · 情绪标注仅供参考</span></div>
         <div class="news-list">
@@ -1006,6 +1118,11 @@ ${valuationSectionHTML}${riskSectionHTML}
           window.SICharts.initPeerChart("gm-peer-chart", peers, chip.dataset.metric, r.name);
         });
       });
+    }
+
+    // 研发投入趋势图
+    if (da && da.rd_trend && da.rd_trend.length) {
+      window.SICharts.initRdChart("rd-trend-chart", da.rd_trend);
     }
 
     // 章节锚点 + scrollspy

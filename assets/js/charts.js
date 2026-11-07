@@ -490,5 +490,72 @@
     });
   }
 
-  window.SICharts = { initReportChart, initSparklines, initLineChart, initPeerChart, initFinancialTrend };
+  // 研发投入柱线图：左轴投入(亿元，可堆叠费用化+资本化)，右轴占营收比(%)
+  function initRdChart(elId, data) {
+    const el = document.getElementById(elId);
+    if (!el || !data || !data.length) return;
+    const draw = () => {
+      const W = Math.max(el.clientWidth || 320, 260);
+      const H = 300;
+      const P = { l: 44, r: 44, t: 30, b: 46 };
+      const iw = W - P.l - P.r;
+      const ih = H - P.t - P.b;
+      const total = (d) => (d.rd_expense || 0) + (d.rd_capitalized || 0);
+      const ratios = data.map((d) => d.rd_ratio).filter((v) => v != null);
+      const hiL = (Math.max.apply(null, data.map(total)) || 1) * 1.25;
+      const hiR = ratios.length ? Math.max.apply(null, ratios) * 1.3 : 1;
+      const YL = (v) => P.t + ih - (v / hiL) * ih;
+      const YR = (v) => P.t + ih - (v / hiR) * ih;
+      const slot = iw / data.length;
+      const bw = Math.min(slot * 0.5, 46);
+      const cx = (i) => P.l + slot * (i + 0.5);
+
+      let grid = "", ylabL = "", ylabR = "";
+      for (let g = 0; g <= 4; g++) {
+        const yy = (P.t + ih - (ih * g) / 4).toFixed(1);
+        grid += `<line x1="${P.l}" y1="${yy}" x2="${W - P.r}" y2="${yy}" stroke="#ECEEF1" stroke-width="1"/>`;
+        ylabL += `<text x="${P.l - 8}" y="${yy}" fill="#757A83" font-size="10" text-anchor="end" dominant-baseline="middle">${(hiL * g / 4).toFixed(1)}</text>`;
+        ylabR += `<text x="${W - P.r + 8}" y="${yy}" fill="#A8ADB5" font-size="10" text-anchor="start" dominant-baseline="middle">${(hiR * g / 4).toFixed(0)}%</text>`;
+      }
+
+      let bars = "", xlab = "";
+      data.forEach((d, i) => {
+        const x = cx(i);
+        const exp = d.rd_expense || 0;
+        const cap = d.rd_capitalized || 0;
+        const hExp = (exp / hiL) * ih;
+        const hCap = (cap / hiL) * ih;
+        const yBase = P.t + ih;
+        bars += `<rect x="${(x - bw / 2).toFixed(1)}" y="${(yBase - hExp).toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(hExp, 0).toFixed(1)}" rx="2" fill="#4E535B"/>`;
+        if (cap > 0) {
+          bars += `<rect x="${(x - bw / 2).toFixed(1)}" y="${(yBase - hExp - hCap).toFixed(1)}" width="${bw.toFixed(1)}" height="${hCap.toFixed(1)}" rx="2" fill="#A8ADB5"/>`;
+        }
+        const barH = hExp + hCap;
+        const inside = barH >= 24;
+        const ly = inside ? (yBase - barH + 14) : (yBase - barH - 6);
+        bars += `<text x="${x.toFixed(1)}" y="${ly.toFixed(1)}" fill="${inside ? "#FFFFFF" : "#4E535B"}" font-size="10" font-weight="600" text-anchor="middle">${total(d).toFixed(2)}</text>`;
+        xlab += `<text x="${x.toFixed(1)}" y="${H - P.b + 16}" fill="#757A83" font-size="10" text-anchor="middle">${d.year}</text>`;
+      });
+
+      let line = "", dots = "";
+      const pts = [];
+      data.forEach((d, i) => {
+        if (d.rd_ratio == null) return;
+        const x = cx(i), y = YR(d.rd_ratio);
+        pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+        dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="#C0392B"/>`;
+        dots += `<text x="${x.toFixed(1)}" y="${(y - 8).toFixed(1)}" fill="#C0392B" font-size="9" text-anchor="middle">${d.rd_ratio}%</text>`;
+      });
+      if (pts.length > 1) line = `<polyline points="${pts.join(" ")}" fill="none" stroke="#C0392B" stroke-width="2" stroke-linejoin="round"/>`;
+
+      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img" aria-label="研发投入趋势图">` +
+        grid + ylabL + ylabR + bars + line + dots + xlab +
+        `<text x="${P.l}" y="16" fill="#757A83" font-size="9">亿元</text>` +
+        `<text x="${W - P.r}" y="16" fill="#C0392B" font-size="9" text-anchor="end">占营收比</text>` + `</svg>`;
+    };
+    draw();
+    onResize(el, draw);
+  }
+
+  window.SICharts = { initReportChart, initSparklines, initLineChart, initPeerChart, initFinancialTrend, initRdChart };
 })();
