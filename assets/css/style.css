@@ -1241,6 +1241,9 @@ img, canvas { display: block; max-width: 100%; }
   vertical-align: 1px;
 }
 
+/* 状态栏缓存来源提示 */
+.fin-status-cached { color: var(--color-text-3); font-size: var(--text-xs); }
+
 /* 筛选面板 */
 .fin-filter {
   margin-bottom: var(--space-4);

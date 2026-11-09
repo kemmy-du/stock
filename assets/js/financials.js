@@ -56,7 +56,7 @@
     chartMode: "q", current: null, historyCache: {},
     newCodes: new Set(), onlyNew: false,
     filters: emptyFilters(), periodOptions: [],
-    generatedAt: "—", tradeDate: "—", pushed: false,
+    generatedAt: "—", tradeDate: "—", pushed: false, cacheNote: null,
   };
 
   const NUM_INPUTS = {
@@ -214,8 +214,15 @@
 
   function updateStatus() {
     if (!els.status) return;
+    const note = state.cacheNote === "pending"
+      ? '<span class="fin-status-cached">（缓存快照 · 生成于 ' + esc(state.generatedAt) +
+        "，正在获取最新版…）</span>"
+      : state.cacheNote === "failed"
+        ? '<span class="fin-status-cached">（缓存快照 · 生成于 ' + esc(state.generatedAt) +
+          "，网络不可用）</span>"
+        : "";
     els.status.innerHTML = "交易日 <span class=\"num\">" + esc(state.tradeDate) +
-      "</span> · 覆盖 <b class=\"num\">" + state.rows.length + "</b> 只 A 股";
+      "</span> · 覆盖 <b class=\"num\">" + state.rows.length + "</b> 只 A 股" + note;
   }
 
   function updateNewChip() {
@@ -402,28 +409,57 @@
     if (!state.sortKeys.length) state.sortKeys = [{ key: "mcap", dir: -1 }];
   }
 
+  function applySnapshot(data, note) {
+    const snap = C.fromSnapshot(data);
+    state.rows = snap.rows;
+    state.newCodes = new Set(snap.newCodes);
+    state.generatedAt = snap.generatedAt;
+    state.tradeDate = snap.tradeDate;
+    state.cacheNote = note || null;
+    state.periodOptions = Array.from(new Set(state.rows.map((r) => r.period).filter(Boolean)))
+      .sort().reverse();
+    renderPeriodChips();
+    renderProfitChips();
+    updateViewGroups();
+    renderActiveFilters();
+    updateFilterBadge();
+    updateNewChip();
+    updateStatus();
+    renderHead();
+    renderBody();
+    refreshOpenDrawer();
+  }
+
+  /* ---------- localStorage 快照缓存：先显后更新 ---------- */
+
+  function store() {
+    try { return window.localStorage || null; } catch (e) { return null; }
+  }
+
   async function load() {
+    const cached = C.readSnapshotCache(store());
+    if (cached) {
+      applySnapshot(cached, "pending");
+      openFromHash();
+    }
     try {
       const res = await fetch("data/financials.json", { cache: "no-cache" });
       if (!res.ok) throw new Error("快照加载失败 " + res.status);
-      const snap = C.fromSnapshot(await res.json());
-      state.rows = snap.rows;
-      state.newCodes = new Set(snap.newCodes);
-      state.generatedAt = snap.generatedAt;
-      state.tradeDate = snap.tradeDate;
-      state.periodOptions = Array.from(new Set(state.rows.map((r) => r.period).filter(Boolean)))
-        .sort().reverse();
-      renderPeriodChips();
-      renderProfitChips();
-      updateViewGroups();
-      renderActiveFilters();
-      updateFilterBadge();
-      updateNewChip();
-      updateStatus();
-      renderHead();
-      renderBody();
-      openFromHash();
+      const data = await res.json();
+      if (cached && C.isSameSnapshot(cached, data)) {
+        state.cacheNote = null;
+        updateStatus();
+        return;
+      }
+      applySnapshot(data, null);
+      C.writeSnapshotCache(store(), data);
+      if (!cached) openFromHash();
     } catch (e) {
+      if (cached) {
+        state.cacheNote = "failed";
+        updateStatus();
+        return;
+      }
       els.body.innerHTML = '<tr><td colspan="' + VIEW_COLUMNS[state.view].length +
         '" class="empty-state" style="border:0">数据加载失败，请稍后重试。</td></tr>';
       failHint("财报数据加载失败，请稍后重试。");
@@ -672,6 +708,18 @@
     } catch (e) {
       el.innerHTML = '<div class="chart-fallback">历史数据加载失败，请稍后重试。</div>';
     }
+  }
+
+  /** 数据被缓存→网络二段替换时，保持已打开抽屉内容与新快照一致（趋势图数据源独立，不重取）。 */
+  function refreshOpenDrawer() {
+    if (!state.current) return;
+    const drawer = $("#fin-drawer");
+    if (!drawer || !drawer.classList.contains("open")) return;
+    const row = rowByCode(state.current);
+    if (!row) return;
+    $("#fin-drawer-title").textContent = row.name + "（" + row.code + "）";
+    $("#fin-drawer-sub").textContent = periodText(row, state.chartMode) + " · 估值 " + state.tradeDate;
+    renderDrawerMetrics(row);
   }
 
   function openDrawer(code) {

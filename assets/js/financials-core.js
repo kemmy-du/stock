@@ -216,9 +216,42 @@
     };
   }
 
+  const CACHE_KEY = "si.financials.snapshot";
+
+  /** 读回上次快照原文；隐私模式、配额异常或内容损坏都按无缓存处理。 */
+  function readSnapshotCache(storage) {
+    try {
+      if (!storage || typeof storage.getItem !== "function") return null;
+      const raw = storage.getItem(CACHE_KEY);
+      if (!raw) return null;
+      const data = JSON.parse(raw);
+      if (!data || typeof data !== "object" || !Array.isArray(data.rows)) return null;
+      return data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeSnapshotCache(storage, payload) {
+    try {
+      if (!storage || typeof storage.setItem !== "function") return false;
+      storage.setItem(CACHE_KEY, JSON.stringify(payload));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  /** 同一份快照判定：生成时间与交易日都相同即无需重绘。 */
+  function isSameSnapshot(a, b) {
+    if (!a || !b) return false;
+    return a.generated_at === b.generated_at && a.trade_date === b.trade_date;
+  }
+
   const api = {
     FIELDS, formatYi, formatNum, formatPct, periodLabel,
     fromSnapshot, filterRows, filterByConditions, sortRows, paginate, trendSeries,
+    CACHE_KEY, readSnapshotCache, writeSnapshotCache, isSameSnapshot,
   };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.FinCore = api;

@@ -127,4 +127,44 @@ assert.deepStrictEqual(codes(core.filterByConditions(fRows, { gmMin: 36 }, "y"))
 assert.deepStrictEqual(codes(core.filterByConditions(fRows, { periods: ["2026-09-30"] }, "y")), ["A", "B", "C"]);
 assert.deepStrictEqual(codes(core.filterByConditions(fRows, { revQoqMin: 20, npQoqMin: 0 }, "y")), ["A", "B", "C"]);
 
+// 快照缓存：命中 / 缺失 / 损坏 / 存储抛错 / 配额失败 / 同快照判定
+const payload = { generated_at: "2026-10-28 21:24", trade_date: "2026-10-28", fields: ["code"], rows: [["1"]], new_codes: ["1"] };
+const memStore = (init) => {
+  const m = Object.assign({}, init);
+  return {
+    getItem: (k) => (k in m ? m[k] : null),
+    setItem: (k, v) => { m[k] = String(v); },
+    dump: m,
+  };
+};
+
+assert.strictEqual(core.CACHE_KEY, "si.financials.snapshot");
+assert.deepStrictEqual(core.readSnapshotCache(memStore({ [core.CACHE_KEY]: JSON.stringify(payload) })), payload);
+assert.strictEqual(core.readSnapshotCache(memStore({})), null);
+assert.strictEqual(core.readSnapshotCache(memStore({ [core.CACHE_KEY]: "{not json" })), null);
+assert.strictEqual(core.readSnapshotCache(memStore({ [core.CACHE_KEY]: '"a string"' })), null);
+assert.strictEqual(core.readSnapshotCache(memStore({ [core.CACHE_KEY]: "null" })), null);
+assert.strictEqual(core.readSnapshotCache(null), null);
+assert.strictEqual(core.readSnapshotCache({
+  getItem() { throw new Error("SecurityError: private mode"); },
+}), null);
+
+assert.strictEqual(core.writeSnapshotCache(memStore({}), payload), true);
+const quota = { getItem: () => null, setItem() { throw new Error("QuotaExceededError"); } };
+assert.strictEqual(core.writeSnapshotCache(quota, payload), false);
+assert.strictEqual(core.writeSnapshotCache(null, payload), false);
+
+// 往返：写入后可读回且内容等价
+const roundTrip = memStore({});
+core.writeSnapshotCache(roundTrip, payload);
+assert.deepStrictEqual(core.readSnapshotCache(roundTrip), payload);
+
+assert.strictEqual(core.isSameSnapshot(payload, payload), true);
+assert.strictEqual(core.isSameSnapshot(payload,
+  Object.assign({}, payload, { generated_at: "2026-10-29 07:00" })), false);
+assert.strictEqual(core.isSameSnapshot(payload,
+  Object.assign({}, payload, { trade_date: "2026-10-29" })), false);
+assert.strictEqual(core.isSameSnapshot(payload, null), false);
+assert.strictEqual(core.isSameSnapshot(null, payload), false);
+
 console.log("financials-core tests passed");
