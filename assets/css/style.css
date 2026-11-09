@@ -1077,10 +1077,18 @@ img, canvas { display: block; max-width: 100%; }
   margin-block: var(--space-4);
 }
 .fin-toolbar .radar-status { margin-left: auto; }
-.fin-table-wrap { max-height: 72vh; overflow: auto; overscroll-behavior: contain; }
-.fin-table { width: max-content; min-width: 100%; font-size: var(--text-sm); }
+.fin-table-wrap {
+  max-height: 72vh;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-md);
+}
+/* 裁剪容器必须是包裹层：table 自身带 overflow 时粘性单元格被限制在表内，横向滚动会跟着跑 */
+.fin-table { width: max-content; min-width: 100%; font-size: var(--text-sm); overflow: visible; border: 0; border-radius: 0; }
 .fin-table th, .fin-table td { padding: var(--space-2) 8px; }
 .fin-table thead th { z-index: 3; }
+.fin-table .fin-idx,
 .fin-table .fin-c1,
 .fin-table .fin-c2 {
   position: sticky;
@@ -1089,17 +1097,20 @@ img, canvas { display: block; max-width: 100%; }
   background: var(--color-surface);
   text-align: left;
 }
-.fin-table .fin-c1 { width: 76px; min-width: 76px; max-width: 76px; }
-.fin-table .fin-c2 { left: 76px; width: 126px; min-width: 126px; max-width: 126px; }
+.fin-table .fin-idx { width: 40px; min-width: 40px; max-width: 40px; color: var(--color-text-3); }
+.fin-table .fin-c1 { left: 40px; width: 76px; min-width: 76px; max-width: 76px; }
+.fin-table .fin-c2 { left: 116px; width: 126px; min-width: 126px; max-width: 126px; }
 .fin-table .fin-c2 > span:first-child {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.fin-table thead .fin-idx,
 .fin-table thead .fin-c1,
 .fin-table thead .fin-c2 { background: var(--color-surface-2); z-index: 5; }
 .fin-table tbody tr { cursor: pointer; }
+.fin-table tbody tr:hover .fin-idx,
 .fin-table tbody tr:hover .fin-c1,
 .fin-table tbody tr:hover .fin-c2 { background: var(--color-surface-2); }
 .fin-table .fin-c3 {

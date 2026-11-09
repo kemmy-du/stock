@@ -6,6 +6,7 @@
 
   const VIEW_COLUMNS = {
     q: [
+      { key: "idx", label: "#", cls: "fin-idx", type: "index", hint: "当前排序与筛选结果中的名次，跨页连续" },
       { key: "code", label: "代码", cls: "fin-c1", type: "text", hint: "股票代码" },
       { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票中文简称" },
       { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "该行单季数据所属季度，如 2026二季报（4–6 月）" },
@@ -28,6 +29,7 @@
       { key: "np_yoy", label: "归母同比", type: "pctSigned", hint: "本季单季归母净利 vs 去年同季单季" },
     ],
     y: [
+      { key: "idx", label: "#", cls: "fin-idx", type: "index", hint: "当前排序与筛选结果中的名次，跨页连续" },
       { key: "code", label: "代码", cls: "fin-c1", type: "text", hint: "股票代码" },
       { key: "name", label: "名称", cls: "fin-c2", type: "name", hint: "股票中文简称" },
       { key: "period", label: "报告期", cls: "fin-c3", type: "period", hint: "年度数据所属报告期，如 2025年报" },
@@ -128,6 +130,9 @@
   function renderHead() {
     const cols = VIEW_COLUMNS[state.view];
     els.head.innerHTML = "<tr>" + cols.map((col) => {
+      if (col.type === "index") {
+        return '<th class="' + col.cls + '" title="' + esc(col.hint) + '">' + col.label + "</th>";
+      }
       const idx = state.sortKeys.findIndex((k) => k.key === col.key);
       const dir = idx >= 0 ? (state.sortKeys[idx].dir < 0 ? "desc" : "asc") : "";
       const badge = state.sortKeys.length > 1 && idx >= 0
@@ -155,8 +160,12 @@
         '" class="empty-state" style="border:0">' +
         (narrowed ? "无匹配股票，试试放宽筛选或搜索" : "无匹配股票") + "</td></tr>";
     } else {
-      els.body.innerHTML = pg.items.map((r) => {
+      els.body.innerHTML = pg.items.map((r, i) => {
+        const rank = (pg.page - 1) * state.size + i + 1;
         const tds = cols.map((col) => {
+          if (col.type === "index") {
+            return '<td class="fin-idx num">' + rank + "</td>";
+          }
           if (col.key === "code") {
             return '<td class="fin-c1"><span class="num">' + esc(r.code) + "</span></td>";
           }
