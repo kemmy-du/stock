@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 10:42",
+ "generated_at": "2026-11-23 11:12",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 28,
+ "total": 31,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -143,6 +143,23 @@
    "url": "http://finance.eastmoney.com/a/202611203936393996.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "4d28d92d476511c4",
+   "title": "18只主动ETF申赎清单发布 贵州茅台、美的集团、宁德时代位居重仓股前三",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "在申赎清单所有778只股票中，重仓股方面，按清单持仓估算规模排序，贵州茅台、美的集团、宁德时代位列前三，分别约为7.85亿元、5.80亿元和5.27亿元。从配置ETF家数看，宁德时代获12家ETF配置居首，中国石油、美的集团均获11家ETF配置。",
+   "url": "http://finance.eastmoney.com/a/202611233937114029.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "137040422229b6d2",
@@ -294,6 +311,40 @@
    "score": 0,
    "summary": "中际旭创 148.80 -10.44 603486 科沃斯 5.14 1.16 688008 澜起科技 84.33 -10.35 000530 冰山冷热 3.87 1.08 300857 协创数据 45.14 -10.16 603687 大胜达 3.15 0.84 600519 贵州茅台",
    "url": "http://finance.eastmoney.com/a/202611233937075781.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "43988f6869866e50",
+   "title": "主力资金监控：长鑫科技净卖出超6亿",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "个股方面，九阳股份主力资金净买入超8亿元位居首位，新易盛、中际旭创、贵州茅台获主力资金净流入居前；长鑫科技遭净卖出超6亿元，冰山冷热、浪潮信息、比亚迪资金净流出额居前。",
+   "url": "http://finance.eastmoney.com/a/202611233937115023.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "578931bd92b518ac",
+   "title": "震荡市资金借道ETF积极入市，沪深300ETF嘉实(159919)低位布局A股核心资产",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
+   "url": "http://stock.eastmoney.com/a/202611233937108132.html",
    "has_report": false,
    "report_id": ""
   },
