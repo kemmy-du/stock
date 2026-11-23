@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 19:43",
+ "generated_at": "2026-11-23 20:14",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 56,
+ "total": 57,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -772,6 +772,23 @@
    "score": 0,
    "summary": "如果以最小申赎单位组合内的估算市值来衡量个股排名，贵州茅台（600519.SH）以每组合约112.3万元的估算市值稳居第一，凸显了其在主动权益投资中的核心地位；美的集团、药明康（603259.SH）、宁德时代和长江电力（600900.SH）紧随其后，估算市值均在60万元以上。",
    "url": "http://finance.eastmoney.com/a/202611233937410591.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ef96ecb5412f61b5",
+   "title": "永辉超市：参股公司拟解散清算，预计分得约1.16亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "该公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。公司综合考虑北京友谊使者主营业务发展现状、股东沟通情况及解散清算安排的必要性，作为参股股东，拟同意该公司解散清算安排。",
+   "url": "http://finance.eastmoney.com/a/202611233937488173.html",
    "has_report": false,
    "report_id": ""
   },
