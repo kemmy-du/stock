@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 14:42",
+ "generated_at": "2026-11-23 15:13",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 39,
+ "total": 40,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -481,6 +481,23 @@
    "score": 0,
    "summary": "上证50ETF华夏（510050.SH）：跟踪的上证50指数，精选沪市市值最大的50只龙头股，经过近几年指数调仓，金融、消费等传统行业权重大幅降低，目前高弹性的信息技术板块和防御的金融、消费板块均有布局，截至2026年10月30日，指数前十大权重股分别为贵州茅台、中国平安、招商银行",
    "url": "http://stock.eastmoney.com/a/202611233937201949.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ddaf035916444cfb",
+   "title": "首批18只主动ETF上市，半日成交近60亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "在申赎清单所有778只股票中，重仓股方面，按清单持仓估算规模排序，贵州茅台、美的集团、宁德时代位列前三，分别约为7.85亿元、5.80亿元和5.27亿元。按行业板块市值持仓比例看，银行板块持仓比例达13.5%，硬件设备为8.11%，食品饮料为6.93%。",
+   "url": "http://finance.eastmoney.com/a/202611233937228985.html",
    "has_report": false,
    "report_id": ""
   },
