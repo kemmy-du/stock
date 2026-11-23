@@ -5,43 +5,43 @@
       "name": "上证指数",
       "code": "000001.SH",
       "market": "CN",
-      "close": 3499.91,
-      "change_pct": -0.96
+      "close": 3538.95,
+      "change_pct": 0.15
     },
     {
       "name": "深证成指",
       "code": "399001.SZ",
       "market": "CN",
-      "close": 10280.58,
-      "change_pct": 0.24
+      "close": 10454.37,
+      "change_pct": 1.93
     },
     {
       "name": "沪深300",
       "code": "000300.SH",
       "market": "CN",
-      "close": 3930.08,
-      "change_pct": -0.62
+      "close": 3958.29,
+      "change_pct": 0.09
     },
     {
       "name": "纳斯达克综指",
       "code": "IXIC.GI",
       "market": "US",
-      "close": 22617.73,
-      "change_pct": -5.28
+      "close": 24089.56,
+      "change_pct": 6.51
     },
     {
       "name": "标普500",
       "code": "SPX.GI",
       "market": "US",
-      "close": 6910.39,
-      "change_pct": -3.7
+      "close": 7237.17,
+      "change_pct": 4.73
     },
     {
       "name": "道琼斯工业",
       "code": "DJI.GI",
       "market": "US",
-      "close": 48147.33,
-      "change_pct": -1.93
+      "close": 49595.31,
+      "change_pct": 3.01
     }
   ]
 }
