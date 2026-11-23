@@ -1,8 +1,403 @@
 {
- "generated_at": "2026-11-23 08:11",
+ "generated_at": "2026-11-23 08:31",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 0,
- "items": []
+ "total": 23,
+ "items": [
+  {
+   "id": "47546471ecbcce36",
+   "title": "茅台原总助、习酒原董事长钟方达被开除党籍和公职",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "negative",
+   "tags": [
+    "突发",
+    "利空"
+   ],
+   "score": 160,
+   "summary": "（资料图片） 　　相关内容显示，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
+   "url": "http://finance.eastmoney.com/a/202611203936461331.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "fd9fae1d7a18bfcc",
+   "title": "习酒前董事长钟方达被“双开” 此前被传已去世",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "negative",
+   "tags": [
+    "突发",
+    "利空"
+   ],
+   "score": 160,
+   "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
+   "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "98fef33aa5ec7d1f",
+   "title": "就在周一！首批18只“每日明牌”基金，来了",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-22",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利空"
+   ],
+   "score": 85,
+   "summary": "以上市公告书披露为口径，该ETF重仓的第一大重仓股贵州茅台上涨2.19%，第二大重仓的工商银行上涨近4%，其后的立讯精密下跌5.68%，中际旭创下跌3.86%。",
+   "url": "http://stock.eastmoney.com/a/202611223936868014.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0ca91dcb635aa062",
+   "title": "1到10月白酒累计产量下跌超4% 行业去库存到了关键期？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-21",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "南都湾财社记者了解到，虽然白酒整体处于减产阶段，但是多家酒企的存货（包括成品酒、半成品等）仍在提高，除了贵州茅台外，五粮液、泸州老窖和古井贡酒，截至今年三季度末存货，比报告期初（2025年12月31日）同比增加超20%、14.05%和2.65%，洋河股份虽然下降约3.78亿元，但仍有",
+   "url": "http://finance.eastmoney.com/a/202611203936313439.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "178da2129143bc92",
+   "title": "深沪北百元股数量达121只，电子行业占比最高",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "股价超百元个股中，收盘价最高的是贵州茅台，今日报收1485.75元，上涨1.75%，其次是寒武纪、宇树科技等，最新收盘价分别为920.00元、590.00元。 　　市场表现方面，收盘股价超百元股中，今日平均下跌5.33%，跑输沪指4.11个百分点。",
+   "url": "http://finance.eastmoney.com/a/202611203936197661.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b122b500cf1dc018",
+   "title": "光刻机概念下跌7.79%，主力资金净流出45股",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "1462.88 688127 蓝特光学 -8.57 1.76 -1450.67 688401 路维光电 -9.27 2.86 -1398.50 003031 中瓷电子 -6.11 1.19 -1279.01 600353 旭光电子 -7.30 3.40 -1037.42 603773 沃格光电",
+   "url": "http://finance.eastmoney.com/a/202611203936196846.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "3254a981e3636a16",
+   "title": "存储芯片概念下跌6.61%，23股主力资金净流出超亿元",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "1197.75 001287 中电港 -6.60 2.24 -1190.20 300671 富满微 -8.53 5.63 -1166.14 688170 德龙激光 -8.88 3.41 -1132.20 600605 汇通能源 -10.01 3.01 -1081.95 603773 沃格光电",
+   "url": "http://finance.eastmoney.com/a/202611203936393996.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "137040422229b6d2",
+   "title": "贺宛男：全球资金投资风格迁移！从“远期故事”向“当期现金流”切换",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-21",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "二是即将于下周一上市的18只主动ETF基金发布十大重仓股，其中四只银行股（招商银行、中国银行、江苏银行、工商银行），一只保险股（中国平安），一只家电股（美的集团），一只白酒股（贵州茅台），股价均有所上涨，涨幅最高的工行上涨6.21%；另三只为宁德时代、寒武纪、中际旭创，股价均有所下跌",
+   "url": "http://finance.eastmoney.com/a/202611213936781073.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "2812fd0e7f0ce7a7",
+   "title": "器官芯片企业耀速科技获数千万元战略融资 年内累计三轮融资近4亿元",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-18",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "竞争格局方面，艾玮得生物参与制定首批器官芯片国家标准，市场监管总局发布《血管芯片通用技术要求》，2027年5月实施；与沃格光电达成战略合作，共同推动玻璃基器官芯片产业化，全球首发玻璃基器官芯片系统AWA-HT系列产品亮相。",
+   "url": "http://finance.eastmoney.com/a/202611183934326612.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "1864205ee7c7a957",
+   "title": "首批18只主动ETF明日集体上市，这些行业被重仓配置 | 主动ETF周报",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-22",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "具体个股而言，贵州茅台、美的集团、宁德时代位居前十大重仓股前列。 　　11月17日晚间，首批18只主动ETF同时披露上市公告书，确定于11月23日（下周一）集中上市交易。",
+   "url": "http://finance.eastmoney.com/a/202611223936874867.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "4f7dfbe3a3c7cd22",
+   "title": "白酒“黄金坑”已现？泸州老窖大股东再次抛出增持计划！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-21",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "此外，贵州茅台、五粮液等头部酒企还出炉了《股东回报规划》，贵州茅台计划每年度分配的现金红利总额不低于当年实现归母净利润的75%，原则上每年度进行两次分红；五粮液计划在2024-2026年公司每年现金分红总额占当年归母净利润比例不低于70%，且不低于200亿元（含税），公司每年的现金分红可分一次或多次",
+   "url": "http://finance.eastmoney.com/a/202611213936841872.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b4a379fd88a484a3",
+   "title": "海南椰岛，摸着劲酒过河｜观酒周报",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "李春风调离茅台葡萄酒，现已出任贵州茅台酒厂 (集团) 保健酒业有限公司法定代表人、董事长。",
+   "url": "http://finance.eastmoney.com/a/202611233937036963.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "88a7451655f3e4d2",
+   "title": "白酒指数周跌8.26% 金种子酒大跌近20%扭亏仍遥遥无期丨酒市周报",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-22",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "截至11月20日收盘，本周Wind白酒指数跌幅达8.26%，以40811.38点报收，板块内，贵州茅台和泸州老窖实现上涨，周涨幅分别达到3.52%和0.18%。另外，山西汾酒和五粮液周跌幅在2%以内，表现同样稳定。",
+   "url": "http://finance.eastmoney.com/a/202611223936889373.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e433eb8272cc2f86",
+   "title": "大众酒突围：价格向上 渠道向下 口味创新 ——专访牛栏山酒厂厂长陈世俊",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-21",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台绑定酱香、五粮液突出浓香、汾酒承载清香……独特香型可以成为品牌名片。但对于缺乏香型代表性的酒企，或品牌认知度在中腰部及以下的酒企，仅强调香型，难以与强势品牌拉开距离。相比之下，二锅头承载的工艺、京味文化和日常饮用认知，为牛栏山提供了更具体的竞争位置。",
+   "url": "http://finance.eastmoney.com/a/202611213936596845.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b561fe477613e720",
+   "title": "严重违纪违法，钟方达被“双开”",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "2018年8月，钟方达任中国贵州茅台酒厂（集团）有限责任公司总经理助理，贵州茅台酒厂（集团）习酒有限责任公司党委书记、董事长、法定代表人。2022年7月，贵州茅台酒厂（集团）习酒有限责任公司法定代表人由钟方达变更为他人。",
+   "url": "http://finance.eastmoney.com/a/202611203936534686.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "3a569200da1a9e4e",
+   "title": "主力资金｜尾盘资金出逃23股",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台、通富微电、华东重机、超声电子等尾盘主力资金均净流入超6000万元。 　　尾盘净流出方面，23股尾盘主力资金净流出均超1亿元。东山精密、招商银行、寒武纪尾盘主力资金净流出均超2亿元，新易盛、中国建筑、中信证券尾盘净流出均超1.5亿元。",
+   "url": "http://finance.eastmoney.com/a/202611203936238875.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a38dbfe1af201494",
+   "title": "茅台集团原总经理助理钟方达被“双开”",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据公开资料，钟方达，1965年10月生，贵州习水人，曾任中国贵州茅台酒厂（集团）有限责任公司总经理助理、贵州茅台酒厂（集团）习酒有限责任公司党委书记及董事长。",
+   "url": "http://finance.eastmoney.com/a/202611203936443089.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "403d0677be6d8e1b",
+   "title": "工商银行，重夺A股市值冠军！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "排在之后的依次是长鑫科技、中国石油、贵州茅台、中国银行、宁德时代等。",
+   "url": "http://finance.eastmoney.com/a/202611203936210777.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ddd6b6ac245e473b",
+   "title": "据贵州省纪委监委派驻茅台集团纪检监察组、毕节市纪委监委消息，中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达被开除党籍和公职",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据贵州省纪委监委派驻茅台集团纪检监察组、毕节市纪委监委消息，中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达被开除党籍和公职。",
+   "url": "http://finance.eastmoney.com/a/202611203936258874.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "6607a6404ef32ca0",
+   "title": "海量财经 | 茅台“由抢改买”：飞天茅台溢价缩至70元，黄牛退场",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "“全面面向C端”，贵州茅台这步棋走得如何？ 　　今年以来，贵州茅台“以消费者为中心”市场化改革持续落子，其遵循“随行就市、供需适配”原则优化价格体系及销售模式，正一步步从“渠道压货、稀缺炒作”转向“直面消费者、动态供需适配”。 　　从目前来看，成效颇丰。",
+   "url": "http://finance.eastmoney.com/a/202611203936548225.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "15ae2c1bd153b1f4",
+   "title": "【焦点复盘】沪指尾盘回升终结日线6连阴，全市场超300股跌逾9%，芯片产业链全天低迷",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-20",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "大额成交股方面，科技与非科技群体之间分化加剧，长鑫科技跌超6%续创上市新低，而长江电力等多股逆势刷新历史高点，贵州茅台、招商银行等上证50成分股飘红。科技权重股走势仍将持续受到外围科技股的持续拖累，部分小市值投机细分的活跃并无助于板块的整体低迷。",
+   "url": "http://stock.eastmoney.com/a/202611203936530946.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "85a44ad8a4759c64",
+   "title": "74.53亿主力资金净流入，共封装光学(CPO)概念涨1.25%",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-18",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "688048 长光华芯 0.78 4.87 2186.00 2.10 002384 东山精密 0.06 9.20 2043.07 0.22 301183 东田微 2.18 6.98 2012.03 3.96 688655 迅捷兴 3.86 8.87 1931.37 4.75 603773 沃格光电",
+   "url": "http://finance.eastmoney.com/a/202611183934161078.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "0ae5782485fbdf89",
+   "title": "36.70亿主力资金净流入，OLED概念涨0.60%",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-17",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "688781 视涯科技 3.38 15.09 908.38 2.92 688328 深科达 -1.85 6.11 873.32 3.20 688170 德龙激光 1.25 4.07 858.62 4.74 603203 快克智能 3.86 2.34 809.00 3.42 603773 沃格光电",
+   "url": "http://finance.eastmoney.com/a/202611173933012610.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
+  }
+ ]
 }
