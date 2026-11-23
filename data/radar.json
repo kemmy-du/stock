@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 11:12",
+ "generated_at": "2026-11-23 11:42",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 31,
+ "total": 32,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -345,6 +345,23 @@
    "score": 0,
    "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
    "url": "http://stock.eastmoney.com/a/202611233937108132.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "48a5057173431656",
+   "title": "18只主动ETF上市，火速完成建仓，平均仓位超90%，持仓股明细曝光，重仓这些股",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "按持股市值估算，18只主动ETF合计持股市值不低于1亿元的近90只，估算持股市值最多的是贵州茅台，主动ETF合计持有超7亿元；美的集团估算持股市值超5亿元。",
+   "url": "http://finance.eastmoney.com/a/202611233937122466.html",
    "has_report": false,
    "report_id": ""
   },
