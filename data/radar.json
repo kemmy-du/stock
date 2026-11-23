@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 09:11",
+ "generated_at": "2026-11-23 09:42",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 23,
+ "total": 24,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -209,6 +209,23 @@
    "score": 0,
    "summary": "李春风调离茅台葡萄酒，现已出任贵州茅台酒厂 (集团) 保健酒业有限公司法定代表人、董事长。",
    "url": "http://finance.eastmoney.com/a/202611233937036963.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8608bd4d9eb146d8",
+   "title": "基金忠言｜首批主动ETF今日上市，谁最“吸金”？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "前五大重仓股依次为贵州茅台、宁德时代、北方华创、唐山港、广深铁路。 　　易方达是国内最大的ETF管理人，ETF规模合计超过7000亿元，渠道和客户资源丰富。同时，公司的主动管理能力也很强。易方达品质均衡主动ETF采用双基金经理，分别为倪春尧和杨思亮。",
+   "url": "http://stock.eastmoney.com/a/202611233937063330.html",
    "has_report": false,
    "report_id": ""
   },
