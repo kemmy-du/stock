@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 06:46",
+ "generated_at": "2026-11-24 07:16",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 70,
+ "total": 71,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -73,6 +73,24 @@
    "score": 160,
    "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
    "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8987340fd9acbdd1",
+   "title": "股市直播|多家A股公司发布回购相关公告；多家A股公司发布重大资产重组相关公告",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 85,
+   "summary": "贵州茅台是被主动ETF持有市值最多的股票，共6只产品持有。宁德时代是受到最多主动ETF青睐的股票，被12只产品持有。美的集团、中国石油、江苏银行、中国神华、中远海控、中国太保、潍柴动力等均有不低于10只主动ETF持有。",
+   "url": "http://finance.eastmoney.com/a/202611243937781366.html",
    "has_report": false,
    "report_id": ""
   },
