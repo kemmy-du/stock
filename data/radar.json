@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 05:46",
+ "generated_at": "2026-11-24 06:16",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 69,
+ "total": 70,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -466,6 +466,23 @@
    "score": 0,
    "summary": "以鑫汇均衡收益主动ETF国泰为例，该基金持仓呈现出“核心资产+科技成长”的均衡特征——一方面以贵州茅台、工商银行等大盘价值股作为组合“压舱石”，另一方面注重科技成长板块投资机会，重点布局中际旭创、新易盛、寒武纪等AI算力与芯片龙头，同时兼顾药明康德、立讯精密、万华化学等医药、电子及化工领域细分龙头",
    "url": "http://fund.eastmoney.com/a/202611243937747985.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0a05c41b9a165267",
+   "title": "东方财富财经早餐 11月24日周二",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "首批18只主动ETF上市首日3涨2平13跌，涨跌幅均在2%以内；首日成交80.08亿元，平均换手22.69%，18只全线小幅折价，根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股",
+   "url": "http://finance.eastmoney.com/a/202611233937615737.html",
    "has_report": false,
    "report_id": ""
   },
