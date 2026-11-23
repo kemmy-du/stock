@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 12:12",
+ "generated_at": "2026-11-23 12:42",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 32,
+ "total": 34,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -362,6 +362,40 @@
    "score": 0,
    "summary": "按持股市值估算，18只主动ETF合计持股市值不低于1亿元的近90只，估算持股市值最多的是贵州茅台，主动ETF合计持有超7亿元；美的集团估算持股市值超5亿元。",
    "url": "http://finance.eastmoney.com/a/202611233937122466.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "899e7f9110923e8d",
+   "title": "【午报】深成指与创业板指探底回升双双翻红，机器人概念再迎爆发，算力硬件股集体修复",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "在申赎清单所有778只股票中，重仓股方面，按清单持仓估算规模排序，贵州茅台、美的集团、宁德时代位列前三，分别约为7.85亿元、5.80亿元和5.27亿元。从配置ETF家数看，宁德时代获12家ETF配置居首，中国石油、美的集团均获11家ETF配置。",
+   "url": "http://finance.eastmoney.com/a/202611233937147223.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8cc6269692ae88e8",
+   "title": "11:01，A股分界点，拉升",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "今天上午，权重股表现分化，中国石油、中芯国际、中国电信、贵州茅台等个股跌幅明显。农业银行、交通银行、邮储银行、紫金矿业等个股上涨。 　　权重股多具有高股息属性，长江证券表示，红利资产仍处在配置窗口内，支撑来自估值与利差两端。",
+   "url": "http://finance.eastmoney.com/a/202611233937143879.html",
    "has_report": false,
    "report_id": ""
   },
