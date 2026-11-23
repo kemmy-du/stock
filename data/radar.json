@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 21:14",
+ "generated_at": "2026-11-23 21:44",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 60,
+ "total": 61,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -840,6 +840,23 @@
    "score": 0,
    "summary": "首批18只主动ETF上市首日3涨2平13跌，涨跌幅均在2%以内；首日成交80.08亿元，平均换手22.69%，18只全线小幅折价，根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股",
    "url": "http://finance.eastmoney.com/a/202611233937502761.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0e5ed3ac7562d9b5",
+   "title": "市场化改革持续推进，贵州茅台北京控股子公司解散清算",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "永辉超市称，根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611233937546083.html",
    "has_report": false,
    "report_id": ""
   },
