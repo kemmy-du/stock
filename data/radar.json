@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 12:42",
+ "generated_at": "2026-11-23 13:12",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 34,
+ "total": 35,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -396,6 +396,23 @@
    "score": 0,
    "summary": "今天上午，权重股表现分化，中国石油、中芯国际、中国电信、贵州茅台等个股跌幅明显。农业银行、交通银行、邮储银行、紫金矿业等个股上涨。 　　权重股多具有高股息属性，长江证券表示，红利资产仍处在配置窗口内，支撑来自估值与利差两端。",
    "url": "http://finance.eastmoney.com/a/202611233937143879.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d70133c4fca58f6d",
+   "title": "首批18只主动ETF上市 持仓股明细曝光 茅台成第一大重仓股",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "从最新披露的PCF清单来看，778只标的股票中，按估算持仓规模排序，贵州茅台、美的集团、宁德时代位列前三，估算持仓规模分别约为7.85亿元、5.80亿元和5.27亿元；从配置产品数量看，宁德时代获12只主动ETF配置，中国石油、美的集团均获11只产品布局，核心资产仍是主动ETF的重点配置方向",
+   "url": "http://finance.eastmoney.com/a/202611233937154093.html",
    "has_report": false,
    "report_id": ""
   },
