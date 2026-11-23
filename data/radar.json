@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 23:14",
+ "generated_at": "2026-11-23 23:44",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 64,
+ "total": 65,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -349,6 +349,23 @@
    "url": "http://finance.eastmoney.com/a/202611183934326612.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "9092c65eb7fd5ca8",
+   "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "1、嘉实新消费股票A：白酒、家电与纺服食品占比较高 　　序号股票代码股票名称占净值比例1600519贵州茅台9.02%2000333美的集团8.38%3000651格力电器7.66%4600060海信视像6.45%5002003伟星股份6.36%6603345安井食品6.07%7002832",
+   "url": "http://fund.eastmoney.com/a/202611233937692147.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "1864205ee7c7a957",
