@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 18:43",
+ "generated_at": "2026-11-23 19:13",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 52,
+ "total": 56,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -704,6 +704,74 @@
    "score": 0,
    "summary": "该平台显示，易方达品质均衡主动ETF持有35只股票，第一大权重股为贵州茅台，估算权重7.38%；中国石油、宁德时代、招商轮船、中国石化、招商南油、恒瑞医药6只股票的权重，均在3%以上。",
    "url": "http://finance.eastmoney.com/a/202611233937390718.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "70245c03dd873b5e",
+   "title": "首批主动ETF上市首秀 聚焦六大表现",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股。",
+   "url": "http://finance.eastmoney.com/a/202611233937420334.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "77f9981daf595ce6",
+   "title": "首批主动ETF上市 15家券商为何大举建仓",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台以3.36亿元的合计持仓金额，在所有前十大重仓股中排名第一；美的集团以2.48亿元的合计持仓金额排名第二；宁德时代以2.24亿元的合计持仓金额排名第三。 　　银行业配置方面，工商银行、建设银行、农业银行、招商银行等，在前十大重仓股中频频出镜。",
+   "url": "http://finance.eastmoney.com/a/202611233937419472.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "caa707bf69ed9268",
+   "title": "永辉超市：拟解散清算参股茅台酒销售公司北京友谊使者",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611233937415493.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "f5c7370768b62624",
+   "title": "首日交投活跃！18只主动ETF上市，开启主动投资透明化新阶段",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "如果以最小申赎单位组合内的估算市值来衡量个股排名，贵州茅台（600519.SH）以每组合约112.3万元的估算市值稳居第一，凸显了其在主动权益投资中的核心地位；美的集团、药明康（603259.SH）、宁德时代和长江电力（600900.SH）紧随其后，估算市值均在60万元以上。",
+   "url": "http://finance.eastmoney.com/a/202611233937410591.html",
    "has_report": false,
    "report_id": ""
   },
