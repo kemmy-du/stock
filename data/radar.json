@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 09:42",
+ "generated_at": "2026-11-23 10:12",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 24,
+ "total": 28,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -56,6 +56,23 @@
    "score": 85,
    "summary": "以上市公告书披露为口径，该ETF重仓的第一大重仓股贵州茅台上涨2.19%，第二大重仓的工商银行上涨近4%，其后的立讯精密下跌5.68%，中际旭创下跌3.86%。",
    "url": "http://stock.eastmoney.com/a/202611223936868014.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "12dea53c4971280f",
+   "title": "上证180指数下跌0.41%，上证180ETF平安(530280)成分股中国石油领涨4.67%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "数据显示，截至2026年10月30日，上证180指数(000010)前十大权重股分别为贵州茅台、药明康德、紫金矿业、中国平安、长江电力、招商银行、恒瑞医药、寒武纪、京沪高铁、中国船舶，前十大权重股合计占比25.92%。",
+   "url": "http://stock.eastmoney.com/a/202611233937082750.html",
    "has_report": false,
    "report_id": ""
   },
@@ -226,6 +243,57 @@
    "score": 0,
    "summary": "前五大重仓股依次为贵州茅台、宁德时代、北方华创、唐山港、广深铁路。 　　易方达是国内最大的ETF管理人，ETF规模合计超过7000亿元，渠道和客户资源丰富。同时，公司的主动管理能力也很强。易方达品质均衡主动ETF采用双基金经理，分别为倪春尧和杨思亮。",
    "url": "http://stock.eastmoney.com/a/202611233937063330.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "75d6dcf4bf2b722e",
+   "title": "权重股走弱 中国石油领跌",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "权重股早盘走弱，中国石油跌超5%，工商银行、建设银行、中国银行、贵州茅台、中芯国际、中国平安、中国人寿等均跌超2%。",
+   "url": "http://finance.eastmoney.com/a/202611233937082855.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b4539b98e9169706",
+   "title": "沪深300ETF平安(510390)近5个交易日净流入3286.48万元，成分股新易盛领涨5.19%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
+   "url": "http://stock.eastmoney.com/a/202611233937081574.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "32b7f2d94eec6058",
+   "title": "两融余额六连降 累计缩水1230.68亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "中际旭创 148.80 -10.44 603486 科沃斯 5.14 1.16 688008 澜起科技 84.33 -10.35 000530 冰山冷热 3.87 1.08 300857 协创数据 45.14 -10.16 603687 大胜达 3.15 0.84 600519 贵州茅台",
+   "url": "http://finance.eastmoney.com/a/202611233937075781.html",
    "has_report": false,
    "report_id": ""
   },
