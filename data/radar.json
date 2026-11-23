@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 03:15",
+ "generated_at": "2026-11-24 03:45",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 67,
+ "total": 69,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -266,6 +266,23 @@
    "report_id": "CN-603773-2026-11-07"
   },
   {
+   "id": "0443a1ca825cfd19",
+   "title": "A股年内回购金额超1500亿元 电子行业规模居首",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 55,
+   "summary": "美的集团、贵州茅台、宁德时代、京东方A等行业龙头均在名单之中。 　　具体来看，电子行业以256.45亿元居首，占总回购金额的16.48%，147家公司单家平均回购1.74亿元。",
+   "url": "http://finance.eastmoney.com/a/202611243937747055.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "a5de80b70568bcf2",
    "title": "斥资最高20亿元！1100亿锂矿龙头拟回购股份用于注销|盘后公告集锦",
    "stock_code": "600519",
@@ -432,6 +449,23 @@
    "score": 0,
    "summary": "据Wind统计，这批主动ETF的持仓清单共涉及778只股票，以11月20日收盘价估算，按估算持仓规模排序：贵州茅台、美的集团、宁德时代位列前三，估算规模分别约为7.85亿元、5.80亿元和5.27亿元，对应配置的主动ETF数量分别为6只、11只和12只；招商银行、药明康德紧随其后，",
    "url": "http://finance.eastmoney.com/a/202611243937742590.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "64b028906757f27a",
+   "title": "首批主动ETF沪深交易所上市 引入增量资金 市场迈入“主动+被动”协同发展新阶段",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "以鑫汇均衡收益主动ETF国泰为例，该基金持仓呈现出“核心资产+科技成长”的均衡特征——一方面以贵州茅台、工商银行等大盘价值股作为组合“压舱石”，另一方面注重科技成长板块投资机会，重点布局中际旭创、新易盛、寒武纪等AI算力与芯片龙头，同时兼顾药明康德、立讯精密、万华化学等医药、电子及化工领域细分龙头",
+   "url": "http://fund.eastmoney.com/a/202611243937747985.html",
    "has_report": false,
    "report_id": ""
   },
