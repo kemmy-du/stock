@@ -61,14 +61,20 @@
     try {
       const all = await loadJSON("reports/index.json");
       const reports = all.slice(0, 12);
-      $("#report-grid").innerHTML = reports.map(reportCardHTML).join("");
-      $("#stat-reports").textContent = all.length;
+      // 首页与市场页共用 #report-grid，但只有首页有统计数字元素
+      $("#report-grid").innerHTML = reports.length
+        ? reports.map(reportCardHTML).join("")
+        : `<div class="empty-state">暂无已发布报告</div>`;
+      const statReports = $("#stat-reports");
+      if (statReports) statReports.textContent = all.length;
       const stocks = new Set(all.map((r) => r.symbol + r.market));
-      $("#stat-stocks").textContent = stocks.size;
+      const statStocks = $("#stat-stocks");
+      if (statStocks) statStocks.textContent = stocks.size;
       // 雷达监控数（取雷达数据的 monitored 字段）
       try {
         const radar = await loadJSON("data/radar.json");
-        $("#stat-radar").textContent = radar.monitored || "—";
+        const statRadar = $("#stat-radar");
+        if (statRadar) statRadar.textContent = radar.monitored || "—";
       } catch (e) { /* 雷达数据缺失时忽略 */ }
       lazySparks($("#report-grid"), 12);
     } catch (e) {
