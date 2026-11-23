@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 18:13",
+ "generated_at": "2026-11-23 18:43",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 51,
+ "total": 52,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -687,6 +687,23 @@
    "score": 0,
    "summary": "截至目前，融资资金最大重仓股是中国平安，融资余额334.25亿元；中际旭创、中信证券、贵州茅台、寒武纪等融资余额超百亿元。",
    "url": "http://finance.eastmoney.com/a/202611233937373887.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "2a6288eeed000d0f",
+   "title": "成交破80亿！首批主动ETF上市首秀：最高仓位超99%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "该平台显示，易方达品质均衡主动ETF持有35只股票，第一大权重股为贵州茅台，估算权重7.38%；中国石油、宁德时代、招商轮船、中国石化、招商南油、恒瑞医药6只股票的权重，均在3%以上。",
+   "url": "http://finance.eastmoney.com/a/202611233937390718.html",
    "has_report": false,
    "report_id": ""
   },
