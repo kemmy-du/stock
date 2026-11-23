@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 20:14",
+ "generated_at": "2026-11-23 20:44",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 57,
+ "total": 60,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -247,6 +247,23 @@
    "url": "http://finance.eastmoney.com/a/202611203936393996.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "a5de80b70568bcf2",
+   "title": "斥资最高20亿元！1100亿锂矿龙头拟回购股份用于注销|盘后公告集锦",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 55,
+   "summary": "根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611233937508668.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "4d28d92d476511c4",
@@ -789,6 +806,40 @@
    "score": 0,
    "summary": "该公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。公司综合考虑北京友谊使者主营业务发展现状、股东沟通情况及解散清算安排的必要性，作为参股股东，拟同意该公司解散清算安排。",
    "url": "http://finance.eastmoney.com/a/202611233937488173.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8532027afd70fc2c",
+   "title": "“老登”之争一年后，中际旭创终究没跑赢贵州茅台",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台则在横盘之后稳步爬升。 　　买入中际旭创的投资人，途中一度浮盈一两倍甚至两倍以上，但兑现收益高度依赖择时；若一直持有至此刻，其股价收益与一年前买入贵州茅台几乎没有区别。",
+   "url": "http://finance.eastmoney.com/a/202611233937512563.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b6df07af2b9ef916",
+   "title": "11月23日东方财富财经晚报（附新闻联播）",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "首批18只主动ETF上市首日3涨2平13跌，涨跌幅均在2%以内；首日成交80.08亿元，平均换手22.69%，18只全线小幅折价，根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股",
+   "url": "http://finance.eastmoney.com/a/202611233937502761.html",
    "has_report": false,
    "report_id": ""
   },
