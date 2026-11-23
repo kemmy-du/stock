@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 14:12",
+ "generated_at": "2026-11-23 14:42",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 37,
+ "total": 39,
  "items": [
   {
    "id": "47546471ecbcce36",
@@ -447,6 +447,40 @@
    "score": 0,
    "summary": "具体来看，主动ETF持有贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力、伊利股份、北方华创、中国神华的总市值位居前列，估算均在3亿元以上，持有贵州茅台、美的集团的总市值分别超7亿元、5亿元。",
    "url": "http://finance.eastmoney.com/a/202611233937158574.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "62a7084433bbce29",
+   "title": "首批主动ETF今日挂牌、宁德时代获12家ETF配置居首——电池ETF永赢（158019）、创业板电池ETF永赢（158081）盘中涨超2.68%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "申赎清单显示，按清单持仓估算规模，贵州茅台、美的集团、宁德时代位居重仓股前三；从配置ETF家数看，宁德时代获12家ETF配置、居全部个股之首（数据来源：Wind，截至2026/11/20）。 　　与被动产品按指数权重机械买入不同，主动ETF的持仓由基金经理自主选择。",
+   "url": "http://finance.eastmoney.com/a/202611233937209676.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8c73b2a436f0d788",
+   "title": "成交额创近11年新高，上证50ETF华夏（510050）近3日吸金221亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "上证50ETF华夏（510050.SH）：跟踪的上证50指数，精选沪市市值最大的50只龙头股，经过近几年指数调仓，金融、消费等传统行业权重大幅降低，目前高弹性的信息技术板块和防御的金融、消费板块均有布局，截至2026年10月30日，指数前十大权重股分别为贵州茅台、中国平安、招商银行",
+   "url": "http://stock.eastmoney.com/a/202611233937201949.html",
    "has_report": false,
    "report_id": ""
   },
