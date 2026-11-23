@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 21:44",
+ "generated_at": "2026-11-23 22:14",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 61,
+ "total": 63,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -279,6 +279,23 @@
    "score": 30,
    "summary": "在申赎清单所有778只股票中，重仓股方面，按清单持仓估算规模排序，贵州茅台、美的集团、宁德时代位列前三，分别约为7.85亿元、5.80亿元和5.27亿元。从配置ETF家数看，宁德时代获12家ETF配置居首，中国石油、美的集团均获11家ETF配置。",
    "url": "http://finance.eastmoney.com/a/202611233937114029.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "156fcd02de168e6c",
+   "title": "18只主动ETF 核心重仓股曝光",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "不过，18只主动ETF在核心重仓股选择上，出现了一定交集： 　　根据Wind据基金公司发布的PCF清单估算的持仓情况来看，贵州茅台是被主动ETF持有市值最多的股票，共6只产品持有。 　　宁德时代是受到最多主动ETF青睐的股票，被12只产品持有。",
+   "url": "http://finance.eastmoney.com/a/202611233937580085.html",
    "has_report": false,
    "report_id": ""
   },
@@ -857,6 +874,23 @@
    "score": 0,
    "summary": "永辉超市称，根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
    "url": "http://finance.eastmoney.com/a/202611233937546083.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a279302d82b4e55e",
+   "title": "A股利好！360亿元增量资金入场 主动ETF来了",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据Wind数据的估算权重，第一大重仓股权重最高的是品质均衡主动ETF易方达的贵州茅台，占比达8.59%；景气均衡主动ETF永赢持仓的寒武纪，占比也达8.03%；均衡量化主动ETF天弘的第一大重仓股贵州茅台，持仓占比为7.78%；最低的质量主动ETF华夏持仓的迈瑞医疗仅2.98%；",
+   "url": "http://finance.eastmoney.com/a/202611233937574639.html",
    "has_report": false,
    "report_id": ""
   },
