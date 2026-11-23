@@ -130,7 +130,7 @@
     el.innerHTML = `
       <div class="container footer-inner">
         <span>股析 StockInsight · 由 CodeBuddy 生成的静态股票分析报告站</span>
-        <span>数据来源：同花顺 iFinD · 仅供研究参考，不构成投资建议 · © ${year}</span>
+        <span>数据来源：东方财富 · 腾讯行情 · 新浪财经 · 仅供研究参考，不构成投资建议 · © ${year}</span>
       </div>`;
   }
 
