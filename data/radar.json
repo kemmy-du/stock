@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 16:43",
+ "generated_at": "2026-11-23 17:13",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 44,
+ "total": 46,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -568,6 +568,40 @@
    "score": 0,
    "summary": "食品饮料跌幅靠前，承德露露（000848）跌超5%，ST交昂（600530）、*ST尼雅（600084）、*ST春天（600381）、贵州茅台（600519）等跌超2%。",
    "url": "http://finance.eastmoney.com/a/202611233937239930.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "64359fb2fcf42f21",
+   "title": "3.86亿元主力资金今日抢筹食品饮料板块",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "以资金流向数据进行统计，该行业资金净流入的个股有55只，其中，净流入资金超千万元的有7只，净流入资金居首的是贵州茅台，今日净流入资金4.57亿元，紧随其后的是伊利股份、双汇发展，净流入资金分别为6303.59万元、4178.98万元。",
+   "url": "http://finance.eastmoney.com/a/202611233937320057.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e161261c3eb16cf4",
+   "title": "11月23日盘后固定价格交易额7.39亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "云南锗业 65.94 2.23 8.19 540.05 002384 东山精密 71.47 5.72 7.18 513.25 688256 寒武纪 914.80 -0.57 0.53 484.94 002636 金安国纪 52.30 2.79 9.19 480.64 600519 贵州茅台",
+   "url": "http://finance.eastmoney.com/a/202611233937320467.html",
    "has_report": false,
    "report_id": ""
   },
