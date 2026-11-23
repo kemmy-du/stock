@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 17:13",
+ "generated_at": "2026-11-23 17:43",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 46,
+ "total": 48,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -22,6 +22,23 @@
    "url": "http://finance.eastmoney.com/a/202611233937297112.html",
    "has_report": false,
    "report_id": ""
+  },
+  {
+   "id": "9be70a0e0b5850eb",
+   "title": "A股再现百股涨停！涨停家数跻身年内前十，三大行业密集涌现，20cm股成“香饽饽”",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 160,
+   "summary": "注：年内出现百股涨停行情的交易日按月份统计（截至11月23日收盘） 　　具体标的来看，剔除ST股，累计共有44股年内涨停次数在20次及以上，其中，华电辽能、沃格光电、华盛昌涨停次数较高，分别达29次、28次、28次，年内最高连板股各位8次、4次、3次。",
+   "url": "http://finance.eastmoney.com/a/202611233937357945.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
   },
   {
    "id": "47546471ecbcce36",
@@ -602,6 +619,23 @@
    "score": 0,
    "summary": "云南锗业 65.94 2.23 8.19 540.05 002384 东山精密 71.47 5.72 7.18 513.25 688256 寒武纪 914.80 -0.57 0.53 484.94 002636 金安国纪 52.30 2.79 9.19 480.64 600519 贵州茅台",
    "url": "http://finance.eastmoney.com/a/202611233937320467.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "582f8584bb488da5",
+   "title": "38股特大单净流入资金超2亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "电子 688498 源杰科技 611.03 4.63 4.20 电子 300750 宁德时代 227.39 -0.17 3.80 电力设备 603893 瑞芯微 202.88 10.00 3.56 电子 000636 风华高科 28.99 10.02 3.52 电子 600519 贵州茅台",
+   "url": "http://finance.eastmoney.com/a/202611233937344796.html",
    "has_report": false,
    "report_id": ""
   },
