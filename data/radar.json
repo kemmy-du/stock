@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23 17:43",
+ "generated_at": "2026-11-23 18:13",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 48,
+ "total": 51,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -160,6 +160,23 @@
    "score": 60,
    "summary": "从个股来看，贵州茅台收盘价达1439.00元/股，下跌3.15%；五粮液收盘价达72.49元/股，下跌0.08%；山西汾酒收盘价达129.18元/股，上涨0.14%；泸州老窖收盘价达79.51元/股，下跌0.29%；洋河股份收盘价达35.10元/股，上涨0.46%。",
    "url": "http://finance.eastmoney.com/a/202611233937269141.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8b37cdcea9e46313",
+   "title": "百元股数量达132只 ，较上一日增加11只",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "股价超百元个股中，收盘价最高的是贵州茅台，今日报收1439.00元，下跌3.15%，其次是寒武纪、宇树科技等，最新收盘价分别为914.80元、708.00元。 　　市场表现方面，收盘股价超百元股中，今日平均上涨4.55%，跑赢沪指4.40个百分点。",
+   "url": "http://finance.eastmoney.com/a/202611233937377062.html",
    "has_report": false,
    "report_id": ""
   },
@@ -636,6 +653,40 @@
    "score": 0,
    "summary": "电子 688498 源杰科技 611.03 4.63 4.20 电子 300750 宁德时代 227.39 -0.17 3.80 电力设备 603893 瑞芯微 202.88 10.00 3.56 电子 000636 风华高科 28.99 10.02 3.52 电子 600519 贵州茅台",
    "url": "http://finance.eastmoney.com/a/202611233937344796.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "5dcbb44d67cff233",
+   "title": "【数据看盘】科创50ETF上周份额大增超百亿，多路资金联手抢筹九阳股份",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "从沪股通前十大成交个股来看，贵州茅台位居首位；药明康德和寒武纪分居二、三位。 　　从深股通前十大成交个股来看，中际旭创位居首位；宁德时代和新易盛分居二、三位。 　　二、板块个股主力大单资金 　　从板块表现来看，AI漫剧、机器人等板块涨幅居前，保险、银行等板块跌幅居前。",
+   "url": "http://finance.eastmoney.com/a/202611233937380146.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e07e50abc834661f",
+   "title": "这些个股获杠杆资金逆市加仓",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-23",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "截至目前，融资资金最大重仓股是中国平安，融资余额334.25亿元；中际旭创、中信证券、贵州茅台、寒武纪等融资余额超百亿元。",
+   "url": "http://finance.eastmoney.com/a/202611233937373887.html",
    "has_report": false,
    "report_id": ""
   },
