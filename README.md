@@ -34,8 +34,8 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 │   ├── js/financials-core.js  # 财报纯逻辑（排序/搜索/分页/趋势序列，可 Node 测试）
 │   ├── js/financials.js  # 财报列表与个股面板
 │   └── js/render.js      # 各页面渲染逻辑
-├── data/market.json      # 指数快照
-├── data/radar.json       # 雷达快照（新闻条目，由报告流程生成）
+├── data/market.json      # 指数快照（Actions 每日自动更新）
+├── data/radar.json       # 雷达快照（东财公告 + 资讯，免 MCP 额度）
 ├── data/financials.json  # 财报汇总快照（脚本生成）
 ├── scripts/
 │   ├── financials_calc.py       # 单季/同比/年化计算
@@ -79,7 +79,7 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 
 ## 股票雷达
 
-- 数据分两层：`data/radar.json` 是离线快照（报告流程生成）；页面再按当前选中标的调用东方财富新闻搜索接口 `search-api-web.eastmoney.com/search/jsonp` 拉取实时新闻，与快照合并去重后按时间倒序展示。
+- 数据分两层：`data/radar.json` 是离线快照（本机 LaunchAgent 每 30 分钟用东财公告接口 `np-anotice-stock` + 资讯搜索 `search-api-web` 生成，不再依赖 iFinD 额度）；页面再按当前选中标的调用同一资讯搜索接口拉取实时新闻，与快照合并去重后按时间倒序展示。
 - 交互：顶部下拉框选择单一标的（不再整屏罗列全部标的），分类 chips 只统计当前标的；状态条显示快照时间、实时条数、最近同步时刻。
 - 刷新：默认每 60 秒自动同步一次当前标的，"同步"按钮可立即拉取；有新条目时插入顶部并打 `NEW`，失败按指数退避重试。
 
@@ -89,7 +89,7 @@ GitHub Pages（main 分支根目录）→ 网页读取 reports/*.json 渲染
 - 口径：季度视图全部为**单季数据**（不是累计值）：一季报 = Q1 累计，二季报 = 中报 − Q1，三季报 = 三季报累计 − 中报，四季报 = 年报 − 三季报；环比 = 本季单季 ÷ 上一单季 − 1，同比 = 本季单季 ÷ 去年同季单季 − 1；毛利率 = 单季毛利润 ÷ 单季营收；动态 PE = 总市值 ÷ 年化归母净利；「报告期」列标注该行单季所属季度（如 2026二季报，可排序）；「股东总数」为 F10 口径的总股东户数（含 A/B/H 股）、「人均流通股数」为流通股 ÷ 股东总数（股），两者均带较上期变化（环比）列，悬停可看截至日期；连续两个季度无财报的退市整理股不纳入
 - 年度视图：取最新报告期的上一年度，四个单季齐全才汇总，报告期显示为「2025年报」
 - 筛选：报告期（多选，选项随快照动态生成）、盈利状态、单季营收/归母环比下限、动态 PE/PB 区间、总市值区间、毛利率/净利率/扣非占归母下限；与搜索、多列排序、分页叠加，条件以标签展示可单独移除；年度视图下报告期与环比筛选隐藏，其余阈值改用全年口径
-- 更新：GitHub Actions 每天 07:00 与每交易日 18:30（北京时间）各运行一次 `scripts/build_financials.py`，数据有变化才提交；也可在 Actions 页手动触发 `workflow_dispatch`
+- 更新：GitHub Actions 每天 07:00 与每交易日 18:30（北京时间）各运行一次，依次执行 `scripts/build_financials.py` 与 `scripts/build_market.py`（指数快照，腾讯 A 股 + 新浪美股），数据有变化才提交；也可在 Actions 页手动触发 `workflow_dispatch`
 - 本地：`python3 scripts/build_financials.py` 生成 `data/financials.json`，再打开 `financials.html`
 - 测试：`cd scripts && python3 -m unittest test_financials_calc -v`、`node scripts/test_financials_core.js`
 
