@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 01:45",
+ "generated_at": "2026-11-24 02:15",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 66,
+ "total": 67,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -415,6 +415,23 @@
    "score": 25,
    "summary": "此外，贵州茅台、五粮液等头部酒企还出炉了《股东回报规划》，贵州茅台计划每年度分配的现金红利总额不低于当年实现归母净利润的75%，原则上每年度进行两次分红；五粮液计划在2024-2026年公司每年现金分红总额占当年归母净利润比例不低于70%，且不低于200亿元（含税），公司每年的现金分红可分一次或多次",
    "url": "http://finance.eastmoney.com/a/202611213936841872.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "5bbecb52b3f4a72a",
+   "title": "主动ETF首航：“明牌博弈”将如何改变投资范式",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据Wind统计，这批主动ETF的持仓清单共涉及778只股票，以11月20日收盘价估算，按估算持仓规模排序：贵州茅台、美的集团、宁德时代位列前三，估算规模分别约为7.85亿元、5.80亿元和5.27亿元，对应配置的主动ETF数量分别为6只、11只和12只；招商银行、药明康德紧随其后，",
+   "url": "http://finance.eastmoney.com/a/202611243937742590.html",
    "has_report": false,
    "report_id": ""
   },
