@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 13:17",
+ "generated_at": "2026-11-24 13:47",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 83,
+ "total": 85,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -144,6 +144,23 @@
    "score": 60,
    "summary": "18只产品的前十大重仓股来看，贵州茅台依旧是第一大重仓股，但被减持，持有ETF数量减少1只。主要是均衡量化主动ETF天弘呈现从价值切向成长风格的情况，贵州茅台在该ETF中清仓退出，片仔癀、工商银行等个股被减持；中微公司、中际旭创、宁德时代等被增持。",
    "url": "http://finance.eastmoney.com/a/202611243938279275.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a71b9cbabb81434e",
+   "title": "A股午盘全线飘红、科技成长领涨！2888亿资金借道沪深300ETF“托举”市场",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "沪深300指数上涨0.57%，权重股方面涨跌互现，中际旭创上涨4.22%，中国平安上涨1.53%，宁德时代上涨0.58%，贵州茅台上涨0.51%，招商银行上涨0.16%；紫金矿业下跌3.01%，药明康德跌0.25%，美的集团跌0.08%。",
+   "url": "http://stock.eastmoney.com/a/202611243938340691.html",
    "has_report": false,
    "report_id": ""
   },
@@ -365,6 +382,23 @@
    "score": 30,
    "summary": "作为主动ETF第一大重仓股，贵州茅台当前估算持股数量为33.69万股，对应估算规模4.85亿元。财务数据显示，2026年前三季度公司实现营业总收入1332.84亿元，同比增长1.82%；归母净利润644.67亿元，同比下降0.25%。",
    "url": "http://finance.eastmoney.com/a/202611243938265037.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "191d56e29fc78c84",
+   "title": "政策加码服务消费，必选消费韧性凸显，消费板块迎来结构性机遇",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "资金层面，食品饮料行业融资余额环比增长0.48%，贵州茅台单日获融资净买入3.81亿元，在整体两融余额下降的背景下逆势获得杠杆资金关注。",
+   "url": "http://fund.eastmoney.com/a/202611243938340494.html",
    "has_report": false,
    "report_id": ""
   },
