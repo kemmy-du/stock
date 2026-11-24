@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 16:48",
+ "generated_at": "2026-11-24 17:18",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 102,
+ "total": 104,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -642,6 +642,23 @@
    "report_id": ""
   },
   {
+   "id": "10576dee28b2d182",
+   "title": "永辉与茅台合资公司拟解散：茅台销售计划已收回，永辉预计分得约1.16亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "公告披露，根据贵州茅台酒市场化改革安排，为进一步优化国内市场渠道统筹，北京友谊使者原销售的贵州茅台酒计划，已有序回到贵州茅台酒销售有限公司，其经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611243938487618.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "9092c65eb7fd5ca8",
    "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
    "stock_code": "600519",
@@ -1029,6 +1046,23 @@
    "score": 0,
    "summary": "工业富联获得逾21亿元主力资金净流入，贵州茅台获得逾13亿元净流入，华胜天成获得逾12亿元净流入，东山精密、华东重机均获得超10亿元净流入，安培龙、模塑科技、东方海洋、寒武纪等也获得超6亿元净流入。",
    "url": "http://finance.eastmoney.com/a/202611243938427927.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a5175c6991cf49e7",
+   "title": "A股突变！市场全天高开回落 红利股走高 科技股再度走弱",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "午后，工商银行、长江电力、中国银行、中国人寿、中国太保、贵州茅台等红利股走高；科技股再度走弱，双方形成跷跷板效应。 　　为何今天跳水回落？",
+   "url": "http://finance.eastmoney.com/a/202611243938449980.html",
    "has_report": false,
    "report_id": ""
   },
