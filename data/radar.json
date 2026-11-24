@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 10:16",
+ "generated_at": "2026-11-24 10:46",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 76,
+ "total": 79,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -127,6 +127,23 @@
    "score": 85,
    "summary": "以上市公告书披露为口径，该ETF重仓的第一大重仓股贵州茅台上涨2.19%，第二大重仓的工商银行上涨近4%，其后的立讯精密下跌5.68%，中际旭创下跌3.86%。",
    "url": "http://stock.eastmoney.com/a/202611223936868014.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "3fd9507b48b3f76a",
+   "title": "减持茅台、增持科技股 有主动ETF从价值切向成长赛道",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 60,
+   "summary": "18只产品的前十大重仓股来看，贵州茅台依旧是第一大重仓股，但被减持，持有ETF数量减少1只。主要是均衡量化主动ETF天弘呈现从价值切向成长风格的情况，贵州茅台在该ETF中清仓退出，片仔癀、工商银行等个股被减持；中微公司、中际旭创、宁德时代等被增持。",
+   "url": "http://finance.eastmoney.com/a/202611243938279275.html",
    "has_report": false,
    "report_id": ""
   },
@@ -335,6 +352,23 @@
    "report_id": ""
   },
   {
+   "id": "629bae7a84c55df1",
+   "title": "主动ETF调仓：中际旭创升至第7，寒武纪受青睐，茅台仍居首",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "作为主动ETF第一大重仓股，贵州茅台当前估算持股数量为33.69万股，对应估算规模4.85亿元。财务数据显示，2026年前三季度公司实现营业总收入1332.84亿元，同比增长1.82%；归母净利润644.67亿元，同比下降0.25%。",
+   "url": "http://finance.eastmoney.com/a/202611243938265037.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "4d28d92d476511c4",
    "title": "18只主动ETF申赎清单发布 贵州茅台、美的集团、宁德时代位居重仓股前三",
    "stock_code": "600519",
@@ -416,6 +450,23 @@
    "score": 25,
    "summary": "永辉超市公告披露，根据贵州茅台酒市场化改革安排，为进一步优化国内茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司（以下简称“茅台酒销售公司”），北京友谊使者公司的经营发展将面临重大变化。",
    "url": "http://finance.eastmoney.com/a/202611243938255520.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b7284f84f1bfeffc",
+   "title": "“核药第一股”，上市首日大跌超26%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "此外，大钲资本旗下南京钲凯（IPO前持股2.71%）、贵州茅台旗下茅台金石基金（IPO前持股1.21%）、启明系（IPO前持股2.41%）等众多机构也持有一定比例的先通医药股份。 　　招股书显示，IPO前，先通医药自2017年以来至少完成了9轮融资，累计融资额约29亿元。",
+   "url": "http://finance.eastmoney.com/a/202611243938272491.html",
    "has_report": false,
    "report_id": ""
   },
