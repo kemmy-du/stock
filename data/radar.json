@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 12:17",
+ "generated_at": "2026-11-24 12:47",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 81,
+ "total": 83,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -471,6 +471,23 @@
    "report_id": ""
   },
   {
+   "id": "0aca963af3758af5",
+   "title": "剩余财产三七分！永辉与茅台12年合资公司解散清算，永辉或可分得1.16亿",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "对于解散清算的原因，永辉超市在公告中提及，根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611243938321524.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "9092c65eb7fd5ca8",
    "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
    "stock_code": "600519",
@@ -671,6 +688,23 @@
    "score": 0,
    "summary": "【大河财立方消息】11月24日，A股高价股集体飘红，贵州茅台涨0.49%、寒武纪、宇树科技涨超5%，中际旭创盘初涨超10%。 　　成交额方面，光通信、AI算力等概念股占据主力位置，成交额前20大个股股价悉数上扬。",
    "url": "http://finance.eastmoney.com/a/202611243938291943.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "774f5a980e18f0e1",
+   "title": "A股“跷跷板”，这些板块，超预期",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台、长江电力、华能水电等个股低开高走。",
+   "url": "http://finance.eastmoney.com/a/202611243938319675.html",
    "has_report": false,
    "report_id": ""
   },
