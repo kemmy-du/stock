@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 18:48",
+ "generated_at": "2026-11-24 19:18",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 106,
+ "total": 109,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -108,6 +108,24 @@
    "score": 85,
    "summary": "贵州茅台是被主动ETF持有市值最多的股票，共6只产品持有。宁德时代是受到最多主动ETF青睐的股票，被12只产品持有。美的集团、中国石油、江苏银行、中国神华、中远海控、中国太保、潍柴动力等均有不低于10只主动ETF持有。",
    "url": "http://finance.eastmoney.com/a/202611243937781366.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b9ab4b627836de29",
+   "title": "22只业绩超预期股深度回调 AI产业链成集中营",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 85,
+   "summary": "数据显示，石头科技、太阳纸业、万华化学、今世缘等个股均有6份至7份表示业绩超预期的研报，罗莱生活和贵州茅台均有5份。中信建投表示，石头科技全球清洁电器龙头地位稳固，新品周期与全球扩张共振、收入高增，费用管控成效显著、盈利能力逆势增强，第二曲线加速兑现，中长期成长空间广阔。",
+   "url": "http://finance.eastmoney.com/a/202611243938571286.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1097,6 +1115,40 @@
    "score": 0,
    "summary": "午后，工商银行、长江电力、中国银行、中国人寿、中国太保、贵州茅台等红利股走高；科技股再度走弱，双方形成跷跷板效应。 　　为何今天跳水回落？",
    "url": "http://finance.eastmoney.com/a/202611243938449980.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "6115566f9a53fb5a",
+   "title": "原酒流拍、老字号重整 中小区域酒企进入“出清时刻”",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "北京商报记者梳理发现，今年上半年，贵州茅台、五粮液、山西汾酒、洋河股份、泸州老窖五家企业营收在20家上市企业总营收中的占比从79.29%提升至81.46%，净利润占比从87.95%提升至90.5%。 　　反观区域酒市场，总量收缩，头部份额扩大，差额就是区域酒企让出的空间。",
+   "url": "http://finance.eastmoney.com/a/202611243938588618.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0bb20c40f4c963cf",
+   "title": "13位百万粉私募大V图谱：有人百亿，有人注销",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "他早年靠重仓贵州茅台声名大噪，近年来重点布局美股科技龙头，人气进一步升温。 　　11月23日，英伟达恢复黄仁勋的CEO职务，但斌在社交媒体微博发文：如愿！英伟达董事会一致同意，恢复黄仁勋CEO职务。还记得之前读员工的回忆文字时，心里默默期盼这一幕。",
+   "url": "http://finance.eastmoney.com/a/202611243938570528.html",
    "has_report": false,
    "report_id": ""
   },
