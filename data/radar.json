@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 15:48",
+ "generated_at": "2026-11-24 16:18",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 97,
+ "total": 100,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -591,6 +591,23 @@
    "report_id": ""
   },
   {
+   "id": "394ad17bde1ee19b",
+   "title": "贵州茅台涨1.57%力挺指数，HALO再被资金盯上？两只ETF同日被增持，什么信号？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "据了解，红利质量ETF招商（159209）跟踪中证全指红利质量指数，前五大成分为贵州茅台、电投能源、三七互娱、中国铝业、格力电器，合计约三成四；800现金流ETF招商（159119）跟踪中证800自由现金流指数，前五大成分为中国海油、中国电信、贵州茅台、上汽集团、中国铝业，合计约四成二",
+   "url": "http://stock.eastmoney.com/a/202611243938427348.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "9092c65eb7fd5ca8",
    "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
    "stock_code": "600519",
@@ -944,6 +961,40 @@
    "score": 0,
    "summary": "食饮板块盘中走强，食品饮料ETF华夏（515170）权重股逆市走强：贵州茅台、伊利股份上涨约1%，安琪酵母、古井贡酒、青岛啤酒震荡飘红。",
    "url": "http://stock.eastmoney.com/a/202611243938394415.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "c1b7ff857c8d3297",
+   "title": "A股，突变！发生了什么？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "午后，工商银行、长江电力、中国银行、中国人寿、中国太保、贵州茅台等红利股走高；科技股再度走弱，双方形成跷跷板效应。 　　为何今天跳水回落？",
+   "url": "http://finance.eastmoney.com/a/202611243938449980.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "eba40015259c7663",
+   "title": "突然，直线拉升！600180，3分钟“地天板”！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "工业富联获得逾21亿元主力资金净流入，贵州茅台获得逾13亿元净流入，华胜天成获得逾12亿元净流入，东山精密、华东重机均获得超10亿元净流入，安培龙、模塑科技、东方海洋、寒武纪等也获得超6亿元净流入。",
+   "url": "http://finance.eastmoney.com/a/202611243938427927.html",
    "has_report": false,
    "report_id": ""
   },
