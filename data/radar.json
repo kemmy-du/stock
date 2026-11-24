@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 14:17",
+ "generated_at": "2026-11-24 14:47",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 92,
+ "total": 94,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -553,6 +553,40 @@
    "score": 25,
    "summary": "据了解，上述三家关联企业正在注销清算，这是贵州茅台渠道改革的其中一步。据南都湾财社记者此前报道，今年半年业绩说明会上，贵州茅台高管明确表示，进一步优化国内市场渠道统筹，所有茅台集团子公司、本公司子公司、惠群公司原销售的贵州茅台酒，计划将于年内有序回到贵州茅台酒销售公司。",
    "url": "http://finance.eastmoney.com/a/202611243938372620.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "da38d551cc048b45",
+   "title": "第酒局丨与永辉超市合资公司启动解散清算，茅台此举有何考虑？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "茅台多家子公司启动清算程序 　　据永辉超市公告，根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611243938381811.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "29677dfe0fb81c7b",
+   "title": "永辉超市、贵州茅台合资公司，宣告解散",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "永辉超市在公告中称，解散原因为贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611243938382614.html",
    "has_report": false,
    "report_id": ""
   },
