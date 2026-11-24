@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 14:47",
+ "generated_at": "2026-11-24 15:17",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 94,
+ "total": 97,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -893,6 +893,57 @@
    "score": 0,
    "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
    "url": "http://stock.eastmoney.com/a/202611243938365463.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0a1f9cfeadffbac8",
+   "title": "贵州茅台涨1.57%力挺指数，HALO再被资金盯上？159209与159119盘中双双净流入",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "权重股方面，贵州茅台涨1.57%，力挺指数。 　　分析指出，红利类指数跑输大盘、资金却逆势申购，这两件事放在一起才是这条行情的重点。",
+   "url": "http://stock.eastmoney.com/a/202611243938398159.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7687f6f9b4e1d2fb",
+   "title": "大消费再度飘红，贵州茅台涨超1%！消费ETF汇添富(159928)指数微涨！机构：继续提升内需消费仓位",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "热门成分股多数飘红：安井食品涨超2%，贵州茅台涨超1%，伊利股份、牧原股份微涨；五粮液回调超1%，泸州老窖微跌（成分股仅做展示，不作为个股推介）。",
+   "url": "http://stock.eastmoney.com/a/202611243938398229.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "17ef7c4d146e0459",
+   "title": "沪指涨幅收窄，食品饮料ETF华夏（515170）权重股贵州茅台、伊利股份逆市走强",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "食饮板块盘中走强，食品饮料ETF华夏（515170）权重股逆市走强：贵州茅台、伊利股份上涨约1%，安琪酵母、古井贡酒、青岛啤酒震荡飘红。",
+   "url": "http://stock.eastmoney.com/a/202611243938394415.html",
    "has_report": false,
    "report_id": ""
   },
