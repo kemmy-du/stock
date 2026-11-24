@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 10:46",
+ "generated_at": "2026-11-24 11:17",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 79,
+ "total": 81,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -637,6 +637,40 @@
    "score": 0,
    "summary": "贵州茅台融资净买入额居首，当日净买入3.81亿元，其次是中际旭创、宇树科技-W，融资净买入金额分别为2.97亿元、2.09亿元，融资净买入金额居前的还有风华高科、江苏银行、新易盛等。",
    "url": "http://finance.eastmoney.com/a/202611243938236570.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e0306c7371acb0b2",
+   "title": "中证A500增强ETF国泰（159226）标的指数连涨2日，资金持续净流入凸显配置价值",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "该指数前十大成分股为贵州茅台、中际旭创、中国平安、宁德时代、药明康德、招商银行、紫金矿业、寒武纪、新易盛、立讯精密，涵盖消费、金融、科技等核心领域龙头，具备广泛的市场代表性。",
+   "url": "http://stock.eastmoney.com/a/202611243938297274.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "659201bf5ee138e9",
+   "title": "A股高价股，集体大涨",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "【大河财立方消息】11月24日，A股高价股集体飘红，贵州茅台涨0.49%、寒武纪、宇树科技涨超5%，中际旭创盘初涨超10%。 　　成交额方面，光通信、AI算力等概念股占据主力位置，成交额前20大个股股价悉数上扬。",
+   "url": "http://finance.eastmoney.com/a/202611243938291943.html",
    "has_report": false,
    "report_id": ""
   },
