@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 09:16",
+ "generated_at": "2026-11-24 09:46",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 73,
+ "total": 75,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -535,6 +535,40 @@
    "score": 0,
    "summary": "其中，贵州茅台、中际旭创、宇树科技-W融资净买入金额排名前三，分别获净买入3.81亿元、2.97亿元、2.09亿元。",
    "url": "http://finance.eastmoney.com/a/202611243938126674.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7762c798526ab72e",
+   "title": "资金风向标 | 两融余额下降86.62亿元 贵州茅台获融资净买入3.81亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "个股方面，贵州茅台获融资净买入3.81亿元，位列全市场首位；融资净买入额居前的还有中际旭创、宇树科技、风华高科、江苏银行、新易盛、中国平安、华虹宏力、招商银行、北方华创。",
+   "url": "http://finance.eastmoney.com/a/202611243938242075.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "592b76c2e026b5ca",
+   "title": "13股获杠杆资金净买入超亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台融资净买入额居首，当日净买入3.81亿元，其次是中际旭创、宇树科技-W，融资净买入金额分别为2.97亿元、2.09亿元，融资净买入金额居前的还有风华高科、江苏银行、新易盛等。",
+   "url": "http://finance.eastmoney.com/a/202611243938236570.html",
    "has_report": false,
    "report_id": ""
   },
