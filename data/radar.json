@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 21:19",
+ "generated_at": "2026-11-24 21:49",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 113,
+ "total": 115,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -745,6 +745,23 @@
    "report_id": ""
   },
   {
+   "id": "cbc77834de2fe8b5",
+   "title": "茅台收权、永辉退场，12年合资卖酒生意走到尽头：年营收8亿，曾投放15万瓶平价飞天",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "根据股权信息，友谊使者公司由永辉超市公司持股30%、贵州茅台酒股份有限公司持股70%，主营业务为代理和销售白酒类商品。 　　永辉超市在公告中称，因友谊使者原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，因此友谊使者的经营发展将面临重大变化。",
+   "url": "http://finance.eastmoney.com/a/202611243938718729.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "9092c65eb7fd5ca8",
    "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
    "stock_code": "600519",
@@ -1217,6 +1234,23 @@
    "score": 0,
    "summary": "据招商证券基金评价团队测算，目前主动ETF的平均仓位为91%，其平均持仓比例较高的行业包括银行、电子、医药生物、非银金融和交通运输，平均持有市值占比居前的个股包括贵州茅台、美的集团、宁德时代等。风格上，大部分主动ETF偏向价值和均衡风格。",
    "url": "http://finance.eastmoney.com/a/202611243938678241.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a635f57595d0a60f",
+   "title": "发行火热、上市小幅折价，首批主动ETF迎来考验",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "按相关持仓估算，贵州茅台、美的集团、宁德时代、招商银行、药明康德、中信证券、中国石油、中际旭创、中国平安、北方华创等股票位居首批主动ETF合计持仓规模前列。",
+   "url": "http://stock.eastmoney.com/a/202611243938704621.html",
    "has_report": false,
    "report_id": ""
   },
