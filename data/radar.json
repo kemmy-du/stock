@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 08:46",
+ "generated_at": "2026-11-24 09:16",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 72,
+ "total": 73,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -518,6 +518,23 @@
    "score": 0,
    "summary": "首批18只主动ETF上市首日3涨2平13跌，涨跌幅均在2%以内；首日成交80.08亿元，平均换手22.69%，18只全线小幅折价，根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股",
    "url": "http://finance.eastmoney.com/a/202611243937995431.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "2b1f81cb15d61007",
+   "title": "179股获融资买入超亿元，中际旭创获买入23.58亿元居首",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "其中，贵州茅台、中际旭创、宇树科技-W融资净买入金额排名前三，分别获净买入3.81亿元、2.97亿元、2.09亿元。",
+   "url": "http://finance.eastmoney.com/a/202611243938126674.html",
    "has_report": false,
    "report_id": ""
   },
