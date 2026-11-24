@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 20:18",
+ "generated_at": "2026-11-24 20:49",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 109,
+ "total": 111,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -711,6 +711,23 @@
    "report_id": ""
   },
   {
+   "id": "229c6acf94693809",
+   "title": "渠道“做减法” 茅台三家子公司同步推进清算",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "8月21日，贵州茅台召开的2026年上半年业绩说明会上，贵州茅台方面明确，公司进一步优化国内市场渠道统筹，所有茅台集团子公司、公司子公司、贵州惠群商贸有限公司原销售的贵州茅台酒计划将于年内有序回到贵州茅台酒销售公司。",
+   "url": "http://finance.eastmoney.com/a/202611243938666371.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "9092c65eb7fd5ca8",
    "title": "三只“消费”主题基金对比：合同主题、重仓方向与中长期表现有何不同？",
    "stock_code": "600519",
@@ -1149,6 +1166,23 @@
    "score": 0,
    "summary": "他早年靠重仓贵州茅台声名大噪，近年来重点布局美股科技龙头，人气进一步升温。 　　11月23日，英伟达恢复黄仁勋的CEO职务，但斌在社交媒体微博发文：如愿！英伟达董事会一致同意，恢复黄仁勋CEO职务。还记得之前读员工的回忆文字时，心里默默期盼这一幕。",
    "url": "http://finance.eastmoney.com/a/202611243938570528.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e3445db9c4abc535",
+   "title": "【数据看盘】沪深300ETF华夏成交额激增超6倍，多路资金激烈博弈物理AI人气股",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "从沪股通前十大成交个股来看，工业富联位居首位；贵州茅台和寒武纪分居二、三位。 　　从深股通前十大成交个股来看，中际旭创位居首位；新易盛和宁德时代分居二、三位。 　　二、板块个股主力大单资金 　　从板块表现来看，保险、消费电子等板块涨幅居前，贵金属、煤炭等板块跌幅居前。",
+   "url": "http://stock.eastmoney.com/a/202611243938647049.html",
    "has_report": false,
    "report_id": ""
   },
