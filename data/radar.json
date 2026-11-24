@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 13:47",
+ "generated_at": "2026-11-24 14:17",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 85,
+ "total": 92,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -335,6 +335,24 @@
    "report_id": ""
   },
   {
+   "id": "af619283f53b9080",
+   "title": "永辉超市拟解散友谊使者，与贵州茅台12年渠道合作将划上句号",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "此前在半年度业绩说明会上，贵州茅台高管表示，目前公司进一步优化国内市场渠道统筹，所有茅台集团子公司、本公司子公司、惠群公司原销售的贵州茅台酒，计划将于年内有序回到贵州茅台酒销售公司。",
+   "url": "http://finance.eastmoney.com/a/202611243938354031.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "a5de80b70568bcf2",
    "title": "斥资最高20亿元！1100亿锂矿龙头拟回购股份用于注销|盘后公告集锦",
    "stock_code": "600519",
@@ -518,6 +536,23 @@
    "score": 25,
    "summary": "对于解散清算的原因，永辉超市在公告中提及，根据贵州茅台酒市场化改革安排，为进一步优化国内贵州茅台酒市场渠道统筹，北京友谊使者公司原销售的贵州茅台酒计划已有序回到贵州茅台酒销售有限公司，北京友谊使者公司的经营发展将面临重大变化。",
    "url": "http://finance.eastmoney.com/a/202611243938321524.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7a71987705ad75ea",
+   "title": "市场化改革仍在持续，茅台正注销清算三家关联公司",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "据了解，上述三家关联企业正在注销清算，这是贵州茅台渠道改革的其中一步。据南都湾财社记者此前报道，今年半年业绩说明会上，贵州茅台高管明确表示，进一步优化国内市场渠道统筹，所有茅台集团子公司、本公司子公司、惠群公司原销售的贵州茅台酒，计划将于年内有序回到贵州茅台酒销售公司。",
+   "url": "http://finance.eastmoney.com/a/202611243938372620.html",
    "has_report": false,
    "report_id": ""
   },
@@ -739,6 +774,91 @@
    "score": 0,
    "summary": "贵州茅台、长江电力、华能水电等个股低开高走。",
    "url": "http://finance.eastmoney.com/a/202611243938319675.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "9d842a5f23bbf2e5",
+   "title": "2026年四季度以来传统红利资产表现突出，300红利低波ETF嘉实(515300)备受市场资金关注",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "成分股方面涨跌互现，京沪高铁领涨1.32%，贵州茅台上涨1.19%，中国通号上涨1.19%；上海银行领，中国电信、云南白药跟跌。 　　华创证券指出，2026年四季度以来传统红利资产表现突出，其中高速公路板块具备典型的“大集团、小公司”投资逻辑及高股息特征。",
+   "url": "http://stock.eastmoney.com/a/202611243938359189.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e0bc2c305b0d5ef6",
+   "title": "旺仔牛奶更不好卖了丨消费参考",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "2026年11月11日起，将有16款贵州茅台酒产品采用全天动态补货模式，其他贵州茅台酒产品沿用原模式投放。",
+   "url": "http://finance.eastmoney.com/a/202611243938354347.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "9f54f445d360c673",
+   "title": "食品饮料ETF华夏（515170）标的指数估值位于历史低位，板块红利及防御特征受到关注",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "消息面上，贵州茅台全面向C 战略持续优化，i 茅台将16款产品由早九晚八的“定时抢购”转为数据驱动动态补货的“日常售卖”。11 月第一周，原奶价格环比提升至3.11 元/kg，多地散奶价格淡季“不降反升”，反映行业供需格局进一步向好。",
+   "url": "http://stock.eastmoney.com/a/202611243938361832.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "f69c9d05e3476848",
+   "title": "沪深300指数连涨2日，沪深300增强ETF国泰（561300）获资金持续流入",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "指数前十大成分股为中国平安、中际旭创、紫金矿业、药明康德、贵州茅台、招商银行、宁德时代、美的集团、寒武纪、北方华创。综上所述，当前核心资产估值处于正常区间，随着市场情绪回暖，兼具宽基配置属性与量化增强策略的沪深300增强ETF国泰（561300）值得关注。",
+   "url": "http://stock.eastmoney.com/a/202611243938361136.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d48cf38a64312afe",
+   "title": "央行灵活运用各类公开市场操作工具呵护流动性充裕，沪深300ETF嘉实(159919)连续3天净流入",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
+   "url": "http://stock.eastmoney.com/a/202611243938365463.html",
    "has_report": false,
    "report_id": ""
   },
