@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 20:49",
+ "generated_at": "2026-11-24 21:19",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 111,
+ "total": 113,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -486,6 +486,23 @@
    "score": 30,
    "summary": "资金层面，食品饮料行业融资余额环比增长0.48%，贵州茅台单日获融资净买入3.81亿元，在整体两融余额下降的背景下逆势获得杠杆资金关注。",
    "url": "http://fund.eastmoney.com/a/202611243938340494.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "c7fac7155cd4d7af",
+   "title": "每人最多还能抢7瓶！马茅珍享版年内最后一轮抢购规则发布",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "11月24日，《每日经济新闻·将进酒》记者在i茅台APP注意到，即将于12月22日-28日开启新一轮投放的53%vol 500ml贵州茅台酒（丙午马年）珍享版购买规则已经发布。按照规则，每人每日可下单一次，每单可购1瓶。也就是说，抢购期内每人最多只能购买7瓶。",
+   "url": "http://finance.eastmoney.com/a/202611243938685222.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1183,6 +1200,23 @@
    "score": 0,
    "summary": "从沪股通前十大成交个股来看，工业富联位居首位；贵州茅台和寒武纪分居二、三位。 　　从深股通前十大成交个股来看，中际旭创位居首位；新易盛和宁德时代分居二、三位。 　　二、板块个股主力大单资金 　　从板块表现来看，保险、消费电子等板块涨幅居前，贵金属、煤炭等板块跌幅居前。",
    "url": "http://stock.eastmoney.com/a/202611243938647049.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b1e83bf917f3bebb",
+   "title": "平均仓位91%！主动ETF亮底牌，投资者能“抄作业”吗？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据招商证券基金评价团队测算，目前主动ETF的平均仓位为91%，其平均持仓比例较高的行业包括银行、电子、医药生物、非银金融和交通运输，平均持有市值占比居前的个股包括贵州茅台、美的集团、宁德时代等。风格上，大部分主动ETF偏向价值和均衡风格。",
+   "url": "http://finance.eastmoney.com/a/202611243938678241.html",
    "has_report": false,
    "report_id": ""
   },
