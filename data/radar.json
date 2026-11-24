@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24 17:48",
+ "generated_at": "2026-11-24 18:18",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 104,
+ "total": 106,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -195,6 +195,23 @@
    "score": 60,
    "summary": "沪深300指数成分股方面，工业富联上涨6.97%，胜宏科技上涨6.27%，中国平安上涨2.20%，贵州茅台上涨1.46%，招商银行上涨0.60%；紫金矿业下跌4.33%，中际旭创下跌0.05%，宁德时代下跌0.01%。",
    "url": "http://stock.eastmoney.com/a/202611243938469417.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "73bf95e02fe468a3",
+   "title": "上市首日破发！“核药第一股”先通医药跌23%，公司上半年亏5.3亿",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "其外部股东名单中，汇集了中国人寿、中信证券、中金公司、贵州茅台、启明创投等知名机构。 　　▲24日，先通医药正式在港交所挂牌 上半年亏损5.3亿 核心产品贡献近六成收入 　　核药近年来备受市场关注。",
+   "url": "http://finance.eastmoney.com/a/202611243938544216.html",
    "has_report": false,
    "report_id": ""
   },
@@ -655,6 +672,23 @@
    "score": 25,
    "summary": "公告披露，根据贵州茅台酒市场化改革安排，为进一步优化国内市场渠道统筹，北京友谊使者原销售的贵州茅台酒计划，已有序回到贵州茅台酒销售有限公司，其经营发展将面临重大变化。",
    "url": "http://finance.eastmoney.com/a/202611243938487618.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "271caa27f79191cd",
+   "title": "茅台与永辉12年合资公司解散清算，茅台收回配额，永辉回应：不影响门店售卖",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-24",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "今年8月举行的半年度业绩说明会上，贵州茅台管理层进一步明确了渠道统筹方向，公司将继续优化国内市场渠道统筹，所有茅台集团子公司、上市公司子公司、惠群公司原销售的贵州茅台酒，计划于年内有序回到贵州茅台酒销售有限公司。",
+   "url": "http://finance.eastmoney.com/a/202611243938538159.html",
    "has_report": false,
    "report_id": ""
   },
