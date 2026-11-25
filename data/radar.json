@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 15:53",
+ "generated_at": "2026-11-25 16:23",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 131,
+ "total": 133,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -107,6 +107,40 @@
    "score": 100,
    "summary": "多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。 　　多只宽基ETF尾盘集中放量，沪深300ETF华夏20分钟成交超90亿元，沪深300ETF易方达20分钟成交超80亿元。",
    "url": "http://finance.eastmoney.com/a/202611253939500022.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d549c84cbe60e1b6",
+   "title": "最后15分钟，突然放量",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。 　　多只ETF尾盘放量 　　多只宽基ETF尾盘快速放量拉升。沪深300ETF华夏最后15分钟成交91.98亿元，全天成交126亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939536779.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "bd51f057eac72224",
+   "title": "多只宽基ETF尾盘放量！近两个月股票型ETF净流入超7600亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。 　　多只ETF尾盘放量 　　多只宽基ETF尾盘快速放量拉升。沪深300ETF华夏最后15分钟成交91.98亿元，全天成交126亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939482131.html",
    "has_report": false,
    "report_id": ""
   },
