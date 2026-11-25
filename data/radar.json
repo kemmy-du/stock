@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 18:23",
+ "generated_at": "2026-11-25 18:53",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 136,
+ "total": 137,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1167,6 +1167,23 @@
    "score": 0,
    "summary": "天孚通信获得逾13亿元主力资金净流入，青山纸业获得逾9亿元净流入，贵州茅台获得近7亿元净流入，荣联科技、胜宏科技、长江电力、九阳股份等均获得超5亿元净流入。 　　医药股整体走强，医药商业、中药、仿制药、化学制药等细分板块指数均逆市上涨。",
    "url": "http://finance.eastmoney.com/a/202611253939544998.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "49dec9532868862b",
+   "title": "主力资金 | 家电大白马尾盘获资金加仓超1亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "贵州茅台尾盘主力资金净流出2.63亿元，居首；招商银行、中国平安、兴业银行和东山精密等尾盘主力资金净流出均超1.5亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939652065.html",
    "has_report": false,
    "report_id": ""
   },
