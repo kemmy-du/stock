@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 11:22",
+ "generated_at": "2026-11-25 11:52",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 121,
+ "total": 122,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -487,6 +487,23 @@
    "score": 55,
    "summary": "值得一提的是，联讯仪器4月24日以81.88元发行价登陆科创板，首日涨875.82%，中一签浮盈35.86万元；上市第5个交易日破千元，6月25日盘中市值逼近2900亿元，一度取代贵州茅台成为A股“第一高价股”。",
    "url": "http://finance.eastmoney.com/a/202611233937657550.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7258453ce194c26f",
+   "title": "电解质水分化加剧：外星人奔跑，补水啦们冷淡丨消费参考",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "《北京日报》报道称，此次解散意味着永辉超市与贵州茅台12年的渠道合作落幕。",
+   "url": "http://finance.eastmoney.com/a/202611253939394991.html",
    "has_report": false,
    "report_id": ""
   },
