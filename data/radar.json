@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 16:23",
+ "generated_at": "2026-11-25 16:53",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 133,
+ "total": 136,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -20,6 +20,23 @@
    "score": 190,
    "summary": "龙头股宇树科技午后涨停，股价突破700元，市值超2800亿元，成为A股目前第三高价股，股价仅次于贵州茅台和寒武纪。 　　消息面上，特斯拉CEO埃隆·马斯克近日在采访中表示，Optimus人形机器人有望在12个月至18个月内完成多步骤复杂操作，先用于重工业，再进入家庭。",
    "url": "http://finance.eastmoney.com/a/202611233937297112.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "741fa3e345ea3219",
+   "title": "600829，尾盘封板！一则消息引爆，相关概念股大面积涨停",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 160,
+   "summary": "天孚通信获得逾13亿元主力资金净流入，青山纸业获得逾9亿元净流入，贵州茅台获得近7亿元净流入，荣联科技、胜宏科技、长江电力、九阳股份等均获得超5亿元净流入。 　　流感概念全天强势，个股掀涨停潮。",
+   "url": "http://finance.eastmoney.com/a/202611253939555733.html",
    "has_report": false,
    "report_id": ""
   },
@@ -141,6 +158,23 @@
    "score": 100,
    "summary": "多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。 　　多只ETF尾盘放量 　　多只宽基ETF尾盘快速放量拉升。沪深300ETF华夏最后15分钟成交91.98亿元，全天成交126亿元。",
    "url": "http://finance.eastmoney.com/a/202611253939482131.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "468069fc0b6d545d",
+   "title": "四点半观市 | 多只红利股尾盘异动",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "尾盘，巨头重演脉冲式拉升 　　多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。多只宽基ETF尾盘集中放量，沪深300ETF华夏20分钟成交超90亿元，沪深300ETF易方达20分钟成交超80亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939552870.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1116,6 +1150,23 @@
    "score": 0,
    "summary": "个股方面，天孚通信资金净买入10.54亿元位居首位，青山纸业、京东方A、贵州茅台主力资金净流入居前；长鑫科技遭净卖出12.25亿元位居首位，东山精密、兆易创新、工业富联主力资金净流出额居前。",
    "url": "http://finance.eastmoney.com/a/202611253939463311.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "01315c0ff6a20ea6",
+   "title": "多股尾盘封板！逆市大涨，资金流入这一板块",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "天孚通信获得逾13亿元主力资金净流入，青山纸业获得逾9亿元净流入，贵州茅台获得近7亿元净流入，荣联科技、胜宏科技、长江电力、九阳股份等均获得超5亿元净流入。 　　医药股整体走强，医药商业、中药、仿制药、化学制药等细分板块指数均逆市上涨。",
+   "url": "http://finance.eastmoney.com/a/202611253939544998.html",
    "has_report": false,
    "report_id": ""
   },
