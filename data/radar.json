@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 22:24",
+ "generated_at": "2026-11-25 22:54",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 138,
+ "total": 140,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -303,6 +303,23 @@
    "report_id": ""
   },
   {
+   "id": "85fd858eaf6da9d0",
+   "title": "A股昔日股王总市值缩水近80%，A股千元股仅剩贵州茅台",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "据21财经雷达，截至11月25日收盘，A股千元股仅剩贵州茅台一只。寒武纪、宇树科技、联讯仪器、源杰科技，股价均跌破千元。 　　（声明：文章内容仅供参考，不构成投资建议。投资者据此操作，风险自担。）",
+   "url": "http://finance.eastmoney.com/a/202611253939881041.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "3fd9507b48b3f76a",
    "title": "减持茅台、增持科技股 有主动ETF从价值切向成长赛道",
    "stock_code": "600519",
@@ -537,6 +554,23 @@
    "score": 55,
    "summary": "联讯仪器、贵州茅台、中际旭创、新易盛、拓荆科技、江波龙等高价股纷纷参与回购，这些公司年内成交均价都超过350元/股。",
    "url": "http://finance.eastmoney.com/a/202611253938861747.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "c8a1ce42073a8117",
+   "title": "利好来了！A股市场 回购潮持续加码！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 55,
+   "summary": "数据显示，石头科技、太阳纸业、万华化学、今世缘等个股均有6份至7份表示业绩超预期的研报，罗莱生活和贵州茅台均有5份。",
+   "url": "http://finance.eastmoney.com/a/202611253939869747.html",
    "has_report": false,
    "report_id": ""
   },
