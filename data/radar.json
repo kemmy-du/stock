@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 22:54",
+ "generated_at": "2026-11-25 23:24",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 140,
+ "total": 142,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -175,6 +175,23 @@
    "score": 100,
    "summary": "尾盘，巨头重演脉冲式拉升 　　多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。多只宽基ETF尾盘集中放量，沪深300ETF华夏20分钟成交超90亿元，沪深300ETF易方达20分钟成交超80亿元。",
    "url": "http://finance.eastmoney.com/a/202611253939552870.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e757a23e5acab1ae",
+   "title": "【中证快报】11月25日中证投资资讯",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "主力资金净流入前三的个股是天孚通信、青山纸业和贵州茅台，净流入额分别为10.86亿元、5.98亿元和3.55亿元。 　　○九阳股份（002242）11月25日涨停，成交额41.097亿元。盘后龙虎榜数据显示，深股通专用买入3.14亿元，卖出2.17亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939888329.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1235,6 +1252,23 @@
    "score": 0,
    "summary": "贵州茅台尾盘主力资金净流出2.63亿元，居首；招商银行、中国平安、兴业银行和东山精密等尾盘主力资金净流出均超1.5亿元。",
    "url": "http://finance.eastmoney.com/a/202611253939652065.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "c6c1799f54482b48",
+   "title": "今日主力复盘，10.96亿元流入天孚通信",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "全市场主力资金净流入超1亿元的个股共计28只，天孚通信资金单日净流入10.96亿元位居首位，青山纸业、贵州茅台主力资金净流入居前。净流出超1亿元的个股共计151只，长鑫科技单日净流出17.91亿元位居首位，兆易创新、东山精密主力资金净流出居前。",
+   "url": "http://finance.eastmoney.com/a/202611253939881947.html",
    "has_report": false,
    "report_id": ""
   },
