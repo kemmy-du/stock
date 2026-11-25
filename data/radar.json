@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 23:24",
+ "generated_at": "2026-11-26 00:25",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 142,
+ "total": 140,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -778,23 +778,6 @@
    "url": "http://finance.eastmoney.com/a/202611213936781073.html",
    "has_report": false,
    "report_id": ""
-  },
-  {
-   "id": "2812fd0e7f0ce7a7",
-   "title": "器官芯片企业耀速科技获数千万元战略融资 年内累计三轮融资近4亿元",
-   "stock_code": "603773",
-   "stock_name": "沃格光电",
-   "market": "CN",
-   "date": "2026-11-18",
-   "sentiment": "positive",
-   "tags": [
-    "利好"
-   ],
-   "score": 30,
-   "summary": "竞争格局方面，艾玮得生物参与制定首批器官芯片国家标准，市场监管总局发布《血管芯片通用技术要求》，2027年5月实施；与沃格光电达成战略合作，共同推动玻璃基器官芯片产业化，全球首发玻璃基器官芯片系统AWA-HT系列产品亮相。",
-   "url": "http://finance.eastmoney.com/a/202611183934326612.html",
-   "has_report": true,
-   "report_id": "CN-603773-2026-11-07"
   },
   {
    "id": "d867b807af127f45",
@@ -2410,23 +2393,6 @@
    "url": "http://stock.eastmoney.com/a/202611203936530946.html",
    "has_report": false,
    "report_id": ""
-  },
-  {
-   "id": "85a44ad8a4759c64",
-   "title": "74.53亿主力资金净流入，共封装光学(CPO)概念涨1.25%",
-   "stock_code": "603773",
-   "stock_name": "沃格光电",
-   "market": "CN",
-   "date": "2026-11-18",
-   "sentiment": "neutral",
-   "tags": [
-    "动态"
-   ],
-   "score": 0,
-   "summary": "688048 长光华芯 0.78 4.87 2186.00 2.10 002384 东山精密 0.06 9.20 2043.07 0.22 301183 东田微 2.18 6.98 2012.03 3.96 688655 迅捷兴 3.86 8.87 1931.37 4.75 603773 沃格光电",
-   "url": "http://finance.eastmoney.com/a/202611183934161078.html",
-   "has_report": true,
-   "report_id": "CN-603773-2026-11-07"
   }
  ]
 }
