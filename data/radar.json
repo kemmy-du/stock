@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 19:23",
+ "generated_at": "2026-11-25 19:53",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 137,
+ "total": 138,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -759,6 +759,23 @@
    "score": 25,
    "summary": "食品饮料ETF天弘（159736）紧密跟踪CS食品饮指数，其行业配置主要包括白酒Ⅱ（42.92%）、饮料乳品（20.03%）、调味发酵品Ⅱ（11.72%）等，前五大成分股为伊利股份、贵州茅台、五粮液、山西汾酒、海天味业。",
    "url": "http://stock.eastmoney.com/a/202611253939460294.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ba8b82251ede9bc9",
+   "title": "主动ETF，加仓中际旭创等",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "其中，中国石化获得3只主动ETF增持，海康威视、中际旭创、华能国际、华夏银行、华鲁恒升、贵州茅台、国电电力、紫金矿业、方正证券、格力电器、京东方A等个股获得2只主动ETF增持。",
+   "url": "http://finance.eastmoney.com/a/202611253939696147.html",
    "has_report": false,
    "report_id": ""
   },
