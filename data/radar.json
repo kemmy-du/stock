@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 14:22",
+ "generated_at": "2026-11-25 14:52",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 127,
+ "total": 129,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -180,6 +180,23 @@
    "score": 85,
    "summary": "以上市公告书披露为口径，该ETF重仓的第一大重仓股贵州茅台上涨2.19%，第二大重仓的工商银行上涨近4%，其后的立讯精密下跌5.68%，中际旭创下跌3.86%。",
    "url": "http://stock.eastmoney.com/a/202611223936868014.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "9335f71f301fb239",
+   "title": "沪指再度探底，低费率沪深300ETF华夏（510330）连续7日获资金买入",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "A股核心标杆指数——沪深300成分股方面涨跌互现，天孚通信上涨7.04%，百利天恒上涨4.68%，复星医药上涨3.64%，青岛啤酒上涨3.38%，贵州茅台上涨0.28%；宁德时代下跌7.42%，中际旭创下跌2.02%，紫金矿业下跌0.86%，招商银行下跌0.85%，中国平安下跌0.31%",
+   "url": "http://stock.eastmoney.com/a/202611253939472987.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1014,6 +1031,23 @@
    "score": 0,
    "summary": "在11月23日上市首日披露的清单中（反映上市前建仓状态），该基金为贵州茅台、片仔癀各分配了100股的实物额度（允许现金替代）；而中际旭创、中微公司等科技股则显示为0股。",
    "url": "http://stock.eastmoney.com/a/202611253939448295.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "aff9826bd426c298",
+   "title": "主力资金监控：电子板块净流出超144亿",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "个股方面，天孚通信资金净买入10.54亿元位居首位，青山纸业、京东方A、贵州茅台主力资金净流入居前；长鑫科技遭净卖出12.25亿元位居首位，东山精密、兆易创新、工业富联主力资金净流出额居前。",
+   "url": "http://finance.eastmoney.com/a/202611253939463311.html",
    "has_report": false,
    "report_id": ""
   },
