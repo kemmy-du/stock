@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 09:21",
+ "generated_at": "2026-11-25 09:51",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 118,
+ "total": 119,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -861,6 +861,23 @@
    "score": 0,
    "summary": "数据显示，截至2026年10月30日，上证180指数(000010)前十大权重股分别为贵州茅台、药明康德、紫金矿业、中国平安、长江电力、招商银行、恒瑞医药、寒武纪、京沪高铁、中国船舶，前十大权重股合计占比25.92%。",
    "url": "http://stock.eastmoney.com/a/202611253939301496.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ed2f9295b1b015de",
+   "title": "隔夜美股消费板块大涨，A股科技与消费同样呈现跷跷板效应",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "关注海外映射和资金再平衡视角下，A股科技和消费的跷跷板效应： 　　食品饮料ETF华夏（515170.SH）及其联接基金：华夏中证细分食品饮料ETF联接C（013126.OF），被动跟踪中证细分食品饮料产业主题指数，指数特征在于，51%仓位聚焦一线白酒龙头（剔除尾部风险的三四线白酒企业），如贵州茅台",
+   "url": "http://stock.eastmoney.com/a/202611253939332781.html",
    "has_report": false,
    "report_id": ""
   },
