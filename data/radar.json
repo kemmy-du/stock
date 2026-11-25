@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 15:22",
+ "generated_at": "2026-11-25 15:53",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 129,
+ "total": 131,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -90,6 +90,23 @@
    "score": 160,
    "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
    "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "4afae4c05276a22d",
+   "title": "巨头尾盘重演脉冲式拉升 多只红利股异动",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "多只红利股尾盘异动，交通银行、中国神华、贵州茅台、长江电力等冲高。 　　多只宽基ETF尾盘集中放量，沪深300ETF华夏20分钟成交超90亿元，沪深300ETF易方达20分钟成交超80亿元。",
+   "url": "http://finance.eastmoney.com/a/202611253939500022.html",
    "has_report": false,
    "report_id": ""
   },
@@ -197,6 +214,23 @@
    "score": 60,
    "summary": "A股核心标杆指数——沪深300成分股方面涨跌互现，天孚通信上涨7.04%，百利天恒上涨4.68%，复星医药上涨3.64%，青岛啤酒上涨3.38%，贵州茅台上涨0.28%；宁德时代下跌7.42%，中际旭创下跌2.02%，紫金矿业下跌0.86%，招商银行下跌0.85%，中国平安下跌0.31%",
    "url": "http://stock.eastmoney.com/a/202611253939472987.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "0ff99d8a48b8ca5b",
+   "title": "沪指争夺3500点，低费率沪深300ETF华夏（513330）最后半小时成交激增",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "沪深300成分股方面涨跌互现，天孚通信上涨7.65%，百利天恒上涨5.00%，山西汾酒上涨3.74%，复星医药上涨3.64%，贵州茅台上涨1.02%；拓荆科技下跌9.80%，宁德时代下跌8.33%，中际旭创下跌1.92%，紫金矿业下跌1.03%，招商银行下跌0.74%。",
+   "url": "http://stock.eastmoney.com/a/202611253939498343.html",
    "has_report": false,
    "report_id": ""
   },
