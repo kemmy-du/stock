@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 13:52",
+ "generated_at": "2026-11-25 14:22",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 123,
+ "total": 127,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -627,6 +627,23 @@
    "report_id": "CN-603773-2026-11-07"
   },
   {
+   "id": "d867b807af127f45",
+   "title": "泸州老窖控股股东拟增持5000万至1亿元，食品饮料ETF天弘（159736）标的指数盘中逆市涨0.61%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "食品饮料ETF天弘（159736）紧密跟踪CS食品饮指数，其行业配置主要包括白酒Ⅱ（42.92%）、饮料乳品（20.03%）、调味发酵品Ⅱ（11.72%）等，前五大成分股为伊利股份、贵州茅台、五粮液、山西汾酒、海天味业。",
+   "url": "http://stock.eastmoney.com/a/202611253939460294.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "0d4d66f2ee97e98d",
    "title": "永辉与茅台合资公司，宣布解散清算！年营收曾超8亿元",
    "stock_code": "600519",
@@ -946,6 +963,57 @@
    "score": 0,
    "summary": "热门成分股多数飘红：青岛啤酒涨超3%，山西汾酒涨超2%，贵州茅台、伊利股份、五粮液、温氏股份、泸州老窖微涨（成分股仅做展示，不作为个股推介）。 　　消息面上，11月奶价同比继续上行，蒙牛乳业明年经营利润率有望恢复扩张。",
    "url": "http://stock.eastmoney.com/a/202611253939439551.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "4024bb0728b8b475",
+   "title": "现金流ETF800鹏华(516460)交投活跃，消费、医药等防御品种获资金偏好",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，中证800自由现金流指数(932368)前十大权重股分别为中国电信、中国海油、贵州茅台、上汽集团、格力电器、中国铝业、中国联通、长城汽车、正泰电器、陕西煤业，前十大权重股合计占比65.32%。",
+   "url": "http://stock.eastmoney.com/a/202611253939443762.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ffc8de83e072213e",
+   "title": "食品饮料板块当前估值具备较强安全边际，消费ETF嘉实(512600)布局消费复苏行情",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，中证主要消费指数(000932)前十大权重股分别为伊利股份、贵州茅台、牧原股份、五粮液、温氏股份、山西汾酒、海天味业、泸州老窖、海大集团、东鹏饮料，前十大权重股合计占比70.1%。",
+   "url": "http://stock.eastmoney.com/a/202611253939446852.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d982a25cb2fd3f09",
+   "title": "主动ETF披露申购赎回清单：谁在悄悄换仓科技股？三组结构性数据值得细看",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "在11月23日上市首日披露的清单中（反映上市前建仓状态），该基金为贵州茅台、片仔癀各分配了100股的实物额度（允许现金替代）；而中际旭创、中微公司等科技股则显示为0股。",
+   "url": "http://stock.eastmoney.com/a/202611253939448295.html",
    "has_report": false,
    "report_id": ""
   },
