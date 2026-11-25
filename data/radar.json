@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 06:56",
+ "generated_at": "2026-11-26 07:26",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 140,
+ "total": 143,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -780,6 +780,23 @@
    "report_id": ""
   },
   {
+   "id": "dc5a50fcb822e419",
+   "title": "主动ETF调仓动向曝光 宽基产品持续吸金",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "其中，中国石化获得3只主动ETF增持，海康威视、中际旭创、华能国际、华夏银行、华鲁恒升、贵州茅台、国电电力、紫金矿业、方正证券、格力电器、京东方A等个股均获得2只主动ETF增持。",
+   "url": "http://finance.eastmoney.com/a/202611263939970927.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "d867b807af127f45",
    "title": "泸州老窖控股股东拟增持5000万至1亿元，食品饮料ETF天弘（159736）标的指数盘中逆市涨0.61%",
    "stock_code": "600519",
@@ -1048,6 +1065,40 @@
    "score": 25,
    "summary": "此外，贵州茅台、五粮液等头部酒企还出炉了《股东回报规划》，贵州茅台计划每年度分配的现金红利总额不低于当年实现归母净利润的75%，原则上每年度进行两次分红；五粮液计划在2024-2026年公司每年现金分红总额占当年归母净利润比例不低于70%，且不低于200亿元（含税），公司每年的现金分红可分一次或多次",
    "url": "http://finance.eastmoney.com/a/202611213936841872.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "32dcbefb810ad1d7",
+   "title": "主动ETF亮底牌",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据招商证券基金评价团队测算，目前主动ETF的平均仓位为91%，其平均持仓比例较高的行业包括银行、电子、医药生物、非银金融和交通运输，平均持有市值占比居前的个股包括贵州茅台、美的集团、宁德时代等。风格上，大部分主动ETF偏向价值和均衡风格。",
+   "url": "http://finance.eastmoney.com/a/202611263939974581.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "acbf3ca7e287f97f",
+   "title": "11月26日国内四大证券报纸、重要财经媒体头版头条内容精华摘要",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据招商证券基金评价团队测算，目前主动ETF的平均仓位为91%，其平均持仓比例较高的行业包括银行、电子、医药生物、非银金融和交通运输，平均持有市值占比居前的个股包括贵州茅台、美的集团、宁德时代等。风格上，大部分主动ETF偏向价值和均衡风格。",
+   "url": "http://finance.eastmoney.com/a/202611263939925986.html",
    "has_report": false,
    "report_id": ""
   },
