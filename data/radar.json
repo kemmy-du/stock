@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25 09:51",
+ "generated_at": "2026-11-25 10:21",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 119,
+ "total": 121,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -878,6 +878,40 @@
    "score": 0,
    "summary": "关注海外映射和资金再平衡视角下，A股科技和消费的跷跷板效应： 　　食品饮料ETF华夏（515170.SH）及其联接基金：华夏中证细分食品饮料ETF联接C（013126.OF），被动跟踪中证细分食品饮料产业主题指数，指数特征在于，51%仓位聚焦一线白酒龙头（剔除尾部风险的三四线白酒企业），如贵州茅台",
    "url": "http://stock.eastmoney.com/a/202611253939332781.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "5ecbcbbef324c663",
+   "title": "多家外资机构看好A股长期配置价值，沪深300ETF嘉实(159919)备受市场资金关注",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "数据显示，截至2026年10月30日，沪深300指数(000300)前十大权重股分别为贵州茅台、中际旭创、宁德时代、中国平安、招商银行、紫金矿业、美的集团、长江电力、药明康德、兴业银行，前十大权重股合计占比22.66%。",
+   "url": "http://stock.eastmoney.com/a/202611253939368063.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "530bcd2efbc5ff9b",
+   "title": "主动ETF最新持仓：中际旭创升至第四，加仓贵阳银行、亿纬锂能",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-25",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据21财经雷达统计，主动ETF十大重仓股依次为贵州茅台、美的集团、宁德时代、中际旭创、招商银行、药明康德、中信证券、中国平安、长江电力、中国石油。较上期，重仓股名单未变。",
+   "url": "http://finance.eastmoney.com/a/202611253939350438.html",
    "has_report": false,
    "report_id": ""
   },
