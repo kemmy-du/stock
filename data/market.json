@@ -1,47 +1,47 @@
 {
-  "as_of": "2026-11-24",
+  "as_of": "2026-11-25",
   "indices": [
     {
       "name": "上证指数",
       "code": "000001.SH",
       "market": "CN",
-      "close": 3548.37,
-      "change_pct": 0.27
+      "close": 3506.56,
+      "change_pct": -1.18
     },
     {
       "name": "深证成指",
       "code": "399001.SZ",
       "market": "CN",
-      "close": 10423.6,
-      "change_pct": -0.29
+      "close": 10241.44,
+      "change_pct": -1.75
     },
     {
       "name": "沪深300",
       "code": "000300.SH",
       "market": "CN",
-      "close": 3963.82,
-      "change_pct": 0.14
+      "close": 3916.85,
+      "change_pct": -1.18
     },
     {
       "name": "纳斯达克综指",
       "code": "IXIC.GI",
       "market": "US",
-      "close": 23723.23,
-      "change_pct": -1.52
+      "close": 23733.54,
+      "change_pct": -1.48
     },
     {
       "name": "标普500",
       "code": "SPX.GI",
       "market": "US",
-      "close": 7193.96,
-      "change_pct": -0.6
+      "close": 7201.09,
+      "change_pct": -0.5
     },
     {
       "name": "道琼斯工业",
       "code": "DJI.GI",
       "market": "US",
-      "close": 49980.19,
-      "change_pct": 0.78
+      "close": 50018.7,
+      "change_pct": 0.85
     }
   ]
 }
