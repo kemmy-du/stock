@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 18:58",
+ "generated_at": "2026-11-26 19:29",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 153,
+ "total": 154,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1288,6 +1288,23 @@
    "url": "http://finance.eastmoney.com/a/202611263940727388.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "1c96a255bbe1c4e0",
+   "title": "当茅台“看上”小红书",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "其中，16款贵州茅台酒产品采用全天动态补货模式，其他贵州茅台酒产品沿用原模式投放。 　　用户规模的爆发与渠道结构的优化密不可分。",
+   "url": "http://finance.eastmoney.com/a/202611263940748057.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "9f30cee31e891c50",
