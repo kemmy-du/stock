@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 08:56",
+ "generated_at": "2026-11-26 09:26",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 143,
+ "total": 144,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1099,6 +1099,23 @@
    "score": 0,
    "summary": "据招商证券基金评价团队测算，目前主动ETF的平均仓位为91%，其平均持仓比例较高的行业包括银行、电子、医药生物、非银金融和交通运输，平均持有市值占比居前的个股包括贵州茅台、美的集团、宁德时代等。风格上，大部分主动ETF偏向价值和均衡风格。",
    "url": "http://finance.eastmoney.com/a/202611263939925986.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "e4716ef3aff8c9ba",
+   "title": "主动ETF十大重仓股 长江电力升至第7 贵州茅台稳居首位",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据上述ETF申赎清单整理，11月25日，主动ETF十大重仓股依次为贵州茅台、美的集团、宁德时代、中际旭创、招商银行、药明康德、长江电力、中信证券、中国平安、中国石油。较上期，重仓股名单未变。",
+   "url": "http://finance.eastmoney.com/a/202611263940277297.html",
    "has_report": false,
    "report_id": ""
   },
