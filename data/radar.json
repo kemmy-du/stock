@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 09:26",
+ "generated_at": "2026-11-26 09:57",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 144,
+ "total": 145,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1116,6 +1116,23 @@
    "score": 0,
    "summary": "根据上述ETF申赎清单整理，11月25日，主动ETF十大重仓股依次为贵州茅台、美的集团、宁德时代、中际旭创、招商银行、药明康德、长江电力、中信证券、中国平安、中国石油。较上期，重仓股名单未变。",
    "url": "http://finance.eastmoney.com/a/202611263940277297.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "86ab0cddfb85ee78",
+   "title": "主动ETF最新持仓：长江电力升至重仓股第7，科技龙头集中度提升",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据21财经雷达统计，主动ETF十大重仓股依次为贵州茅台、美的集团、宁德时代、中际旭创、招商银行、药明康德、长江电力、中信证券、中国平安、中国石油。较上期，重仓股名单未变。持股市值前三位是贵州茅台、美的集团、宁德时代，市值分别为6.98亿元、4.24亿元、3.67亿元。",
+   "url": "http://finance.eastmoney.com/a/202611263940403112.html",
    "has_report": false,
    "report_id": ""
   },
