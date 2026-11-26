@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 22:29",
+ "generated_at": "2026-11-26 22:59",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 158,
+ "total": 159,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1390,6 +1390,23 @@
    "url": "http://finance.eastmoney.com/a/202611263940882063.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "308fd291a7accedd",
+   "title": "茅台集团总经理王莉与贵州爱茅台数科公司技术人员交流座谈",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "据贵州茅台消息，11月25日，茅台集团党委副书记、总经理王莉与贵州爱茅台数字科技有限公司技术人员交流座谈。王莉表示，i茅台当前主要作为产品销售平台，接下来要努力形成服务中台、品牌服务阵地、用户运营载体等功能定位。",
+   "url": "http://finance.eastmoney.com/a/202611263940951927.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "9f30cee31e891c50",
