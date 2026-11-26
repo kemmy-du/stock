@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 20:29",
+ "generated_at": "2026-11-26 20:59",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 155,
+ "total": 156,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -107,6 +107,23 @@
    "score": 160,
    "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
    "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b15dff2861a5480c",
+   "title": "【财闻联播】目标价1800元，摩根大通上调贵州茅台至超配！8天6板，这家公司紧急提示风险",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "摩根大通将贵州茅台评级上调至超配，目标价1800元 　　摩根大通证券股份有限公司将贵州茅台评级上调至超配，目标价1800元，即上涨23%。摩根大通分析师Jessie Xu之前的评级为中性。",
+   "url": "http://finance.eastmoney.com/a/202611263940821195.html",
    "has_report": false,
    "report_id": ""
   },
