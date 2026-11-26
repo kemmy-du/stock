@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 19:29",
+ "generated_at": "2026-11-26 19:59",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 154,
+ "total": 155,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1303,6 +1303,23 @@
    "score": 0,
    "summary": "其中，16款贵州茅台酒产品采用全天动态补货模式，其他贵州茅台酒产品沿用原模式投放。 　　用户规模的爆发与渠道结构的优化密不可分。",
    "url": "http://finance.eastmoney.com/a/202611263940748057.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "1f27d84af619113b",
+   "title": "摩根大通将贵州茅台评级上调至超配 目标价1800元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "摩根大通证券股份有限公司将贵州茅台评级上调至超配，目标价1,800元人民币，即上涨23%。摩根大通分析师Jessie Xu之前的评级为中性。",
+   "url": "http://finance.eastmoney.com/a/202611263940775162.html",
    "has_report": false,
    "report_id": ""
   },
