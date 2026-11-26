@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26 17:28",
+ "generated_at": "2026-11-26 17:58",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
@@ -282,6 +282,23 @@
    "score": 85,
    "summary": "以上市公告书披露为口径，该ETF重仓的第一大重仓股贵州茅台上涨2.19%，第二大重仓的工商银行上涨近4%，其后的立讯精密下跌5.68%，中际旭创下跌3.86%。",
    "url": "http://stock.eastmoney.com/a/202611223936868014.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b4fb139866244e1a",
+   "title": "深沪北百元股数量达121只，科创板股票占48.76%",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "negative",
+   "tags": [
+    "利空"
+   ],
+   "score": 60,
+   "summary": "股价超百元个股中，收盘价最高的是贵州茅台，今日报收1469.00元，下跌0.40%，其次是寒武纪、宇树科技等，最新收盘价分别为942.85元、666.00元。 　　市场表现方面，收盘股价超百元股中，今日平均下跌0.23%，跑输沪指0.24个百分点。",
+   "url": "http://finance.eastmoney.com/a/202611263940697982.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1881,23 +1898,6 @@
    "score": 0,
    "summary": "按相关持仓估算，贵州茅台、美的集团、宁德时代、招商银行、药明康德、中信证券、中国石油、中际旭创、中国平安、北方华创等股票位居首批主动ETF合计持仓规模前列。",
    "url": "http://stock.eastmoney.com/a/202611243938704621.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
-   "id": "47d00adef2ae200c",
-   "title": "深沪北百元股数量达131只，科创板股票占48.85%",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-24",
-   "sentiment": "neutral",
-   "tags": [
-    "动态"
-   ],
-   "score": 0,
-   "summary": "股价超百元个股中，收盘价最高的是贵州茅台，今日报收1460.00元，上涨1.46%，其次是寒武纪、宇树科技等，最新收盘价分别为970.00元、718.00元。 　　市场表现方面，收盘股价超百元股中，今日平均上涨0.75%，跑赢沪指0.48个百分点。",
-   "url": "http://finance.eastmoney.com/a/202611243938767126.html",
    "has_report": false,
    "report_id": ""
   },
