@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 02:00",
+ "generated_at": "2026-11-27 02:30",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 161,
+ "total": 162,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1187,6 +1187,23 @@
    "url": "http://finance.eastmoney.com/a/202611213936841872.html",
    "has_report": false,
    "report_id": ""
+  },
+  {
+   "id": "823bfd76c606a747",
+   "title": "6G产业推进提速 12只概念股获机构净买入超亿元",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "少数概念股逆势上涨，如亨通光电、本川智能、沃格光电、中国电信、光库科技等年内涨幅超10%。 　　亨通光电年内累计上涨40.5%，排在首位。",
+   "url": "http://finance.eastmoney.com/a/202611273941006565.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
   },
   {
    "id": "32dcbefb810ad1d7",
