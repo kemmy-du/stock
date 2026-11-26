@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 05:01",
+ "generated_at": "2026-11-27 05:31",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 162,
+ "total": 163,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -709,6 +709,23 @@
    "score": 55,
    "summary": "值得一提的是，联讯仪器4月24日以81.88元发行价登陆科创板，首日涨875.82%，中一签浮盈35.86万元；上市第5个交易日破千元，6月25日盘中市值逼近2900亿元，一度取代贵州茅台成为A股“第一高价股”。",
    "url": "http://finance.eastmoney.com/a/202611233937657550.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b1aeeb1c7b4a123d",
+   "title": "今日数据精选：中国首次包揽全球科研城市前三；多地推行公交“响应式停靠”",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "（新浪财经） 　　i茅台：上线至今，用户已突破1亿人 　　11月26日，贵州茅台官方数字营销平台“i茅台”宣布正式入驻小红书。其在笔记中透露，i茅台APP上线至今，用户已经突破1亿人。",
+   "url": "http://finance.eastmoney.com/a/202611273941019457.html",
    "has_report": false,
    "report_id": ""
   },
