@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26 20:59",
+ "generated_at": "2026-11-26 21:29",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
@@ -861,6 +861,23 @@
    "score": 25,
    "summary": "其中，中国石化获得3只主动ETF增持，海康威视、中际旭创、华能国际、华夏银行、华鲁恒升、贵州茅台、国电电力、紫金矿业、方正证券、格力电器、京东方A等个股均获得2只主动ETF增持。",
    "url": "http://finance.eastmoney.com/a/202611263939970927.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a87052eb60ed0c3a",
+   "title": "11月26日东方财富财经晚报（附新闻联播）",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "贵州茅台：摩根大通证券股份有限公司将贵州茅台评级上调至超配，目标价1,800元人民币，即上涨23%。摩根大通分析师JessieXu之前的评级为中性。 　　通富微电：董事长石磊提议1.5亿元—3亿元回购公司股份，用于股权激励或员工持股计划。",
+   "url": "http://finance.eastmoney.com/a/202611263940803533.html",
    "has_report": false,
    "report_id": ""
   },
@@ -2459,23 +2476,6 @@
    "score": 0,
    "summary": "贵州茅台则在横盘之后稳步爬升。 　　买入中际旭创的投资人，途中一度浮盈一两倍甚至两倍以上，但兑现收益高度依赖择时；若一直持有至此刻，其股价收益与一年前买入贵州茅台几乎没有区别。",
    "url": "http://finance.eastmoney.com/a/202611233937512563.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
-   "id": "b6df07af2b9ef916",
-   "title": "11月23日东方财富财经晚报（附新闻联播）",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-23",
-   "sentiment": "neutral",
-   "tags": [
-    "动态"
-   ],
-   "score": 0,
-   "summary": "首批18只主动ETF上市首日3涨2平13跌，涨跌幅均在2%以内；首日成交80.08亿元，平均换手22.69%，18只全线小幅折价，根据最新披露的PCF清单进行估算，贵州茅台、美的集团、招商银行、宁德时代、药明康德、中国石油、中信证券、中国平安、江苏银行、长江电力，构成了主动ETF最新的前十大重仓股",
-   "url": "http://finance.eastmoney.com/a/202611233937502761.html",
    "has_report": false,
    "report_id": ""
   },
