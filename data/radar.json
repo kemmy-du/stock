@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 17:58",
+ "generated_at": "2026-11-26 18:28",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 151,
+ "total": 152,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1252,6 +1252,23 @@
    "score": 0,
    "summary": "在产品特点方面，上证指数ETF国泰紧密跟踪上证综合指数，前十大成分股为工商银行、农业银行、中国石油、贵州茅台、中国银行、招商银行、工业富联、中国神华、中国平安、紫金矿业，涵盖了金融、能源、消费等核心领域的龙头企业。",
    "url": "http://stock.eastmoney.com/a/202611263940553540.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ac2c33104a8a8767",
+   "title": "中国神华创19年新高！市值超其余煤炭股之和，这些板块也有“超级一哥”",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "目前，中国神华股价冲至53元，在一众万亿市值股中位列第三，仅次于贵州茅台、中国移动。同时，其总市值达10891亿元，在整个煤炭板块（2.13万亿元）中占比近51%，超过其余煤炭股市值之和。",
+   "url": "http://finance.eastmoney.com/a/202611263940705834.html",
    "has_report": false,
    "report_id": ""
   },
