@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 21:29",
+ "generated_at": "2026-11-26 21:59",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 156,
+ "total": 158,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -882,6 +882,23 @@
    "report_id": ""
   },
   {
+   "id": "f0a0191023df8751",
+   "title": "11月26日晚间新闻精选",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "6、公司新闻方面：①摩根大通将贵州茅台评级上调至超配目标价1800元人民币。②通富微电：董事长提议回购1.5亿至3亿元股份。③上交所向克来机电下发监管工作函。④8天6板全筑股份：子公司云阙智算尚处于早期试点培育阶段。",
+   "url": "http://finance.eastmoney.com/a/202611263940890727.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "d867b807af127f45",
    "title": "泸州老窖控股股东拟增持5000万至1亿元，食品饮料ETF天弘（159736）标的指数盘中逆市涨0.61%",
    "stock_code": "600519",
@@ -1356,6 +1373,23 @@
    "url": "http://finance.eastmoney.com/a/202611263940775162.html",
    "has_report": false,
    "report_id": ""
+  },
+  {
+   "id": "c6c031273ff4da0d",
+   "title": "84.74亿主力资金净流入，共封装光学(CPO)概念涨1.23%",
+   "stock_code": "603773",
+   "stock_name": "沃格光电",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "0.91 1.26 -492.74 -3.14 300310 宜通世纪 -2.65 2.97 -548.21 -5.61 002161 远望谷 -1.38 3.25 -612.39 -5.91 601137 博威合金 -0.58 1.18 -666.76 -4.47 603773 沃格光电",
+   "url": "http://finance.eastmoney.com/a/202611263940882063.html",
+   "has_report": true,
+   "report_id": "CN-603773-2026-11-07"
   },
   {
    "id": "9f30cee31e891c50",
