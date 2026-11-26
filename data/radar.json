@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26 15:58",
+ "generated_at": "2026-11-26 16:28",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 150,
+ "total": 151,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -674,6 +674,23 @@
    "score": 30,
    "summary": "11月26日，贵州茅台官方数字营销平台“i茅台”宣布正式入驻小红书。其在笔记中透露，i茅台APP上线至今，用户已经突破1亿人。",
    "url": "http://finance.eastmoney.com/a/202611263940582214.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "18696ff9bdecf475",
+   "title": "i茅台用户总数已突破1亿",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-26",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "11月26日，贵州茅台官方数字营销平台“i茅台”正式入驻小红书。其在笔记中透露，i茅台APP自上线以来，累计用户数已突破1亿。",
+   "url": "http://finance.eastmoney.com/a/202611263940596580.html",
    "has_report": false,
    "report_id": ""
   },
