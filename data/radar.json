@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 05:31",
+ "generated_at": "2026-11-27 06:01",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 163,
+ "total": 164,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -590,6 +590,23 @@
    "url": "http://finance.eastmoney.com/a/202611203936393996.html",
    "has_report": true,
    "report_id": "CN-603773-2026-11-07"
+  },
+  {
+   "id": "447e6dfccb2f6abd",
+   "title": "中国U17男足8-0胜斐济；额度超6000亿！四大行支持股票回购增持；英伟达暂停向东南亚四国发货；摩根：贵州茅台目标价1800元丨每经早参",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 55,
+   "summary": "2 贵州茅台被外资投行上调至“超配” 　　贵州茅台（SH600519，股价1469元，市值18369亿元）：11月26日，摩根大通证券股份有限公司将贵州茅台的股票评级由“中性”上调至“超配”，目标价定为1800元，较最新股价存在约23%的上涨空间。",
+   "url": "http://bank.eastmoney.com/a/202611273941024892.html",
+   "has_report": false,
+   "report_id": ""
   },
   {
    "id": "21780dc39356ac69",
