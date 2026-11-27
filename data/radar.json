@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 18:33",
+ "generated_at": "2026-11-27 19:03",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 189,
+ "total": 193,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -768,6 +768,60 @@
    "report_id": ""
   },
   {
+   "id": "67fe14aa7609f0cc",
+   "title": "茅台拟中期分红320亿元 创历史新高",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "需要注意的是，贵州茅台今年盈利其实并未显著增长。 　　今年上半年，贵州茅台归母净利润同比下降近2%。第三季度有所发力后，其前三季度归母净利润的同比降幅收窄至0.25%。 　　分红金额继续增长，背后是茅台希望向市场展示出诚意——其依然在按照此前承诺稳步提升投资者回报。",
+   "url": "http://finance.eastmoney.com/a/202611273941814245.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ad2593520a1cdedd",
+   "title": "晚间公告丨11月27日这些公告有看头",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "【品大事】 　　贵州茅台2026年中期利润分配方案：拟10派256元 　　贵州茅台发布2026年中期利润分配方案，拟向全体股东每股派发现金红利25.6元（含税），合计派发现金红利320.02亿元（含税）。",
+   "url": "http://finance.eastmoney.com/a/202611273941811652.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ad66770b836908ee",
+   "title": "320亿元！贵州茅台，刚刚通过！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "11月27日，贵州茅台公告，董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.6元（含税）；截至2026年10月31日，公司总股本为12.5亿股，据此计算合计派发现金红利320.02亿元（含税）。",
+   "url": "http://finance.eastmoney.com/a/202611273941806373.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1242,6 +1296,23 @@
    "score": 25,
    "summary": "11月27日，贵州茅台公告，经董事会决议，公司以实施权益分派股权登记日公司总股本为基数，实施2026年中期利润分配方案。 　　贵州茅台本次利润分配方案如下：向全体股东每股派发现金红利25.60元（含税）。",
    "url": "http://finance.eastmoney.com/a/202611273941786423.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "bcae6fb74e79b4b9",
+   "title": "拟10派256元！A股“股王”，大手笔分红！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "贵州茅台中期拟分红超320亿元。 　　11月27日晚，贵州茅台公布2026年中期利润分配方案。公司向全体股东每股派发现金红利25.60元(含税)。 　　截至2026年10月31日，贵州茅台总股本为12.50亿股，以此计算，此次合计派发现金红利320.02亿元(含税)。",
+   "url": "http://finance.eastmoney.com/a/202611273941805390.html",
    "has_report": false,
    "report_id": ""
   },
