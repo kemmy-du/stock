@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 17:33",
+ "generated_at": "2026-11-27 18:03",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 182,
+ "total": 186,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -732,6 +732,24 @@
    "report_id": ""
   },
   {
+   "id": "1474e6fe7b0cab80",
+   "title": "贵州茅台：2026年中期利润分配拟每股派现25.6元 合计派现320亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "贵州茅台(600519.SH)公告称，公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，截至2026年10月31日公司总股本为12.5亿股，合计派发现金红利320.02亿元(含税)。",
+   "url": "http://finance.eastmoney.com/a/202611273941766576.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1074,6 +1092,40 @@
    "report_id": ""
   },
   {
+   "id": "834621e94c28326b",
+   "title": "贵州茅台:贵州茅台第五届董事会2026年度第八次会议决议公告",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-28",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "董事会决议公告",
+   "url": "https://data.eastmoney.com/notices/detail/600519/AN202611271832113732.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d6d8510827dc2492",
+   "title": "贵州茅台:贵州茅台2026年中期利润分配方案公告",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-28",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "分配预案",
+   "url": "https://data.eastmoney.com/notices/detail/600519/AN202611271832113728.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "b42b034e9354870e",
    "title": "基金公司出招 助投资者看清主动ETF“明牌”",
    "stock_code": "600519",
@@ -1121,6 +1173,23 @@
    "score": 25,
    "summary": "而另一个“爱喝酒”基金经理刘彦春，其与农冰立共同掌管的“景顺长城新兴成长混合”，虽然贵州茅台仍在十大重仓股内，但在第三季度该基金减持贵州茅台12800股。",
    "url": "http://finance.eastmoney.com/a/202611273941659982.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "ab2c1c3c48647e6f",
+   "title": "洋河称库存已降至低位，多家酒企发声，白酒渠道出清见底？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "比如贵州茅台在此前的三季度业绩说明会上明确，飞天茅台酒渠道存销比处于良性水平，茅台1935渠道存销比相对健康，其他系列酒存销比在下降；公司承认行业渠道库存普遍承压，选择主动纾解渠道商压力，适度减少市场投放，而非单纯向渠道压货。",
+   "url": "http://finance.eastmoney.com/a/202611273941776197.html",
    "has_report": false,
    "report_id": ""
   },
