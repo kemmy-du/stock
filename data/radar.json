@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 20:34",
+ "generated_at": "2026-11-27 21:04",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 198,
+ "total": 199,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -930,6 +930,42 @@
    "report_id": ""
   },
   {
+   "id": "fc7a7f31e46adb62",
+   "title": "11月27日晚间上市公司利好消息一览(附名单)",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "沪深两市多家上市公司11月27日晚间发布重要公告，以下为利好的消息汇总： 　　贵州茅台2026年中期利润分配方案：拟10派256元 　　贵州茅台(600519)11月27日发布2026年中期利润分配方案，拟向全体股东每股派发现金红利25.6元（含税），合计派发现金红利320.02亿元",
+   "url": "http://finance.eastmoney.com/a/202611273941923444.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "1c9b2feade0c2153",
+   "title": "贵州茅台披露2026年中期利润分配方案",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "贵州茅台自2001年上市以来，累计现金分红已达到4011.45亿元（未包含本次中期分红数据）。根据中国上市公司协会2026年9月份发布的上市公司现金分红榜单，贵州茅台位居现金分红总额榜单第七、股利支付率第八。",
+   "url": "http://finance.eastmoney.com/a/202611273941925365.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1285,23 +1321,6 @@
    "score": 30,
    "summary": "二是即将于下周一上市的18只主动ETF基金发布十大重仓股，其中四只银行股（招商银行、中国银行、江苏银行、工商银行），一只保险股（中国平安），一只家电股（美的集团），一只白酒股（贵州茅台），股价均有所上涨，涨幅最高的工行上涨6.21%；另三只为宁德时代、寒武纪、中际旭创，股价均有所下跌",
    "url": "http://finance.eastmoney.com/a/202611213936781073.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
-   "id": "d6d8510827dc2492",
-   "title": "贵州茅台:贵州茅台2026年中期利润分配方案公告",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-28",
-   "sentiment": "neutral",
-   "tags": [
-    "公告"
-   ],
-   "score": 25,
-   "summary": "分配预案",
-   "url": "https://data.eastmoney.com/notices/detail/600519/AN202611271832113728.html",
    "has_report": false,
    "report_id": ""
   },
