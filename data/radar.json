@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 15:33",
+ "generated_at": "2026-11-27 16:03",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 179,
+ "total": 181,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -20,6 +20,23 @@
    "score": 190,
    "summary": "龙头股宇树科技午后涨停，股价突破700元，市值超2800亿元，成为A股目前第三高价股，股价仅次于贵州茅台和寒武纪。 　　消息面上，特斯拉CEO埃隆·马斯克近日在采访中表示，Optimus人形机器人有望在12个月至18个月内完成多步骤复杂操作，先用于重工业，再进入家庭。",
    "url": "http://finance.eastmoney.com/a/202611233937297112.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "b7253dd6588b5995",
+   "title": "A股，满屏涨停！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 160,
+   "summary": "贵州茅台涨超0.67%，寒武纪重回1000元上方，第三高价股宇树科技盘中涨停后炸板。 　　值得注意的是，多只高位人气股盘中重挫，九阳股份、东方海洋午后一度逼近跌停。青岛食品、金新农、华东重机跌幅明显。 　　港股市场，恒生指数涨超2%，恒生科技涨超6%。",
+   "url": "http://forex.eastmoney.com/a/202611273941661718.html",
    "has_report": false,
    "report_id": ""
   },
@@ -1070,6 +1087,23 @@
    "score": 25,
    "summary": "根据上述ETF申赎清单整理，11月26日，主动ETF十大重仓股依次为贵州茅台、美的集团、中际旭创、药明康德、招商银行、宁德时代、长江电力、中信证券、中国石油、中国平安。较上期，重仓股名单未变。",
    "url": "http://finance.eastmoney.com/a/202611273941350235.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "dbed6d1e796b97df",
+   "title": "摩根大通上调贵州茅台目标价，近期股价走高，哪些基金加仓？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "而另一个“爱喝酒”基金经理刘彦春，其与农冰立共同掌管的“景顺长城新兴成长混合”，虽然贵州茅台仍在十大重仓股内，但在第三季度该基金减持贵州茅台12800股。",
+   "url": "http://finance.eastmoney.com/a/202611273941659982.html",
    "has_report": false,
    "report_id": ""
   },
