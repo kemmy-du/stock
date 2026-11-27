@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 23:04",
+ "generated_at": "2026-11-27 23:35",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 207,
+ "total": 209,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1054,6 +1054,41 @@
    "score": 55,
    "summary": "【公司要闻】 　　1.11月27日，贵州茅台公告称，公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，合计派发现金红利320.02亿元(含税)。",
    "url": "http://finance.eastmoney.com/a/202611273942062633.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "d3b140f42bf19ef6",
+   "title": "11月27日晚间重要公告集锦",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "贵州茅台：披露2026年中期利润分配方案拟10派256元 　　上证报中国证券网讯（记者骆民）贵州茅台公告，公司董事会会议审议通过《2026年中期利润分配方案》：向全体股东每股派发现金红利25.6元（含税）。",
+   "url": "http://finance.eastmoney.com/a/202611273942084247.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "3c83457ee0057fb6",
+   "title": "【中证十点半】拟10派256元！贵州茅台大手笔分红；思特威董事长提议5亿元—10亿元回购公司股份",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 55,
+   "summary": "",
+   "url": "http://finance.eastmoney.com/a/202611273942071510.html",
    "has_report": false,
    "report_id": ""
   },
