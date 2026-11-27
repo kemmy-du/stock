@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 20:04",
+ "generated_at": "2026-11-27 20:34",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 195,
+ "total": 198,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -124,6 +124,24 @@
    "score": 160,
    "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
    "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7c38a510ddebdbb0",
+   "title": "公告精选：思特威董事长提议5亿元—10亿元回购公司股份；华胜天成等提示风险",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "negative",
+   "tags": [
+    "公告",
+    "利空"
+   ],
+   "score": 115,
+   "summary": "贵州茅台2026年中期利润分配方案：拟10派256元。 　　龙洲股份：控股孙公司中汽宏远继续临时停工停产。 　　*ST卓然：公司股票将于12月4日终止上市暨摘牌。 　　智飞生物：司美格鲁肽注射液体重管理适应症申请生产注册获得受理。",
+   "url": "http://finance.eastmoney.com/a/202611273941900359.html",
    "has_report": false,
    "report_id": ""
   },
@@ -858,6 +876,60 @@
    "report_id": ""
   },
   {
+   "id": "fcf7d937c432671c",
+   "title": "贵州茅台中期分红拟每股派现25.6元，景旺电子拟26.8亿元投建mSAP精密线路板项目丨公告精选",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "贵州茅台：2026年中期利润分配拟每股派现25.6元合计派现320亿元 　　贵州茅台公告称，公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，截至2026年10月31日公司总股本为12.5亿股，合计派发现金红利320.02亿元(含税)。",
+   "url": "http://finance.eastmoney.com/a/202611273941880590.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "8c241ad43cb783b3",
+   "title": "拟10派256元！茅台披露2026年中期利润分配方案|盘后公告集锦",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "今日聚焦 　　【贵州茅台：2026年中期利润分配拟每股派现25.6元合计派现320亿元】 　　贵州茅台(600519.SH)公告称，公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，截至2026年10月31日公司总股本为12.5亿股，合计派发现金红利",
+   "url": "http://finance.eastmoney.com/a/202611273941886070.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "a31bfcda0c29bf73",
+   "title": "贵州茅台：第五届董事会2026年度第八次会议决议公告",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "证券日报网讯11月27日，贵州茅台发布公告称，公司于2026年11月26日召开第五届董事会2026年度第八次会议，审议通过《2026年中期利润分配方案》《关于修订〈财务管理办法〉的议案》《关于修订〈全面预算管理规定〉的议案》等多项议案。",
+   "url": "http://finance.eastmoney.com/a/202611273941880889.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1047,6 +1119,23 @@
    "report_id": ""
   },
   {
+   "id": "829db408d2dc6ea5",
+   "title": "11月27日东方财富财经晚报（附新闻联播）",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "公司新闻 　　贵州茅台：公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，截至2026年10月31日公司总股本为12.5亿股，合计派发现金红利320.02亿元(含税)。本次利润分配无需提交股东会审议，经董事会审议通过后即可实施。",
+   "url": "http://finance.eastmoney.com/a/202611273941896282.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "625c5e4f4d7604a7",
    "title": "i茅台：上线至今，用户已经突破1亿人",
    "stock_code": "600519",
@@ -1200,23 +1289,6 @@
    "report_id": ""
   },
   {
-   "id": "834621e94c28326b",
-   "title": "贵州茅台:贵州茅台第五届董事会2026年度第八次会议决议公告",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-28",
-   "sentiment": "neutral",
-   "tags": [
-    "公告"
-   ],
-   "score": 25,
-   "summary": "董事会决议公告",
-   "url": "https://data.eastmoney.com/notices/detail/600519/AN202611271832113732.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
    "id": "d6d8510827dc2492",
    "title": "贵州茅台:贵州茅台2026年中期利润分配方案公告",
    "stock_code": "600519",
@@ -1366,23 +1438,6 @@
    "score": 25,
    "summary": "其中，中国石化获得3只主动ETF增持，海康威视、中际旭创、华能国际、华夏银行、华鲁恒升、贵州茅台、国电电力、紫金矿业、方正证券、格力电器、京东方A等个股均获得2只主动ETF增持。",
    "url": "http://finance.eastmoney.com/a/202611263939970927.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
-   "id": "a87052eb60ed0c3a",
-   "title": "11月26日东方财富财经晚报（附新闻联播）",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-26",
-   "sentiment": "neutral",
-   "tags": [
-    "公告"
-   ],
-   "score": 25,
-   "summary": "贵州茅台：摩根大通证券股份有限公司将贵州茅台评级上调至超配，目标价1,800元人民币，即上涨23%。摩根大通分析师JessieXu之前的评级为中性。 　　通富微电：董事长石磊提议1.5亿元—3亿元回购公司股份，用于股权激励或员工持股计划。",
-   "url": "http://finance.eastmoney.com/a/202611263940803533.html",
    "has_report": false,
    "report_id": ""
   },
