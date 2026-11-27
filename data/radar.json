@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 19:34",
+ "generated_at": "2026-11-27 20:04",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 193,
+ "total": 195,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -818,6 +818,42 @@
    "score": 55,
    "summary": "11月27日，贵州茅台公告，董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.6元（含税）；截至2026年10月31日，公司总股本为12.5亿股，据此计算合计派发现金红利320.02亿元（含税）。",
    "url": "http://finance.eastmoney.com/a/202611273941806373.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "68bf4d8aa6e710b1",
+   "title": "青岛啤酒入局威士忌赛道，众多白酒巨头排队进场",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "11月10日，贵州茅台董事、代行总经理职责的王莉在三季度业绩说明会上表示，“行业当前仍然处于深度调整之中，消费需求疲软、消费场景减少的态势并没有根本性转变”。 　　与之形成反差的是，威士忌仍在增长。",
+   "url": "http://finance.eastmoney.com/a/202611273941875834.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "17ff3a0b93e3be63",
+   "title": "11月27日晚间沪深上市公司重大事项公告最新快递",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "贵州茅台2026年中期利润分配方案：拟10派256元 　　贵州茅台(600519)11月27日发布2026年中期利润分配方案，拟向全体股东每股派发现金红利25.6元（含税），合计派发现金红利320.02亿元（含税）。",
+   "url": "http://finance.eastmoney.com/a/202611273941863848.html",
    "has_report": false,
    "report_id": ""
   },
