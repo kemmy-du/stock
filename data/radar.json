@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 10:32",
+ "generated_at": "2026-11-27 11:02",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 172,
+ "total": 173,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -848,6 +848,23 @@
    "score": 30,
    "summary": "NO.2 “i茅台”用户总数破亿 　　11月26日，贵州茅台官方数字营销平台“i茅台”正式入驻小红书。其在笔记中透露，“i茅台”App自上线以来，累计用户数已突破1亿。",
    "url": "http://finance.eastmoney.com/a/202611273941264785.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "f407ca2ce5ceb8a1",
+   "title": "高端白酒集体涨价，行业拐点真的来了？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "茅台的动作更为系统：贵州茅台党委副书记、董事、代总经理王莉此前明确，茅台聚焦“全面向C”市场化改革目标，在渠道端形成批发、线下零售、线上零售、餐饮、私域“五大渠道”并行格局，推动飞天茅台上线i茅台平台，并建立“随行就市、相对平稳”的自营体系零售价格动态调整机制。",
+   "url": "http://finance.eastmoney.com/a/202611273941529245.html",
    "has_report": false,
    "report_id": ""
   },
