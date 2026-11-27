@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 13:02",
+ "generated_at": "2026-11-27 13:32",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 173,
+ "total": 174,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1409,6 +1409,23 @@
    "score": 0,
    "summary": "据21财经雷达统计，主动ETF十大重仓股依次为贵州茅台、美的集团、中际旭创、药明康德、招商银行、宁德时代、长江电力、中信证券、中国石油、中国平安。较上期，重仓股名单未变。持股市值前三位是贵州茅台、美的集团、中际旭创，市值分别为6.89亿元、4.18亿元、3.92亿元。",
    "url": "http://finance.eastmoney.com/a/202611273941472497.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "797842078616abee",
+   "title": "【茅台】摩根大通：上调，目标1800元！159119、159209应声吸筹",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "11 月 26 日，摩根大通证券将贵州茅台评级由“中性”上调至“超配”，目标价定为 1800 元，较 11 月 26 日收盘价 1469 元约有 23% 的上行空间，目标价本身较此前上调近 28%。",
+   "url": "http://stock.eastmoney.com/a/202611273941590416.html",
    "has_report": false,
    "report_id": ""
   },
