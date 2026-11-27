@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 09:31",
+ "generated_at": "2026-11-27 10:02",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 171,
+ "total": 172,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -317,6 +317,24 @@
    "score": 60,
    "summary": "摩根大通上调贵州茅台评级至超配 　　11月26日，摩根大通发布最新研究报告称，前三季度A股白酒上市公司整体营收与净利润同比下滑，行业仍处磨底阶段，贵州茅台保持正增长凸显龙头经营韧性。",
    "url": "http://finance.eastmoney.com/a/202611273941268441.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "f01146b458d8776f",
+   "title": "半年内态度反转！贵州茅台评级被调至“超配”、目标1800元，什么信号？",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "negative",
+   "tags": [
+    "利好",
+    "利空"
+   ],
+   "score": 60,
+   "summary": "近日，摩根大通发布研究报告，将贵州茅台评级由“中性”上调至“超配”，目标价1800元，对应当前股价约有23%的上行空间。“超配”在卖方评级体系里意味着建议高于基准配置。该行分析师曾于今年5月将评级下调至中性，半年之内两次调整方向相反。",
+   "url": "http://stock.eastmoney.com/a/202611273941481421.html",
    "has_report": false,
    "report_id": ""
   },
