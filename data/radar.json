@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 16:33",
+ "generated_at": "2026-11-27 17:03",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 181,
+ "total": 182,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -124,6 +124,23 @@
    "score": 160,
    "summary": "11月20日傍晚，贵州省纪委监委网站披露，经贵州省纪委监委批准，贵州省纪委监委派驻茅台集团纪检监察组、毕节市监委对中国贵州茅台酒厂（集团）有限责任公司原总经理助理钟方达严重违纪违法问题进行了立案审查调查。",
    "url": "http://finance.eastmoney.com/a/202611203936454394.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "55d471f511ec4d5e",
+   "title": "A股上演“大奇迹日”！沪深300单日涨幅创下2024年10月8日以来新高",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "突发"
+   ],
+   "score": 100,
+   "summary": "权重股方面，中际旭创当日收涨19.98%，宁德时代涨5.71%，紫金矿业、药明康德涨超4%，贵州茅台、中国平安收盘前亦翻红，其余成分股方面，芯原股份、新易盛、中微公司、软通动力、拓荆科技等多股收盘20cm涨停。",
+   "url": "http://stock.eastmoney.com/a/202611273941726439.html",
    "has_report": false,
    "report_id": ""
   },
