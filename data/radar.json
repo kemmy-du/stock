@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 18:03",
+ "generated_at": "2026-11-27 18:33",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 186,
+ "total": 189,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -750,6 +750,24 @@
    "report_id": ""
   },
   {
+   "id": "b3221831060ad788",
+   "title": "贵州茅台最新公告：拟每股派现25.6元，合计派发320.02亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "中新经纬11月27日电 27日，贵州茅台公告称，公司董事会审议通过2026年中期利润分配方案，向全体股东每股派发现金红利25.60元(含税)，截至2026年10月31日公司总股本为12.5亿股，合计派发现金红利320.02亿元(含税)。",
+   "url": "http://finance.eastmoney.com/a/202611273941793312.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1190,6 +1208,40 @@
    "score": 25,
    "summary": "比如贵州茅台在此前的三季度业绩说明会上明确，飞天茅台酒渠道存销比处于良性水平，茅台1935渠道存销比相对健康，其他系列酒存销比在下降；公司承认行业渠道库存普遍承压，选择主动纾解渠道商压力，适度减少市场投放，而非单纯向渠道压货。",
    "url": "http://finance.eastmoney.com/a/202611273941776197.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "9b7cb79360b409e4",
+   "title": "贵州茅台2026年中期分红出炉 拟现金分红320亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "公开数据显示，贵州茅台此次中期分红是贵州茅台启动中期分红以来金额最高的一笔，2024年、2025年中期分红金额为300亿元。贵州茅台表示，本次利润分配方案综合考虑了公司目前的生产经营状况、未来发展资金需求、经营现金流等因素，不会对公司正常经营和长期发展造成影响。",
+   "url": "http://finance.eastmoney.com/a/202611273941791912.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "32de9aed7b8b74af",
+   "title": "贵州茅台宣布：大手笔分红320亿元",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "11月27日，贵州茅台公告，经董事会决议，公司以实施权益分派股权登记日公司总股本为基数，实施2026年中期利润分配方案。 　　贵州茅台本次利润分配方案如下：向全体股东每股派发现金红利25.60元（含税）。",
+   "url": "http://finance.eastmoney.com/a/202611273941786423.html",
    "has_report": false,
    "report_id": ""
   },
