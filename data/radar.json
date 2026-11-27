@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 14:02",
+ "generated_at": "2026-11-27 14:33",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 177,
+ "total": 179,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1495,6 +1495,40 @@
    "score": 0,
    "summary": "数据显示，截至2026年10月30日，沪深300 ESG基准指数(931463)前十大权重股分别为贵州茅台、中际旭创、招商银行、美的集团、宁德时代、长江电力、中国平安、兴业银行、紫金矿业、比亚迪，前十大权重股合计占比29.3%。",
    "url": "http://stock.eastmoney.com/a/202611273941603055.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "1a9da83ff74b000f",
+   "title": "贵州茅台集团在天津成立飞天十号租赁公司",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "企查查股权穿透显示，该公司由中国贵州茅台酒厂（集团）有限责任公司间接全资持股。",
+   "url": "http://finance.eastmoney.com/a/202611273941635842.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "f3ae4005cbcc980e",
+   "title": "寒武纪，重回千元大关",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "截至目前，A股千元股共有2家，另一家为贵州茅台。",
+   "url": "http://finance.eastmoney.com/a/202611273941629621.html",
    "has_report": false,
    "report_id": ""
   },
