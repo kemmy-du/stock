@@ -1,26 +1,26 @@
 {
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-27",
   "indices": [
     {
       "name": "上证指数",
       "code": "000001.SH",
       "market": "CN",
-      "close": 3476.88,
-      "change_pct": 0.01
+      "close": 3486.76,
+      "change_pct": 0.28
     },
     {
       "name": "深证成指",
       "code": "399001.SZ",
       "market": "CN",
-      "close": 10084.04,
-      "change_pct": -0.02
+      "close": 10301.4,
+      "change_pct": 2.16
     },
     {
       "name": "沪深300",
       "code": "000300.SH",
       "market": "CN",
-      "close": 3900.55,
-      "change_pct": 0.06
+      "close": 3909.93,
+      "change_pct": 0.24
     },
     {
       "name": "纳斯达克综指",
