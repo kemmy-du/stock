@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 22:04",
+ "generated_at": "2026-11-27 22:34",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 202,
+ "total": 205,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1003,6 +1003,24 @@
    "report_id": ""
   },
   {
+   "id": "3bec978c0337476d",
+   "title": "创新高！贵州茅台推320亿元中期分红方案 i茅台同步上新",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "公告",
+    "利好"
+   ],
+   "score": 55,
+   "summary": "持续大手笔分红，背后是贵州茅台对大小股东的诚意，南都湾财社记者在部分贵州茅台股东群中留意到，不少股东对于此次分红表示欢迎，有股东称“拿到钱才是最踏实”，同时也有股东表示，在大额分红同时，希望贵州茅台能再度实施“回购注销”。",
+   "url": "http://finance.eastmoney.com/a/202611273941977381.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "21780dc39356ac69",
    "title": "忙着甩货的华致酒行看上算力业务",
    "stock_code": "600519",
@@ -1498,6 +1516,23 @@
    "report_id": ""
   },
   {
+   "id": "88c0e7d9a1dd409e",
+   "title": "关键时刻 大手笔分红来了 10派256元！",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "公告"
+   ],
+   "score": 25,
+   "summary": "【导读】贵州茅台推出大手笔分红，每10股派发现金红利256元 　　贵州茅台，大手笔分红来了！ 　　11月27日晚间，贵州茅台公布2026年中期利润分配方案，拟每股派发现金红利25.60元（含税）。 　　截至2026年9月30日，贵州茅台母公司报表中未分配利润为1610.69亿元。",
+   "url": "http://finance.eastmoney.com/a/202611273942022671.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "dc5a50fcb822e419",
    "title": "主动ETF调仓动向曝光 宽基产品持续吸金",
    "stock_code": "600519",
@@ -1936,6 +1971,23 @@
    "score": 0,
    "summary": "截至目前，A股千元股共有2家，另一家为贵州茅台。",
    "url": "http://finance.eastmoney.com/a/202611273941629621.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "7ab95eb0d6ae239d",
+   "title": "18只主动ETF上市首周：17只收涨 有的重仓科技股！散户“抄作业”或存较大误差",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "neutral",
+   "tags": [
+    "动态"
+   ],
+   "score": 0,
+   "summary": "根据PCF清单估算，截至11月26日收盘，国泰鑫汇均衡共持股54只，前十大重仓股为贵州茅台、中际旭创、中国平安、药明康德、中信证券、招商银行、北方华创、万华化学、大族激光、新易盛。",
+   "url": "http://stock.eastmoney.com/a/202611273942027854.html",
    "has_report": false,
    "report_id": ""
   },
