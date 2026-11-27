@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-27 08:01",
+ "generated_at": "2026-11-27 08:31",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 167,
+ "total": 168,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -782,6 +782,40 @@
    "report_id": ""
   },
   {
+   "id": "dd371f55717356b2",
+   "title": "摩根大通上调贵州茅台评级至超配",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "摩根大通称，贵州茅台无与伦比的品牌影响力和不断提高的盈利可见度证明了溢价的合理性，将公司评级从中性上调至超配，目标价提高近28%至1800元。",
+   "url": "http://finance.eastmoney.com/a/202611273941265475.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "60c0c201c61c2ada",
+   "title": "金种子酒：未来一年整体招聘规模预计保持稳定；“i茅台”用户总数破亿丨酒业早参",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-27",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "NO.2 “i茅台”用户总数破亿 　　11月26日，贵州茅台官方数字营销平台“i茅台”正式入驻小红书。其在笔记中透露，“i茅台”App自上线以来，累计用户数已突破1亿。",
+   "url": "http://finance.eastmoney.com/a/202611273941264785.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
    "id": "625c5e4f4d7604a7",
    "title": "i茅台：上线至今，用户已经突破1亿人",
    "stock_code": "600519",
@@ -1475,23 +1509,6 @@
    "score": 0,
    "summary": "其中，16款贵州茅台酒产品采用全天动态补货模式，其他贵州茅台酒产品沿用原模式投放。 　　用户规模的爆发与渠道结构的优化密不可分。",
    "url": "http://finance.eastmoney.com/a/202611263940748057.html",
-   "has_report": false,
-   "report_id": ""
-  },
-  {
-   "id": "1f27d84af619113b",
-   "title": "摩根大通将贵州茅台评级上调至超配 目标价1800元",
-   "stock_code": "600519",
-   "stock_name": "贵州茅台",
-   "market": "CN",
-   "date": "2026-11-26",
-   "sentiment": "neutral",
-   "tags": [
-    "动态"
-   ],
-   "score": 0,
-   "summary": "摩根大通证券股份有限公司将贵州茅台评级上调至超配，目标价1,800元人民币，即上涨23%。摩根大通分析师Jessie Xu之前的评级为中性。",
-   "url": "http://finance.eastmoney.com/a/202611263940775162.html",
    "has_report": false,
    "report_id": ""
   },
