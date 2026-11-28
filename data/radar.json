@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-28 08:36",
+ "generated_at": "2026-11-28 09:06",
  "window_days": 7,
  "monitored": 2,
  "fetched": 2,
- "total": 200,
+ "total": 201,
  "items": [
   {
    "id": "ce9d8dcead1f7943",
@@ -1159,6 +1159,23 @@
    "score": 55,
    "summary": "值得一提的是，联讯仪器4月24日以81.88元发行价登陆科创板，首日涨875.82%，中一签浮盈35.86万元；上市第5个交易日破千元，6月25日盘中市值逼近2900亿元，一度取代贵州茅台成为A股“第一高价股”。",
    "url": "http://finance.eastmoney.com/a/202611233937657550.html",
+   "has_report": false,
+   "report_id": ""
+  },
+  {
+   "id": "07bdb146e2a5b8b3",
+   "title": "新华财经早报：11月28日",
+   "stock_code": "600519",
+   "stock_name": "贵州茅台",
+   "market": "CN",
+   "date": "2026-11-28",
+   "sentiment": "positive",
+   "tags": [
+    "利好"
+   ],
+   "score": 30,
+   "summary": "贵州茅台发布2026年中期利润分配方案，拟向全体股东每股派发现金红利25.6元（含税），合计派发现金红利320.02亿元（含税）。（新华财经） 　　?松发股份下属公司恒力造船拟投资约170亿元建设绿色高端海工科技装备制造项目。（新华财经） 　　?",
+   "url": "http://forex.eastmoney.com/a/202611283942331625.html",
    "has_report": false,
    "report_id": ""
   },
